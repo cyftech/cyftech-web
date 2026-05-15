@@ -1,0 +1,999 @@
+/* Created By AkinaCss */
+/* Detay area */
+
+/* main image and header area */
+
+.mainDetay {
+    width: 100%;
+    min-height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.overlayMain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000007e;
+    background: linear-gradient(180deg, #0000007e,rgba(15, 25, 65, 0.8) 70%, rgba(15, 25, 65, 1) 100%);
+}
+
+.overlayMain .mainImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.overlayMain .mainImg.about {
+    object-position: top;
+}
+
+.mainInside {
+    width: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    position: relative;
+    z-index: 2;
+    margin-top: 120px;
+    padding: 50px 0px;
+}
+
+.mainText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 20px;
+    color: var(--white);
+}
+
+.mapping {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    color: var(--white);
+    font-size: 14px;
+}
+
+.mapping a {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+    gap: 5px;
+    color: var(--white);
+}
+.mapping p {
+    color: var(--white);
+    margin-top: 2px;
+    font-size: 14px;
+}
+
+.mapping a:hover {
+    color: var(--blueLight);
+}
+
+.mapping svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--blueLight);
+}
+
+/* ============================================================== */
+
+/* Text Area */
+
+.textArea {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 30px 0px 50px 0px;
+    background: rgba(15, 25, 65, 1);
+}
+.textArea.col {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.textMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+    width: 80%;
+    gap: 20px;
+}
+
+.textInside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
+    width: 70%;
+    color: var(--white);
+    font-size: 18px;
+    gap: 10px;
+}
+
+.news-body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.news-body p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.news-body em {
+    font-weight: 600;
+}
+
+.linkInside {
+    width: 30%;
+    max-height: 500px;
+    min-width: 280px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+.linkInside ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+    list-style-type: none;
+    list-style-position: inside;
+    max-height: 500px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 10px 20px;
+    padding-bottom: 50px;
+}
+.linkInside ul::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    background: linear-gradient(180deg, transparent, rgba(15, 25, 65, 0.8) 70%, rgba(15, 25, 65, 1) 100%);
+    z-index: 2;
+}
+
+/* width */
+.linkInside ul::-webkit-scrollbar {
+  width: 7px;
+}
+/* Track */
+.linkInside ul::-webkit-scrollbar-track {
+  background: transparent; 
+}
+/* Handle */
+.linkInside ul::-webkit-scrollbar-thumb {
+  background: var(--color-text-light);
+  border-radius: 12px;
+}
+/* Handle on hover */
+.linkInside ul::-webkit-scrollbar-thumb:hover {
+  background: var(--blueLight); 
+}
+
+.linkInside ul li {
+    width: 100%;
+}
+
+.LinkHeader {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--white);
+    text-align: center;
+    border-bottom: 3px solid var(--white);
+    width: 100%;
+
+}
+
+.linkInside .linkBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: var(--white);
+    overflow: hidden;
+}
+
+.linkBox .linkImg {
+    width: 100%;
+    display: flex;
+    height: 150px;
+    overflow: hidden;
+}
+
+.linkBox .linkImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+}
+.linkBox:hover .linkImg img {
+    transform: scale(1.1);
+}
+
+.linkBox .blogContent h4 {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.linkBox:hover .blogContent h4 {
+    color: var(--blueLight);
+}
+
+.linkBox .blogContent h4 span::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--mainHover);
+    transition: 0.3s;
+}
+
+.linkBox:hover .blogContent h4 span::after {
+    width: 100%;
+}
+
+.linkBox .blogContent h4 svg {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    fill: var(--white);
+    transition: 0.3s;
+    opacity: 0;
+}
+.linkBox:hover .blogContent h4 svg {
+    opacity: 1;
+    fill: var(--blueLight);
+    transform: translateX(5px);
+}
+
+
+/* ============================================================== */
+
+/* blog Area */
+
+.blogMain {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.blogMain .blogImg {
+    height: 200px;
+}
+
+.blogMain .cardBlog {
+    flex: 1 1 25%;
+    width: 25%;
+    max-width: calc(25% - 20px);
+}
+
+.blogMain .blogContent h4 {
+    font-size: 18px;
+}
+.blogMain .blogContent .cardP {
+    font-size: 14px;
+}
+
+/* ============================================================== */
+
+/* Page Navigator Css Start */
+
+.page-navigator {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 40px;
+}
+
+.page-navigator-btns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.dots {
+    color: var(--white);
+}
+
+.page-navigator-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    transition: 0.3s;
+    color: var(--footer-txt);
+    background-color: transparent;
+    font-weight: 400;
+    outline: none;
+}
+
+.page-navigator-btn.active {
+    color: var(--white);
+    background-color: var(--blueLight);
+}
+
+.page-navigator-btn:hover {
+    color: var(--white);
+    background-color: var(--main);
+}
+
+.page-navigator-btn svg {
+    width: 15px;
+    height: 15px;
+    fill: var(--white);
+}
+
+/* ============================================================== */
+
+/* projeler Area */
+
+.mainDetay.center {
+    min-height: 450px;
+}
+
+.mainDetay.center .mainInside {
+    margin-top: 100px;
+}
+
+.mainDetay.center .mainText {
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.mainDetay.center .mainText h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.blogMain.project .cardBlog {
+    flex: 1 1 50%;
+    width: 50%;
+    max-width: calc(50% - 20px);
+}
+
+.blogMain.project .blogImg {
+    height: 300px;
+}
+
+.blogMain.project .blogContent h4 {
+    font-size: 18px;
+}
+.blogMain.project .blogContent .cardP {
+    font-size: 14px;
+}
+
+.mainDetay.center .mainImg {
+    object-position: bottom;
+}
+
+.textArea.col.proje {
+    z-index: 1;
+}
+
+.textArea.col.proje .blogMain.project{
+    position: relative;
+    top: -150px;
+    z-index: 2;
+}
+
+.textArea.col.proje .page-navigator {
+    position: relative;
+    top: -75px;
+}
+
+.blogMain.project .blogContent {
+    padding: 15px 20px;
+}
+
+/* ============================================================== */
+
+/* Responsive Area */
+
+.referansBox {
+    flex: 1 1 33%;
+    width: 33%;
+    max-width: calc(33% - 20px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+    padding: 20px;
+    color: var(--white);
+}
+
+.referansBox .musteriTxt {
+    font-size: 16px;
+}
+
+.referansBox .musteriTitle {
+    padding-left: 0px;
+    min-width: auto;
+}
+
+.referansBox img {
+    width: 100%;
+    height: 50px;
+    object-fit: scale-down;
+    object-position: left;
+}
+
+.referansTitle {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--footer-txt);
+}
+
+/* ============================================================== */
+
+/* Hakkimizda Area */
+
+.main.hakkimizda {
+    width: 100%;
+    margin: 79px 0px 0px 0px;
+    min-height: 450px;
+    border-radius: 0px;
+    border: none;
+    background: rgba(0, 0, 0, .0);
+    backdrop-filter: blur(0);
+    height: auto;
+}
+
+.main.hakkimizda .video-section {
+    min-height: 450px;
+}
+
+.main.hakkimizda .video-text h2 {
+    font-size: 2rem;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.main.hakkimizda .video-text p {
+    font-size: 16px;
+}
+
+.cardNeden.status {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.cardNeden.status h4 {
+    font-size: 50px;
+    line-height: 1;
+}
+
+/* ============================================================== */
+
+/* Team Area */
+
+.cardHizmet.ekip {
+    flex: 1 1 33%;
+    width: 33%;
+    max-width: calc(33% - 20px);
+    padding: 0px;
+    gap: 0;
+}
+
+.cardHizmet.ekip img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.cardHizmet.ekip h3 {
+    padding: 0px 10px;
+    padding-top: 20px;
+    font-style: normal;
+    text-align: center;
+    width: 100%;
+}
+.cardHizmet.ekip .cardP {
+    padding: 0px 10px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.cardHizmet.ekip h3::after {
+    display: none;
+}
+
+/* ============================================================== */
+
+/* secim Area */
+
+.cardHizmet-area.secim .cardNeden.status p {
+    font-size: 15px;
+}
+
+.cardHizmet-area.secim .cardNeden.status {
+    text-align: center;
+    align-items: center;
+    flex: 1 1 33%;
+    width: 33%;
+    max-width: calc(33% - 20px);
+}
+
+.cardHizmet-area.secim .cardNeden.status img {
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+}
+
+.hizmet-area.secim .videoBtn {
+    padding-left: 10px;
+    margin: 30px 0px;
+    box-shadow: 0px 0px 10px var(--blueLight);
+    background-color: var(--blue);
+    border: 2px solid var(--blueLight);
+}
+
+.hizmet-area.secim .videoBtn:hover {
+    background-color: var(--blueLight);
+    box-shadow: 0px 0px 20px var(--blueLight);
+    border-color: var(--white);
+}
+
+/* ============================================================== */
+
+/* neler sunuyoruz Area */
+
+.nelerBox {
+    flex: 1 1 33%;
+    width: 33%;
+    max-width: calc(33% - 20px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.nelerBox img {
+    width: 100%;
+    height: 150px;
+    object-fit: scale-down;
+}
+
+.nelerBox p {
+    color: var(--white);
+    font-size: 20px;
+}
+
+/* ============================================================== */
+
+/* tasarim sureci Area */
+
+.steps {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: start;
+    gap: clamp(14px,3vw,28px);
+    counter-reset: step;
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.steps::before {
+    content: "";
+    position: absolute;
+    left: calc(32px + 2px);
+    right: calc(32px + 2px);
+    top: 17px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--blueLight), transparent);
+    z-index: 0;
+}
+
+.step {
+    flex: 1 1 0;
+    min-width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+
+.node {
+    width: 36px;
+    height: 36px;
+    margin: 0 auto 10px;
+    border: 2px solid var(--blueLight);
+    border-radius: 50%;
+    position: relative;
+    background: radial-gradient(circle at 50% 50%, rgba(47,120,255,1) 0 8px, transparent 9px);
+    box-shadow: 0 0 0 4px rgba(47,120,255,.08), 0 0 18px rgba(47,120,255,.35) inset;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.meta {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.num::before {
+    counter-increment: step;
+    content: counter(step, decimal-leading-zero);
+}
+.num {
+    display: block;
+    font-size: 14px;
+    color: var(--footer-txt);
+    letter-spacing: .08em;
+}
+
+.title {
+    display: block;
+    font-size: 18px;
+    color: var(--white);
+    margin-top: 5px;
+}
+
+.title .none {
+    font-size: 14px;
+    color: var(--footer-txt);
+    margin-top: 5px;
+}
+
+.step:hover .node,
+.step:focus-within .node {
+    transform:scale(1.05);
+    box-shadow:0 0 0 6px rgba(47,120,255,.10), 0 0 22px rgba(47,120,255,.55) inset;
+}
+
+/* ============================================================== */
+
+/* iletisim Area */
+
+.contactMain {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+}
+
+.contactBoxs {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+}
+
+.contactBox {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    gap: 15px;
+    overflow: hidden;
+}
+
+.contactBox.p-10 {
+    padding: 20px 30px;
+}
+.contactBox.p-0 {
+    padding: 0px;
+    height: 280px;
+}
+
+.contactBox h2 {
+    font-size: max(2.3vw, 32px);
+    color: var(--white);
+    line-height: 1;
+}
+
+.contactBox form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 15px;
+}
+
+.form-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 500;
+    transition: color 0.3s;
+    color: var(--white);
+}
+
+.contactBoxs input, .contactBoxs textarea, .contactBoxs select {
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: 1px solid transparent;
+    transition: 0.3s;
+}
+
+.form-group:hover label {
+  color: var(--blueLight);
+}
+
+.contactBoxs input:valid,
+.contactBoxs input:focus,
+.contactBoxs input:hover,
+.contactBoxs input:active {
+    border: 1px solid var(--blueLight);
+}
+
+.contactBoxs textarea {
+    resize: vertical;
+    transition: 0.3s;
+}
+
+.contactBoxs textarea:valid,
+.contactBoxs textarea:focus,
+.contactBoxs textarea:active {
+    border: 2px solid var(--blueLight);
+}
+
+.contactBox .videoBtn {
+    width: 100%;
+    padding: 12px 0px;
+    margin-top: 10px;
+}
+
+.Ofisler {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+}
+
+.Ofisler svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--white);
+}
+
+.Ofisler .glassIco {
+    width: 50px;
+    height: 50px;
+    fill: var(--white);
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.ofisBox {
+    display: flex;
+    flex-direction: column;
+}
+.ofisBox p {
+    color: var(--white);
+    font-size: 18px;
+}
+.ofisBox .title {
+    color: var(--footer-txt);
+    font-size: 14px;
+}
+
+.ofisBox a {
+    color: var(--white);
+    font-size: 18px;
+}
+
+.ofisBox a:hover {
+    color: var(--blueLight);
+    transform: translateX(5px);
+}
+
+.ofisBox.center {
+    justify-content: center;
+}
+
+.contactBox.p-0 iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/* ============================================================== */
+
+/* Responsive Area */
+
+@media (min-width: 1921px) {
+    .mainInside, .textMain, .blogMain, .contactMain {
+        max-width: 1800px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .mainInside, .textMain, .blogMain, .contactMain {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .blogMain .cardBlog {
+        flex: 1 1 33%;
+        width: 33%;
+        max-width: calc(33% - 20px);
+    }
+}
+
+@media (max-width: 767px) {
+    .textMain {
+        flex-direction: column;
+    }
+    .textInside, .linkInside {
+        width: 100%;
+    }
+
+    .blogMain .cardBlog {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+    }
+
+    .blogMain.project .cardBlog {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main.hakkimizda {
+        height: 100vh;
+    }
+
+    .cardHizmet-area.secim .cardNeden.status {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+    }
+
+    .nelerBox {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .steps {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .steps::before {
+        display: none;
+    }
+    .step {
+        width: 100%;
+        text-align: left;
+        padding-left: 48px;
+    }
+    .step .node {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+    }
+    .step::before {
+        content: "";
+        position: absolute;
+        left: 17px;
+        top: 36px;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, var(--blueLight), transparent);
+    }
+    .step:last-child::before {
+        display: none;
+    }
+
+    .contactMain {
+        flex-direction: column;
+    }
+    .contactBoxs {
+        width: 100%;
+    }
+}
+
+@media (max-width: 630px) {
+    .cardHizmet.ekip {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+    }
+    .cardHizmet.ekip img {
+        height: 300px;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .blogMain .cardBlog {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .main.hakkimizda .video-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .cardHizmet.ekip {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}

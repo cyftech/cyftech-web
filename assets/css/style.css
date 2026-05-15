@@ -1,0 +1,1282 @@
+/* Created By AkinaCss */
+/* Main area */
+
+.main {
+    width: calc(100% - 40px);
+    height: calc(100vh - 120px);
+    min-height: 600px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: start;
+    position: relative;
+    margin: 100px 20px 20px 20px;
+    background: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(0.5rem);
+    border-radius: 0 0 20px 20px;
+    border: 1px solid #308efa63;
+    border-top: none;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.main.scrolled {
+    width: 100%;
+    height: 100vh;
+    margin: 100px 0px 0px 0px;
+    border-radius: 0px;
+}
+
+.video-section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    overflow: hidden;
+}
+
+.video-section video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000007e;
+    background: linear-gradient(30deg,rgba(7, 44, 126, 0.6) 0%, rgba(0, 0, 0, 0.7) 100%);
+    z-index: 1;
+}
+
+.video-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--white);
+    z-index: 2;
+    text-align: start;
+    font-size: 2rem;
+    margin: auto;
+}
+
+.main-inside {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+}
+
+.video-text p {
+    width: 70%;
+}
+
+.main-inside .smalltxt {
+    font-size: 22px;
+}
+
+.video-text h1 {
+    font-size: 5rem;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.video-buttons {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.videoBtn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;   
+    border-radius: 10px;
+    padding: 12px 10px;
+    padding-left: 20px;
+    min-width: 200px;
+    font-family: var(--urban-txt);
+    letter-spacing: 1px;
+}
+
+.videoBtn.color1 {
+    background-color: var(--blue);
+    color: var(--white);
+    border: 1px solid var(--blue1);
+}
+.videoBtn.color1:hover {
+    background-color: var(--mainHover);
+    color: var(--white);
+    border: 1px solid var(--mainHover);
+}
+.videoBtn.color1:hover svg {
+    background-color: var(--white);
+    fill: var(--mainHover);
+}
+.videoBtn.color1 svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    fill: var(--white);
+    padding: 6px;
+    border-radius: 100%;
+    transition: 0.3s;
+    width: 35px;
+}
+
+.videoBtn.color2 {
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--blue1);
+}
+.videoBtn.color2:hover {
+    background-color: var(--mainHover);
+    color: var(--white);
+}
+.videoBtn.color2:hover svg {
+    background-color: var(--mainHover);
+    fill: var(--white);
+}
+.videoBtn.color2 svg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--white);
+    fill: var(--main);
+    padding: 6px;
+    border-radius: 100%;
+    transition: 0.3s;
+    width: 35px;
+}
+
+.main-box {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+}
+
+.main-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.gradient-text {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(270deg, #7dd3fc, #308efa, #0B2A44);
+    background-size: 300% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s linear infinite;
+    pointer-events: none;
+    user-select: none;  
+}
+@keyframes gradientMove {
+    0% { background-position: 300% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+/* Main Css End */
+
+/* ===================================================== */
+
+/* Hizmetlerimiz Css Start */
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+    width: 100%;
+    padding: 50px 0px;
+    z-index: 0;
+    position: relative;
+}
+
+.section.pb-20 {
+    padding-bottom: 20px;
+}
+
+.hizmet-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.hizmet-area h2 {
+    width: 100%;
+    padding: 1em 0.35em 0.2em 0.35em;
+    text-align: left;
+    color: var(--white);
+    font-size: max(2.6vw,42px);
+}
+
+.cardHizmet-area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    min-width: 270px;
+    margin-top: 10px;
+    gap: 20px;
+    margin-bottom: 1em;
+}
+
+.cardHizmet {
+    flex: 1 1 25%;
+    width: 25%;
+    max-width: calc(25% - 20px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+    padding: 1em 2em;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.glass-card {
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(79, 130, 241, 0.3);
+  position: relative;
+  overflow: hidden;
+  background: padding-box rgba(255, 255, 255, 0.02);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 32px, rgba(0, 0, 0, 0.05) 0px 2px 8px, rgba(255, 255, 255, 0.12) 0px 1px 0px inset, rgba(255, 255, 255, 0.06) 0px -1px 0px inset;
+  backdrop-filter: blur(8px) saturate(1.2);
+}
+
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(79, 130, 241, 0.8),
+    transparent
+  );
+}
+
+.glass-card::after {
+  content: '';
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(55, 107, 248, 0.8),
+    transparent
+  );
+}
+
+.innerglass {
+    position: absolute;
+    inset: 0px;
+    background: radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+    mix-blend-mode: overlay;
+    pointer-events: none;
+}
+
+.cardHizmet svg {
+    width: 50px;
+    height: 50px;
+    max-height: 50px;
+    fill: var(--white);
+}
+.cardHizmet h3 {
+    width: 100%;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.cardP {
+    width: 100%;
+    font-size: 14px;
+    color: var(--light);
+    transition: 0.3s;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.cardHizmet .hizmetBtn {
+    border: none;
+    padding: 0px 0px;
+    border-radius: 0px;
+}
+
+.cardHizmet .hizmetBtn svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--mainHover);
+    transition: 0.3s;
+    margin-left: -10px;
+}
+
+.cardHizmet svg {
+    transition: 0.3s;
+}
+
+.cardHizmet:hover svg {
+    fill: var(--blueLight);
+}
+
+.cardHizmet:hover .hizmetBtn svg {
+    margin-left: 0px;
+}
+
+.cardHizmet h3 {
+    position: relative;
+    width: fit-content;
+}
+
+.cardHizmet h3::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--mainHover);
+    transition: 0.3s;
+}
+
+.cardHizmet:hover h3::after {
+    width: 100%;
+}
+
+/* Hizmetlerimiz Css End */
+
+/* ===================================================== */
+
+/* Neden biz Css Start */
+
+.cardNeden {
+    flex: 1 1 25%;
+    width: 25%;
+    max-width: calc(25% - 20px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 1em 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+.cardNeden svg {
+    width: 75px;
+    height: 75px;
+    max-height: 75px;
+    fill: var(--white);
+}
+.cardNeden h3 {
+    width: 100%;
+    font-size: 25px;
+}
+
+.section.pt-0 {
+    padding-top: 0px;
+}
+
+.section.p-0 {
+    padding: 0px;
+}
+
+/* Neden biz Css End */
+
+/* ========================================================= */
+
+/* Musteri yorumari Css Start */
+
+.projeSection {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.proje-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    width: 80%;
+    gap: 50px;
+    padding: 50px 16px 16px 16px;
+}
+
+.proje-area-inside {
+    width: calc(50% - 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--white);
+}
+
+.proje-area-inside h2 {
+    width: 100%;
+    text-align: left;
+    color: var(--white);
+    font-size: max(2.6vw, 42px);
+}
+
+.cardProje {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+    padding: 1em 2em;
+    border-radius: 25px;
+    margin-top: 20px;
+    color: var(--white);
+}
+
+.cardProje .innerglass {
+    background: radial-gradient(circle at 0% 20%, rgba(128, 177, 250, 0.15) 0%, transparent 70%);
+}
+
+/* slider area */
+
+.projeSlider {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: start;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.projeSlide1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.projeSlide1 img {
+    width: 80% !important;
+    min-height: 350px;
+    object-fit: scale-down !important;
+}
+
+.projeSlider .owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+}
+
+.projeSlider .owl-nav button {
+    background: rgba(0,0,0,0.8) !important;
+    border-radius: 50%;
+    width: 32px;
+    min-width: 32px;
+    min-height: 32px;
+    height: 32px;
+    pointer-events: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent !important;
+}
+.projeSlider .owl-nav button:hover {
+    background: rgba(0,0,0,0.7) !important;
+    border: 1px solid var(--mainHover) !important;
+}
+
+/* Dots'ları alta ve ortaya yerleştir */
+.projeSlider .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+.projeSlider .owl-dot span {
+    width: 10px;
+    height: 10px;
+    background: var(--main);
+    display: block;
+    border-radius: 50%;
+    margin: 5px;
+}
+.projeSlider .owl-dot.active span {
+    background: var(--blue1);
+}
+
+/* musteri area */
+
+.musteriCard {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 20px;
+    margin-top: 50px;
+    color: var(--white);
+}
+
+.musteriArea {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.userImg {
+    width: 70px;
+    height: 70px;
+    min-height: 70px;
+    min-width: 70px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(0.5rem);
+    border: 1px solid #308efa63;
+    border: 1px solid #CBECFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.userImg svg {
+    width: 50px;
+    height: 50px;
+    fill: var(--main);
+}
+
+.userImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.musteriArea h3 {
+    font-size: max(2vw, 32px);
+    color: var(--white);
+}
+
+.musteriTxt {
+    width: 100%;
+    font-size: 18px;
+    color: var(--light);
+    line-height: 1.5rem;
+}
+
+.musteriTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    line-height: 1.5rem;
+    font-weight: 400;   
+    border-radius: 10px;
+    padding: 12px 10px;
+    padding-left: 20px;
+    min-width: 200px;
+    font-family: var(--urban-txt);
+    letter-spacing: 1px;
+    background: #001439;
+    background: linear-gradient(90deg,rgba(255, 255, 255, 0) 25%, rgba(0, 20, 57, 1) 100%);
+}
+
+.musteriTitle p {
+    background: -webkit-linear-gradient(0deg, #42B3FF, #C0F3FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Musteri yorumari Css End */
+
+/* ========================================================= */
+
+/* calisma sureci Css Start */
+
+.cardHizmet-area.calisma {
+    align-items: center;
+    gap: 0;
+}
+
+.cardCalisma {
+    flex: 1 1 25%;
+    width: 25%;
+    max-width: calc(25% - 50px);
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 1em 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    color: var(--white);
+}
+
+.calismaIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.calismaIcon svg {
+    width: 75px;
+    height: 75px;
+    max-height: 75px;
+    fill: var(--white);
+}
+.calismaIcon h3 {
+    width: 100%;
+    font-size: 25px;
+}
+
+.rightSvg {
+    width: 50px;
+    height: 50px;
+    max-height: 50px;
+    fill: var(--blue);
+}
+
+/* calisma sureci Css End */
+
+/* ========================================================= */
+
+/* CTA Area Css Start */
+
+.neon-wave {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.neon-wave.top {
+    top: 0;
+}
+.neon-wave.bottom {
+    bottom: 0;
+}
+
+.innerCta {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    gap: 20px;
+}
+
+.innerCta .left {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0px;
+    z-index: 1;
+}
+
+.innerCta .left img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.innerCta .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    color: var(--white);
+    z-index: 2;
+}
+
+.innerCta .right .title {
+    font-size: 5rem;
+    line-height: 1.2;
+    width: 100%;
+}
+
+.innerCta .right .subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.cta-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.cta-actions .videoBtn {
+    font-size: 20px;
+    padding: 12px 20px;
+}
+
+.cta-actions.bottom .videoBtn {
+    min-width: 320px;
+}
+
+.cta-actions.bottom .videoBtn svg {
+    background-color: transparent;
+    fill: var(--blueLight);
+    padding: 0;
+    border-radius: 0;
+}
+
+.cta-actions.bottom .videoBtn:hover svg {
+    fill: var(--white);
+}
+
+.whatsapp-fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--wp);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+}
+
+.whatsapp-fab svg {
+    width: 35px;
+    height: 35px;
+    fill: var(--white);
+}
+
+/* CTA Area Css End */
+
+/* ========================================================= */
+
+/* Blog Area Css Start */
+
+.hizmet-area.blog {
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.hizmet-area.blog .bHeaderTxt {
+    width: 100%;
+    padding: 1em 0em 0em 0em;
+    text-align: left;
+    color: var(--white);
+    font-size: max(2.6vw, 42px);
+}
+.hizmet-area.blog .bHeaderTxt1 {
+    width: 100%;
+    padding: 1em 0em 0.2em 0em;
+    text-align: left;
+    color: var(--white);
+    font-size: max(2vw, 32px);
+}
+.hizmet-area.blog .bHeaderTxt2 {
+    width: 100%;
+    padding: 0em 0em 0.2em 0em;
+    text-align: left;
+    color: var(--white);
+}
+
+.blog-cards {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.cardBlog {
+    flex: 1 1 33%;
+    width: 33%;
+    max-width: calc(33% - 20px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 5px;
+    border-radius: 10px;
+    margin-top: 30px;
+    color: var(--white);
+    background: rgba(80, 80, 80, 0.1);
+    backdrop-filter: blur(0.5rem);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 8px 32px, rgba(0, 0, 0, 0.05) 0px 2px 8px, rgba(255, 255, 255, 0.12) 0px 1px 0px inset, rgba(255, 255, 255, 0.06) 0px -1px 0px inset;
+}
+
+.blogImg {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px 10px 0 0;
+}
+
+.blogImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+}
+
+.blogContent {
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    gap: 10px;
+}
+
+.cardBlog .hizmetBtn {
+    border: none;
+    padding: 0px 0px;
+    border-radius: 0px;
+    margin-top: 10px;
+}
+
+.cardBlog .hizmetBtn svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--mainHover);
+    transition: 0.3s;
+    margin-left: -10px;
+}
+
+.cardBlog svg {
+    transition: 0.3s;
+}
+
+.cardBlog:hover svg {
+    fill: var(--blueLight);
+}
+
+.cardBlog:hover .hizmetBtn svg {
+    margin-left: 0px;
+}
+
+.blogContent .date {
+    font-size: 14px;
+    color: var(--light);
+}
+
+.blogContent h4 {
+    width: fit-content;
+    font-size: 22px;
+    text-align: left;
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.blogContent h4::after {
+    content: '';
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: var(--mainHover);
+    transition: 0.3s;
+}
+
+.cardBlog:hover .blogContent h4::after {
+    width: 100%;
+}
+
+.cardBlog:hover .blogContent h4 {
+    color: var(--mainHover);
+}
+
+.blogContent .cardP {
+    font-size: 16px;
+}
+
+.cardBlog:hover .blogImg img {
+    transform: scale(1.1);
+}
+
+/* Blog Area Css End */
+
+/* ========================================================= */
+
+/* Responsive Start */
+
+@media (min-width: 1921px) {
+    .video-text h1, .video-text p, .video-text, .hizmet-area, .proje-area {
+        max-width: 1800px;
+    }
+}
+
+@media (max-width: 1700px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 1500px) {
+    .innerCta .left {
+        margin: auto;
+        margin-left: 0;
+        padding: 100px 0px;
+    }
+}
+
+@media (max-width: 1410px) {
+    .cardNeden {
+        padding: 1em 0px;
+    }
+}
+
+
+@media (max-width: 1400px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 3.5rem;
+    }
+    .video-text p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1310px) {
+    .cardNeden h3 {
+        font-size: 22px;
+    }
+    .cardNeden svg {
+        width: 65px;
+        height: 65px;
+        max-height: 65px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .cardHizmet {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 1202px) {
+    .main-inside, .hizmet-area, .proje-area {
+        width: 90%;
+    }
+    .main-box {
+        position: absolute;
+        bottom: 0;
+        right: 20px;
+    }
+
+    .main-inside p {
+        width: 70%;
+    }
+
+    .innerCta .right {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1050px) {
+    .cardNeden h3 {
+        font-size: 25px;
+    }
+    .cardNeden svg {
+        width: 75px;
+        height: 75px;
+        max-height: 75px;
+    }
+    .cardNeden {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+        padding: 1em 0px 0px 0px;
+    }
+}
+
+@media (max-width: 1010px) {
+    .proje-area {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .proje-area-inside {
+        width: 100%;
+    }
+
+    .innerCta .right {
+        width: 80%;
+        padding: 50px 0px;
+    }
+    .innerCta .left {
+        width: 20%;
+    }
+}
+
+@media (max-width: 860px) {
+    .blog-cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .cardBlog {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 20px);
+    }
+    .cardBlog:last-child {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 840px) {
+    .cta-actions.bottom {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .video-text {
+        text-align: center;
+        justify-content: center;
+        align-items: start;
+        padding: 50px 0px;
+    }
+    .video-text p {
+        width: 100%;
+    }
+    .video-buttons {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .main-box {
+        position: absolute;
+        bottom: 0;
+        right: auto;
+    }
+
+    .innerCta .left {
+        display: none;
+    }
+    .innerCta .right {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 713px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 3rem;
+    }
+
+    
+    .none2 {
+        display: none;
+    }
+
+    .cardCalisma {
+        flex: 1 1 50%;
+        width: 50%;
+        max-width: calc(50% - 50px);
+    }
+}
+
+@media (max-width: 650px) {
+    .blog-cards {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .cardBlog {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 630px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 2.5rem;
+    }
+    .video-text p {
+        font-size: 14px;
+    }
+    .main, .video-section {
+        min-height: 500px;
+    }
+
+    .cardHizmet {
+        flex: 1 1 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hizmet-area h2 {
+        text-align: center;
+    }
+
+    .proje-area-inside h2 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 630px) {
+    .cardNeden svg {
+        width: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+    .cardNeden h3 {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 542px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 2rem;
+    }
+    .video-text p {
+        font-size: 14px;
+    }
+    .video-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .video-buttons .videoBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 542px) {
+    .main {
+        width: calc(100% - 40px);
+        margin: 100px 20px 20px 20px;
+    }
+
+    header {
+        width: calc(100% - 40px);
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+    .cardNeden svg {
+        width: 50px;
+        height: 50px;
+        max-height: 50px;
+    }
+    .cardNeden h3 {
+        width: auto;
+        font-size: 18px;
+    }
+
+    .cardNeden {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cta-actions {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 1.8rem;
+    }
+    .video-text p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    .video-text h1, .innerCta .right .title {
+        font-size: 1.5rem;
+    }
+}
+
+/* Responsive End */
+
+/* ===================================================== */
