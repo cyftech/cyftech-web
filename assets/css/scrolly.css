@@ -1,0 +1,71 @@
+/* CYF Tech — shared scroll-story layout for service pages
+   left: steps that scroll · right: a sticky stage whose state follows the active step */
+.wt{position:relative;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:48px;padding:0 48px;max-width:1440px;margin:0 auto}
+.wt-bg{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.wt-bg .floor{position:absolute;left:-20%;right:-20%;top:0;height:100vh;perspective:520px;overflow:hidden;-webkit-mask-image:linear-gradient(0deg,#000 20%,transparent);mask-image:linear-gradient(0deg,#000 20%,transparent)}
+.wt-bg .floor>div{position:absolute;left:0;right:0;top:-64px;bottom:0;transform:rotateX(68deg);transform-origin:50% 100%}
+.wt-bg .floor>div>div{position:absolute;left:0;right:0;top:-64px;bottom:0;background-image:linear-gradient(var(--accent-faint) 1px,transparent 1px),linear-gradient(90deg,var(--accent-faint) 1px,transparent 1px);background-size:64px 64px;animation:pcGrid 4s linear infinite}
+.wt-bg .grid{position:absolute;left:0;right:0;top:100vh;bottom:0;-webkit-mask-image:linear-gradient(180deg,transparent,#000 15%,#000 85%,transparent);mask-image:linear-gradient(180deg,transparent,#000 15%,#000 85%,transparent)}
+.wt-bg .grid.sq{background-image:linear-gradient(var(--accent-faint) 1px,transparent 1px),linear-gradient(90deg,var(--accent-faint) 1px,transparent 1px);background-size:56px 56px}
+.wt-bg .grid.lines{background-image:repeating-linear-gradient(90deg,transparent 0 47px,var(--accent-faint) 47px 48px)}
+.wt-bg .grid.diag{background-image:repeating-linear-gradient(-60deg,transparent 0 40px,var(--accent-faint) 40px 41px)}
+.wt-bg .grid.dots{background-image:radial-gradient(var(--accent-dot) 1.2px,transparent 1.8px);background-size:28px 28px}
+
+/* left: steps */
+.wt-steps{position:relative;z-index:2}
+.wt-step{min-height:100vh;display:flex;flex-direction:column;justify-content:center;padding:96px 0;transition:opacity .5s ease}
+.wt-step:not(.on){opacity:.25}
+.wt-step .h1{font-size:64px}
+.wt-step h2{font-size:48px;line-height:1.06;font-weight:600;letter-spacing:-.03em}
+.wt-step p{margin-top:20px;font-size:18px;line-height:1.6;color:var(--muted);max-width:520px}
+.wt-step .lead{font-size:19px}
+.wt-hint{display:flex;align-items:center;gap:10px;margin-top:56px;font-family:var(--mono);font-size:12px;color:var(--dim);animation:pcHint 1.8s ease-in-out infinite}
+
+/* right: sticky stage holding a fixed 640×520 rig, scaled to fit */
+.wt-stage{position:sticky;top:var(--head-h);height:calc(100vh - var(--head-h));z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.wt-label{font-family:var(--mono);font-size:12px;color:var(--dim);letter-spacing:.04em;margin-bottom:20px;display:flex;align-items:center;gap:12px}
+.wt-label b{color:var(--accent);font-weight:500}
+.wt-label i{width:24px;height:1px;background:var(--line-3)}
+.wt-label span{color:var(--text)}
+.wt-fit{width:640px;height:520px;flex:none;position:relative}
+.wt-rig{position:absolute;left:0;top:0;width:640px;height:520px;transform-origin:0 0}
+
+/* shared window chrome */
+.sx-win{position:absolute;left:50%;top:40px;width:560px;height:380px;transform:translateX(-50%);border-radius:14px;background:#061224;border:1px solid var(--line-3);box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .6s ease,border-color .6s ease}
+.sx-bar{height:38px;flex:none;display:flex;align-items:center;gap:12px;padding:0 14px;background:#0B1B33;border-bottom:1px solid var(--line-2)}
+.sx-dots{display:flex;gap:6px;flex:none}
+.sx-dots i{width:9px;height:9px;border-radius:50%;background:#26395C}
+.sx-title{flex:1;min-width:0;font-family:var(--mono);font-size:11px;color:var(--dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sx-body{position:relative;flex:1;min-height:0;overflow:hidden}
+.sx-layer{position:absolute;inset:0;opacity:0;visibility:hidden;transition:opacity .45s ease,visibility .45s}
+.sx-layer.show{opacity:1;visibility:visible}
+.sx-badge{flex:none;display:flex;align-items:center;gap:6px;height:22px;padding:0 10px;border-radius:999px;border:1px solid rgba(74,222,128,.4);color:#4ADE80;font-family:var(--mono);font-size:10px;letter-spacing:.06em;opacity:0;transform:scale(.8);transition:opacity .4s ease .3s,transform .4s ease .3s}
+.sx-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:#4ADE80;box-shadow:0 0 8px #4ADE80}
+.is-live .sx-badge{opacity:1;transform:none}
+.is-live .sx-win{border-color:color-mix(in srgb,var(--accent) 60%,transparent);box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 70px color-mix(in srgb,var(--accent) 22%,transparent)}
+
+/* floating overlays around the window */
+.wt-ov{position:absolute;opacity:0;transform:translateY(10px) scale(.96);transition:opacity .45s ease,transform .45s ease;pointer-events:none;z-index:3}
+.wt-ov.show{opacity:1;transform:none}
+.wt-ov .chip{white-space:nowrap}
+.sx-panel{padding:14px 16px;border-radius:12px;background:rgba(4,8,20,.96);border:1px solid var(--line-3);box-shadow:0 20px 40px rgba(0,0,0,.5);font-size:12px;color:var(--muted)}
+.sx-panel h4{margin:0 0 10px;font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.08em;color:var(--accent)}
+
+/* demo boxes in "neler sunuyoruz" cards */
+.demo{height:200px;border-radius:12px;background:#061224;border:1px solid var(--line-2);position:relative;overflow:hidden;margin-bottom:8px}
+
+@media (prefers-reduced-motion: reduce){
+  .wt-bg .floor>div>div,.wt-hint,.demo *{animation:none !important}
+}
+
+@media (max-width: 960px){
+  .wt{grid-template-columns:minmax(0,1fr);gap:0;padding:0 20px}
+  .wt-stage{order:-1;top:var(--head-h);height:48vh;min-height:300px;background:linear-gradient(180deg,var(--bg) 85%,transparent);z-index:3;padding-top:8px}
+  .wt-label{margin-bottom:8px}
+  .wt-step{min-height:70vh;padding:40px 0}
+  .wt-step:not(.on){opacity:.35}
+  .wt-step .h1{font-size:40px}
+  .wt-step h2{font-size:32px}
+  .wt-step p{font-size:16px}
+  .wt-hint{display:none}
+}

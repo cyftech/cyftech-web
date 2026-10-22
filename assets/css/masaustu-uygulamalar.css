@@ -1,0 +1,123 @@
+/* CYF Tech — masaüstü stage: "ofisinizin yazılımı" (layout: scrolly.css) */
+.ms-desk{position:absolute;left:20px;top:24px;width:600px;height:400px;border-radius:14px;border:1px solid var(--line-3);overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#0E2440,#061224 60%);box-shadow:0 30px 60px rgba(0,0,0,.45);transition:border-color .6s ease,box-shadow .6s ease}
+.ms-desk::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--accent-faint) 1px,transparent 1px),linear-gradient(90deg,var(--accent-faint) 1px,transparent 1px);background-size:40px 40px;opacity:.6}
+.is-live .ms-desk{border-color:color-mix(in srgb,var(--accent) 60%,transparent);box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 70px color-mix(in srgb,var(--accent) 22%,transparent)}
+.ms-empty{position:absolute;left:0;right:0;top:150px;text-align:center;font-family:var(--mono);font-size:12px;color:#4F6585;transition:opacity .4s ease}
+.is-flow .ms-empty,.is-open .ms-empty{opacity:0}
+
+/* taskbar */
+.ms-bar{position:absolute;left:0;right:0;bottom:0;height:40px;background:rgba(4,8,20,.85);border-top:1px solid var(--line-2);display:flex;align-items:center;justify-content:center;gap:10px;z-index:4}
+.ms-bar i{width:22px;height:22px;border-radius:6px;background:#1A2944}
+.ms-bar i.app{background:var(--accent);opacity:0;transform:translateY(10px) scale(.6);transition:opacity .4s ease,transform .4s ease;box-shadow:0 0 14px color-mix(in srgb,var(--accent) 50%,transparent)}
+.is-open .ms-bar i.app{opacity:1;transform:none}
+.ms-clock{position:absolute;right:14px;font-family:var(--mono);font-size:10px;color:var(--dim)}
+
+/* 1 · process flow on the desktop */
+.ms-flow{position:absolute;left:0;right:0;top:140px;display:flex;align-items:center;justify-content:center;gap:10px;opacity:0;transition:opacity .4s ease}
+.is-flow .ms-flow{opacity:1}
+.ms-flow span{padding:10px 14px;border-radius:10px;background:#0B1B33;border:1px solid var(--line-3);font-size:13px;font-weight:600;opacity:0;transform:translateY(8px);transition:opacity .4s ease,transform .4s ease;transition-delay:calc(.2s + var(--i) * .3s)}
+.ms-flow span small{display:block;font-family:var(--mono);font-size:10px;font-weight:400;color:var(--dim);margin-top:2px}
+.ms-flow em{font-style:normal;font-family:var(--mono);color:var(--accent);opacity:0;transition:opacity .3s ease;transition-delay:calc(.35s + var(--i) * .3s)}
+.is-flow .ms-flow span,.is-flow .ms-flow em{opacity:1;transform:none}
+
+/* app window */
+.ms-win{position:absolute;left:40px;top:26px;width:520px;height:318px;border-radius:10px;background:#081830;border:1px solid var(--line-3);box-shadow:0 24px 50px rgba(0,0,0,.55);overflow:hidden;display:flex;flex-direction:column;opacity:0;transform:translateY(60px) scale(.6);transform-origin:50% 120%;transition:opacity .45s ease,transform .55s cubic-bezier(.3,.7,.3,1);z-index:2}
+.is-open .ms-win{opacity:1;transform:none}
+.ms-title{height:32px;flex:none;display:flex;align-items:center;gap:10px;padding:0 10px;background:#0B1B33;border-bottom:1px solid var(--line-2);font-family:var(--mono);font-size:11px;color:var(--muted);position:relative}
+.ms-title .nm{flex:1;text-align:center}
+.ms-mac{display:flex;gap:6px;position:absolute;left:12px}
+.ms-mac i{width:10px;height:10px;border-radius:50%;background:#F87171}
+.ms-mac i:nth-child(2){background:#FBBF24}
+.ms-mac i:nth-child(3){background:#4ADE80}
+.ms-winctl{display:flex;gap:14px;position:absolute;right:12px;color:var(--dim);font-size:11px;opacity:0}
+.ms-app{flex:1;min-height:0;display:grid;grid-template-columns:110px 1fr}
+.ms-side{background:#0A1830;border-right:1px solid var(--line-2);padding:12px 10px;display:flex;flex-direction:column;gap:9px}
+.ms-side i{height:8px;border-radius:4px;background:#1A2944}
+.ms-side i.on{background:#2B4470}
+.ms-main{padding:12px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.ms-tools{display:flex;gap:8px}
+.ms-tools span{height:24px;padding:0 10px;border-radius:6px;border:1px solid var(--line-3);font-size:11px;display:flex;align-items:center;color:var(--text)}
+.ms-tools span:first-child{background:var(--accent);border-color:var(--accent);color:var(--on-accent);font-weight:600}
+.ms-tools .s{margin-left:auto;width:120px;background:#0B1B33;border-color:transparent}
+.ms-table{display:flex;flex-direction:column;gap:5px}
+.ms-row{display:grid;grid-template-columns:1.4fr 1fr .8fr 70px;gap:10px;align-items:center;height:26px;padding:0 10px;border-radius:5px;background:#0B1B33}
+.ms-row i{height:6px;border-radius:3px;background:#2B4470}
+.ms-row i:first-child{background:#4F6585}
+.ms-row b{height:16px;border-radius:999px;font-size:9px;font-weight:600;display:flex;align-items:center;justify-content:center;font-family:var(--mono)}
+.ms-row b.ok{background:rgba(74,222,128,.15);color:#4ADE80}
+.ms-row b.wait{background:rgba(251,191,36,.15);color:#FBBF24}
+.ms-row.h{background:transparent;height:18px}
+.ms-row.h i{background:#1A2944}
+.ms-win .pop{opacity:0;transform:translateY(6px);transition:opacity .35s ease,transform .35s ease;transition-delay:calc(.4s + var(--i) * 80ms)}
+.is-open .ms-win .pop{opacity:1;transform:none}
+.ms-status{height:24px;flex:none;border-top:1px solid var(--line-2);display:flex;align-items:center;gap:8px;padding:0 12px;font-family:var(--mono);font-size:10px;color:var(--dim);position:relative}
+.ms-status span{position:absolute;left:12px;display:flex;align-items:center;gap:6px}
+.ms-status span::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.ms-status .on{color:#4ADE80}
+.ms-status .off{color:#FBBF24;opacity:0}
+.is-sync .ms-status .on{animation:msOn 5s ease infinite}
+.is-sync .ms-status .off{animation:msOff 5s ease infinite}
+@keyframes msOn{0%,20%{opacity:1}25%,65%{opacity:0}70%,100%{opacity:1}}
+@keyframes msOff{0%,20%{opacity:0}25%,65%{opacity:1}70%,100%{opacity:0}}
+
+/* 3 · devices + sync */
+.ms-dev{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:0;transition:opacity .4s ease}
+.ms-dev.show{opacity:1}
+.ms-dev svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.ms-dev path{fill:none;stroke:var(--accent);stroke-width:2;stroke-dasharray:3 9;stroke-linecap:round;animation:msFlow 1s linear infinite}
+@keyframes msFlow{to{stroke-dashoffset:-12}}
+.ms-dev .chip{position:absolute;white-space:nowrap;opacity:0;transform:scale(.9);transition:opacity .4s ease,transform .4s ease;transition-delay:calc(var(--i) * .15s)}
+.ms-dev.show .chip{opacity:1;transform:none}
+
+/* 4 · platforms + installer */
+.is-plat .ms-mac{animation:msMac 6s ease infinite}
+.is-plat .ms-winctl{animation:msWin 6s ease infinite}
+@keyframes msMac{0%,30%{opacity:0}34%,63%{opacity:1}67%,100%{opacity:0}}
+@keyframes msWin{0%,30%{opacity:1}34%,63%{opacity:0}67%,100%{opacity:1}}
+.ms-plats{position:absolute;left:0;right:0;top:436px;display:flex;justify-content:center;gap:20px;font-family:var(--mono);font-size:12px;color:#4F6585;opacity:0;transition:opacity .4s ease}
+.ms-plats span{display:flex;align-items:center;gap:6px}
+.ms-plats span::before{content:"";width:6px;height:6px;border-radius:50%;background:currentColor}
+.is-plat .ms-plats{opacity:1}
+@keyframes msPlat{0%,32%{color:var(--accent)}33%,100%{color:#4F6585}}
+.is-plat .ms-plats span{animation:msPlat 6s linear infinite}
+.is-plat .ms-plats span:nth-child(2){animation-delay:-4s}
+.is-plat .ms-plats span:nth-child(3){animation-delay:-2s}
+.ms-install{left:400px;top:250px;width:230px}
+.ms-install .bar{height:6px;border-radius:3px;background:var(--line-2);overflow:hidden;margin:8px 0}
+.ms-install .bar i{display:block;height:100%;width:0;background:#4ADE80;transition:width 2.2s ease .4s}
+.ms-install.show .bar i{width:100%}
+.ms-install b{display:block;font-weight:500;color:var(--text);font-size:13px}
+.ms-install small{display:block;font-family:var(--mono);font-size:10px;color:#4ADE80;opacity:0;transition:opacity .3s ease 2.6s}
+.ms-install.show small{opacity:1}
+
+/* 5 · update toast */
+.ms-toast{position:absolute;right:16px;bottom:54px;z-index:5;opacity:0;transform:translateY(12px);transition:opacity .45s ease .5s,transform .45s ease .5s}
+.is-live .ms-toast{opacity:1;transform:none}
+.ms-toast .tag{color:#4ADE80}
+
+/* overlay slots */
+.ms-o-l{left:-40px;top:300px}
+.ms-o-r{left:470px;top:-4px;transition-delay:.12s}
+.ms-o-b{left:40px;top:436px}
+
+/* demos */
+.demo-mswin{display:flex;align-items:center;justify-content:center}
+.demo-mswin .w{width:210px;border-radius:8px;border:1px solid var(--line-3);background:#081830;overflow:hidden}
+.demo-mswin .t{height:18px;background:#0B1B33;border-bottom:1px solid var(--line-2)}
+.demo-mswin .r{height:14px;margin:6px 8px;border-radius:3px;background:#0B1B33;animation:dmRow 4s ease infinite;animation-delay:calc(var(--i) * .2s)}
+@keyframes dmRow{0%{opacity:0;transform:translateX(-8px)}12%,85%{opacity:1;transform:none}100%{opacity:0}}
+.demo-dev{display:flex;align-items:center;justify-content:center}
+.demo-dev svg{position:absolute;inset:0;width:100%;height:100%}
+.demo-dev path{fill:none;stroke:var(--accent);stroke-width:1.5;stroke-dasharray:2 10;animation:msFlow 1s linear infinite}
+.demo-dev .hub{width:70px;height:50px;border-radius:8px;border:1px solid var(--accent);background:#061224;position:relative;z-index:2;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10px;color:var(--accent)}
+.demo-dev .sat{position:absolute;padding:4px 8px;border-radius:6px;background:#0B1B33;border:1px solid var(--line-3);font-family:var(--mono);font-size:10px;color:var(--muted)}
+.demo-sync{display:flex;align-items:center;justify-content:center;gap:16px}
+.demo-sync .box{width:80px;padding:12px 8px;border-radius:8px;border:1px solid var(--line-3);background:#0B1B33;text-align:center;font-family:var(--mono);font-size:10px;color:var(--muted)}
+.demo-sync .lane{position:relative;width:70px;height:4px;border-radius:2px;background:var(--line-2)}
+.demo-sync .lane i{position:absolute;top:-3px;width:10px;height:10px;border-radius:50%;background:var(--accent);animation:dmSync 2s ease-in-out infinite}
+.demo-sync .lane i:nth-child(2){animation-delay:-1s;background:#4ADE80}
+@keyframes dmSync{0%{left:0;opacity:0}15%{opacity:1}85%{opacity:1}100%{left:60px;opacity:0}}
+
+@media (prefers-reduced-motion: reduce){
+  .ms-dev path,.is-sync .ms-status .on,.is-sync .ms-status .off,.is-plat .ms-mac,.is-plat .ms-winctl,.is-plat .ms-plats span{animation:none}
+}
