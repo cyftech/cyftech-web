@@ -1,0 +1,51 @@
+/* CYF Tech — hakkimizda.html hero: the </> mark inside a glowing ring, two orbits spinning around it,
+   the four values floating at the corners */
+
+/* facts under the buttons */
+.ab-manifest{display:flex;flex-wrap:wrap;gap:10px 28px;list-style:none;margin:40px 0 0;padding:24px 0 0;border-top:1px solid var(--line-2);font-family:var(--mono);font-size:13px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em}
+.ab-manifest b{font-family:var(--sans);font-size:22px;font-weight:600;letter-spacing:-.02em;color:var(--text);text-transform:none;margin-right:6px}
+
+/* stage */
+@keyframes abPulse{0%,100%{box-shadow:0 0 90px color-mix(in srgb,var(--accent) 18%,transparent),inset 0 0 50px var(--accent-faint)}50%{box-shadow:0 0 140px color-mix(in srgb,var(--accent) 30%,transparent),inset 0 0 70px var(--accent-faint)}}
+@keyframes abSpin{to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes abPop{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}
+.ab-stage{position:relative;height:520px}
+.ab-ring,.ab-orbit i{position:absolute;left:50%;top:50%;border-radius:50%;transform:translate(-50%,-50%)}
+.ab-ring{width:250px;height:250px;display:flex;align-items:center;justify-content:center;border:1px solid var(--accent-line);background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 24%,#06122A),#050B1A);animation:abPulse 5s ease-in-out infinite}
+.ab-logo{font-family:var(--mono);font-size:76px;font-weight:700;letter-spacing:-.04em;color:var(--accent);text-shadow:0 0 40px color-mix(in srgb,var(--accent) 60%,transparent)}
+
+/* orbits: each carries one bright dot on its edge */
+.ab-orbit i{border:1px dashed color-mix(in srgb,var(--accent) 28%,transparent);animation:abSpin 26s linear infinite}
+.ab-orbit i:first-child{width:370px;height:370px}
+.ab-orbit i:last-child{width:500px;height:500px;border-style:solid;border-color:var(--line-2);animation-duration:44s;animation-direction:reverse}
+.ab-orbit i::before{content:"";position:absolute;left:50%;top:-5px;width:9px;height:9px;margin-left:-4.5px;border-radius:50%;background:var(--accent);box-shadow:0 0 14px var(--accent)}
+
+/* value chips at the four corners (pop in, then float) */
+.ab-chip{position:absolute;z-index:2;opacity:0;animation:abPop .6s ease forwards,pcFloat 4.2s ease-in-out .6s infinite}
+.ab-chip0{left:0;top:9%}
+.ab-chip1{right:0;top:22%;animation-delay:.15s,-1.2s}
+.ab-chip2{left:4%;bottom:20%;animation-delay:.3s,-2.1s}
+.ab-chip3{right:2%;bottom:7%;animation-delay:.45s,-3s}
+
+@media (prefers-reduced-motion: reduce){
+  .ab-ring,.ab-orbit i{animation:none}
+  .ab-chip{opacity:1;animation:none}
+}
+@media (max-width: 960px){
+  .ab-stage{max-width:560px;margin:0 auto}
+}
+@media (max-width: 640px){
+  .ab-stage{height:auto;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px;padding-top:260px}
+  .ab-ring{top:120px;width:170px;height:170px}
+  .ab-logo{font-size:52px}
+  .ab-orbit i{top:120px}
+  .ab-orbit i:first-child{width:240px;height:240px}
+  .ab-orbit i:last-child{width:320px;height:320px}
+  .ab-chip{position:static;padding:10px 12px}
+  .ab-chip small{font-size:12px}
+  .ab-manifest b{font-size:19px}
+}
+
+/* stats strip right under the hero (dark, instead of the light band) */
+.ab-stats{position:relative;z-index:1;padding:8px 0 24px}
+.ab-stats .stats{border:1px solid var(--line-2);border-radius:18px;background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 6%,rgba(8,16,32,.8)),rgba(8,16,32,.8));overflow:hidden}

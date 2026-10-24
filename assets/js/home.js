@@ -1,7 +1,11 @@
 // CYF Tech — home: scroll-driven 3D point shapes
 (function () {
+  // point colour follows the theme accent; section names come from the rail (so they are translated with the page)
   var ACCENT = '#38BDF8';
-  var NAMES = ['Giriş', 'Web Tasarım', 'Web Geliştirme', 'SEO', 'E-Ticaret', 'Süreç', 'İletişim'];
+  var readAccent = function () { ACCENT = getComputedStyle(document.documentElement).getPropertyValue('--brand').trim() || ACCENT; };
+  readAccent();
+  document.addEventListener('cyf:theme', readAccent);
+  var NAMES = Array.prototype.map.call(document.querySelectorAll('.pc-rail a'), function (a) { return a.getAttribute('aria-label'); });
   var NS = NAMES.length;
 
   var cv = document.querySelector('[data-pc-canvas]');

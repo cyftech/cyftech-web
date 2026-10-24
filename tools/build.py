@@ -1,6 +1,7 @@
-import os, re, sys
+import hashlib, json, os, re, sys
 OUT = sys.argv[1]
-VER = '20261023'  # bump on every deploy so browsers fetch fresh css/js
+VER = '20261024q'  # bump on every deploy so browsers fetch fresh css/js
+SHOW_CD = False  # CD shelf (referanslar-cd.html) is parked: the page still builds, but nothing links to it
 
 TEL = '0543 791 10 61'
 TEL_HREF = 'tel:+905437911061'
@@ -14,32 +15,88 @@ SERVICES = [
     ('mobil-uygulamalar.html', 'Mobil Uygulamalar', 'iOS ve Android için hızlı, kullanıcı dostu uygulamalar.'),
 ]
 
+# Projects / references. Also feeds the CD shelf on referanslar.html (etiket: spine label, dosya: file name on
+# the retro screen, renk: case colour). Images are laptop + phone mockups (1400×1000) of the live sites.
+# Each project has a row on referanslar.html (#<slug>); referanslar-cd.html#ref-<slug> plays its CD on the shelf page.
+def _p(ad, sektor, img, url, aciklama, tags, renk, etiket, dosya):
+    return dict(ad=ad, slug=img, sektor=sektor, img=f'assets/img/proje/{img}.webp', url=url, aciklama=aciklama, tags=tags, renk=renk, etiket=etiket, dosya=dosya)
+
+
 PROJECTS = [
-    dict(ad='Hürsat', sektor='E-Ticaret Yazılımı', img='assets/img/proje/01.png',
-         aciklama='İşletmelere e-ticaret yazılım çözümleri sunan Hürsat için paketlerini ve iletişim adımlarını öne çıkaran, tüm cihazlara uyumlu bir web sitesi hazırladık.',
-         tags=['Web Tasarım', 'E-Ticaret']),
-    dict(ad='Softrue Solutions', sektor='Yazılım', img='assets/img/proje/02.png',
-         aciklama='Yazılım çözümleri geliştiren Softrue Solutions için ürünlerini, güvenlik yaklaşımını ve kurumsal kimliğini anlatan bir web sitesi geliştirdik.',
-         tags=['Web Tasarım', 'Web Geliştirme']),
-    dict(ad='Sistem KYS', sektor='KOBİ Yönetim Platformu', img='assets/img/proje/03.png',
-         aciklama='Ekonomik ve sürdürülebilir bir KOBİ yönetim platformu olan Sistem KYS için platformu tanıtan bir web sitesi geliştirdik.',
-         tags=['Web Geliştirme']),
-    dict(ad='Eurolab', sektor='Laboratuvar', img='assets/img/proje/eurolab.webp',
-         aciklama='EUROLAB için kullanıcı dostu arayüzüyle laboratuvar hizmetlerini sunan kurumsal web sitesini hayata geçirdik.',
-         tags=['Web Tasarım', 'SEO']),
+    _p('KA Mühendislik', 'Elektrik-Mekanik Mühendislik', 'ka-muhendislik', 'https://kamuhendislik.com.tr',
+       '1971’den bu yana MEP taahhüt, tasarım, işletme-bakım ve dış ticaret alanında çalışan KA Mühendislik için hizmetlerini ve Dalaman Havalimanı, Mercedes Türkiye Genel Müdürlüğü gibi projelerini öne çıkaran, Türkçe ve İngilizce kurumsal web sitesini hayata geçirdik.',
+       ['Web Tasarım', 'Web Geliştirme'], '#B8923E', 'KA MÜH.', 'KAMUH.EXE'),
+    _p('Zumer Gayrimenkul', 'Gayrimenkul', 'zumer', 'https://zumerkonut.com',
+       'İstanbul’da alım-satım, kiralama ve yatırım danışmanlığı yapan Zumer Gayrimenkul için satılık ve kiralık ilanlarını, ekibini, galerisini ve blog yazılarını sunan kurumsal web sitesini geliştirdik.',
+       ['Web Tasarım', 'Web Geliştirme'], '#8C6A3F', 'ZUMER', 'ZUMER.EXE'),
+    _p('MÜSİAD Gebze', 'İş Dünyası Derneği', 'musiad-gebze', 'https://musiadgebze.org.tr',
+       'MÜSİAD Gebze Şubesi için üye firmaları ve ürünlerini, 15 sektörü, faaliyetleri, duyuruları ve kurumsal anlaşmaları bir araya getiren; üyelik ön başvurusu alan bir kurumsal portal geliştirdik.',
+       ['Web Tasarım', 'Web Geliştirme'], '#C8A13A', 'MÜSİAD', 'MUSIAD.EXE'),
+    _p('Nurella Spa & Masaj', 'Spa ve Masaj', 'nurella', 'https://manisamasaj.com',
+       'Manisa’daki Nurella Spa & Massage için 18 masaj çeşidini ayrı sayfalarda anlatan; spa paketlerini, çalışma saatlerini ve telefon / WhatsApp ile hızlı randevuyu öne çıkaran web sitesini tasarladık.',
+       ['Web Tasarım'], '#9333EA', 'NURELLA', 'NURELLA.EXE'),
+    _p('Softrue Solutions', 'Yazılım', 'softrue', 'https://softrue.com.tr',
+       'Gebze Bilişim Vadisi’ndeki Softrue için Sistem KYS, Odak ve İSG yazılımları gibi ürünlerini, bilgi güvenliği politikalarını ve kurumsal kimliğini anlatan web sitesini geliştirdik.',
+       ['Web Tasarım', 'Web Geliştirme'], '#E0503A', 'SOFTRUE', 'SOFTRUE.EXE'),
+    _p('Sistem KYS', 'KOBİ Yönetim Platformu', 'sistemkys', 'https://sistemkys.com',
+       'Proje, CRM, sipariş ve İK modülleriyle KOBİ’lere hitap eden Sistem KYS için platformu, modüllerini ve web / mobil sürümlerini tanıtan Türkçe ve İngilizce web sitesini geliştirdik.',
+       ['Web Geliştirme'], '#1F9D6B', 'SİSTEM KYS', 'SISTKYS.EXE'),
+    _p('Dost Oyun Merkezi', 'Oyun ve İnternet Kafe', 'teknikdost', 'https://teknikdost.com',
+       '2003’ten bu yana hizmet veren Dost Oyun Merkezi için hizmetlerini, çalışma saatlerini ve WhatsApp üzerinden rezervasyonu öne çıkaran web sitesini hazırladık.',
+       ['Web Tasarım'], '#DC2626', 'DOST', 'DOST.EXE'),
+    _p('Globac', 'Belgelendirme ve Muayene', 'globac', 'https://globac.net',
+       'Globac için ISO sistem belgelendirmesi, laboratuvar testleri ve periyodik muayene hizmetlerini sektör sektör anlatan; akreditasyonlarını ve haberlerini sunan kurumsal web sitesini geliştirdik.',
+       ['Web Tasarım', 'Web Geliştirme'], '#0EA5E9', 'GLOBAC', 'GLOBAC.EXE'),
+    _p('Eurolab', 'Test ve Sertifikasyon', 'eurolab-tr', 'https://eurolab.tr',
+       'EUROLAB için test, muayene, sertifikasyon ve güvence hizmetlerini; sektör sayfalarını, teknik kaynaklarını ve sertifikalı ürün dizinlerini sunan kurumsal web sitesini hayata geçirdik.',
+       ['Web Tasarım', 'SEO'], '#F2B33D', 'EUROLAB', 'EUROLAB.EXE'),
+    _p('Testing Laboratory', 'Test Laboratuvarı', 'testinglaboratory', 'https://testinglaboratory.org',
+       'Eurolab’ın 31 sektördeki ürün kalitesi, güvenlik ve uygunluk testlerini anlatan; sertifika sorgulama, haberler ve kariyer sayfaları bulunan İngilizce web sitesini geliştirdik.',
+       ['Web Tasarım', 'SEO'], '#16A34A', 'TESTING LAB.', 'TESTLAB.EXE'),
+    _p('TestingLab', 'Test ve Denetim', 'testinglab-com', 'https://testinglab.com',
+       'Otomotivden gıda güvenliğine test, sertifikasyon ve denetim hizmetlerini sunan; sertifika başvurusu ve akreditasyon sayfaları bulunan TestingLab web sitesini geliştirdik.',
+       ['Web Tasarım', 'SEO'], '#0D9488', 'TESTINGLAB', 'TLABCOM.EXE'),
+    _p('TestingLab.net', 'Test, Denetim ve Kalibrasyon', 'testinglab-net', 'https://testinglab.net',
+       'Test, sertifikasyon, denetim ve kalibrasyon hizmetlerini onlarca alt sayfada anlatan; sertifika doğrulama, haberler ve kariyer bölümleri olan web sitesini hayata geçirdik.',
+       ['Web Tasarım', 'SEO'], '#4F46E5', 'TLAB.NET', 'TLABNET.EXE'),
+    _p('EU Test Lab', 'Test ve Sürdürülebilirlik', 'eutestlab', 'https://eutestlab.com',
+       'Sürdürülebilirlik uzmanlığını öne çıkaran; kimyadan havacılığa, batarya testlerinden yangın güvenliğine 30’u aşkın alanı ayrı sayfalarda sunan web sitesini geliştirdik.',
+       ['Web Tasarım', 'SEO'], '#0F766E', 'EUTESTLAB', 'EUTEST.EXE'),
+    _p('EU Lab Test', 'Laboratuvar Testleri', 'eulabtest', 'https://eulabtest.com',
+       'Gıdadan tıbbi cihazlara, çevreden kalibrasyona laboratuvar test ve belgelendirme hizmetlerini anlatan; sertifika sorgulama ve başvuru adımları olan web sitesini geliştirdik.',
+       ['Web Tasarım', 'SEO'], '#7C3AED', 'EULABTEST', 'EULAB.EXE'),
+    _p('Kalite.com', 'Uygunluk Değerlendirme', 'kalite', 'https://kalite.com',
+       'Belgelendirme, gözetim, muayene ve laboratuvar testlerini Türkçe olarak sunan; askeri, elektronik ve tekstil testlerine ayrı bölümler ayıran uygunluk değerlendirme sitesini geliştirdik.',
+       ['Web Tasarım', 'SEO'], '#65A30D', 'KALİTE', 'KALITE.EXE'),
+]
+
+# Our own products, listed on projelerimiz.html (cards open the live product); not part of the references above
+OWN_PROJECTS = [
+    _p('KATSİS', 'Apartman ve Site Yönetimi', 'katsis', 'https://katsis.com.tr',
+       'Apartman ve site yönetimini tek panelde toplayan KATSİS’i geliştirdik: aidat ve borç takibi, kasa, duyuru, destek talepleri, sanal POS ve SMS modülleri; web paneli, iOS / Android ve Windows uygulamalarıyla.',
+       ['Web Geliştirme', 'Mobil Uygulama', 'Masaüstü Uygulama'], '#2563EB', 'KATSİS', 'KATSIS.EXE'),
+    _p('RestaurantBill', 'Restoran Yönetimi', 'restaurantbill', 'https://sophram.com',
+       'Çok şubeli restoranlar için adisyon ve mutfak ekranı sistemi RestaurantBill’i geliştirdik: garson, mutfak ve kasa ekranları siparişleri anlık olarak paylaşıyor; şube, personel, menü, kasa ve finansal raporlar tek panelden yönetiliyor.',
+       ['Web Geliştirme', 'Gerçek Zamanlı'], '#B8923E', 'RESTBILL', 'RESTBILL.EXE'),
 ]
 
 POSTS = [
-    dict(date='24 Ağustos 2025', title="CYF Tech ÜLKE TV'de", img='assets/img/blog/ulketv.webp', href='blog-inside.html',
+    dict(date='24 Ağustos 2025', title="CYF Tech ÜLKE TV'de", img='assets/img/blog/ulketv.webp', href='blog-inside.html', kat='Haber', sure='2 dk',
          ozet='CYF Tech, Ülke TV’de yayınlanan Aycan Gül ile Yeni Nesil İşler programına konuk oldu; kuruluş hikâyemizi, projelerimizi ve yapay zekânın iş dünyasına etkisini konuştuk.'),
-    dict(date='22 Mayıs 2025', title='SEO Stratejileri ile Trafik Artırma', img='assets/img/blog/03.png', href=None,
+    dict(date='22 Mayıs 2025', title='SEO Stratejileri ile Trafik Artırma', img='assets/img/blog/03.png', href=None, kat='SEO',
          ozet='Arama motorlarında görünürlüğü artırmak için teknik SEO, içerik ve bağlantı stratejileri.'),
-    dict(date='25 Nisan 2025', title='Web Tasarımında 5 Temel İpucu', img='assets/img/blog/01.jpeg', href=None,
+    dict(date='25 Nisan 2025', title='Web Tasarımında 5 Temel İpucu', img='assets/img/blog/01.jpeg', href=None, kat='Web Tasarım',
          ozet='Ziyaretçinin ilk saniyede güven duyduğu, sade ve hızlı bir web sitesi için temel ilkeler.'),
-    dict(date='2 Nisan 2025', title='Dijital Pazarlamada En İyi Uygulamalar', img='assets/img/blog/02.webp', href=None,
+    dict(date='2 Nisan 2025', title='Dijital Pazarlamada En İyi Uygulamalar', img='assets/img/blog/02.webp', href=None, kat='Dijital Pazarlama',
          ozet='Markanızı dijitalde doğru kitleye ulaştırmak için öne çıkan yöntemler.'),
 ]
 
+# site languages: Turkish at the root, the others in /<code>/ (built by tools/i18n.py from the Turkish pages)
+LANGS = [('tr', 'Türkçe'), ('en', 'English'), ('de', 'Deutsch'), ('ar', 'العربية'), ('zh', '中文'), ('ru', 'Русский')]
+
+I_GLOBE = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>'
+I_SUN = '<svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>'
+I_MOON = '<svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg>'
 I_CHEV = '<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>'
 I_MENU = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>'
 I_WA = '<svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg>'
@@ -51,14 +108,24 @@ def cur(active, key):
     return ' aria-current="page"' if active == key else ''
 
 
-def header(active, overlay=False, progress=False):
+def lang_switch(fname):
+    """Language menu. hrefs are written for the Turkish root; tools/i18n.py rebases them inside /<code>/."""
+    other = fname if fname != 'referanslar-cd.html' else 'referanslar.html'  # the parked CD shelf is Turkish only
+    items = ''.join(f'<a href="{fname if c == "tr" else f"{c}/{other}"}" hreflang="{c}" lang="{c}" data-lang="{c}"><b>{c.upper()}</b><span>{n}</span></a>' for c, n in LANGS)
+    return f'''<div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Dil seçin">{I_GLOBE}<span data-lang-cur>TR</span></button>
+      <div class="lang-menu">{items}</div>
+    </div>'''
+
+
+def header(active, overlay=False, progress=False, fname='index.html'):
     dd = ''.join(
         f'<a href="{h}"{cur(active, h)}><span class="num">0{i+1}</span><span><b>{t}</b><small>{d}</small></span></a>'
         for i, (h, t, d) in enumerate(SERVICES))
     mserv = ''.join(f'<a href="{h}"{cur(active, h)}>{t}</a>' for h, t, _ in SERVICES)
     is_serv = active in [s[0] for s in SERVICES]
     return f'''<header class="site-head{' overlay' if overlay else ''}">
-  <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Ana menü">
     <div class="nav-dd{' is-current' if is_serv else ''}">
       <button type="button" aria-haspopup="true">Hizmetler {I_CHEV}</button>
@@ -71,8 +138,10 @@ def header(active, overlay=False, progress=False):
     <a href="iletisim.html"{cur(active, 'iletisim')}>İletişim</a>
   </nav>
   <div class="head-actions">
+    {lang_switch(fname)}
+    <button type="button" class="icon-btn theme-btn" aria-label="Gece / gündüz teması" title="Gece / gündüz teması">{I_SUN}{I_MOON}</button>
     <a class="btn btn-primary btn-sm" href="iletisim.html">Teklif Al</a>
-    <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mnav">{I_MENU}</button>
+    <button class="menu-btn" type="button" aria-label="Menüyü aç" data-label-open="Menüyü aç" data-label-close="Menüyü kapat" aria-expanded="false" aria-controls="mnav">{I_MENU}</button>
   </div>
   {'<div class="head-prog" aria-hidden="true"></div>' if progress else ''}
 </header>
@@ -96,7 +165,7 @@ def footer():
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
       </div>
       <div>
@@ -133,7 +202,7 @@ def number_sections(body):
 
 def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class=''):
     fonts = 'family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700' + ('&amp;family=VT323' if vt323 else '') + '&amp;display=swap'
-    css_tags = ''.join(f'\n<link rel="stylesheet" href="assets/css/{c}?v={VER}">' for c in ('site.css',) + tuple(css))
+    css_tags = ''.join(f'\n<link rel="stylesheet" href="assets/css/{c}?v={VER}">' for c in ('site.css',) + tuple(css) + ('theme-light.css',))
     js_list = ('site.js',) + (('ambient.js',) if ambient else ()) + tuple(js)
     js_tags = ''.join(f'\n<script src="assets/js/{j}?v={VER}" defer></script>' for j in js_list)
     fab = f'\n<a class="wa-fab" href="{WA}" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın">{I_WA}</a>' if wa else ''
@@ -151,13 +220,15 @@ def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress
 <meta property="og:description" content="{desc}">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/img/logo/ico.png">
+<script>try{{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}}catch(e){{}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?{fonts}">{css_tags}{js_tags}
 </head>
 <body{body_attr}>
+{BOOT}
 <a class="sr-only" href="#icerik">İçeriğe geç</a>
-{header(active, overlay, progress)}
+{header(active, overlay, progress, fname)}
 <main id="icerik">
 {body}
 </main>
@@ -167,6 +238,93 @@ def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress
 '''
     with open(os.path.join(OUT, fname), 'w', encoding='utf-8', newline='\n') as f:
         f.write(html)
+
+
+# first page of a session: boot screen (html.intro is set in the head). Points fly in from 3D and assemble the </>
+# mark inside an orbit ring, the name decodes, the mark holds and spins one full turn, then the points burst toward
+# the camera while a hole opens on the page.
+# The canvas is driven by the inline script below; the rest is CSS, so the screen still ends on its own without JS.
+BOOT = r'''<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>'''
 
 
 def floor():
@@ -188,11 +346,25 @@ def page_hero(crumb, eyebrow, h1, lead, extra='', right=''):
 </section>'''
 
 
-def project_cards(limit=None, link='referanslar.html'):
+def ref_link(p):
+    return f"referanslar.html#{p['slug']}"
+
+
+def cd_link(p):
+    return f"referanslar-cd.html#ref-{p['slug']}"
+
+
+def cd_button():
+    return '<a class="btn" href="referanslar-cd.html">CD rafında gezin</a>' if SHOW_CD else ''
+
+
+def project_cards(limit=None, link=ref_link, items=PROJECTS):
     out = []
-    for p in PROJECTS[:limit]:
+    for p in items[:limit]:
         tags = ''.join(f'<span>{t}</span>' for t in p['tags'])
-        out.append(f'''<a class="pcard reveal" href="{link}">
+        href = link(p)
+        ext = ' target="_blank" rel="noopener"' if href.startswith('http') else ''
+        out.append(f'''<a class="pcard reveal" href="{href}"{ext}>
         <div class="pcard-img"><img src="{p['img']}" alt="{p['ad']} web sitesi ekran görüntüsü" loading="lazy"></div>
         <div class="pcard-body"><div class="pcard-meta">{p['sektor']}</div><h3 class="h3">{p['ad']}</h3><p>{p['aciklama']}</p><div class="tags">{tags}</div></div>
       </a>''')
@@ -201,14 +373,15 @@ def project_cards(limit=None, link='referanslar.html'):
 
 def project_marquee():
     """Full-bleed, tilted, self-scrolling strip of the real project mockups (two copies for a seamless loop)."""
-    items = ''.join(f'''<a class="mq-item" href="referanslar.html"><img src="{p['img']}" alt="{p['ad']} web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>{p['ad']}</b><span>{p['sektor']}</span></div></a>''' for p in PROJECTS)
+    items = ''.join(f'''<a class="mq-item" href="{ref_link(p)}"><img src="{p['img']}" alt="{p['ad']} web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>{p['ad']}</b><span>{p['sektor']}</span></div></a>''' for p in PROJECTS)
     return f'''<div class="marquee" aria-label="Tamamlanan projeler">
   <div class="mq-tilt"><div class="marquee-track"><div class="mq-set">{items}</div><div class="mq-set" aria-hidden="true">{items}</div></div></div>
 </div>'''
 
 
-def cta(title='Projenizi birlikte hayata geçirelim.', text='Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım.'):
-    return f'''<section class="band-light">
+def cta(title='Projenizi birlikte hayata geçirelim.', text='Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım.', dark=False):
+    # dark: a glowing card in the page accent instead of the light band (service pages)
+    return f'''<section class="{'section cta-dark' if dark else 'band-light'}">
   <div class="bg-layer" aria-hidden="true"></div>
   <div class="wrap">
     <div class="cta reveal">
@@ -263,7 +436,7 @@ def home():
     </div>
   </section>'''
 
-    recent = ' · '.join(f'<a href="referanslar.html">{p["ad"]}</a>' for p in PROJECTS)
+    recent = ' · '.join(f'<a href="referanslar.html">{p["ad"]}</a>' for p in PROJECTS[:5])
     body = f'''<canvas class="pc-canvas" data-pc-canvas aria-hidden="true"></canvas>
 <div class="pc-track">
   <section id="p0" class="pc-sec hero">
@@ -409,7 +582,7 @@ def service(fname):
 
 <section class="section">
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// TAMAMLANAN PROJELER</div><h2 class="h2">Son işlerimiz.</h2></div><a class="link-arrow" href="projelerimiz.html">Tüm projeler →</a></div>
+    <div class="sec-head"><div><div class="eyebrow">// TAMAMLANAN PROJELER</div><h2 class="h2">Son işlerimiz.</h2></div><a class="link-arrow" href="referanslar.html">Tüm referanslar →</a></div>
     <div class="cards">
       {project_cards(3)}
     </div>
@@ -430,7 +603,7 @@ def service(fname):
 # ------------------------------------------------------------------ about
 def about():
     team = [('celal.webp', 'Celal Yılmaz'), ('yusuf.webp', 'Yusuf Fırat'), ('fatih.webp', 'Fatih Kayacı')]
-    team_html = ''.join(f'<div class="member reveal"><img src="assets/img/hakkimizda/{img}" alt="{n}" loading="lazy"><div><b>{n}</b><span>KURUCU ORTAK</span></div></div>' for img, n in team)
+    team_html = ''.join(f'<div class="member reveal"><img src="assets/img/hakkimizda/{img}?v={VER}" alt="{n}" loading="lazy"><div><b>{n}</b><span>KURUCU ORTAK</span></div></div>' for img, n in team)
     why = ['Müşterilerimize özel çözümler sunan bir şirketiz.',
            'Rekabetçi fiyatlarla, özenle hazırlanmış kaliteli işler teslim ediyoruz.',
            'Projeye yönelik tanımlanan gereksinimlere göre sabit fiyat teklifleri sunuyoruz.',
@@ -438,12 +611,21 @@ def about():
            'Başlangıçtan sona kadar sizinle ilgilenecek özel bir proje yöneticisi atıyoruz.',
            'Ekibimiz 7/24 destek hizmeti sunuyor.']
     why_html = ''.join(f'<div class="card reveal"><span class="num">0{i+1}</span><p style="color:var(--text);font-size:17px">{w}</p></div>' for i, w in enumerate(why))
-    stats = [('+5', 'Yıl deneyim'), ('+50', 'Tamamlanan proje'), ('%100', 'Müşteri memnuniyeti'), ('%99', 'Zamanında teslim oranı')]
+    stats = [('3', 'Yıl deneyim'), ('20+', 'Tamamlanan proje'), ('%100', 'Müşteri memnuniyeti'), ('%99', 'Zamanında teslim oranı')]
     stats_html = ''.join(f'<div class="stat"><b>{a}</b><span>{b}</span></div>' for a, b in stats)
-    right = '<div class="chip-stack"><div class="chip float"><span class="dot"></span><div><b>Güvenilirlik</b><small>Uzun soluklu iş ortaklığı</small></div></div><div class="chip float"><span class="dot"></span><div><b>Hızlı teslimat</b><small>Planlanan takvimde</small></div></div><div class="chip float"><span class="dot"></span><div><b>Özel çözümler</b><small>İşinize göre şekillenir</small></div></div><div class="chip float"><span class="dot"></span><div><b>7/24 destek</b><small>Yayından sonra da yanınızda</small></div></div></div>'
-    body = f'''{page_hero('HAKKIMIZDA', '// CYF TECH · HAKKIMIZDA', 'Dijitalin güvenilir <span class="accent">noktası.</span>', 'CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır.', '<div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="projelerimiz.html">Projelerimiz</a></div>', right)}
+    # hero stage: the </> mark inside a glowing ring, the four values orbiting it
+    values = [('Güvenilirlik', 'Uzun soluklu iş ortaklığı'), ('Hızlı teslimat', 'Planlanan takvimde'),
+              ('Özel çözümler', 'İşinize göre şekillenir'), ('7/24 destek', 'Yayından sonra da yanınızda')]
+    chips = ''.join(f'<div class="chip float ab-chip ab-chip{i}"><span class="dot"></span><div><b>{t}</b><small>{d}</small></div></div>' for i, (t, d) in enumerate(values))
+    right = f'''<div class="ab-stage">
+        <div class="ab-orbit" aria-hidden="true"><i></i><i></i></div>
+        <div class="ab-ring" aria-hidden="true"><span class="ab-logo">&lt;/&gt;</span></div>
+        {chips}
+      </div>'''
+    manifest = '<ul class="ab-manifest"><li><b>3</b> kurucu ortak</li><li><b>20+</b> tamamlanan proje</li><li><b>Manisa</b> merkezli</li></ul>'
+    body = f'''{page_hero('HAKKIMIZDA', '// CYF TECH · HAKKIMIZDA', 'Dijitalin güvenilir <span class="accent">noktası.</span>', 'CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, fikrinizi ilk görüşmeden yayına kadar birlikte taşır.', '<div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="projelerimiz.html">Projelerimiz</a></div>' + manifest, right)}
 
-<section class="band-light band-tight">
+<section class="ab-stats">
   <div class="wrap"><div class="stats reveal">{stats_html}</div></div>
 </section>
 
@@ -480,10 +662,10 @@ def about():
   </div>
 </section>
 
-{cta()}'''
+{cta(dark=True)}'''
     doc('hakkimizda.html', 'Hakkımızda — CYF Tech',
         'CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, misyonumuz ve vizyonumuz.',
-        body, 'hakkimizda')
+        body, 'hakkimizda', css=('hakkimizda.css',))
 
 
 # ------------------------------------------------------------------ contact
@@ -512,11 +694,26 @@ def contact():
   </div>
 </section>
 
-<section class="band-light band-tight">
-  <div class="bg-layer" aria-hidden="true"></div>
+<section class="section-tight ct-loc">
+  <div class="bg-layer bg-grid bg-fade" aria-hidden="true"></div>
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// OFİSİMİZ</div><h2 class="h2">Manisa, Şehzadeler.</h2></div><a class="link-arrow" href="{MAPS}" target="_blank" rel="noopener">Yol tarifi al →</a></div>
-    <div class="map reveal"><iframe title="CYF Tech ofis konumu" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6234.998530286844!2d27.426501!3d38.614394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99d0c71cffc89%3A0x4cbce09a63a2e25b!2zQ1lGIFRlY2ggeWF6xLFsxLFt!5e0!3m2!1str!2str!4v1760401938035!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe></div>
+    <div class="sec-head"><div><div class="eyebrow">// OFİSİMİZ</div><h2 class="h2">Manisa, Şehzadeler.</h2></div><p class="muted">Ofisimize uğramadan önce bizi aramanız yeterli; yol tarifi için haritayı kullanabilirsiniz.</p></div>
+    <div class="ct-box reveal">
+      <div class="ct-panel">
+        <div class="ct-pin"><span class="ct-ping" aria-hidden="true"></span><b>CYF Tech</b><small>Merkez ofis</small></div>
+        <div class="ct-addr">Yarhasanlar Mh. 2300 Sk.<br>No:3 Daire:1<br><span>Şehzadeler / Manisa</span></div>
+        <dl class="ct-meta">
+          <div><dt>Enlem</dt><dd>38.6144° K</dd></div>
+          <div><dt>Boylam</dt><dd>27.4265° D</dd></div>
+          <div><dt>Ofisler</dt><dd>Manisa · İstanbul (Kartal)</dd></div>
+        </dl>
+        <div class="ct-actions"><a class="btn btn-primary btn-sm" href="{MAPS}" target="_blank" rel="noopener">Yol tarifi al</a><a class="btn btn-sm" href="{TEL_HREF}">Arayın</a></div>
+      </div>
+      <div class="ct-map">
+        <iframe title="CYF Tech ofis konumu" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6234.998530286844!2d27.426501!3d38.614394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99d0c71cffc89%3A0x4cbce09a63a2e25b!2zQ1lGIFRlY2ggeWF6xLFsxLFt!5e0!3m2!1str!2str!4v1760401938035!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <span class="ct-tag" aria-hidden="true">38.6144, 27.4265</span>
+      </div>
+    </div>
   </div>
 </section>
 <script>
@@ -530,32 +727,33 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 </script>'''
     doc('iletisim.html', 'İletişim — CYF Tech',
         'CYF Tech ile iletişime geçin: 0543 791 10 61 · info@cyftech.com.tr · Yarhasanlar Mh. 2300 Sk. No:3, Şehzadeler / Manisa.',
-        body, 'iletisim')
+        body, 'iletisim', css=('iletisim.css',))
 
 
 # ------------------------------------------------------------------ projects
 def projects():
-    body = f'''{page_hero('PROJELER', '// CYF TECH · PROJELER', 'Tamamlanan <span class="accent">projelerimiz.</span>', 'Farklı sektörler için geliştirdiğimiz özelleştirilmiş web ve yazılım projeleri. Her biri, müşterimizin ihtiyacına göre şekillendi.', '<div class="btn-row"><a class="btn btn-primary" href="referanslar.html">CD rafında inceleyin</a><a class="btn" href="iletisim.html">Teklif Al</a></div>')}
-
-{project_marquee()}
+    body = f'''{page_hero('PROJELER', '// CYF TECH · PROJELER', 'Kendi <span class="accent">projelerimiz.</span>', 'Fikirden yayına kendimiz tasarlayıp geliştirdiğimiz, bugün gerçek kullanıcılara hizmet veren ürünlerimiz.', '<div class="btn-row"><a class="btn btn-primary" href="referanslar.html">Referanslarımız</a>' + cd_button() + '<a class="btn" href="iletisim.html">Teklif Al</a></div>')}
 
 <section class="section-tight">
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// PROJE DETAYLARI</div><h2 class="h2">Her biri farklı bir ihtiyaç.</h2></div><p class="muted">Kartlara tıklayıp projeyi CD rafında, bilgisayara takarak inceleyebilirsiniz.</p></div>
+    <div class="sec-head"><div><div class="eyebrow">// ÜRÜNLERİMİZ</div><h2 class="h2">Kendi ürünlerimiz.</h2></div><p class="muted">Kartlara tıklayarak ürünün canlı sürümünü inceleyebilirsiniz. Müşterilerimiz için yaptığımız işler referanslar sayfasında.</p></div>
     <div class="cards c2">
-      {project_cards()}
+      {project_cards(link=lambda p: p['url'], items=OWN_PROJECTS)}
     </div>
   </div>
 </section>
 
-{cta()}'''
+{cta(dark=True)}'''
     doc('projelerimiz.html', 'Projelerimiz — CYF Tech',
-        'CYF Tech’in tamamladığı projeler: Hürsat, Softrue Solutions, Sistem KYS ve Eurolab için web tasarım ve yazılım çalışmaları.',
+        'CYF Tech’in kendi ürünleri: apartman ve site yönetim platformu KATSİS ve restoran adisyon ve mutfak ekranı sistemi RestaurantBill.',
         body, 'projeler')
 
 
 # ------------------------------------------------------------------ references
 def references():
+    # CD shelf data for referanslar.js
+    refs = json.dumps([dict(ad=p['ad'], slug=p['slug'], etiket=p['etiket'], dosya=p['dosya'], renk=p['renk'], sektor=p['sektor'], gorsel=p['img'],
+                            aciklama=p['aciklama'], hizmetler=p['tags'], url=p['url']) for p in PROJECTS], ensure_ascii=False).replace('</', r'<\/')
     body = f'''<div class="fl-root" data-fl-root>
   <div class="fl-area" data-fl-area>
     <div class="fl-stage" data-fl-stage>
@@ -670,41 +868,179 @@ def references():
   <div class="wrap">
     <div class="sec-head"><div><div class="eyebrow">// TÜM REFERANSLAR</div><h2 class="h2">Çeşitli sektörlerden müşterilerimiz.</h2></div><p class="muted">Çeşitli sektörlerden birçok müşteriye güvenilir hizmet sunduk.</p></div>
     <div class="cards c4">
-      {project_cards(link='projelerimiz.html')}
+      {project_cards(link=cd_link)}
     </div>
   </div>
 </section>
+<script>window.CYF_REFS = {refs};</script>
 
 {cta()}'''
-    doc('referanslar.html', 'Referanslar — CYF Tech',
-        'CYF Tech referansları: Hürsat, Softrue Solutions, Sistem KYS ve Eurolab. Raftaki CD’lerden birini seçin, projeyi inceleyin.',
+    doc('referanslar-cd.html', 'CD Rafı — Referanslar | CYF Tech',
+        'CYF Tech referansları: KA Mühendislik, Zumer Gayrimenkul, MÜSİAD Gebze, Softrue, Eurolab ve daha fazlası. Raftaki CD’lerden birini seçin, projeyi inceleyin.',
         body, 'referanslar', css=('referanslar.css',), js=('referanslar.js',), vt323=True)
 
 
+# referanslar.html groups the projects by field; every project is listed exactly once
+REF_GROUPS = [
+    ('yazilim', 'Yazılım ve SaaS', 'Kendi ürünlerini dijitale taşıyan yazılım firmaları ve platformlar.', ['sistemkys', 'softrue']),
+    ('kurumsal', 'Kurumsal ve Mühendislik', 'Köklü firmalar ve iş dünyası kuruluşları için kurumsal siteler ve portallar.', ['ka-muhendislik', 'musiad-gebze']),
+    ('test', 'Test, Muayene ve Belgelendirme', 'Eurolab ve Globac için çok sayfalı, sektör sektör ayrışan hizmet siteleri.', ['eurolab-tr', 'testinglaboratory', 'testinglab-com', 'testinglab-net', 'eutestlab', 'eulabtest', 'kalite', 'globac']),
+    ('yerel', 'Gayrimenkul ve Yerel İşletmeler', 'Müşterisine telefon ve WhatsApp kadar yakın olması gereken işletmeler.', ['zumer', 'nurella', 'teknikdost']),
+]
+
+
+def references_list():
+    by_slug = {p['slug']: p for p in PROJECTS}
+    assert sorted(s for g in REF_GROUPS for s in g[3]) == sorted(by_slug), 'REF_GROUPS must list every project once'
+    host = lambda u: u.split('//', 1)[-1].rstrip('/')
+    n_tags = len({t for p in PROJECTS for t in p['tags']})
+
+    chips = ''.join(f'<div class="chip float" style="animation-delay:-{i * 1.1:.1f}s"><span class="tag">{len(s):02d}</span><div><b>{t}</b><small>{", ".join(by_slug[x]["ad"] for x in s[:2])}{" ve diğerleri" if len(s) > 2 else ""}</small></div></div>'
+                    for i, (_, t, _, s) in enumerate(REF_GROUPS))
+    stats = [(f'{len(PROJECTS)}', 'Yayındaki referans'), (f'{len(REF_GROUPS)}', 'Farklı sektör grubu'), (f'{n_tags}', 'Hizmet türü'), ('7/24', 'Yayından sonra destek')]
+    stats_html = ''.join(f'<div class="stat"><b>{a}</b><span>{b}</span></div>' for a, b in stats)
+    filters = '<button type="button" class="rf-chip on" data-rf="all">Tümü <b>' + str(len(PROJECTS)) + '</b></button>' + ''.join(
+        f'<button type="button" class="rf-chip" data-rf="{k}">{t} <b>{len(s)}</b></button>' for k, t, _, s in REF_GROUPS)
+
+    n = 0
+    groups = ''
+    for k, t, d, slugs in REF_GROUPS:
+        rows = ''
+        for s in slugs:
+            p = by_slug[s]
+            n += 1
+            tags = ''.join(f'<span>{x}</span>' for x in p['tags'])
+            rows += f'''
+      <article class="rf-row reveal" id="{s}" style="--c:{p['renk']}">
+        <span class="rf-num">{n:02d}</span>
+        <a class="rf-img" href="{p['url']}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="{p['img']}" alt="" loading="lazy"></a>
+        <div class="rf-body">
+          <div class="rf-meta"><i></i>{p['sektor']}</div>
+          <h3 class="h3">{p['ad']}</h3>
+          <p>{p['aciklama']}</p>
+          <div class="tags">{tags}</div>
+        </div>
+        <div class="rf-links">
+          <a class="rf-visit" href="{p['url']}" target="_blank" rel="noopener">{host(p['url'])} <span>↗</span></a>
+          {f'<a class="rf-cd" href="{cd_link(p)}">CD rafında incele →</a>' if SHOW_CD else ''}
+        </div>
+      </article>'''
+        groups += f'''
+    <div class="rf-group" data-rf-group="{k}">
+      <div class="rf-ghead"><h2 class="h3">{t}</h2><p>{d}</p><span class="badge">{len(slugs):02d} PROJE</span></div>{rows}
+    </div>'''
+
+    body = f'''{page_hero('REFERANSLAR', '// CYF TECH · REFERANSLAR', 'Bize güvenen <span class="accent">markalar.</span>',
+                    'Mühendislikten test laboratuvarlarına, yazılım ürünlerinden yerel işletmelere; farklı sektörlerden markaların dijital yüzünü birlikte kurduk. Her referans canlı, her biri ziyaret edilebilir.',
+                    '<div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a>' + cd_button() + '</div>',
+                    f'<div class="chip-stack rf-chips">{chips}</div>')}
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap"><div class="stats reveal">{stats_html}</div></div>
+</section>
+
+<section class="section-tight rf-list">
+  <div class="bg-layer bg-rows bg-fade" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">// TÜM REFERANSLAR</div><h2 class="h2">Sektör sektör işlerimiz.</h2></div><p class="muted">Bir sektör seçin ya da hepsine göz atın. Görsele ya da adrese tıklayarak siteyi canlı olarak açabilirsiniz.</p></div>
+    <div class="rf-filter" role="group" aria-label="Sektöre göre süz">{filters}</div>
+{groups}
+  </div>
+</section>
+<script>
+(function () {{
+  var chips = document.querySelectorAll('.rf-chip'), groups = document.querySelectorAll('[data-rf-group]');
+  function pick(k) {{
+    chips.forEach(function (c) {{ var on = c.getAttribute('data-rf') === k; c.classList.toggle('on', on); c.setAttribute('aria-pressed', on); }});
+    groups.forEach(function (g) {{ g.hidden = k !== 'all' && g.getAttribute('data-rf-group') !== k; }});
+  }}
+  chips.forEach(function (c) {{ c.addEventListener('click', function () {{ pick(c.getAttribute('data-rf')); }}); }});
+  // arriving from a project card (#slug): make sure its group is visible
+  if (location.hash && document.getElementById(location.hash.slice(1))) pick('all');
+}})();
+</script>
+
+{cta(dark=True)}'''
+    doc('referanslar.html', 'Referanslar — CYF Tech',
+        'CYF Tech referansları: KA Mühendislik, Zumer Gayrimenkul, MÜSİAD Gebze, Softrue, Sistem KYS, Eurolab ve daha fazlası. Sektörlere göre tüm projelerimiz.',
+        body, 'referanslar', css=('referans-listesi.css',))
+
+
 # ------------------------------------------------------------------ blog
+AYLAR = ['Ocak', 'Şubat', 'Mart', 'Nisan', 'Mayıs', 'Haziran', 'Temmuz', 'Ağustos', 'Eylül', 'Ekim', 'Kasım', 'Aralık']
+
+
+def post_date(p):
+    """'24 Ağustos 2025' -> ('24', 'Ağu', '2025', '2025-08-24')"""
+    g, a, y = p['date'].split()
+    return g, a[:3], y, f'{y}-{AYLAR.index(a) + 1:02d}-{int(g):02d}'
+
+
+def post_hash(p):
+    return hashlib.sha1(p['title'].encode('utf-8')).hexdigest()[:7]
+
+
 def blog():
-    cards = []
+    """Blog as a commit log: a terminal listing every post, the latest published post as a feature, then a timeline."""
+    live = [p for p in POSTS if p['href']]
+    feat = live[0]
+    log = ''.join(
+        f'''<li style="--i:{i}"><span class="bl-h">{post_hash(p)}</span> <span class="bl-d">{post_date(p)[3]}</span> <span class="bl-k">{p['kat'].lower()}:</span> {p['title']}{'' if p['href'] else ' <span class="bl-draft">(taslak)</span>'}</li>'''
+        for i, p in enumerate(POSTS))
+    term = f'''<div class="bl-term" aria-hidden="true">
+        <div class="bl-bar"><i></i><i></i><i></i><span>~/cyftech/blog</span></div>
+        <div class="bl-screen"><p><span class="bl-p">$</span> git log --oneline</p><ul>{log}</ul><p style="--i:{len(POSTS)}"><span class="bl-p">$</span> <span class="bl-caret"></span></p></div>
+      </div>'''
+    _, _, _, iso = post_date(feat)
+    featured = f'''<a class="bl-feat reveal" href="{feat['href']}">
+      <div class="bl-feat-img"><img src="{feat['img']}" alt="" loading="lazy"></div>
+      <div class="bl-feat-body">
+        <span class="bl-flag">ÖNE ÇIKAN</span>
+        <div class="bl-meta"><b>{feat['kat']}</b><span>·</span><time datetime="{iso}">{feat['date']}</time><span>·</span>{feat['sure']} okuma</div>
+        <h2 class="h2">{feat['title']}</h2>
+        <p>{feat['ozet']}</p>
+        <span class="link-arrow">Yazıyı oku →</span>
+      </div>
+    </a>'''
+    rows = []
     for p in POSTS:
-        inner = f'''<div class="pcard-img"><img src="{p['img']}" alt="" loading="lazy"></div>
-        <div class="pcard-body"><div class="pcard-meta">{p['date']}</div><h2 class="h3">{p['title']}</h2><p>{p['ozet']}</p>{'<span class="more" style="color:var(--accent);font-weight:500;margin-top:auto">Devamını oku →</span>' if p['href'] else '<span class="badge" style="align-self:flex-start;margin-top:auto">YAKINDA</span>'}</div>'''
+        g, a, y, iso = post_date(p)
+        meta = f"<span>·</span>{p['sure']} okuma" if p['href'] else '<span class="badge">TASLAK · YAKINDA</span>'
+        more = '<span class="bl-more">Devamını oku →</span>' if p['href'] else ''
+        inner = f'''<time class="bl-date" datetime="{iso}"><b>{g}</b><span>{a} {y}</span></time>
+        <div class="bl-node" aria-hidden="true"></div>
+        <div class="bl-body">
+          <div class="bl-meta"><span class="bl-h">{post_hash(p)}</span><b>{p['kat']}</b>{meta}</div>
+          <h3 class="h3">{p['title']}</h3>
+          <p>{p['ozet']}</p>{more}
+        </div>
+        <div class="bl-thumb"><img src="{p['img']}" alt="" loading="lazy"></div>'''
         if p['href']:
-            cards.append(f'<a class="pcard reveal" href="{p["href"]}">{inner}</a>')
+            rows.append(f'<a class="bl-row reveal" href="{p["href"]}">{inner}</a>')
         else:
-            cards.append(f'<div class="pcard reveal" style="opacity:.85">{inner}</div>')
-    body = f'''{page_hero('BLOG', '// CYF TECH · BLOG', 'Blog ve <span class="accent">haberler.</span>', 'Teknoloji, yazılım ve sektörel gelişmeler üzerine içerikler; CYF Tech’ten en güncel duyurular ve haberler.')}
+            rows.append(f'<div class="bl-row is-draft reveal">{inner}</div>')
+
+    body = f'''{page_hero('BLOG', '// CYF TECH · BLOG', 'Blog ve <span class="accent">haberler.</span>', 'Teknoloji, yazılım ve sektörel gelişmeler üzerine içerikler; CYF Tech’ten en güncel duyurular ve haberler.', right=term)}
 
 <section class="section-tight" style="padding-top:0">
   <div class="wrap">
-    <div class="cards c2">
-      {''.join(cards)}
+    {featured}
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="sec-head"><div><div class="eyebrow">// TÜM YAZILAR</div><h2 class="h2">Yayın akışı.</h2></div><p class="muted">{len(live)} yazı yayında, {len(POSTS) - len(live)} yazı hazırlanıyor. Yeni içerikler akışın en üstüne eklenir.</p></div>
+    <div class="bl-log">
+      {''.join(rows)}
     </div>
   </div>
 </section>
 
-{cta()}'''
+{cta(dark=True)}'''
     doc('blog.html', 'Blog — CYF Tech',
         'CYF Tech blog: web tasarım, yazılım, SEO ve dijital pazarlama üzerine içerikler; şirket haberleri ve duyurular.',
-        body, 'blog')
+        body, 'blog', css=('blog.css',))
 
 
 def blog_inside():
@@ -748,7 +1084,12 @@ about()
 contact()
 projects()
 references()
+references_list()
 blog()
 blog_inside()
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scrolly_pages.py'), encoding='utf-8').read())
+# translated copies in /en/, /de/, ... from tools/i18n/<code>.json
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import i18n
+i18n.build(OUT)
 print('ok')

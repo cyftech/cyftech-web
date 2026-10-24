@@ -1,4 +1,5 @@
 /* CYF Tech — masaüstü stage: "ofisinizin yazılımı" (layout: scrolly.css) */
+body{--accent:#FB923C}
 .ms-desk{position:absolute;left:20px;top:24px;width:600px;height:400px;border-radius:14px;border:1px solid var(--line-3);overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#0E2440,#061224 60%);box-shadow:0 30px 60px rgba(0,0,0,.45);transition:border-color .6s ease,box-shadow .6s ease}
 .ms-desk::before{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--accent-faint) 1px,transparent 1px),linear-gradient(90deg,var(--accent-faint) 1px,transparent 1px);background-size:40px 40px;opacity:.6}
 .is-live .ms-desk{border-color:color-mix(in srgb,var(--accent) 60%,transparent);box-shadow:0 30px 60px rgba(0,0,0,.45),0 0 70px color-mix(in srgb,var(--accent) 22%,transparent)}

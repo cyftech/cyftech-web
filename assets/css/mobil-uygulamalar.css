@@ -1,4 +1,5 @@
 /* CYF Tech — mobil stage: "bir uygulamanın cebe yolculuğu" (layout: scrolly.css) */
+body{--accent:#F472B6}
 .mb-phone{position:absolute;left:205px;top:16px;width:230px;height:470px;border-radius:40px;background:#0B1424;border:2px solid #26395C;box-shadow:0 30px 60px rgba(0,0,0,.5);transition:transform .8s cubic-bezier(.65,0,.35,1),opacity .5s ease,box-shadow .6s ease,border-color .6s ease;z-index:2}
 .mb-screen{position:absolute;inset:9px;border-radius:32px;background:#061224;overflow:hidden}
 .mb-notch{position:absolute;top:8px;left:50%;width:74px;height:20px;border-radius:999px;background:#0B1424;transform:translateX(-50%);z-index:6}

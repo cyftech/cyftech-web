@@ -8,6 +8,7 @@
   var steps = Array.prototype.slice.call(document.querySelectorAll('.wt-step'));
   var num = document.querySelector('[data-wt-num]');
   var name = document.querySelector('[data-wt-name]');
+  var wt = document.querySelector('.wt');
   if (!stage || !rig || !steps.length) return;
 
   var states = steps.map(function (s) { return (s.getAttribute('data-state') || '').split(/\s+/).filter(Boolean); });
@@ -27,6 +28,9 @@
     steps.forEach(function (s, k) { s.classList.toggle('on', k === i); });
     if (num) num.textContent = '0' + i;
     if (name) name.textContent = steps[i].getAttribute('data-name');
+    // the stage and background take the active step's colour
+    var tone = steps[i].getAttribute('data-tone');
+    if (wt && tone) wt.style.setProperty('--accent', tone);
   }
 
   function update() {

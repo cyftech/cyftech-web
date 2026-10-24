@@ -4,41 +4,47 @@ CURSOR = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><pa
 DOT = '<span class="dot"></span>'
 def TAG(t): return f'<span class="tag">{t}</span>'
 
+# Every step, block and card carries its own accent (.tone in site.css re-derives the accent tints).
+# The page tones must match the body --accent set in each page's css.
+PAGE_TONE = {'web-cozumleri.html': '#38BDF8', 'masaustu-uygulamalar.html': '#FB923C', 'mobil-uygulamalar.html': '#F472B6'}
+def TONE(c): return f' style="--accent:{c}"'
+
 
 def chip(lead, b, small, delay=None):
     style = f' style="animation-delay:{delay}"' if delay else ''
     return f'<div class="chip float"{style}>{lead}<div><b>{b}</b><small>{small}</small></div></div>'
 
 
-def demo_card(demo, t, d, i):
+def demo_card(demo, t, d, i, c):
     return f'''
-      <div class="card reveal">
+      <div class="card tone reveal"{TONE(c)}>
         {demo}
         <span class="num">0{i+1}</span><h3 class="h3">{t}</h3><p>{d}</p>
       </div>'''
 
 
 def scrolly_page(fname, meta, label0, hint, steps, stage, below, css):
-    """meta: n, t, title, desc, h1, lead · steps: [(name, h2, p, [items], state)] · below: html after the story."""
+    """meta: n, t, title, desc, h1, lead, tones (intro + one per step) · steps: [(name, h2, p, [items], state)] · below: html after the story."""
+    tones = meta['tones']
     step_html = ''
     for i, (nm, h2, p, items, state) in enumerate(steps, 1):
         lis = ''.join(f'<li>{x}</li>' for x in items)
         extra = ('<div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="' + WA + '" target="_blank" rel="noopener">WhatsApp\'tan yazın</a></div>') if i == len(steps) else ''
         step_html += f'''
-      <div class="wt-step" data-name="{nm}" data-state="{state}">
+      <div class="wt-step tone" data-name="{nm}" data-state="{state}" data-tone="{tones[i]}"{TONE(tones[i])}>
         <div class="eyebrow">0{i} — {nm.upper()}</div>
         <h2>{h2}</h2>
         <p>{p}</p>
         <ul class="arrow-list">{lis}</ul>{extra}
       </div>'''
-    others = ''.join(f'<a class="card reveal" href="{h}"><span class="num">0{i+1}</span><h3 class="h3">{t}</h3><p>{d}</p><span class="more">İncele →</span></a>'
+    others = ''.join(f'<a class="card tone reveal" href="{h}"{TONE(PAGE_TONE[h])}><span class="num">0{i+1}</span><h3 class="h3">{t}</h3><p>{d}</p><span class="more">İncele →</span></a>'
                      for i, (h, t, d) in enumerate(SERVICES) if h != fname)
     second = meta.get('second', ('projelerimiz.html', 'Projelerimize Göz At'))
-    body = f'''<section class="wt" aria-label="{meta['t']} süreci">
+    body = f'''<section class="wt tone" aria-label="{meta['t']} süreci"{TONE(tones[0])}>
   <div class="wt-bg" aria-hidden="true"><div class="floor"><div><div></div></div></div><div class="grid {meta.get('grid', 'sq')}"></div></div>
 
   <div class="wt-steps">
-    <div class="wt-step on" data-name="{label0}" data-state="">
+    <div class="wt-step tone on" data-name="{label0}" data-state="" data-tone="{tones[0]}"{TONE(tones[0])}>
       <div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><span>HİZMETLER</span><span>/</span><span>{meta['t'].upper()}</span></div>
       <div class="eyebrow">// HİZMETLER · {meta['n']} — {meta['t'].upper()}</div>
       <h1 class="h1">{meta['h1']}</h1>
@@ -67,16 +73,16 @@ def scrolly_page(fname, meta, label0, hint, steps, stage, below, css):
   </div>
 </section>
 
-{cta()}'''
-    doc(fname, meta['title'], meta['desc'], body, fname, css=('scrolly.css', css), js=('scrolly.js',))
+{cta(dark=True)}'''
+    doc(fname, meta['title'], meta['desc'], body, fname, css=('scrolly.css', css), js=('scrolly.js',), body_class='tone')
 
 
-def offers_section(head, sub, offers, eyebrow='// NELER SUNUYORUZ'):
+def offers_section(head, sub, offers, tones, eyebrow='// NELER SUNUYORUZ'):
     return f'''<section class="section">
   <div class="bg-layer bg-dots bg-fade" aria-hidden="true"></div>
   <div class="wrap">
     <div class="sec-head"><div><div class="eyebrow">{eyebrow}</div><h2 class="h2">{head}</h2></div><p class="muted">{sub}</p></div>
-    <div class="bento">{''.join(demo_card(d, t, x, i) for i, (d, t, x) in enumerate(offers))}
+    <div class="bento">{''.join(demo_card(d, t, x, i, tones[i]) for i, (d, t, x) in enumerate(offers))}
     </div>
   </div>
 </section>'''
@@ -120,7 +126,7 @@ WEB_SVCS = [
 
 
 def web():
-    meta = dict(n='01', t='Web Çözümleri', grid='sq', title='Web Çözümleri — Web Tasarım, Yazılım, E-Ticaret ve SEO | CYF Tech',
+    meta = dict(n='01', t='Web Çözümleri', grid='sq', tones=['#38BDF8', '#A78BFA', '#34D399', '#FBBF24', '#FB7185', '#38BDF8'], title='Web Çözümleri — Web Tasarım, Yazılım, E-Ticaret ve SEO | CYF Tech',
                 desc='CYF Tech web çözümleri: web tasarım, özel web yazılımı, e-ticaret siteleri ve SEO hizmetleri tek çatı altında. Tasarımdan yayına uçtan uca.',
                 h1='Web’de ihtiyacınız olan her şey, tek çatı altında.',
                 lead='Web tasarımdan özel yazılıma, e-ticaretten SEO’ya kadar markanızın web’deki bütün ihtiyaçlarını tek ekip olarak, uçtan uca üstleniyoruz.')
@@ -210,12 +216,15 @@ def web():
         <div class="ec-fly"></div>
         <div class="ec-cursor">{CURSOR}</div>'''
 
+    # each service block takes its story step's colour; its cards use neighbouring hues of the same family
+    blk_tones = meta['tones'][1:5]
+    card_tones = [['#A78BFA', '#818CF8', '#E879F9'], ['#34D399', '#2DD4BF', '#A3E635'], ['#FBBF24', '#FB923C', '#F87171'], ['#FB7185', '#F472B6', '#C084FC']]
     blocks = ''
     for k, s in enumerate(WEB_SVCS):
         flow = ''.join(f'<span><b>0{i+1}</b>{f}</span>' for i, f in enumerate(s['flow']))
-        cards = ''.join(f'''<div class="card reveal">{d}<div><h3 class="h3">{t}</h3><p style="margin-top:8px">{x}</p></div></div>''' for d, t, x in s['offers'])
+        cards = ''.join(f'''<div class="card tone reveal"{TONE(c)}>{d}<div><h3 class="h3">{t}</h3><p style="margin-top:8px">{x}</p></div></div>''' for (d, t, x), c in zip(s['offers'], card_tones[k]))
         blocks += f'''
-<section class="svc-block" id="{s['id']}">
+<section class="svc-block tone" id="{s['id']}"{TONE(blk_tones[k])}>
   <div class="wrap split">
     <div class="reveal" data-num="">
       <div class="eyebrow">// 0{k+1} — {s['t'].upper()}</div>
@@ -227,23 +236,21 @@ def web():
     <div class="svc-cards">{cards}</div>
   </div>
 </section>'''
-    below = f'''<section class="section-tight" style="padding-bottom:0">
-  <div class="wrap"><div class="sec-head" style="margin-bottom:0"><div><div class="eyebrow">// WEB HİZMETLERİMİZ</div><h2 class="h2">Dört hizmet, tek ekip.</h2></div><p class="muted">Her biri tek başına da alınabilir; birlikte olduklarında siteniz tasarımdan sıralamaya kadar uyum içinde çalışır.</p></div></div>
-</section>
-{blocks}
-
-<section class="section" style="padding-bottom:0">
+    # cover for the four blocks: its own band, a stripe of the block colours and an index linking to each block
+    idx = ''.join(f'<a class="tone" href="#{s["id"]}"{TONE(c)}><b>0{k+1}</b><span>{s["t"]}</span><small>{s["h"]}</small><em>↓</em></a>' for k, (s, c) in enumerate(zip(WEB_SVCS, blk_tones)))
+    below = f'''<section class="svc-intro" style="--stripe:linear-gradient(90deg,{','.join(blk_tones)})">
   <div class="wrap">
-    <div class="sec-head" style="margin-bottom:0"><div><div class="eyebrow">// TAMAMLANAN PROJELER</div><h2 class="h2">Son işlerimiz.</h2></div><a class="link-arrow" href="referanslar.html">Tüm referanslar →</a></div>
+    <div class="svc-intro-head"><div class="eyebrow">// WEB HİZMETLERİMİZ</div><h2 class="h2">Dört hizmet, tek ekip.</h2><p class="muted">Her biri tek başına da alınabilir; birlikte olduklarında siteniz tasarımdan sıralamaya kadar uyum içinde çalışır.</p></div>
+    <nav class="svc-index" aria-label="Web hizmetleri">{idx}</nav>
   </div>
-  {project_marquee()}
-</section>'''
+</section>
+{blocks}'''
     scrolly_page('web-cozumleri.html', meta, 'Boş sayfa', 'Kaydırın — tasarımdan yayına bir web projesini izleyin', steps, stage, below, 'web-cozumleri.css')
 
 
 # ================================================================== MASAÜSTÜ
 def masaustu():
-    meta = dict(n='02', t='Masaüstü Uygulamalar', grid='lines', title='Masaüstü Uygulamalar — Windows, macOS ve Linux | CYF Tech',
+    meta = dict(n='02', t='Masaüstü Uygulamalar', grid='lines', tones=['#FB923C', '#2DD4BF', '#818CF8', '#A3E635', '#F472B6', '#22D3EE'], title='Masaüstü Uygulamalar — Windows, macOS ve Linux | CYF Tech',
                 desc='CYF Tech masaüstü yazılım geliştirme: işinize özel, çevrimdışı da çalışan, yazıcı ve barkod okuyucu gibi cihazlarla entegre Windows, macOS ve Linux uygulamaları.',
                 h1='İşinize özel masaüstü yazılımlar.',
                 lead='Ofisinizde, mağazanızda ya da üretim alanınızda her gün kullanacağınız; hızlı, güvenli ve internet kesildiğinde bile çalışmaya devam eden masaüstü uygulamalar geliştiriyoruz.',
@@ -295,13 +302,13 @@ def masaustu():
         ('<div class="demo demo-sync" aria-hidden="true"><div class="box">yerel<br>kayıt</div><div class="lane"><i></i><i></i></div><div class="box">sunucu</div></div>',
          'Çevrimdışı Çalışma ve Eşitleme', 'İnternet kesilse de iş durmaz; bağlantı geldiğinde veriler otomatik olarak eşitlenir.'),
     ]
-    below = '<div id="neler"></div>' + offers_section('Masaüstünde neler yapıyoruz?', 'Windows, macOS ve Linux için; işletmenizin her gün kullandığı araçları geliştiriyoruz.', offers)
+    below = '<div id="neler"></div>' + offers_section('Masaüstünde neler yapıyoruz?', 'Windows, macOS ve Linux için; işletmenizin her gün kullandığı araçları geliştiriyoruz.', offers, ['#2DD4BF', '#FBBF24', '#A78BFA'])
     scrolly_page('masaustu-uygulamalar.html', meta, 'Boş masaüstü', 'Kaydırın — bir masaüstü yazılımın kuruluşunu izleyin', steps, stage, below, 'masaustu-uygulamalar.css')
 
 
 # ================================================================== MOBİL
 def mobil():
-    meta = dict(n='03', t='Mobil Uygulamalar', grid='dots', title='Mobil Uygulamalar — iOS ve Android | CYF Tech',
+    meta = dict(n='03', t='Mobil Uygulamalar', grid='dots', tones=['#F472B6', '#A78BFA', '#38BDF8', '#34D399', '#FBBF24', '#FB923C'], title='Mobil Uygulamalar — iOS ve Android | CYF Tech',
                 desc='CYF Tech mobil uygulama geliştirme: iOS ve Android için hızlı, kullanıcı dostu ve güvenli uygulamalar; tasarımdan mağazada yayına uçtan uca.',
                 h1='İşletmeniz, müşterinizin cebinde.',
                 lead='Müşterilerinize ve ekibinize her an ulaşan; hızlı, kullanıcı dostu ve güvenli iOS ve Android uygulamalarını tasarlıyor, geliştiriyor ve mağazalarda yayınlıyoruz.',
@@ -353,7 +360,7 @@ def mobil():
         ('<div class="demo demo-ver" aria-hidden="true">' + ''.join(f'<div style="--i:{i}"><span>sürüm {v}</span><b>{t}</b></div>' for i, (v, t) in enumerate([('1.0', 'yayında'), ('1.1', 'yeni özellik'), ('1.2', 'iyileştirme'), ('1.3', 'güncelleme')])) + '</div>',
          'Mağaza Yayını ve Bakım', 'Mağaza başvurusundan düzenli güncellemelere kadar uygulamanızın tüm yaşam döngüsünü yönetiyoruz.'),
     ]
-    below = '<div id="neler"></div>' + offers_section('Mobilde neler yapıyoruz?', 'Müşterilerinize ve ekibinize özel; tasarımdan mağazaya uçtan uca mobil uygulamalar.', offers)
+    below = '<div id="neler"></div>' + offers_section('Mobilde neler yapıyoruz?', 'Müşterilerinize ve ekibinize özel; tasarımdan mağazaya uçtan uca mobil uygulamalar.', offers, ['#A3E635', '#FB923C', '#818CF8'])
     scrolly_page('mobil-uygulamalar.html', meta, 'Fikir', 'Kaydırın — bir uygulamanın cebe yolculuğunu izleyin', steps, stage, below, 'mobil-uygulamalar.css')
 
 

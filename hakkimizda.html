@@ -2,6 +2,7 @@
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
+<script id="cyf-lang-redirect">try{var L=["en", "de", "ar", "zh", "ru", "tr"],s=localStorage.getItem("cyf-lang");if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();location.replace(p.slice(0,p.length-f.length)+s+"/"+(f||"index.html")+location.search+location.hash)}}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Hakkımızda — CYF Tech</title>
 <meta name="description" content="CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, misyonumuz ve vizyonumuz.">
@@ -10,17 +11,108 @@
 <meta property="og:description" content="CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, misyonumuz ve vizyonumuz.">
 <meta property="og:type" content="website">
 <link rel="icon" type="image/png" href="assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=20261023">
-<script src="assets/js/site.js?v=20261023" defer></script>
-<script src="assets/js/ambient.js?v=20261023" defer></script>
+<link rel="stylesheet" href="assets/css/site.css?v=20261024q">
+<link rel="stylesheet" href="assets/css/hakkimizda.css?v=20261024q">
+<link rel="stylesheet" href="assets/css/theme-light.css?v=20261024q">
+<script src="assets/js/site.js?v=20261024q" defer></script>
+<script src="assets/js/ambient.js?v=20261024q" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/hakkimizda.html">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/hakkimizda.html">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/hakkimizda.html">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/hakkimizda.html">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/hakkimizda.html">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/hakkimizda.html">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/hakkimizda.html">
 </head>
 <body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
 <a class="sr-only" href="#icerik">İçeriğe geç</a>
 <header class="site-head">
-  <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Ana menü">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Hizmetler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -33,8 +125,13 @@
     <a href="iletisim.html">İletişim</a>
   </nav>
   <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Dil seçin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>TR</span></button>
+      <div class="lang-menu"><a href="hakkimizda.html" hreflang="tr" lang="tr" data-lang="tr" aria-current="true"><b>TR</b><span>Türkçe</span></a><a href="en/hakkimizda.html" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="de/hakkimizda.html" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="ar/hakkimizda.html" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="zh/hakkimizda.html" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="ru/hakkimizda.html" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Gece / gündüz teması" title="Gece / gündüz teması"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
     <a class="btn btn-primary btn-sm" href="iletisim.html">Teklif Al</a>
-    <button class="menu-btn" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    <button class="menu-btn" type="button" aria-label="Menüyü aç" data-label-open="Menüyü aç" data-label-close="Menüyü kapat" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
   </div>
   
 </header>
@@ -57,12 +154,16 @@
       <div class="hero-grid"><div><div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><span>HAKKIMIZDA</span></div>
       <div class="eyebrow">// CYF TECH · HAKKIMIZDA</div>
       <h1 class="h1">Dijitalin güvenilir <span class="accent">noktası.</span></h1>
-      <p class="lead" style="margin-top:24px">CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır.</p><div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="projelerimiz.html">Projelerimiz</a></div></div><div><div class="chip-stack"><div class="chip float"><span class="dot"></span><div><b>Güvenilirlik</b><small>Uzun soluklu iş ortaklığı</small></div></div><div class="chip float"><span class="dot"></span><div><b>Hızlı teslimat</b><small>Planlanan takvimde</small></div></div><div class="chip float"><span class="dot"></span><div><b>Özel çözümler</b><small>İşinize göre şekillenir</small></div></div><div class="chip float"><span class="dot"></span><div><b>7/24 destek</b><small>Yayından sonra da yanınızda</small></div></div></div></div></div>
+      <p class="lead" style="margin-top:24px">CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, fikrinizi ilk görüşmeden yayına kadar birlikte taşır.</p><div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="projelerimiz.html">Projelerimiz</a></div><ul class="ab-manifest"><li><b>3</b> kurucu ortak</li><li><b>20+</b> tamamlanan proje</li><li><b>Manisa</b> merkezli</li></ul></div><div><div class="ab-stage">
+        <div class="ab-orbit" aria-hidden="true"><i></i><i></i></div>
+        <div class="ab-ring" aria-hidden="true"><span class="ab-logo">&lt;/&gt;</span></div>
+        <div class="chip float ab-chip ab-chip0"><span class="dot"></span><div><b>Güvenilirlik</b><small>Uzun soluklu iş ortaklığı</small></div></div><div class="chip float ab-chip ab-chip1"><span class="dot"></span><div><b>Hızlı teslimat</b><small>Planlanan takvimde</small></div></div><div class="chip float ab-chip ab-chip2"><span class="dot"></span><div><b>Özel çözümler</b><small>İşinize göre şekillenir</small></div></div><div class="chip float ab-chip ab-chip3"><span class="dot"></span><div><b>7/24 destek</b><small>Yayından sonra da yanınızda</small></div></div>
+      </div></div></div>
   </div>
 </section>
 
-<section class="band-light band-tight">
-  <div class="wrap"><div class="stats reveal"><div class="stat"><b>+5</b><span>Yıl deneyim</span></div><div class="stat"><b>+50</b><span>Tamamlanan proje</span></div><div class="stat"><b>%100</b><span>Müşteri memnuniyeti</span></div><div class="stat"><b>%99</b><span>Zamanında teslim oranı</span></div></div></div>
+<section class="ab-stats">
+  <div class="wrap"><div class="stats reveal"><div class="stat"><b>3</b><span>Yıl deneyim</span></div><div class="stat"><b>20+</b><span>Tamamlanan proje</span></div><div class="stat"><b>%100</b><span>Müşteri memnuniyeti</span></div><div class="stat"><b>%99</b><span>Zamanında teslim oranı</span></div></div></div>
 </section>
 
 <section class="section">
@@ -81,14 +182,14 @@
 <section class="section">
   <div class="wrap">
     <div class="sec-head" data-num="01"><div><div class="eyebrow">// EKİBİMİZ</div><h2 class="h2">Kurucu ekibimiz.</h2></div></div>
-    <div class="team"><div class="member reveal"><img src="assets/img/hakkimizda/celal.webp" alt="Celal Yılmaz" loading="lazy"><div><b>Celal Yılmaz</b><span>KURUCU ORTAK</span></div></div><div class="member reveal"><img src="assets/img/hakkimizda/yusuf.webp" alt="Yusuf Fırat" loading="lazy"><div><b>Yusuf Fırat</b><span>KURUCU ORTAK</span></div></div><div class="member reveal"><img src="assets/img/hakkimizda/fatih.webp" alt="Fatih Kayacı" loading="lazy"><div><b>Fatih Kayacı</b><span>KURUCU ORTAK</span></div></div></div>
+    <div class="team"><div class="member reveal"><img src="assets/img/hakkimizda/celal.webp?v=20261024q" alt="Celal Yılmaz" loading="lazy"><div><b>Celal Yılmaz</b><span>KURUCU ORTAK</span></div></div><div class="member reveal"><img src="assets/img/hakkimizda/yusuf.webp?v=20261024q" alt="Yusuf Fırat" loading="lazy"><div><b>Yusuf Fırat</b><span>KURUCU ORTAK</span></div></div><div class="member reveal"><img src="assets/img/hakkimizda/fatih.webp?v=20261024q" alt="Fatih Kayacı" loading="lazy"><div><b>Fatih Kayacı</b><span>KURUCU ORTAK</span></div></div></div>
   </div>
 </section>
 
 <section class="section-tight" style="padding-top:0">
   <div class="wrap"><div class="sec-head" data-num="02" style="margin-bottom:0"><div><div class="eyebrow">// BİRLİKTE ÇALIŞTIKLARIMIZ</div><h2 class="h2">Hayata geçirdiğimiz işler.</h2></div><a class="link-arrow" href="referanslar.html">Tüm referanslar →</a></div></div>
   <div class="marquee" aria-label="Tamamlanan projeler">
-  <div class="mq-tilt"><div class="marquee-track"><div class="mq-set"><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/01.png" alt="Hürsat web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Hürsat</b><span>E-Ticaret Yazılımı</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/02.png" alt="Softrue Solutions web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Softrue Solutions</b><span>Yazılım</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/03.png" alt="Sistem KYS web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Sistem KYS</b><span>KOBİ Yönetim Platformu</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/eurolab.webp" alt="Eurolab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Eurolab</b><span>Laboratuvar</span></div></a></div><div class="mq-set" aria-hidden="true"><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/01.png" alt="Hürsat web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Hürsat</b><span>E-Ticaret Yazılımı</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/02.png" alt="Softrue Solutions web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Softrue Solutions</b><span>Yazılım</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/03.png" alt="Sistem KYS web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Sistem KYS</b><span>KOBİ Yönetim Platformu</span></div></a><a class="mq-item" href="referanslar.html"><img src="assets/img/proje/eurolab.webp" alt="Eurolab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Eurolab</b><span>Laboratuvar</span></div></a></div></div></div>
+  <div class="mq-tilt"><div class="marquee-track"><div class="mq-set"><a class="mq-item" href="referanslar.html#ka-muhendislik"><img src="assets/img/proje/ka-muhendislik.webp" alt="KA Mühendislik web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>KA Mühendislik</b><span>Elektrik-Mekanik Mühendislik</span></div></a><a class="mq-item" href="referanslar.html#zumer"><img src="assets/img/proje/zumer.webp" alt="Zumer Gayrimenkul web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Zumer Gayrimenkul</b><span>Gayrimenkul</span></div></a><a class="mq-item" href="referanslar.html#musiad-gebze"><img src="assets/img/proje/musiad-gebze.webp" alt="MÜSİAD Gebze web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>MÜSİAD Gebze</b><span>İş Dünyası Derneği</span></div></a><a class="mq-item" href="referanslar.html#nurella"><img src="assets/img/proje/nurella.webp" alt="Nurella Spa & Masaj web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Nurella Spa & Masaj</b><span>Spa ve Masaj</span></div></a><a class="mq-item" href="referanslar.html#softrue"><img src="assets/img/proje/softrue.webp" alt="Softrue Solutions web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Softrue Solutions</b><span>Yazılım</span></div></a><a class="mq-item" href="referanslar.html#sistemkys"><img src="assets/img/proje/sistemkys.webp" alt="Sistem KYS web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Sistem KYS</b><span>KOBİ Yönetim Platformu</span></div></a><a class="mq-item" href="referanslar.html#teknikdost"><img src="assets/img/proje/teknikdost.webp" alt="Dost Oyun Merkezi web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Dost Oyun Merkezi</b><span>Oyun ve İnternet Kafe</span></div></a><a class="mq-item" href="referanslar.html#globac"><img src="assets/img/proje/globac.webp" alt="Globac web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Globac</b><span>Belgelendirme ve Muayene</span></div></a><a class="mq-item" href="referanslar.html#eurolab-tr"><img src="assets/img/proje/eurolab-tr.webp" alt="Eurolab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Eurolab</b><span>Test ve Sertifikasyon</span></div></a><a class="mq-item" href="referanslar.html#testinglaboratory"><img src="assets/img/proje/testinglaboratory.webp" alt="Testing Laboratory web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Testing Laboratory</b><span>Test Laboratuvarı</span></div></a><a class="mq-item" href="referanslar.html#testinglab-com"><img src="assets/img/proje/testinglab-com.webp" alt="TestingLab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>TestingLab</b><span>Test ve Denetim</span></div></a><a class="mq-item" href="referanslar.html#testinglab-net"><img src="assets/img/proje/testinglab-net.webp" alt="TestingLab.net web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>TestingLab.net</b><span>Test, Denetim ve Kalibrasyon</span></div></a><a class="mq-item" href="referanslar.html#eutestlab"><img src="assets/img/proje/eutestlab.webp" alt="EU Test Lab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>EU Test Lab</b><span>Test ve Sürdürülebilirlik</span></div></a><a class="mq-item" href="referanslar.html#eulabtest"><img src="assets/img/proje/eulabtest.webp" alt="EU Lab Test web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>EU Lab Test</b><span>Laboratuvar Testleri</span></div></a><a class="mq-item" href="referanslar.html#kalite"><img src="assets/img/proje/kalite.webp" alt="Kalite.com web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Kalite.com</b><span>Uygunluk Değerlendirme</span></div></a></div><div class="mq-set" aria-hidden="true"><a class="mq-item" href="referanslar.html#ka-muhendislik"><img src="assets/img/proje/ka-muhendislik.webp" alt="KA Mühendislik web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>KA Mühendislik</b><span>Elektrik-Mekanik Mühendislik</span></div></a><a class="mq-item" href="referanslar.html#zumer"><img src="assets/img/proje/zumer.webp" alt="Zumer Gayrimenkul web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Zumer Gayrimenkul</b><span>Gayrimenkul</span></div></a><a class="mq-item" href="referanslar.html#musiad-gebze"><img src="assets/img/proje/musiad-gebze.webp" alt="MÜSİAD Gebze web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>MÜSİAD Gebze</b><span>İş Dünyası Derneği</span></div></a><a class="mq-item" href="referanslar.html#nurella"><img src="assets/img/proje/nurella.webp" alt="Nurella Spa & Masaj web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Nurella Spa & Masaj</b><span>Spa ve Masaj</span></div></a><a class="mq-item" href="referanslar.html#softrue"><img src="assets/img/proje/softrue.webp" alt="Softrue Solutions web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Softrue Solutions</b><span>Yazılım</span></div></a><a class="mq-item" href="referanslar.html#sistemkys"><img src="assets/img/proje/sistemkys.webp" alt="Sistem KYS web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Sistem KYS</b><span>KOBİ Yönetim Platformu</span></div></a><a class="mq-item" href="referanslar.html#teknikdost"><img src="assets/img/proje/teknikdost.webp" alt="Dost Oyun Merkezi web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Dost Oyun Merkezi</b><span>Oyun ve İnternet Kafe</span></div></a><a class="mq-item" href="referanslar.html#globac"><img src="assets/img/proje/globac.webp" alt="Globac web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Globac</b><span>Belgelendirme ve Muayene</span></div></a><a class="mq-item" href="referanslar.html#eurolab-tr"><img src="assets/img/proje/eurolab-tr.webp" alt="Eurolab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Eurolab</b><span>Test ve Sertifikasyon</span></div></a><a class="mq-item" href="referanslar.html#testinglaboratory"><img src="assets/img/proje/testinglaboratory.webp" alt="Testing Laboratory web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Testing Laboratory</b><span>Test Laboratuvarı</span></div></a><a class="mq-item" href="referanslar.html#testinglab-com"><img src="assets/img/proje/testinglab-com.webp" alt="TestingLab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>TestingLab</b><span>Test ve Denetim</span></div></a><a class="mq-item" href="referanslar.html#testinglab-net"><img src="assets/img/proje/testinglab-net.webp" alt="TestingLab.net web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>TestingLab.net</b><span>Test, Denetim ve Kalibrasyon</span></div></a><a class="mq-item" href="referanslar.html#eutestlab"><img src="assets/img/proje/eutestlab.webp" alt="EU Test Lab web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>EU Test Lab</b><span>Test ve Sürdürülebilirlik</span></div></a><a class="mq-item" href="referanslar.html#eulabtest"><img src="assets/img/proje/eulabtest.webp" alt="EU Lab Test web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>EU Lab Test</b><span>Laboratuvar Testleri</span></div></a><a class="mq-item" href="referanslar.html#kalite"><img src="assets/img/proje/kalite.webp" alt="Kalite.com web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>Kalite.com</b><span>Uygunluk Değerlendirme</span></div></a></div></div></div>
 </div>
 </section>
 
@@ -100,7 +201,7 @@
   </div>
 </section>
 
-<section class="band-light">
+<section class="section cta-dark">
   <div class="bg-layer" aria-hidden="true"></div>
   <div class="wrap">
     <div class="cta reveal">
@@ -123,7 +224,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
       </div>
       <div>

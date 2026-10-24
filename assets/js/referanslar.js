@@ -1,12 +1,7 @@
 // CYF Tech — references: CD shelf + retro PC
 (function () {
-  // Referanslar — add a row per reference (fits ~40 on the shelf)
-  var R = [
-    { ad: 'Hürsat', etiket: 'HÜRSAT', dosya: 'HURSAT.EXE', renk: '#1A6CFF', sektor: 'E-Ticaret Yazılımı', gorsel: 'assets/img/proje/01.png', aciklama: 'İşletmelere e-ticaret yazılım çözümleri sunan Hürsat için paketlerini ve iletişim adımlarını öne çıkaran, mobil, tablet ve masaüstünde uyumlu bir web sitesi hazırladık.', hizmetler: ['Web Tasarım', 'E-Ticaret'], url: '' },
-    { ad: 'Softrue Solutions', etiket: 'SOFTRUE', dosya: 'SOFTRUE.EXE', renk: '#E0503A', sektor: 'Yazılım', gorsel: 'assets/img/proje/02.png', aciklama: 'Yazılım çözümleri geliştiren Softrue Solutions için ürünlerini, güvenlik yaklaşımını ve kurumsal kimliğini anlatan, tüm ekranlara uyumlu bir web sitesi geliştirdik.', hizmetler: ['Web Tasarım', 'Web Geliştirme'], url: '' },
-    { ad: 'Sistem KYS', etiket: 'SİSTEM KYS', dosya: 'SISTKYS.EXE', renk: '#1F9D6B', sektor: 'KOBİ Yönetim Platformu', gorsel: 'assets/img/proje/03.png', aciklama: 'Ekonomik ve sürdürülebilir bir KOBİ yönetim platformu olan Sistem KYS için, platformu tanıtan ve tüm cihazlarda sorunsuz çalışan bir web sitesi geliştirdik.', hizmetler: ['Web Geliştirme'], url: '' },
-    { ad: 'Eurolab', etiket: 'EUROLAB', dosya: 'EUROLAB.EXE', renk: '#F2B33D', sektor: 'Laboratuvar', gorsel: 'assets/img/proje/eurolab.webp', aciklama: 'EUROLAB için kullanıcı dostu arayüzüyle laboratuvar hizmetlerini, sertifikalarını ve haberlerini sunan kurumsal web sitesini hayata geçirdik.', hizmetler: ['Web Tasarım', 'SEO'], url: '' }
-  ];
+  // Referanslar come from PROJECTS in tools/build.py (window.CYF_REFS, fits ~40 on the shelf)
+  var R = window.CYF_REFS || [];
   var Z = 2.45;
   var SHELF_Y = 37;       // top of the cases on the shelf
   var TRAY = [1130, 369]; // centre of the CD tray recess
@@ -148,6 +143,20 @@
     bootSeq(0);
   }
 
+  // referanslar.html#ref-<slug> (project cards elsewhere on the site) plays that CD.
+  // idle: pull it off the shelf · already showing another one: swap discs on screen · mid-animation: ignore
+  function fromHash() {
+    var m = /^#ref-(.+)$/.exec(location.hash);
+    if (!m) return;
+    var i = -1;
+    for (var k = 0; k < n; k++) if (R[k].slug === decodeURIComponent(m[1])) i = k;
+    if (i < 0) return;
+    window.scrollTo(0, 0);
+    if (st.phase === 'idle') at(500, function () { insert(i); });
+    else if (st.phase === 'show' && st.active !== i) { clearT(); set({ active: i, phase: 'boot', boot: 0 }); bootSeq(0); }
+  }
+  window.addEventListener('hashchange', fromHash);
+
   document.querySelectorAll('[data-fl-eject]').forEach(function (b) { b.addEventListener('click', eject); });
   $('[data-fl-prev]').addEventListener('click', function () { step(-1); });
   $('[data-fl-next]').addEventListener('click', function () { step(1); });
@@ -263,4 +272,5 @@
   }
 
   render();
+  fromHash();
 })();

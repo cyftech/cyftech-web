@@ -1,0 +1,84 @@
+/* CYF Tech — day theme. Loaded last on every page; everything is scoped to [data-theme="light"] on <html>.
+   The tokens flip to a light palette, surfaces that hard-code the night colours are re-pointed here, and the
+   device "screens" (windows, phones, terminal, demo boxes) stay dark by restoring the night tokens inside them. */
+
+[data-theme="light"]{
+  color-scheme:light;
+  --bg:#F3F6FA;
+  --bg-2:#E8EEF5;
+  --surface:rgba(255,255,255,.92);
+  --line:#DFE6EF;
+  --line-2:#D2DCE8;
+  --line-3:#B6C4D6;
+  --text:#0B1424;
+  --muted:#3D4F66;
+  --dim:#5B6B82;
+  --rail:#7D8CA3;
+  --brand:#0284C7;
+  --accent:#0284C7;
+  --on-accent:#FFFFFF;
+}
+[data-theme="light"],[data-theme="light"] .tone{
+  --accent-line:color-mix(in srgb, var(--accent) 40%, transparent);
+  --accent-faint:color-mix(in srgb, var(--accent) 9%, transparent);
+  --accent-dot:color-mix(in srgb, var(--accent) 24%, transparent);
+  --accent-hi:color-mix(in srgb, var(--accent) 72%, #000);
+}
+/* bright per-section accents (amber, lime…) need more weight to read on white */
+[data-theme="light"] .eyebrow,[data-theme="light"] .accent,[data-theme="light"] .link-arrow{color:color-mix(in srgb,var(--accent) 78%,#000)}
+
+/* screens keep the night palette */
+[data-theme="light"] :is(.sx-win,.sx-panel,.demo,.wt-code,.wt-scores,.wt-browser,.ms-desk,.mb-phone,.bl-term){
+  color-scheme:dark;
+  --surface:rgba(8,16,32,.88);
+  --line:#11203A;--line-2:#1A2944;--line-3:#26395C;
+  --text:#E6EDF3;--muted:#A9B8CC;--dim:#94A3B8;--rail:#7D8CA3;
+  color:var(--text);
+}
+
+/* base */
+[data-theme="light"] a:hover{color:var(--accent-hi)}
+[data-theme="light"] body:not(.home)::after{opacity:.025}
+[data-theme="light"] [data-num]::before{-webkit-text-stroke-color:rgba(4,8,20,.16)}
+
+/* header + menus */
+[data-theme="light"] .site-head{background:rgba(243,246,250,.82)}
+[data-theme="light"] .dd-menu,[data-theme="light"] .lang-menu{background:rgba(255,255,255,.98);box-shadow:0 24px 48px rgba(11,20,36,.14)}
+[data-theme="light"] .dd-menu a:hover,[data-theme="light"] .lang-menu a:hover{background:var(--bg-2)}
+[data-theme="light"] .mnav{background:rgba(243,246,250,.98)}
+
+/* surfaces */
+[data-theme="light"] :is(.card,.pcard,.member,.rf-chip){background:#FFFFFF}
+[data-theme="light"] .card.tone{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 7%,#fff),#fff 60%)}
+[data-theme="light"] :is(.pcard-img,.bl-thumb){background:var(--bg-2)}
+[data-theme="light"] .mq-item{background:#FFFFFF;box-shadow:0 24px 48px rgba(11,20,36,.12)}
+[data-theme="light"] .cta{background:#FFFFFF}
+[data-theme="light"] .cta-dark .cta{background:radial-gradient(700px 380px at 0% 0%,color-mix(in srgb,var(--accent) 12%,transparent),transparent 70%),radial-gradient(520px 320px at 100% 100%,color-mix(in srgb,var(--accent) 8%,transparent),transparent 70%),#FFFFFF;box-shadow:0 30px 60px rgba(11,20,36,.12)}
+[data-theme="light"] .cta-dark .contact-lines{background:var(--bg)}
+[data-theme="light"] .field input,[data-theme="light"] .field textarea{background:#FFFFFF}
+[data-theme="light"] .map iframe,[data-theme="light"] .ct-map iframe{filter:none}
+[data-theme="light"] .band-light{background:#E2E9F2}
+@media (max-width: 860px){
+  [data-theme="light"] .pc-txt.l,[data-theme="light"] .pc-txt.r{background:rgba(255,255,255,.88)}
+}
+
+/* referanslar */
+[data-theme="light"] .rf-img{background:radial-gradient(120% 90% at 50% 0%,color-mix(in srgb,var(--c) 16%,#fff),#EEF3F9)}
+[data-theme="light"] .rf-meta,[data-theme="light"] .rf-visit span{color:color-mix(in srgb,var(--c) 75%,#000)}
+
+/* web çözümleri: service index tiles */
+[data-theme="light"] .svc-index a{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 10%,#fff),#fff 70%)}
+
+/* blog */
+[data-theme="light"] .bl-feat{background:radial-gradient(600px 340px at 100% 0%,var(--accent-faint),transparent 70%),#FFFFFF;box-shadow:0 30px 60px rgba(11,20,36,.12)}
+[data-theme="light"] .bl-term{box-shadow:0 30px 60px rgba(11,20,36,.18)}
+
+/* hakkımızda */
+[data-theme="light"] .ab-ring{background:radial-gradient(closest-side,color-mix(in srgb,var(--accent) 18%,#fff),#fff)}
+[data-theme="light"] .ab-stats .stats{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,#fff),#fff)}
+
+/* iletişim */
+[data-theme="light"] .ct-box{background:#FFFFFF;box-shadow:0 30px 60px rgba(11,20,36,.12)}
+[data-theme="light"] .ct-map{background:var(--bg-2)}
+[data-theme="light"] .ct-tag{background:rgba(255,255,255,.92)}
+[data-theme="light"] .bl-term{background:#050B1A}
