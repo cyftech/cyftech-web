@@ -12,6 +12,8 @@ def TONE(c): return f' style="--accent:{c}"'
 
 def chip(lead, b, small, delay=None):
     style = f' style="animation-delay:{delay}"' if delay else ''
+    if 'wt-aa' not in lead and b in CHIP_ICON:  # icons instead of dots / short codes ("Aa" stays: it shows the type)
+        lead = icon(CHIP_ICON[b])
     return f'<div class="chip float"{style}>{lead}<div><b>{b}</b><small>{small}</small></div></div>'
 
 
@@ -37,7 +39,7 @@ def scrolly_page(fname, meta, label0, hint, steps, stage, below, css):
         <p>{p}</p>
         <ul class="arrow-list">{lis}</ul>{extra}
       </div>'''
-    others = ''.join(f'<a class="card tone reveal" href="{h}"{TONE(PAGE_TONE[h])}><span class="num">0{i+1}</span><h3 class="h3">{t}</h3><p>{d}</p><span class="more">İncele →</span></a>'
+    others = ''.join(f'<a class="card tone reveal" href="{h}"{TONE(PAGE_TONE[h])}><div class="card-icon">{icon(SERVICE_ICON[h], 22)}</div><span class="num">0{i+1}</span><h3 class="h3">{t}</h3><p>{d}</p><span class="more">İncele →</span></a>'
                      for i, (h, t, d) in enumerate(SERVICES) if h != fname)
     second = meta.get('second', ('projelerimiz.html', 'Projelerimize Göz At'))
     body = f'''<section class="wt tone" aria-label="{meta['t']} süreci"{TONE(tones[0])}>

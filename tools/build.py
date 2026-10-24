@@ -1,6 +1,6 @@
 import hashlib, json, os, re, sys
 OUT = sys.argv[1]
-VER = '20261024q'  # bump on every deploy so browsers fetch fresh css/js
+VER = '20261024u'  # bump on every deploy so browsers fetch fresh css/js
 SHOW_CD = False  # CD shelf (referanslar-cd.html) is parked: the page still builds, but nothing links to it
 
 TEL = '0543 791 10 61'
@@ -104,6 +104,99 @@ I_DOWN = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="cu
 I_DRAG = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l20 3-4 3M4 12h16"/></svg>'.replace('l20 3', 'l4 3')
 
 
+# Stroke icons (24×24, currentColor), used across the site. icon(name) returns an inline <svg class="ic">.
+# Keep icons outside sentences (at the start or end of a block): tools/i18n.py treats an <svg> as a text boundary.
+ICONS = {
+    'arrow': '<path d="M5 12h14M13 6l6 6-6 6"/>',
+    'back': '<path d="M19 12H5M11 6l-6 6 6 6"/>',
+    'external': '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+    'phone': '<path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/>',
+    'mail': '<rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/>',
+    'pin': '<path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/>',
+    'nav': '<path d="M3 11l18-8-8 18-2-8-8-2z"/>',
+    'send': '<path d="M21 3L10 14M21 3l-7 18-4-7-7-4 18-7z"/>',
+    'building': '<path d="M4 21V5a1 1 0 0 1 1-1h9a1 1 0 0 1 1 1v16M15 9h4a1 1 0 0 1 1 1v11M3 21h18M8 8h3M8 12h3M8 16h3"/>',
+    'web': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/>',
+    'desktop': '<rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/>',
+    'mobile': '<rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/>',
+    'shield': '<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/>',
+    'bolt': '<path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/>',
+    'puzzle': '<path d="M10 4a2 2 0 1 1 4 0v1h4a1 1 0 0 1 1 1v4h-1a2 2 0 1 0 0 4h1v4a1 1 0 0 1-1 1h-4v-1a2 2 0 1 0-4 0v1H6a1 1 0 0 1-1-1v-4h1a2 2 0 1 0 0-4H5V6a1 1 0 0 1 1-1h4V4z"/>',
+    'headset': '<path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/>',
+    'layout': '<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/>',
+    'devices': '<rect x="2" y="5" width="14" height="10" rx="1.5"/><path d="M5 19h8"/><rect x="17" y="9" width="5" height="11" rx="1.5"/>',
+    'palette': '<path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-1-1-1.6-1-2.6 0-1.1.9-2 2-2h2.4A4.6 4.6 0 0 0 22 10c0-3.9-4.5-7-10-7z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/>',
+    'layers': '<path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/>',
+    'plug': '<path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0V8zM12 17v5"/>',
+    'lock': '<rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    'trend': '<path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/>',
+    'sliders': '<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>',
+    'code': '<path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/>',
+    'gauge': '<path d="M4 18a9 9 0 1 1 16 0"/><path d="M12 14l4-5"/>',
+    'search': '<circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/>',
+    'chart': '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
+    'card': '<rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/>',
+    'box': '<path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/>',
+    'truck': '<path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/>',
+    'tag': '<path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/>',
+    'clipboard': '<rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/>',
+    'pen': '<path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/>',
+    'rocket': '<path d="M9 15l-3-3c1-4 4-8 10-9 0 6-4 9-9 10z"/><circle cx="14" cy="9" r="1.5"/><path d="M9 15l1 4 3-2M6 12l-4-1 2-3M5 15c-1 1-1.5 4-1.5 4.5 0 0 3.5-.5 4.5-1.5"/>',
+    'whatsapp': '<path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/>',
+    'file': '<path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/>',
+    'target': '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/>',
+    'eye': '<path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>',
+    'users': '<circle cx="9" cy="8" r="3.5"/><path d="M2 20a7 7 0 0 1 14 0M16 4.5a3.5 3.5 0 0 1 0 7M18 13.5a6 6 0 0 1 4 6.5"/>',
+    'userc': '<circle cx="10" cy="8" r="4"/><path d="M3 21a7 7 0 0 1 11-5.7M16 19l2 2 4-4"/>',
+    'award': '<circle cx="12" cy="9" r="6"/><path d="M8.5 14l-1.5 8 5-3 5 3-1.5-8"/>',
+    'coins': '<ellipse cx="9" cy="7" rx="6" ry="3"/><path d="M3 7v5c0 1.7 2.7 3 6 3s6-1.3 6-3V7M9 15v3c0 1.7 2.7 3 6 3s6-1.3 6-3v-5c0-1.7-2.7-3-6-3"/>',
+    'calendar': '<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/>',
+    'clock': '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+    'folder': '<path d="M3 6a1 1 0 0 1 1-1h5l2 2h9a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V6z"/><path d="M9 13l2 2 4-4"/>',
+    'smile': '<circle cx="12" cy="12" r="9"/><path d="M8 14a5 5 0 0 0 8 0M9 9.5h.01M15 9.5h.01"/>',
+    'globe': '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/>',
+    'grid': '<rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/>',
+    'flask': '<path d="M9 3h6M10 3v6L4 19a1 1 0 0 0 .9 1.5h14.2A1 1 0 0 0 20 19l-6-10V3"/><path d="M7 15h10"/>',
+    'store': '<path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/>',
+    'bell': '<path d="M6 16V11a6 6 0 0 1 12 0v5l2 2H4l2-2zM10 21h4"/>',
+    'refresh': '<path d="M20 11a8 8 0 0 0-14.5-4.5L4 8M4 4v4h4M4 13a8 8 0 0 0 14.5 4.5L20 16M20 20v-4h-4"/>',
+    'hand': '<path d="M8 13V5.5a1.5 1.5 0 0 1 3 0V11M11 10V4.5a1.5 1.5 0 0 1 3 0V11M14 10.5V6a1.5 1.5 0 0 1 3 0v8a7 7 0 0 1-7 7h-1a6 6 0 0 1-5-2.7L2.5 15a1.5 1.5 0 0 1 2.5-1.6L8 16"/>',
+    'key': '<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M14 9l2 2"/>',
+    'check': '<path d="M5 12l5 5 9-10"/>',
+    'news': '<rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 8h10M7 12h10M7 16h6"/>',
+    'quote': '<path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/>',
+    'tv': '<rect x="3" y="6" width="18" height="13" rx="2"/><path d="M8 2l4 4 4-4"/>',
+    'mic': '<rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/>',
+    'user': '<circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/>',
+    'share': '<circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/>',
+    'linkedin': '<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/>',
+    'x': '<path d="M4 4l16 16M20 4L4 20"/>',
+}
+
+
+def icon(name, size=18, cls=''):
+    return (f'<svg class="ic{" " + cls if cls else ""}" width="{size}" height="{size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" '
+            f'stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS[name]}</svg>')
+
+
+SERVICE_ICON = {'web-cozumleri.html': 'web', 'masaustu-uygulamalar.html': 'desktop', 'mobil-uygulamalar.html': 'mobile'}
+# info chips are matched to an icon by their (Turkish) title
+CHIP_ICON = {
+    'Güvenilirlik': 'shield', 'Hızlı teslimat': 'bolt', 'Özel çözümler': 'puzzle', '7/24 destek': 'headset',
+    'UI / UX': 'layout', 'Responsive': 'devices', 'Marka kimliği': 'palette', 'Prototip': 'layers',
+    'API': 'plug', 'Güvenlik': 'lock', 'Ölçeklenebilir': 'trend', 'Yönetim paneli': 'sliders',
+    'Teknik SEO': 'code', 'Site hızı': 'gauge', 'Anahtar kelime': 'search', 'Raporlama': 'chart',
+    'Ödeme': 'card', 'Ürün yönetimi': 'box', 'Sipariş takibi': 'truck', 'Kampanyalar': 'tag',
+    'Planlama': 'clipboard', 'Tasarım': 'pen', 'Geliştirme': 'code', 'Yayın': 'rocket',
+    'Telefon': 'phone', 'E-posta': 'mail', 'WhatsApp': 'whatsapp', 'Teklif': 'file',
+    'Güvenli altyapı': 'lock', 'Güvenli ödeme': 'card', 'Organik trafik': 'trend', 'Güvenli bağlantı': 'lock',
+    'Güncelleme yüklendi': 'refresh', 'Darboğazlar': 'gauge', 'Kullanıcı rolleri': 'users', 'Kısayollar': 'key',
+    'Tek elle kullanım': 'hand', 'Tek kod tabanı': 'code', 'Farklı ekranlar': 'devices', 'Anlık bildirim': 'bell',
+    'Güncellemeler': 'refresh',
+}
+KAT_ICON = {'Haber': 'news', 'SEO': 'search', 'Web Tasarım': 'pen', 'Dijital Pazarlama': 'chart'}
+
+
 def cur(active, key):
     return ' aria-current="page"' if active == key else ''
 
@@ -120,9 +213,9 @@ def lang_switch(fname):
 
 def header(active, overlay=False, progress=False, fname='index.html'):
     dd = ''.join(
-        f'<a href="{h}"{cur(active, h)}><span class="num">0{i+1}</span><span><b>{t}</b><small>{d}</small></span></a>'
+        f'<a href="{h}"{cur(active, h)}>{icon(SERVICE_ICON[h], 20, "dd-ic")}<span class="num">0{i+1}</span><span><b>{t}</b><small>{d}</small></span></a>'
         for i, (h, t, d) in enumerate(SERVICES))
-    mserv = ''.join(f'<a href="{h}"{cur(active, h)}>{t}</a>' for h, t, _ in SERVICES)
+    mserv = ''.join(f'<a href="{h}"{cur(active, h)}>{icon(SERVICE_ICON[h])}{t}</a>' for h, t, _ in SERVICES)
     is_serv = active in [s[0] for s in SERVICES]
     return f'''<header class="site-head{' overlay' if overlay else ''}">
   <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
@@ -160,12 +253,12 @@ def header(active, overlay=False, progress=False, fname='index.html'):
 
 
 def footer():
-    serv = ''.join(f'<li><a href="{h}">{t}</a></li>' for h, t, _ in SERVICES)
+    serv = ''.join(f'<li><a href="{h}">{icon(SERVICE_ICON[h], 16)}{t}</a></li>' for h, t, _ in SERVICES)
     return f'''<footer class="site-foot">
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-mark">&lt;/&gt;</span><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
       </div>
       <div>
@@ -178,7 +271,7 @@ def footer():
       </div>
       <div>
         <h2>İLETİŞİM</h2>
-        <ul><li><a href="{TEL_HREF}">{TEL}</a></li><li><a href="mailto:{MAIL}">{MAIL}</a></li><li><a href="{WA}" target="_blank" rel="noopener">WhatsApp</a></li><li><a href="{MAPS}" target="_blank" rel="noopener">Şehzadeler / Manisa</a></li></ul>
+        <ul><li><a href="{TEL_HREF}">{icon('phone', 16)}{TEL}</a></li><li><a href="mailto:{MAIL}">{icon('mail', 16)}{MAIL}</a></li><li><a href="{WA}" target="_blank" rel="noopener">{icon('whatsapp', 16)}WhatsApp</a></li><li><a href="{MAPS}" target="_blank" rel="noopener">{icon('pin', 16)}Şehzadeler / Manisa</a></li></ul>
       </div>
     </div>
     <div class="foot-bottom">
@@ -198,6 +291,25 @@ def number_sections(body):
         return f'{m.group(1) or m.group(2)} data-num="{counter[0]:02d}"'
     # a section head gets the attribute appended; an explicit empty slot (data-num="") gets filled
     return re.sub(r'(<div class="sec-head"|<div class="reveal") data-num=""|(<div class="sec-head")', sub, body)
+
+
+# icons added to recurring controls after a page is assembled (buttons, contact lines)
+SWAPS = [
+    ('>Teklif Al</a>', '>Teklif Al' + icon('arrow', 16, 'ic-dir') + '</a>'),
+    ('rel="noopener">WhatsApp\'tan yazın</a>', 'rel="noopener">' + icon('whatsapp', 17) + 'WhatsApp\'tan yazın</a>'),
+    ('<span class="k">tel</span>', icon('phone', 16) + '<span class="k">tel</span>'),
+    ('<span class="k">mail</span>', icon('mail', 16) + '<span class="k">mail</span>'),
+    ('<span class="k">adres</span>', icon('pin', 16) + '<span class="k">adres</span>'),
+    ('>Gönder</button>', '>Gönder' + icon('send', 16) + '</button>'),
+    ('rel="noopener">Yol tarifi al</a>', 'rel="noopener">' + icon('nav', 16) + 'Yol tarifi al</a>'),
+    ('>Arayın</a>', '>' + icon('phone', 16) + 'Arayın</a>'),
+]
+
+
+def iconize(html):
+    for a, b in SWAPS:
+        html = html.replace(a, b)
+    return html
 
 
 def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class=''):
@@ -237,7 +349,7 @@ def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress
 </html>
 '''
     with open(os.path.join(OUT, fname), 'w', encoding='utf-8', newline='\n') as f:
-        f.write(html)
+        f.write(iconize(html))
 
 
 # first page of a session: boot screen (html.intro is set in the head). Points fly in from 3D and assemble the </>
@@ -405,7 +517,7 @@ def cta(title='Projenizi birlikte hayata geçirelim.', text='Aklınızdaki proje
 def chipset(items, kind='dot'):
     out = []
     for tag, b, s in items:
-        lead = f'<span class="tag">{tag}</span>' if kind == 'tag' else '<span class="dot"></span>'
+        lead = icon(CHIP_ICON.get(b, 'check'))
         out.append(f'<div><div class="chip float">{lead}<div><b>{b}</b><small>{s}</small></div></div></div>')
     return '<div class="pc-chipset">' + ''.join(out) + '</div>'
 
@@ -464,10 +576,10 @@ def home():
       <div class="eyebrow">05 — ÇALIŞMA SÜRECİMİZ</div>
       <h2 class="pc-h2">Fikirden yayına dört adım.</h2>
       <ol class="steps">
-        <li><span class="n">01</span><div><b>Planlama</b><span>İhtiyaçları ve hedefleri birlikte netleştiriyoruz.</span></div></li>
-        <li><span class="n">02</span><div><b>Tasarım</b><span>Arayüzü ve kullanıcı akışını çiziyoruz.</span></div></li>
-        <li><span class="n">03</span><div><b>Geliştirme</b><span>Tasarımı hızlı ve güvenli koda dönüştürüyoruz.</span></div></li>
-        <li><span class="n">04</span><div><b>Yayın</b><span>Siteyi canlıya alıyor, 7/24 destekle yanınızda oluyoruz.</span></div></li>
+        <li><span class="n">{icon('clipboard', 20)}<small>01</small></span><div><b>Planlama</b><span>İhtiyaçları ve hedefleri birlikte netleştiriyoruz.</span></div></li>
+        <li><span class="n">{icon('pen', 20)}<small>02</small></span><div><b>Tasarım</b><span>Arayüzü ve kullanıcı akışını çiziyoruz.</span></div></li>
+        <li><span class="n">{icon('code', 20)}<small>03</small></span><div><b>Geliştirme</b><span>Tasarımı hızlı ve güvenli koda dönüştürüyoruz.</span></div></li>
+        <li><span class="n">{icon('rocket', 20)}<small>04</small></span><div><b>Yayın</b><span>Siteyi canlıya alıyor, 7/24 destekle yanınızda oluyoruz.</span></div></li>
       </ol>
     </div>
   </section>
@@ -610,19 +722,20 @@ def about():
            'Alanında uzman ve deneyimli profesyonellerden oluşan bir ekibiz.',
            'Başlangıçtan sona kadar sizinle ilgilenecek özel bir proje yöneticisi atıyoruz.',
            'Ekibimiz 7/24 destek hizmeti sunuyor.']
-    why_html = ''.join(f'<div class="card reveal"><span class="num">0{i+1}</span><p style="color:var(--text);font-size:17px">{w}</p></div>' for i, w in enumerate(why))
-    stats = [('3', 'Yıl deneyim'), ('20+', 'Tamamlanan proje'), ('%100', 'Müşteri memnuniyeti'), ('%99', 'Zamanında teslim oranı')]
-    stats_html = ''.join(f'<div class="stat"><b>{a}</b><span>{b}</span></div>' for a, b in stats)
+    why_icons = ['users', 'coins', 'file', 'award', 'userc', 'headset']
+    why_html = ''.join(f'<div class="card reveal"><div class="card-icon">{icon(why_icons[i], 22)}</div><span class="num">0{i+1}</span><p style="color:var(--text);font-size:17px">{w}</p></div>' for i, w in enumerate(why))
+    stats = [('calendar', '3', 'Yıl deneyim'), ('folder', '20+', 'Tamamlanan proje'), ('smile', '%100', 'Müşteri memnuniyeti'), ('clock', '%99', 'Zamanında teslim oranı')]
+    stats_html = ''.join(f'<div class="stat">{icon(ic, 26)}<b>{a}</b><span>{b}</span></div>' for ic, a, b in stats)
     # hero stage: the </> mark inside a glowing ring, the four values orbiting it
     values = [('Güvenilirlik', 'Uzun soluklu iş ortaklığı'), ('Hızlı teslimat', 'Planlanan takvimde'),
               ('Özel çözümler', 'İşinize göre şekillenir'), ('7/24 destek', 'Yayından sonra da yanınızda')]
-    chips = ''.join(f'<div class="chip float ab-chip ab-chip{i}"><span class="dot"></span><div><b>{t}</b><small>{d}</small></div></div>' for i, (t, d) in enumerate(values))
+    chips = ''.join(f'<div class="chip float ab-chip ab-chip{i}">{icon(CHIP_ICON[t])}<div><b>{t}</b><small>{d}</small></div></div>' for i, (t, d) in enumerate(values))
     right = f'''<div class="ab-stage">
         <div class="ab-orbit" aria-hidden="true"><i></i><i></i></div>
         <div class="ab-ring" aria-hidden="true"><span class="ab-logo">&lt;/&gt;</span></div>
         {chips}
       </div>'''
-    manifest = '<ul class="ab-manifest"><li><b>3</b> kurucu ortak</li><li><b>20+</b> tamamlanan proje</li><li><b>Manisa</b> merkezli</li></ul>'
+    manifest = f'<ul class="ab-manifest"><li>{icon("users")}<b>3</b> kurucu ortak</li><li>{icon("folder")}<b>20+</b> tamamlanan proje</li><li>{icon("pin")}<b>Manisa</b> merkezli</li></ul>'
     body = f'''{page_hero('HAKKIMIZDA', '// CYF TECH · HAKKIMIZDA', 'Dijitalin güvenilir <span class="accent">noktası.</span>', 'CYF Tech, her sektöre özel web ve yazılım çözümleri üreten yenilikçi bir teknoloji firmasıdır. Ekibimiz, fikrinizi ilk görüşmeden yayına kadar birlikte taşır.', '<div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Teklif Al</a><a class="btn" href="projelerimiz.html">Projelerimiz</a></div>' + manifest, right)}
 
 <section class="ab-stats">
@@ -635,8 +748,8 @@ def about():
     <div class="reveal"><div class="eyebrow">// MİSYON &amp; VİZYON</div><h2 class="h2">Misyonumuz ve vizyonumuz.</h2></div>
     <div class="reveal">
       <ol class="steps">
-        <li><span class="n">M</span><div><b>Misyonumuz</b><span>Her sektörden işletmenin dijital dönüşümünü hızlandırarak verimlilik ve kârlılığı artıran özel yazılım çözümleri geliştirmek.</span></div></li>
-        <li><span class="n">V</span><div><b>Vizyonumuz</b><span>Yenilikçi, güvenilir ve müşteri odaklı teknolojilerle küresel ölçekte dijital dönüşümün öncüsü olmak.</span></div></li>
+        <li><span class="n">{icon('target', 22)}</span><div><b>Misyonumuz</b><span>Her sektörden işletmenin dijital dönüşümünü hızlandırarak verimlilik ve kârlılığı artıran özel yazılım çözümleri geliştirmek.</span></div></li>
+        <li><span class="n">{icon('eye', 22)}</span><div><b>Vizyonumuz</b><span>Yenilikçi, güvenilir ve müşteri odaklı teknolojilerle küresel ölçekte dijital dönüşümün öncüsü olmak.</span></div></li>
       </ol>
     </div>
   </div>
@@ -685,11 +798,11 @@ def contact():
       </form>
     </div>
     <div class="reveal">
-      <div class="info"><span class="k">Adres</span><div><a href="{MAPS}" target="_blank" rel="noopener">Yarhasanlar Mh. 2300 Sk. No:3 Daire:1</a><small>Şehzadeler / Manisa</small></div></div>
-      <div class="info"><span class="k">Telefon</span><div><a href="{TEL_HREF}">+90 (543) 791 10 61</a></div></div>
-      <div class="info"><span class="k">E-posta</span><div><a href="mailto:{MAIL}">{MAIL}</a></div></div>
-      <div class="info"><span class="k">WhatsApp</span><div><a href="{WA}" target="_blank" rel="noopener">Hemen yazın →</a></div></div>
-      <div class="info"><span class="k">Ofisler</span><div>Manisa<small>Merkez</small><div style="margin-top:10px">İstanbul</div><small>Kartal</small></div></div>
+      <div class="info">{icon('pin', 20)}<span class="k">Adres</span><div><a href="{MAPS}" target="_blank" rel="noopener">Yarhasanlar Mh. 2300 Sk. No:3 Daire:1</a><small>Şehzadeler / Manisa</small></div></div>
+      <div class="info">{icon('phone', 20)}<span class="k">Telefon</span><div><a href="{TEL_HREF}">+90 (543) 791 10 61</a></div></div>
+      <div class="info">{icon('mail', 20)}<span class="k">E-posta</span><div><a href="mailto:{MAIL}">{MAIL}</a></div></div>
+      <div class="info">{icon('whatsapp', 20)}<span class="k">WhatsApp</span><div><a href="{WA}" target="_blank" rel="noopener">Hemen yazın →</a></div></div>
+      <div class="info">{icon('building', 20)}<span class="k">Ofisler</span><div>Manisa<small>Merkez</small><div style="margin-top:10px">İstanbul</div><small>Kartal</small></div></div>
     </div>
   </div>
 </section>
@@ -731,22 +844,132 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 
 
 # ------------------------------------------------------------------ projects
+# projelerimiz.html: an index of our products on top, then one detailed section per product (#<slug>).
+# Feature / role lists come from the products themselves (KATSİS panels and modules, RestaurantBill roles and screens).
+PROJECT_DETAILS = {
+    'katsis': dict(
+        c='#3B82F6',
+        tagline='Yöneticiyi, sakini ve personeli aynı sistemde buluşturan site yönetim platformu.',
+        platforms=[('web', 'Web paneli'), ('mobile', 'iOS ve Android'), ('desktop', 'Windows uygulaması')],
+        features=[
+            ('coins', 'Aidat ve borç takibi', 'Aidatları, borçları ve tahsilatları daire daire izleyin; geciken ödemeleri anında görün.'),
+            ('card', 'Online ödeme', 'Sakinler borçlarını sanal POS ile kartla ya da havaleyle ödesin.'),
+            ('chart', 'Kasa ve gelir-gider', 'Kasalar, gelir-gider kayıtları ve bilanço tek ekranda; gider dökümü sakinlerle paylaşılır.'),
+            ('bell', 'Duyuru, anket ve bildirim', 'Duyuruları SMS ve anlık bildirimle iletin, anketlerle sakinlerin görüşünü alın.'),
+            ('headset', 'Destek talepleri', 'Sakinlerin arıza ve isteklerini kayıt altına alın, her talebin durumunu takip edin.'),
+            ('refresh', 'Periyodik bakım ve demirbaş', 'Asansör, jeneratör gibi bakımları planlayın; demirbaşları kayıt altında tutun.'),
+            ('file', 'Karar defteri ve işletme projesi', 'Yönetim kararlarını ve yıllık işletme projesini dijitalde saklayın, sakinlerle paylaşın.'),
+            ('users', 'Personel ve görevler', 'Personele görev atayın; telefon rehberi ve bakım listeleriyle sahada destekleyin.'),
+        ],
+        roles_h='Üç ayrı panel, tek sistem.',
+        roles=[
+            ('building', 'Yönetici paneli', 'Sitenin, binaların ve dairelerin finansını ve işleyişini yönetir.'),
+            ('user', 'Sakin paneli', 'Borçlarını görür ve online öder; duyuru, anket ve taleplerini takip eder.'),
+            ('clipboard', 'Personel paneli', 'Görevlerini, bakım listelerini ve duyuruları sahadan takip eder.'),
+        ],
+        gallery=[],
+        tech=['PHP 8.2', 'MariaDB', 'Redis', 'RabbitMQ', 'Docker', 'Firebase'],
+    ),
+    'restaurantbill': dict(
+        c='#D4A64A',
+        tagline='Garsonu, mutfağı ve kasayı anlık olarak senkronize eden restoran yönetim sistemi.',
+        platforms=[('web', 'Web uygulaması'), ('devices', 'Tablet ve telefon uyumlu'), ('bolt', 'Gerçek zamanlı')],
+        features=[
+            ('grid', 'Masa ve sipariş yönetimi', 'Garsonlar masaları bölgelere göre görür, siparişi birkaç dokunuşla mutfağa iletir.'),
+            ('bolt', 'Anlık senkronizasyon', 'Sipariş ve durum değişiklikleri garson, mutfak ve kasa ekranlarına aynı anda yansır.'),
+            ('tv', 'Mutfak ekranı', 'Bekleyen, hazırlanan ve hazır siparişler mutfakta sütunlar halinde takip edilir.'),
+            ('card', 'Kasa ve ödeme', 'Kasa oturumları, kasalar arası transfer ve kör sayımla güvenli hesap kapanışı.'),
+            ('building', 'Çoklu şube', 'Tek şirket altında birden çok şube; her şubenin kendi personeli, menüsü ve kasası.'),
+            ('lock', 'Rol bazlı yetki', 'İşletme sahibi, yönetici, garson, kasiyer ve mutfak için ayrı ekranlar ve yetkiler.'),
+            ('chart', 'Finansal raporlar', 'Şube bazında satış ve kasa raporlarıyla işletmenin nabzını tutun.'),
+            ('shield', 'Denetim kaydı', 'Sipariş, ödeme ve personel işlemlerinin tamamı kayıt altında.'),
+        ],
+        roles_h='Her rol için ayrı ekran.',
+        roles=[
+            ('userc', 'İşletme sahibi', 'Şubeleri, yöneticileri, marka ayarlarını ve raporları yönetir.'),
+            ('sliders', 'Yönetici', 'Menüyü, masaları ve personeli şube bazında düzenler.'),
+            ('clipboard', 'Garson', 'Masaları ve siparişleri yönetir.'),
+            ('tv', 'Mutfak', 'Siparişleri hazırlar, hazır olanları bildirir.'),
+            ('card', 'Kasiyer', 'Ödemeleri alır, kasayı yönetir.'),
+        ],
+        gallery=[('garson', 'Garson ekranı'), ('mutfak', 'Mutfak ekranı'), ('kasa', 'Kasa ekranı'), ('sahip', 'İşletme sahibi paneli'), ('yonetici', 'Yönetici paneli')],
+        tech=['.NET 9', 'React 19', 'TypeScript', 'PostgreSQL', 'SignalR', 'Docker'],
+    ),
+}
+
+
+def project_section(i, p):
+    d = PROJECT_DETAILS[p['slug']]
+    host = p['url'].split('//', 1)[-1].rstrip('/')
+    plats = ''.join(f'<li>{icon(ic, 16)}<span>{t}</span></li>' for ic, t in d['platforms'])
+    feats = ''.join(f'<div class="pj-feat reveal"><div class="card-icon">{icon(ic, 22)}</div><h4>{t}</h4><p>{x}</p></div>' for ic, t, x in d['features'])
+    roles = ''.join(f'<div class="pj-role">{icon(ic, 20)}<div><b>{t}</b><span>{x}</span></div></div>' for ic, t, x in d['roles'])
+    gallery = ''
+    if d['gallery']:
+        shots = ''.join(f'<figure class="pj-shot"><img src="assets/img/proje/{p["slug"]}/{f}.webp" alt="{p["ad"]} — {cap}" loading="lazy"><figcaption>{cap}</figcaption></figure>'
+                        for f, cap in d['gallery'])
+        gallery = f'''
+    <div class="pj-block">
+      <div class="eyebrow">// EKRANLAR</div>
+      <div class="pj-gallery">{shots}</div>
+    </div>'''
+    tech = ''.join(f'<span>{t}</span>' for t in d['tech'])
+    return f'''<section class="pj tone{' pj-alt' if i % 2 else ''}" id="{p['slug']}" style="--c:{d['c']};--accent:{d['c']}">
+  <div class="wrap">
+    <div class="pj-head">
+      <div class="pj-intro reveal">
+        <div class="pj-num">0{i + 1}</div>
+        <div class="eyebrow">// {p['sektor']}</div>
+        <h2 class="h2">{p['ad']}</h2>
+        <p class="lead pj-tagline">{d['tagline']}</p>
+        <p class="pj-desc">{p['aciklama']}</p>
+        <ul class="pj-plats">{plats}</ul>
+        <div class="btn-row"><a class="btn btn-primary" href="{p['url']}" target="_blank" rel="noopener">{host}{icon('external', 16, 'ic-dir')}</a><a class="btn" href="iletisim.html">Benzerini isteyin</a></div>
+      </div>
+      <div class="pj-visual reveal"><img src="{p['img']}" alt="{p['ad']} web sitesi ekran görüntüsü" loading="lazy"></div>
+    </div>
+
+    <div class="pj-block">
+      <div class="eyebrow">// ÖNE ÇIKAN ÖZELLİKLER</div>
+      <div class="pj-feats">{feats}</div>
+    </div>
+
+    <div class="pj-block pj-split">
+      <div><div class="eyebrow">// KİMLER KULLANIYOR</div><h3 class="h3 pj-roles-h">{d['roles_h']}</h3></div>
+      <div class="pj-roles">{roles}</div>
+    </div>{gallery}
+
+    <div class="pj-tech"><div class="pj-tech-l">{icon('code', 16)}Teknolojiler</div><div translate="no">{tech}</div></div>
+  </div>
+</section>'''
+
+
 def projects():
+    tiles = ''.join(f'''<a class="pj-tile reveal" href="#{p['slug']}" style="--c:{PROJECT_DETAILS[p['slug']]['c']}">
+        <div class="pj-tile-img"><img src="{p['img']}" alt="" loading="lazy"></div>
+        <div class="pj-tile-body"><span class="pj-tile-num">0{i + 1}</span><div class="pj-tile-meta">{p['sektor']}</div><h3 class="h3">{p['ad']}</h3><p>{PROJECT_DETAILS[p['slug']]['tagline']}</p><div class="pj-tile-go">Projeyi incele{icon('arrow', 16, 'ic-dir')}</div></div>
+      </a>''' for i, p in enumerate(OWN_PROJECTS))
+    subnav = ''.join(f'<a href="#{p["slug"]}" style="--c:{PROJECT_DETAILS[p["slug"]]["c"]}"><i></i>{p["ad"]}</a>' for p in OWN_PROJECTS)
+    sections = '\n\n'.join(project_section(i, p) for i, p in enumerate(OWN_PROJECTS))
     body = f'''{page_hero('PROJELER', '// CYF TECH · PROJELER', 'Kendi <span class="accent">projelerimiz.</span>', 'Fikirden yayına kendimiz tasarlayıp geliştirdiğimiz, bugün gerçek kullanıcılara hizmet veren ürünlerimiz.', '<div class="btn-row"><a class="btn btn-primary" href="referanslar.html">Referanslarımız</a>' + cd_button() + '<a class="btn" href="iletisim.html">Teklif Al</a></div>')}
 
-<section class="section-tight">
+<section class="section-tight" style="padding-top:0">
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// ÜRÜNLERİMİZ</div><h2 class="h2">Kendi ürünlerimiz.</h2></div><p class="muted">Kartlara tıklayarak ürünün canlı sürümünü inceleyebilirsiniz. Müşterilerimiz için yaptığımız işler referanslar sayfasında.</p></div>
-    <div class="cards c2">
-      {project_cards(link=lambda p: p['url'], items=OWN_PROJECTS)}
+    <div class="sec-head"><div><div class="eyebrow">// ÜRÜNLERİMİZ</div><h2 class="h2">Kendi ürünlerimiz.</h2></div><p class="muted">Bir ürüne tıklayın, ayrıntılı tanıtımına geçin.</p></div>
+    <div class="pj-tiles">
+      {tiles}
     </div>
   </div>
 </section>
 
+<nav class="pj-subnav" aria-label="Projeler" translate="no"><div class="wrap">{subnav}</div></nav>
+
+{sections}
+
 {cta(dark=True)}'''
     doc('projelerimiz.html', 'Projelerimiz — CYF Tech',
         'CYF Tech’in kendi ürünleri: apartman ve site yönetim platformu KATSİS ve restoran adisyon ve mutfak ekranı sistemi RestaurantBill.',
-        body, 'projeler')
+        body, 'projeler', css=('projeler.css',))
 
 
 # ------------------------------------------------------------------ references
@@ -897,8 +1120,8 @@ def references_list():
 
     chips = ''.join(f'<div class="chip float" style="animation-delay:-{i * 1.1:.1f}s"><span class="tag">{len(s):02d}</span><div><b>{t}</b><small>{", ".join(by_slug[x]["ad"] for x in s[:2])}{" ve diğerleri" if len(s) > 2 else ""}</small></div></div>'
                     for i, (_, t, _, s) in enumerate(REF_GROUPS))
-    stats = [(f'{len(PROJECTS)}', 'Yayındaki referans'), (f'{len(REF_GROUPS)}', 'Farklı sektör grubu'), (f'{n_tags}', 'Hizmet türü'), ('7/24', 'Yayından sonra destek')]
-    stats_html = ''.join(f'<div class="stat"><b>{a}</b><span>{b}</span></div>' for a, b in stats)
+    stats = [('globe', f'{len(PROJECTS)}', 'Yayındaki referans'), ('layers', f'{len(REF_GROUPS)}', 'Farklı sektör grubu'), ('grid', f'{n_tags}', 'Hizmet türü'), ('headset', '7/24', 'Yayından sonra destek')]
+    stats_html = ''.join(f'<div class="stat">{icon(ic, 26)}<b>{a}</b><span>{b}</span></div>' for ic, a, b in stats)
     filters = '<button type="button" class="rf-chip on" data-rf="all">Tümü <b>' + str(len(PROJECTS)) + '</b></button>' + ''.join(
         f'<button type="button" class="rf-chip" data-rf="{k}">{t} <b>{len(s)}</b></button>' for k, t, _, s in REF_GROUPS)
 
@@ -921,13 +1144,13 @@ def references_list():
           <div class="tags">{tags}</div>
         </div>
         <div class="rf-links">
-          <a class="rf-visit" href="{p['url']}" target="_blank" rel="noopener">{host(p['url'])} <span>↗</span></a>
+          <a class="rf-visit" href="{p['url']}" target="_blank" rel="noopener">{host(p['url'])} {icon('external', 14, 'ic-dir')}</a>
           {f'<a class="rf-cd" href="{cd_link(p)}">CD rafında incele →</a>' if SHOW_CD else ''}
         </div>
       </article>'''
         groups += f'''
     <div class="rf-group" data-rf-group="{k}">
-      <div class="rf-ghead"><h2 class="h3">{t}</h2><p>{d}</p><span class="badge">{len(slugs):02d} PROJE</span></div>{rows}
+      <div class="rf-ghead"><h2 class="h3">{icon({'yazilim': 'code', 'kurumsal': 'building', 'test': 'flask', 'yerel': 'store'}[k], 22)}{t}</h2><p>{d}</p><span class="badge">{len(slugs):02d} PROJE</span></div>{rows}
     </div>'''
 
     body = f'''{page_hero('REFERANSLAR', '// CYF TECH · REFERANSLAR', 'Bize güvenen <span class="accent">markalar.</span>',
@@ -1008,7 +1231,7 @@ def blog():
         meta = f"<span>·</span>{p['sure']} okuma" if p['href'] else '<span class="badge">TASLAK · YAKINDA</span>'
         more = '<span class="bl-more">Devamını oku →</span>' if p['href'] else ''
         inner = f'''<time class="bl-date" datetime="{iso}"><b>{g}</b><span>{a} {y}</span></time>
-        <div class="bl-node" aria-hidden="true"></div>
+        <div class="bl-node" aria-hidden="true">{icon(KAT_ICON[p['kat']], 15)}</div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">{post_hash(p)}</span><b>{p['kat']}</b>{meta}</div>
           <h3 class="h3">{p['title']}</h3>
@@ -1043,40 +1266,60 @@ def blog():
         body, 'blog', css=('blog.css',))
 
 
+
+
 def blog_inside():
-    others = ''.join(f'<li><span class="d">{p["date"]}</span><b>{p["title"]}</b><span class="badge" style="margin-top:8px">YAKINDA</span></li>' for p in POSTS[1:])
+    post = POSTS[0]
+    _, _, _, iso = post_date(post)
+    others = ''.join(f'''<li><span class="bi-oic">{icon(KAT_ICON[p['kat']], 18)}</span><div><span class="d">{p['date']}</span><b>{p['title']}</b><span class="badge">YAKINDA</span></div></li>'''
+                     for p in POSTS[1:])
+    facts = ''.join(f'<li>{icon(i, 18)}<div><span>{k}</span><b>{v}</b></div></li>' for i, k, v in [
+        ('tv', 'Kanal', 'Ülke TV'), ('mic', 'Program', 'Yeni Nesil İşler'), ('user', 'Sunucu', 'Aycan Gül'), ('calendar', 'Yayın tarihi', post['date'])])
+    share = ''.join(f'<a class="bi-share-btn" data-share="{k}" href="#" target="_blank" rel="noopener" aria-label="{n}" title="{n}">{ic}</a>' for k, n, ic in [
+        ('wa', 'WhatsApp ile paylaş', I_WA.replace('width="24" height="24"', 'width="18" height="18"')), ('li', 'LinkedIn’de paylaş', icon('linkedin', 18)),
+        ('x', 'X’te paylaş', icon('x', 18)), ('mail', 'E-posta ile gönder', icon('mail', 18))])
     body = f'''<section class="page-hero" style="padding-bottom:48px">
   {floor()}
   <div class="wrap">
     <div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><a href="blog.html">BLOG</a><span>/</span><span>HABER</span></div>
-    <div class="eyebrow">// HABER · 24 AĞUSTOS 2025</div>
     <h1 class="h1" style="max-width:900px">CYF Tech ÜLKE TV'de.</h1>
+    <div class="bi-meta"><div class="bi-tag">{icon('tag')}{post['kat']}</div><div>{icon('calendar')}<time datetime="{iso}">{post['date']}</time></div><div>{icon('clock')}{post['sure']} okuma</div></div>
   </div>
 </section>
 
 <section class="section-tight" style="padding-top:0">
-  <div class="wrap split" style="grid-template-columns:minmax(0,1.6fr) minmax(0,.6fr)">
+  <div class="wrap bi-grid">
     <article class="article">
       <div class="article-img"><img src="assets/img/blog/ulketv.webp" alt="CYF Tech, Ülke TV Yeni Nesil İşler programında"></div>
       <p>CYF Tech, 24 Ağustos 2025 tarihinde Ülke TV’de yayınlanan Aycan Gül ile Yeni Nesil İşler programına konuk oldu. Programda şirketin kuruluş hikâyesi, inovasyon odaklı projeleri ve Türkiye’de yazılım sektörüne kazandırdığı yenilikçi çözümler ele alındı.</p>
       <p>CYF Tech kurucuları programda yazılım geliştirme süreçlerinden, dijital dönüşüm projelerinden ve yapay zekânın iş dünyasındaki dönüştürücü etkilerinden bahsetti. Ayrıca gençlerin yazılım dünyasına adım atarken dikkat etmeleri gereken noktalar ve kariyer planlaması üzerine tavsiyelerde bulunuldu.</p>
       <p>Program boyunca CYF Tech’in yazılım sektöründe edindiği tecrübeler, müşteri odaklı yaklaşımı ve geleceğin teknolojilerine yönelik vizyonu izleyicilerle paylaşıldı. Yapay zekâ destekli çözümlerden web ve mobil uygulama geliştirme süreçlerine kadar geniş bir yelpazede sunulan hizmetler detaylı olarak anlatıldı.</p>
       <p>Şirket temsilcileri, teknolojinin yalnızca iş süreçlerinde değil, eğitim ve toplumsal gelişim açısından da büyük bir potansiyele sahip olduğunu vurguladı:</p>
-      <blockquote>“Yapay zekâ, gençlere yeni fırsatlar sunuyor. Önemli olan bu teknolojiyi doğru anlamak ve üretken şekilde kullanmak.”</blockquote>
+      <blockquote><div class="bi-q">{icon('quote', 22)}</div>“Yapay zekâ, gençlere yeni fırsatlar sunuyor. Önemli olan bu teknolojiyi doğru anlamak ve üretken şekilde kullanmak.”</blockquote>
       <p>CYF Tech’in Ülke TV’deki bu özel röportajı, hem yazılım sektörüne ilgi duyan gençler hem de dijital dönüşüm yolculuğuna çıkmak isteyen işletmeler için ilham verici bir içerik oldu.</p>
-      <a class="link-arrow" href="blog.html">← Tüm yazılar</a>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog.html">{icon('back')}Tüm yazılar</a>
+        <div class="bi-share"><div class="bi-share-l">{icon('share')}Paylaş</div>{share}</div>
+      </div>
     </article>
-    <aside>
-      <div class="eyebrow">// DİĞER YAZILAR</div>
-      <ul class="aside-list">{others}</ul>
+    <aside class="bi-aside">
+      <div class="bi-box">
+        <div class="eyebrow">// PROGRAM BİLGİLERİ</div>
+        <ul class="bi-facts">{facts}</ul>
+      </div>
+      <div class="bi-box">
+        <div class="eyebrow">// DİĞER YAZILAR</div>
+        <ul class="bi-others">{others}</ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim.html"><b>Projenizi konuşalım.</b><span>Aklınızdaki fikri anlatın, size özel teklifimizi hazırlayalım.</span><div class="bi-go">Teklif Al{icon('arrow')}</div></a>
     </aside>
   </div>
 </section>
 
-{cta()}'''
+{cta(dark=True)}'''
     doc('blog-inside.html', "CYF Tech ÜLKE TV'de — CYF Tech Blog",
         'CYF Tech, Ülke TV’de Aycan Gül ile Yeni Nesil İşler programına konuk oldu: kuruluş hikâyesi, projeler ve yapay zekânın iş dünyasına etkisi.',
-        body, 'blog')
+        body, 'blog', css=('blog.css',))
 
 
 home()

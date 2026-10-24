@@ -272,6 +272,7 @@ def check(lang):
 
 
 if __name__ == '__main__':
+    sys.stdout.reconfigure(encoding='utf-8')  # Windows consoles default to a legacy code page
     mode, arg = sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else '.'
     if mode == 'check':
         sys.exit(0 if check(arg) else 1)

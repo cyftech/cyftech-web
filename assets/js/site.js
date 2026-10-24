@@ -115,6 +115,29 @@
     })();
   }
 
+  // share buttons on articles: point them at this page (whatever language it is in)
+  document.querySelectorAll('[data-share]').forEach(function (a) {
+    var url = encodeURIComponent(location.href.split('#')[0]), title = encodeURIComponent(document.title);
+    a.href = {
+      wa: 'https://wa.me/?text=' + title + '%20' + url,
+      li: 'https://www.linkedin.com/sharing/share-offsite/?url=' + url,
+      x: 'https://twitter.com/intent/tweet?url=' + url + '&text=' + title,
+      mail: 'mailto:?subject=' + title + '&body=' + url
+    }[a.getAttribute('data-share')] || a.href;
+  });
+
+  // projects page: highlight the product whose section is on screen in the sticky sub-nav
+  var subLinks = document.querySelectorAll('.pj-subnav a');
+  if (subLinks.length && 'IntersectionObserver' in window) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        subLinks.forEach(function (a) { a.classList.toggle('on', a.getAttribute('href') === '#' + en.target.id); });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('.pj[id]').forEach(function (s) { spy.observe(s); });
+  }
+
   var items = document.querySelectorAll('.reveal');
   if (!('IntersectionObserver' in window)) {
     items.forEach(function (el) { el.classList.add('in'); });

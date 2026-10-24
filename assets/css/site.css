@@ -499,5 +499,32 @@ html.intro .boot.skip{animation:btGone .35s ease forwards}
   .boot-word{font-size:26px}
 }
 
-/* header logo is the name alone (the </> mark stays in the footer) */
-.site-head .logo-word{font-size:21px;font-weight:600}
+/* the logo is the name alone (header and footer) */
+.site-head .logo-word,.site-foot .logo-word{font-size:21px;font-weight:600}
+
+/* ============================================================
+   Icons (icon() in build.py): inline svg.ic in buttons, menus, lists, chips, cards, stats
+   ============================================================ */
+.ic{flex:none;vertical-align:-3px}
+.btn .ic{margin-inline:-2px}
+.dd-menu .num{display:none}
+.dd-menu .dd-ic{width:40px;height:40px;padding:9px;border-radius:10px;border:1px solid var(--line-2);background:var(--accent-faint);color:var(--accent)}
+.dd-menu a:hover .dd-ic{border-color:var(--accent-line)}
+.mnav a .ic{margin-inline-end:12px;color:var(--accent)}
+.foot-grid ul a{display:inline-flex;align-items:center;gap:10px}
+.foot-grid ul .ic{color:var(--accent);opacity:.8}
+.contact-lines a{display:flex;align-items:center;gap:10px}
+.contact-lines .ic{color:var(--accent)}
+.chip>.ic{color:var(--accent)}
+.card-icon{background:var(--accent-faint);border-color:var(--accent-line)}
+.card .card-icon+.num{margin-top:4px}
+.stat .ic{display:block;margin-bottom:16px;color:var(--accent)}
+.steps .n{display:flex;flex-direction:column;gap:6px;width:36px}
+.steps .n small{font-size:11px;color:var(--dim)}
+.info>.ic{margin-top:2px;color:var(--accent)}
+.ab-manifest li{display:flex;align-items:center;gap:8px}
+.ab-manifest li .ic{color:var(--accent)}
+.rf-ghead .h3{display:flex;align-items:center;gap:12px}
+.rf-ghead .h3 .ic{color:var(--accent)}
+.rf-visit .ic{color:color-mix(in srgb,var(--c) 55%,#fff)}
+[dir="rtl"] .ic-dir{transform:scaleX(-1)}  /* arrows point the reading direction */
