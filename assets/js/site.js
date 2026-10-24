@@ -83,16 +83,27 @@
     var SIZE = 26, PAD = 6;
     var mx = -100, my = -100, x = mx, y = my, w = SIZE, h = SIZE, target = null, shown = false;
 
+    // Chrome sends the page no event at all when the pointer enters a cross-origin iframe (the Google map), so the map
+    // is covered by a .map-shield button: over it the square cursor hides and the normal pointer shows. A click lifts the
+    // shield so the map can be used (the square stays hidden, the page sees nothing); the next move on the page itself
+    // puts the shield back and brings the square cursor back.
+    var hide = function () { root.classList.remove('cur-on'); shown = false; target = null; };
+    var overMap = function (px, py) {
+      var el = document.elementFromPoint(px, py);
+      return !!el && (el.tagName === 'IFRAME' || !!el.closest('.map-shield'));
+    };
     document.addEventListener('mousemove', function (e) {
       mx = e.clientX; my = e.clientY;
+      if (overMap(mx, my)) { hide(); return; }
+      document.querySelectorAll('.map-shield.off').forEach(function (s) { s.classList.remove('off'); });
       if (!shown) { shown = true; x = mx - SIZE / 2; y = my - SIZE / 2; root.classList.add('cur-on'); }
     });
     document.addEventListener('mouseover', function (e) {
-      if (e.target.tagName === 'IFRAME') { root.classList.remove('cur-on'); shown = false; return; }
+      if (e.target.tagName === 'IFRAME' || e.target.closest('.map-shield')) { hide(); return; }
       target = e.target.closest(HOT);
       root.classList.toggle('cur-text', !target && !!e.target.closest('input, textarea, [contenteditable]'));
     });
-    document.documentElement.addEventListener('mouseleave', function () { root.classList.remove('cur-on'); shown = false; });
+    document.documentElement.addEventListener('mouseleave', hide);
     document.addEventListener('mousedown', function () { root.classList.add('cur-down'); });
     document.addEventListener('mouseup', function () { root.classList.remove('cur-down'); });
 
@@ -114,6 +125,11 @@
       requestAnimationFrame(tick);
     })();
   }
+
+  // map shield: click (or tap) lifts it so the map underneath can be dragged and zoomed
+  document.querySelectorAll('.map-shield').forEach(function (s) {
+    s.addEventListener('click', function () { s.classList.add('off'); });
+  });
 
   // share buttons on articles: point them at this page (whatever language it is in)
   document.querySelectorAll('[data-share]').forEach(function (a) {

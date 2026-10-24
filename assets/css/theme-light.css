@@ -78,9 +78,13 @@
 [data-theme="light"] .ab-stats .stats{background:linear-gradient(180deg,color-mix(in srgb,var(--accent) 5%,#fff),#fff)}
 
 /* iletişim */
-[data-theme="light"] .ct-box{background:#FFFFFF;box-shadow:0 30px 60px rgba(11,20,36,.12)}
+[data-theme="light"] :is(.ct-ch,.ct-mini){background:#FFFFFF}
+[data-theme="light"] .ct-editor{background:#FFFFFF;box-shadow:0 30px 60px rgba(11,20,36,.12)}
+[data-theme="light"] .ct-bar{background:var(--bg-2)}
+[data-theme="light"] .ct-opt{background:var(--bg)}
+[data-theme="light"] .ct-form .field input,[data-theme="light"] .ct-form .field textarea{background:#FFFFFF}
+[data-theme="light"] .ct-card{background:rgba(255,255,255,.94);box-shadow:0 30px 60px rgba(11,20,36,.14)}
 [data-theme="light"] .ct-map{background:var(--bg-2)}
-[data-theme="light"] .ct-tag{background:rgba(255,255,255,.92)}
 [data-theme="light"] .bl-term{background:#050B1A}
 [data-theme="light"] .bi-box{background:#FFFFFF}
 [data-theme="light"] .bi-cta{background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 10%,#fff),#fff 70%)}
@@ -91,3 +95,4 @@
 [data-theme="light"] .pj-visual{background:radial-gradient(90% 80% at 50% 10%,color-mix(in srgb,var(--c) 18%,#fff),#EEF3F9 75%);box-shadow:0 30px 60px rgba(11,20,36,.12)}
 [data-theme="light"] .pj-subnav{background:rgba(243,246,250,.85)}
 [data-theme="light"] :is(.pj-tile-meta,.pj-tile-go){color:color-mix(in srgb,var(--c) 75%,#000)}
+[data-theme="light"] .map-hint{background:rgba(255,255,255,.94);box-shadow:0 12px 30px rgba(11,20,36,.15)}

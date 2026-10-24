@@ -1,6 +1,6 @@
 import hashlib, json, os, re, sys
 OUT = sys.argv[1]
-VER = '20261024u'  # bump on every deploy so browsers fetch fresh css/js
+VER = '20261025b'  # bump on every deploy so browsers fetch fresh css/js
 SHOW_CD = False  # CD shelf (referanslar-cd.html) is parked: the page still builds, but nothing links to it
 
 TEL = '0543 791 10 61'
@@ -782,50 +782,70 @@ def about():
 
 
 # ------------------------------------------------------------------ contact
-def contact():
-    body = f'''{page_hero('İLETİŞİM', '// CYF TECH · İLETİŞİM', 'Projenizi birlikte <span class="accent">hayata geçirelim.</span>', 'Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım. Telefon, e-posta veya WhatsApp üzerinden de bize hemen ulaşabilirsiniz.')}
+MAP_EMBED = 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6234.998530286844!2d27.426501!3d38.614394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99d0c71cffc89%3A0x4cbce09a63a2e25b!2zQ1lGIFRlY2ggeWF6xLFsxLFt!5e0!3m2!1str!2str!4v1760401938035!5m2!1str!2str'
 
-<section class="section-tight" style="padding-top:0">
-  <div class="wrap split">
-    <div class="card reveal" style="padding:36px">
-      <h2 class="h3" style="font-size:26px">Bize ulaşın</h2>
-      <form class="form" id="contact-form" style="margin-top:12px">
-        <div class="field"><label for="name">Ad Soyad</label><input id="name" name="name" autocomplete="name" required></div>
-        <div class="field"><label for="mail">E-posta</label><input id="mail" name="mail" type="email" autocomplete="email" required></div>
-        <div class="field"><label for="message">Mesaj</label><textarea id="message" name="message" required></textarea></div>
-        <button class="btn btn-primary" type="submit" style="justify-self:start">Gönder</button>
-        <p class="form-note">Gönder'e bastığınızda mesajınız e-posta uygulamanızda {MAIL} adresine hazır olarak açılır.</p>
+
+def contact():
+    # hero: three direct channels · brief form styled as an editor window, with the process beside it · full-width map
+    channels = ''.join(f'''<a class="ct-ch reveal" href="{href}"{ext} style="--c:{c}"><div class="ct-ch-ic">{icon(ic, 22)}</div><div class="ct-ch-tx"><b>{t}</b><span>{v}</span></div>{icon('arrow', 18, 'ic-dir ct-ch-go')}</a>'''
+                       for href, ext, c, ic, t, v in [
+                           (WA, ' target="_blank" rel="noopener"', '#4ADE80', 'whatsapp', 'WhatsApp', 'Hemen yazın'),
+                           (TEL_HREF, '', '#38BDF8', 'phone', 'Telefon', TEL),
+                           (f'mailto:{MAIL}', '', '#A78BFA', 'mail', 'E-posta', MAIL)])
+    svcs = ''.join(f'<label class="ct-opt"><input type="checkbox" name="svc">{icon(ic, 18)}<span>{t}</span></label>' for ic, t in [
+        ('web', 'Web sitesi'), ('card', 'E-ticaret'), ('mobile', 'Mobil uygulama'), ('desktop', 'Masaüstü yazılım'), ('search', 'SEO'), ('puzzle', 'Diğer')])
+    steps = ''.join(f'<li><span class="n">0{i + 1}</span><div><b>{t}</b><span>{d}</span></div></li>' for i, (t, d) in enumerate([
+        ('Mesajınızı inceliyoruz', 'İhtiyacınızı ve hedeflerinizi anlamak için talebinizi dikkatle okuyoruz.'),
+        ('Sizinle görüşüyoruz', 'Kısa bir görüşmeyle kapsamı ve beklentileri birlikte netleştiriyoruz.'),
+        ('Teklifimizi iletiyoruz', 'Kapsamı, takvimi ve fiyatı içeren size özel teklifimizi hazırlıyoruz.')]))
+    body = f'''{page_hero('İLETİŞİM', '// CYF TECH · İLETİŞİM', 'Projenizi birlikte <span class="accent">hayata geçirelim.</span>', 'Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım. Telefon, e-posta veya WhatsApp üzerinden de bize hemen ulaşabilirsiniz.', '', f'<div class="ct-chs">{channels}</div>')}
+
+<section class="section-tight ct-brief-sec" style="padding-top:0">
+  <div class="wrap ct-brief-grid">
+    <aside class="ct-process reveal">
+      <div class="eyebrow">// NASIL İLERLİYORUZ</div>
+      <h2 class="h2">Mesajınızdan teklife üç adım.</h2>
+      <ol class="steps">{steps}</ol>
+      <div class="ct-mini">{icon('pin', 18)}<div><b>Yarhasanlar Mh. 2300 Sk. No:3 Daire:1</b><span>Şehzadeler / Manisa</span></div></div>
+    </aside>
+
+    <div class="ct-editor reveal">
+      <div class="ct-bar" translate="no"><i></i><i></i><i></i><span>yeni-proje.brief</span></div>
+      <form class="form ct-form" id="contact-form" data-label-services="İlgilenilen hizmetler" data-label-phone="Telefon">
+        <fieldset class="ct-q">
+          <legend><span class="ct-qn">01</span>Ne yaptırmak istiyorsunuz?</legend>
+          <div class="ct-opts">{svcs}</div>
+        </fieldset>
+        <fieldset class="ct-q">
+          <legend><span class="ct-qn">02</span>Sizi nasıl tanıyalım?</legend>
+          <div class="ct-row">
+            <div class="field"><label for="name">Ad Soyad</label><input id="name" name="name" autocomplete="name" required></div>
+            <div class="field"><label for="mail">E-posta</label><input id="mail" name="mail" type="email" autocomplete="email" required></div>
+          </div>
+          <div class="field"><label for="phone">Telefon <small>(isteğe bağlı)</small></label><input id="phone" name="phone" type="tel" autocomplete="tel"></div>
+        </fieldset>
+        <fieldset class="ct-q">
+          <legend><span class="ct-qn">03</span>Projenizden bahsedin</legend>
+          <div class="field"><label for="message">Mesaj</label><textarea id="message" name="message" placeholder="Hedefiniz, kapsam ve varsa örnek aldığınız siteler…" required></textarea></div>
+        </fieldset>
+        <div class="ct-send"><button class="btn btn-primary" type="submit">Gönder</button><p class="form-note">Gönder'e bastığınızda mesajınız e-posta uygulamanızda {MAIL} adresine hazır olarak açılır.</p></div>
       </form>
-    </div>
-    <div class="reveal">
-      <div class="info">{icon('pin', 20)}<span class="k">Adres</span><div><a href="{MAPS}" target="_blank" rel="noopener">Yarhasanlar Mh. 2300 Sk. No:3 Daire:1</a><small>Şehzadeler / Manisa</small></div></div>
-      <div class="info">{icon('phone', 20)}<span class="k">Telefon</span><div><a href="{TEL_HREF}">+90 (543) 791 10 61</a></div></div>
-      <div class="info">{icon('mail', 20)}<span class="k">E-posta</span><div><a href="mailto:{MAIL}">{MAIL}</a></div></div>
-      <div class="info">{icon('whatsapp', 20)}<span class="k">WhatsApp</span><div><a href="{WA}" target="_blank" rel="noopener">Hemen yazın →</a></div></div>
-      <div class="info">{icon('building', 20)}<span class="k">Ofisler</span><div>Manisa<small>Merkez</small><div style="margin-top:10px">İstanbul</div><small>Kartal</small></div></div>
     </div>
   </div>
 </section>
 
-<section class="section-tight ct-loc">
-  <div class="bg-layer bg-grid bg-fade" aria-hidden="true"></div>
+<section class="ct-loc">
+  <div class="ct-map"><iframe title="CYF Tech ofis konumu" src="{MAP_EMBED}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe><button class="map-shield" type="button" aria-label="Haritayı etkinleştir"><div class="map-hint">{icon('hand', 16)}Haritayı kullanmak için tıklayın</div></button></div>
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// OFİSİMİZ</div><h2 class="h2">Manisa, Şehzadeler.</h2></div><p class="muted">Ofisimize uğramadan önce bizi aramanız yeterli; yol tarifi için haritayı kullanabilirsiniz.</p></div>
-    <div class="ct-box reveal">
-      <div class="ct-panel">
-        <div class="ct-pin"><span class="ct-ping" aria-hidden="true"></span><b>CYF Tech</b><small>Merkez ofis</small></div>
-        <div class="ct-addr">Yarhasanlar Mh. 2300 Sk.<br>No:3 Daire:1<br><span>Şehzadeler / Manisa</span></div>
-        <dl class="ct-meta">
-          <div><dt>Enlem</dt><dd>38.6144° K</dd></div>
-          <div><dt>Boylam</dt><dd>27.4265° D</dd></div>
-          <div><dt>Ofisler</dt><dd>Manisa · İstanbul (Kartal)</dd></div>
-        </dl>
-        <div class="ct-actions"><a class="btn btn-primary btn-sm" href="{MAPS}" target="_blank" rel="noopener">Yol tarifi al</a><a class="btn btn-sm" href="{TEL_HREF}">Arayın</a></div>
-      </div>
-      <div class="ct-map">
-        <iframe title="CYF Tech ofis konumu" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6234.998530286844!2d27.426501!3d38.614394!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14b99d0c71cffc89%3A0x4cbce09a63a2e25b!2zQ1lGIFRlY2ggeWF6xLFsxLFt!5e0!3m2!1str!2str!4v1760401938035!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-        <span class="ct-tag" aria-hidden="true">38.6144, 27.4265</span>
-      </div>
+    <div class="ct-card reveal">
+      <div class="ct-pin"><span class="ct-ping" aria-hidden="true"></span><b>CYF Tech</b><small>Merkez ofis</small></div>
+      <div class="ct-addr">Yarhasanlar Mh. 2300 Sk.<br>No:3 Daire:1<br><span>Şehzadeler / Manisa</span></div>
+      <ul class="ct-offices">
+        <li>{icon('building', 18)}<div><b>Manisa</b><span>Merkez</span></div></li>
+        <li>{icon('building', 18)}<div><b>İstanbul</b><span>Kartal</span></div></li>
+      </ul>
+      <div class="ct-actions"><a class="btn btn-primary btn-sm" href="{MAPS}" target="_blank" rel="noopener">Yol tarifi al</a><a class="btn btn-sm" href="{TEL_HREF}">Arayın</a></div>
+      <span class="ct-tag" aria-hidden="true">38.6144, 27.4265</span>
     </div>
   </div>
 </section>
@@ -833,9 +853,13 @@ def contact():
 document.getElementById('contact-form').addEventListener('submit', function (e) {{
   e.preventDefault();
   var f = e.target;
+  var picked = Array.prototype.map.call(f.querySelectorAll('input[name="svc"]:checked'), function (c) {{ return c.parentNode.textContent.trim(); }});
   var subject = 'Teklif talebi — ' + f.name.value;
-  var bodyTxt = f.message.value + '\\n\\n' + f.name.value + ' <' + f.mail.value + '>';
-  window.location.href = 'mailto:{MAIL}?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(bodyTxt);
+  var lines = [f.message.value, ''];
+  if (picked.length) lines.push(f.getAttribute('data-label-services') + ': ' + picked.join(', '));
+  if (f.phone.value) lines.push(f.getAttribute('data-label-phone') + ': ' + f.phone.value);
+  lines.push(f.name.value + ' <' + f.mail.value + '>');
+  window.location.href = 'mailto:{MAIL}?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(lines.join('\\n'));
 }});
 </script>'''
     doc('iletisim.html', 'İletişim — CYF Tech',

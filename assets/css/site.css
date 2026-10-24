@@ -528,3 +528,16 @@ html.intro .boot.skip{animation:btGone .35s ease forwards}
 .rf-ghead .h3 .ic{color:var(--accent)}
 .rf-visit .ic{color:color-mix(in srgb,var(--c) 55%,#fff)}
 [dir="rtl"] .ic-dir{transform:scaleX(-1)}  /* arrows point the reading direction */
+/* RTL: phone numbers and addresses keep their own order (digit groups would otherwise be reversed) */
+[dir="rtl"] a[href^="tel:"],[dir="rtl"] a[href^="mailto:"],[dir="rtl"] .ct-ch-tx span{unicode-bidi:plaintext}
+[dir="rtl"] .ct-ch-tx span{text-align:right}
+
+/* map shield (see site.js): sits on the map iframe; hover shows the normal pointer + a hint, click lifts it */
+.map-shield{position:absolute;inset:0;z-index:2;display:flex;align-items:flex-end;justify-content:center;padding:0 16px 28px;margin:0;border:0;background:transparent;font:inherit;color:var(--text);cursor:pointer}
+html.has-cur .map-shield,html.has-cur .map-shield *{cursor:pointer}
+.map-shield.off{pointer-events:none}
+.map-hint{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;border-radius:999px;border:1px solid var(--line-3);background:rgba(4,8,20,.88);box-shadow:0 12px 30px rgba(0,0,0,.35);font-size:14px;opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease}
+.map-hint .ic{color:var(--accent)}
+.map-shield:hover .map-hint,.map-shield:focus-visible .map-hint{opacity:1;transform:none}
+.map-shield.off .map-hint{opacity:0}
+@media (hover: none){.map-hint{opacity:1;transform:none}}

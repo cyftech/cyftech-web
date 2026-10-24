@@ -41,7 +41,7 @@ SCRIPT_KEYS = ['Teklif talebi — ']
 
 INLINE = {'span', 'b', 'strong', 'i', 'em', 'br', 'small', 'time', 'code', 'sup', 'sub'}
 VOID = {'br', 'img', 'input', 'meta', 'link', 'hr', 'source', 'wbr'}
-ATTRS = ('alt', 'title', 'aria-label', 'placeholder', 'data-label-open', 'data-label-close', 'data-name')
+ATTRS = ('alt', 'title', 'aria-label', 'placeholder', 'data-label-open', 'data-label-close', 'data-label-services', 'data-label-phone', 'data-name')
 TOKEN = re.compile(r'(<!--.*?-->|<script\b.*?</script>|<style\b.*?</style>|<[^>]+>|[^<]+)', re.S)
 TAGNAME = re.compile(r'^</?([a-zA-Z0-9-]+)')
 LETTER = re.compile(r'[^\W\d_]')
