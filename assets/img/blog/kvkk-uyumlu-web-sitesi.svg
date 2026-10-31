@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#A3E635" stop-opacity=".34"/><stop offset=".55" stop-color="#A3E635" stop-opacity=".06"/><stop offset="1" stop-color="#A3E635" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#A3E635" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#A3E635" stroke-opacity=".28" stroke-width="1.5"><line x1="764" y1="330" x2="799" y2="305"/><line x1="799" y1="305" x2="1101" y2="192"/><line x1="1101" y1="192" x2="1154" y2="502"/><line x1="1154" y1="502" x2="758" y2="513"/><line x1="758" y1="513" x2="652" y2="603"/><line x1="652" y1="603" x2="771" y2="467"/><line x1="771" y1="467" x2="660" y2="389"/><line x1="660" y1="389" x2="671" y2="376"/><line x1="671" y1="376" x2="764" y2="330"/></g><g fill="#A3E635" fill-opacity=".8"><circle cx="764" cy="330" r="3"/><circle cx="799" cy="305" r="5"/><circle cx="1101" cy="192" r="7"/><circle cx="1154" cy="502" r="3"/><circle cx="758" cy="513" r="5"/><circle cx="652" cy="603" r="7"/><circle cx="771" cy="467" r="3"/><circle cx="660" cy="389" r="5"/><circle cx="671" cy="376" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#A3E635" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#A3E635" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></g>
+<g fill="#A3E635"><rect x="96" y="430" width="199" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="247" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="175" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="264" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#A3E635" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#A3E635" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/kvkk-uyumlu-web-sitesi</text><text x="1104" y="612" text-anchor="end">6050e47</text></g>
+</svg>

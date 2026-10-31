@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#22D3EE" stop-opacity=".34"/><stop offset=".55" stop-color="#22D3EE" stop-opacity=".06"/><stop offset="1" stop-color="#22D3EE" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#22D3EE" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#22D3EE" stroke-opacity=".28" stroke-width="1.5"><line x1="1083" y1="177" x2="1152" y2="217"/><line x1="1152" y1="217" x2="997" y2="370"/><line x1="997" y1="370" x2="1099" y2="555"/><line x1="1099" y1="555" x2="807" y2="523"/><line x1="807" y1="523" x2="783" y2="540"/><line x1="783" y1="540" x2="797" y2="477"/><line x1="797" y1="477" x2="773" y2="433"/><line x1="773" y1="433" x2="844" y2="351"/><line x1="844" y1="351" x2="1083" y2="177"/></g><g fill="#22D3EE" fill-opacity=".8"><circle cx="1083" cy="177" r="3"/><circle cx="1152" cy="217" r="5"/><circle cx="997" cy="370" r="7"/><circle cx="1099" cy="555" r="3"/><circle cx="807" cy="523" r="5"/><circle cx="783" cy="540" r="7"/><circle cx="797" cy="477" r="3"/><circle cx="773" cy="433" r="5"/><circle cx="844" cy="351" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#22D3EE" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#22D3EE" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></g>
+<g fill="#22D3EE"><rect x="96" y="430" width="335" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="290" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="198" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="362" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#22D3EE" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#22D3EE" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/mobil-uygulama-gelistirme-maliyeti</text><text x="1104" y="612" text-anchor="end">1496763</text></g>
+</svg>

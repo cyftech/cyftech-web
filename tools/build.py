@@ -1,6 +1,6 @@
-import hashlib, json, os, re, sys
+import hashlib, json, math, os, re, runpy, sys
 OUT = sys.argv[1]
-VER = '20261025b'  # bump on every deploy so browsers fetch fresh css/js
+VER = '20261031d'  # bump on every deploy so browsers fetch fresh css/js
 SHOW_CD = False  # CD shelf (referanslar-cd.html) is parked: the page still builds, but nothing links to it
 
 TEL = '0543 791 10 61'
@@ -8,6 +8,7 @@ TEL_HREF = 'tel:+905437911061'
 MAIL = 'info@cyftech.com.tr'
 WA = 'https://wa.me/905437911061'
 MAPS = 'https://maps.app.goo.gl/161gqpBeCkMonnv89'
+SITE = 'https://cyftech.com.tr'
 
 SERVICES = [
     ('web-cozumleri.html', 'Web Çözümleri', 'Web tasarım, yazılım, e-ticaret ve SEO — tek çatı altında.'),
@@ -81,15 +82,36 @@ OWN_PROJECTS = [
 ]
 
 POSTS = [
+    dict(date='31 Ekim 2026', title='Kurumsal Web Sitesi Yaptırmadan Önce Bilmeniz Gereken 7 Şey', img='assets/img/blog/01.jpeg',
+         href='kurumsal-web-sitesi-rehberi.html', kat='Web Tasarım', sure='6 dk',
+         ozet='Amaçtan mobil uyuma, hızdan SEO’ya ve yayın sonrası bakıma: yeni bir web sitesine yatırım yapmadan önce sormanız gereken soruları ve sık yapılan hataları derledik.'),
     dict(date='24 Ağustos 2025', title="CYF Tech ÜLKE TV'de", img='assets/img/blog/ulketv.webp', href='blog-inside.html', kat='Haber', sure='2 dk',
          ozet='CYF Tech, Ülke TV’de yayınlanan Aycan Gül ile Yeni Nesil İşler programına konuk oldu; kuruluş hikâyemizi, projelerimizi ve yapay zekânın iş dünyasına etkisini konuştuk.'),
-    dict(date='22 Mayıs 2025', title='SEO Stratejileri ile Trafik Artırma', img='assets/img/blog/03.png', href=None, kat='SEO',
-         ozet='Arama motorlarında görünürlüğü artırmak için teknik SEO, içerik ve bağlantı stratejileri.'),
-    dict(date='25 Nisan 2025', title='Web Tasarımında 5 Temel İpucu', img='assets/img/blog/01.jpeg', href=None, kat='Web Tasarım',
-         ozet='Ziyaretçinin ilk saniyede güven duyduğu, sade ve hızlı bir web sitesi için temel ilkeler.'),
-    dict(date='2 Nisan 2025', title='Dijital Pazarlamada En İyi Uygulamalar', img='assets/img/blog/02.webp', href=None, kat='Dijital Pazarlama',
-         ozet='Markanızı dijitalde doğru kitleye ulaştırmak için öne çıkan yöntemler.'),
 ]
+
+# long-form guides written as data: tools/posts/<slug>.py, each with POST = dict(...) (format: tools/posts/_check.py).
+# They are listed after the featured guide in this order; files not named here follow alphabetically.
+POST_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'posts')
+POST_ORDER = ['web-sitesi-fiyatlari', 'seo-nedir', 'e-ticaret-sitesi-kurma-rehberi', 'mobil-uygulama-gelistirme-maliyeti',
+              'wordpress-mi-ozel-yazilim-mi', 'yerel-seo-google-isletme-profili', 'kobiler-icin-yapay-zeka', 'site-hizi-core-web-vitals',
+              'kvkk-uyumlu-web-sitesi', 'native-mi-cross-platform-mu', 'ozel-yazilim-gelistirme', 'google-ads-mi-seo-mu',
+              'donusum-odakli-web-tasarim', 'teknik-seo-kontrol-listesi', 'alan-adi-ve-hosting-secimi', 'web-sitesi-guvenligi',
+              'landing-page-rehberi', 'masaustu-mu-web-uygulamasi-mi', 'apartman-yonetim-yazilimi', 'restoran-adisyon-sistemi']
+
+
+def load_posts():
+    found = {f[:-3] for f in os.listdir(POST_DIR) if f.endswith('.py') and not f.startswith('_')} if os.path.isdir(POST_DIR) else set()
+    out = []
+    for slug in [s for s in POST_ORDER if s in found] + sorted(found - set(POST_ORDER)):
+        P = runpy.run_path(os.path.join(POST_DIR, slug + '.py'))['POST']
+        P.setdefault('date', '31 Ekim 2026')
+        P.update(href=slug + '.html', img=f'assets/img/blog/{slug}.svg', data=True)
+        out.append(P)
+    return out
+
+
+DATA_POSTS = load_posts()
+POSTS[1:1] = DATA_POSTS
 
 # site languages: Turkish at the root, the others in /<code>/ (built by tools/i18n.py from the Turkish pages)
 LANGS = [('tr', 'Türkçe'), ('en', 'English'), ('de', 'Deutsch'), ('ar', 'العربية'), ('zh', '中文'), ('ru', 'Русский')]
@@ -194,7 +216,8 @@ CHIP_ICON = {
     'Tek elle kullanım': 'hand', 'Tek kod tabanı': 'code', 'Farklı ekranlar': 'devices', 'Anlık bildirim': 'bell',
     'Güncellemeler': 'refresh',
 }
-KAT_ICON = {'Haber': 'news', 'SEO': 'search', 'Web Tasarım': 'pen', 'Dijital Pazarlama': 'chart'}
+KAT_ICON = {'Haber': 'news', 'SEO': 'search', 'Web Tasarım': 'pen', 'Dijital Pazarlama': 'chart', 'Yazılım': 'code',
+            'Mobil Uygulama': 'mobile', 'E-Ticaret': 'store', 'Güvenlik': 'shield', 'Yapay Zekâ': 'layers'}
 
 
 def cur(active, key):
@@ -312,7 +335,7 @@ def iconize(html):
     return html
 
 
-def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class=''):
+def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class='', head='', og_type='website'):
     fonts = 'family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700' + ('&amp;family=VT323' if vt323 else '') + '&amp;display=swap'
     css_tags = ''.join(f'\n<link rel="stylesheet" href="assets/css/{c}?v={VER}">' for c in ('site.css',) + tuple(css) + ('theme-light.css',))
     js_list = ('site.js',) + (('ambient.js',) if ambient else ()) + tuple(js)
@@ -330,7 +353,11 @@ def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress
 <meta name="theme-color" content="#040814">
 <meta property="og:title" content="{title}">
 <meta property="og:description" content="{desc}">
-<meta property="og:type" content="website">
+<meta property="og:type" content="{og_type}">
+<meta property="og:url" content="{SITE}/{fname}">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="{SITE}/{fname}">{head}
 <link rel="icon" type="image/png" href="assets/img/logo/ico.png">
 <script>try{{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}}catch(e){{}}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -1233,10 +1260,12 @@ def blog():
     feat = live[0]
     log = ''.join(
         f'''<li style="--i:{i}"><span class="bl-h">{post_hash(p)}</span> <span class="bl-d">{post_date(p)[3]}</span> <span class="bl-k">{p['kat'].lower()}:</span> {p['title']}{'' if p['href'] else ' <span class="bl-draft">(taslak)</span>'}</li>'''
-        for i, p in enumerate(POSTS))
+        for i, p in enumerate(POSTS[:8]))
+    if len(POSTS) > 8:
+        log += f'<li style="--i:8"><span class="bl-d">… +{len(POSTS) - 8}</span></li>'
     term = f'''<div class="bl-term" aria-hidden="true">
         <div class="bl-bar"><i></i><i></i><i></i><span>~/cyftech/blog</span></div>
-        <div class="bl-screen"><p><span class="bl-p">$</span> git log --oneline</p><ul>{log}</ul><p style="--i:{len(POSTS)}"><span class="bl-p">$</span> <span class="bl-caret"></span></p></div>
+        <div class="bl-screen"><p><span class="bl-p">$</span> git log --oneline</p><ul>{log}</ul><p style="--i:{min(len(POSTS), 9)}"><span class="bl-p">$</span> <span class="bl-caret"></span></p></div>
       </div>'''
     _, _, _, iso = post_date(feat)
     featured = f'''<a class="bl-feat reveal" href="{feat['href']}">
@@ -1263,9 +1292,12 @@ def blog():
         </div>
         <div class="bl-thumb"><img src="{p['img']}" alt="" loading="lazy"></div>'''
         if p['href']:
-            rows.append(f'<a class="bl-row reveal" href="{p["href"]}">{inner}</a>')
+            rows.append(f'<a class="bl-row reveal" href="{p["href"]}" data-kat="{p["kat"]}">{inner}</a>')
         else:
-            rows.append(f'<div class="bl-row is-draft reveal">{inner}</div>')
+            rows.append(f'<div class="bl-row is-draft reveal" data-kat="{p["kat"]}">{inner}</div>')
+    kats = sorted((k for k in KAT_ICON if any(p['kat'] == k for p in POSTS)), key=lambda k: -sum(p['kat'] == k for p in POSTS))
+    chips = ''.join(f'<button type="button" class="bl-chip" data-kat="{k}" aria-pressed="false">{icon(KAT_ICON[k], 15)}<span>{k}</span><i>{sum(p["kat"] == k for p in POSTS)}</i></button>' for k in kats)
+    filt = f'<div class="bl-filter" role="group" aria-label="Kategoriye göre süz"><button type="button" class="bl-chip" data-kat="" aria-pressed="true">{icon("grid", 15)}<span>Tümü</span><i>{len(POSTS)}</i></button>{chips}</div>'
 
     body = f'''{page_hero('BLOG', '// CYF TECH · BLOG', 'Blog ve <span class="accent">haberler.</span>', 'Teknoloji, yazılım ve sektörel gelişmeler üzerine içerikler; CYF Tech’ten en güncel duyurular ve haberler.', right=term)}
 
@@ -1277,7 +1309,8 @@ def blog():
 
 <section class="section-tight">
   <div class="wrap">
-    <div class="sec-head"><div><div class="eyebrow">// TÜM YAZILAR</div><h2 class="h2">Yayın akışı.</h2></div><p class="muted">{len(live)} yazı yayında, {len(POSTS) - len(live)} yazı hazırlanıyor. Yeni içerikler akışın en üstüne eklenir.</p></div>
+    <div class="sec-head"><div><div class="eyebrow">// TÜM YAZILAR</div><h2 class="h2">Yayın akışı.</h2></div><p class="muted">{f'{len(live)} yazı yayında, {len(POSTS) - len(live)} yazı hazırlanıyor.' if len(live) < len(POSTS) else f'{len(live)} yazı yayında.'} Yeni içerikler akışın en üstüne eklenir.</p></div>
+    {filt}
     <div class="bl-log">
       {''.join(rows)}
     </div>
@@ -1292,21 +1325,46 @@ def blog():
 
 
 
-def blog_inside():
-    post = POSTS[0]
+def related(post, n=5):
+    """Other posts for the aside: same category first, then the rest in feed order."""
+    rest = [p for p in POSTS if p is not post and p['href']]
+    return ([p for p in rest if p['kat'] == post['kat']] + [p for p in rest if p['kat'] != post['kat']])[:n]
+
+
+def post_ld(post, desc, faq=()):
+    # structured data: BlogPosting (+ FAQPage, + breadcrumbs). i18n.py translates the text fields and rewrites the URLs.
     _, _, _, iso = post_date(post)
-    others = ''.join(f'''<li><span class="bi-oic">{icon(KAT_ICON[p['kat']], 18)}</span><div><span class="d">{p['date']}</span><b>{p['title']}</b><span class="badge">YAKINDA</span></div></li>'''
-                     for p in POSTS[1:])
-    facts = ''.join(f'<li>{icon(i, 18)}<div><span>{k}</span><b>{v}</b></div></li>' for i, k, v in [
-        ('tv', 'Kanal', 'Ülke TV'), ('mic', 'Program', 'Yeni Nesil İşler'), ('user', 'Sunucu', 'Aycan Gül'), ('calendar', 'Yayın tarihi', post['date'])])
+    url = f"{SITE}/{post['href']}"
+    org = {'@type': 'Organization', 'name': 'CYF Tech', 'url': SITE + '/', 'logo': {'@type': 'ImageObject', 'url': f'{SITE}/assets/img/logo/ico.png'}}
+    items = [{'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': post['title'], 'description': desc,
+              'image': f"{SITE}/{post['img']}", 'datePublished': iso, 'dateModified': iso, 'inLanguage': 'tr',
+              'mainEntityOfPage': url, 'url': url, 'author': org, 'publisher': org},
+             {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
+                 {'@type': 'ListItem', 'position': 1, 'name': 'CYF Tech', 'item': f'{SITE}/index.html'},
+                 {'@type': 'ListItem', 'position': 2, 'name': 'Blog', 'item': f'{SITE}/blog.html'},
+                 {'@type': 'ListItem', 'position': 3, 'name': post['title'], 'item': url}]}]
+    if faq:
+        items.append({'@context': 'https://schema.org', '@type': 'FAQPage', 'inLanguage': 'tr', 'mainEntity': [
+            {'@type': 'Question', 'name': q, 'acceptedAnswer': {'@type': 'Answer', 'text': a}} for q, a in faq]})
+    return ''.join('\n<script type="application/ld+json">' + json.dumps(i, ensure_ascii=False).replace('</', '<\\/') + '</script>' for i in items)
+
+
+def post_page(post, crumb, h1, img_alt, article, aside_box, desc, faq=()):
+    # a single blog post: hero, article + sticky aside (post-specific box, related posts, CTA)
+    _, _, _, iso = post_date(post)
+    others = ''
+    for p in related(post):
+        inner = f'''<span class="bi-oic">{icon(KAT_ICON[p['kat']], 18)}</span><div><span class="d">{p['date']}</span><b>{p['title']}</b>'''
+        others += (f'''<li><a href="{p['href']}">{inner}<span class="bi-read">{p['sure']} okuma</span></div></a></li>''' if p['href']
+                   else f'''<li>{inner}<span class="badge">YAKINDA</span></div></li>''')
     share = ''.join(f'<a class="bi-share-btn" data-share="{k}" href="#" target="_blank" rel="noopener" aria-label="{n}" title="{n}">{ic}</a>' for k, n, ic in [
         ('wa', 'WhatsApp ile paylaş', I_WA.replace('width="24" height="24"', 'width="18" height="18"')), ('li', 'LinkedIn’de paylaş', icon('linkedin', 18)),
         ('x', 'X’te paylaş', icon('x', 18)), ('mail', 'E-posta ile gönder', icon('mail', 18))])
     body = f'''<section class="page-hero" style="padding-bottom:48px">
   {floor()}
   <div class="wrap">
-    <div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><a href="blog.html">BLOG</a><span>/</span><span>HABER</span></div>
-    <h1 class="h1" style="max-width:900px">CYF Tech ÜLKE TV'de.</h1>
+    <div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><a href="blog.html">BLOG</a><span>/</span><span>{crumb}</span></div>
+    <h1 class="h1" style="max-width:900px">{h1}</h1>
     <div class="bi-meta"><div class="bi-tag">{icon('tag')}{post['kat']}</div><div>{icon('calendar')}<time datetime="{iso}">{post['date']}</time></div><div>{icon('clock')}{post['sure']} okuma</div></div>
   </div>
 </section>
@@ -1314,23 +1372,15 @@ def blog_inside():
 <section class="section-tight" style="padding-top:0">
   <div class="wrap bi-grid">
     <article class="article">
-      <div class="article-img"><img src="assets/img/blog/ulketv.webp" alt="CYF Tech, Ülke TV Yeni Nesil İşler programında"></div>
-      <p>CYF Tech, 24 Ağustos 2025 tarihinde Ülke TV’de yayınlanan Aycan Gül ile Yeni Nesil İşler programına konuk oldu. Programda şirketin kuruluş hikâyesi, inovasyon odaklı projeleri ve Türkiye’de yazılım sektörüne kazandırdığı yenilikçi çözümler ele alındı.</p>
-      <p>CYF Tech kurucuları programda yazılım geliştirme süreçlerinden, dijital dönüşüm projelerinden ve yapay zekânın iş dünyasındaki dönüştürücü etkilerinden bahsetti. Ayrıca gençlerin yazılım dünyasına adım atarken dikkat etmeleri gereken noktalar ve kariyer planlaması üzerine tavsiyelerde bulunuldu.</p>
-      <p>Program boyunca CYF Tech’in yazılım sektöründe edindiği tecrübeler, müşteri odaklı yaklaşımı ve geleceğin teknolojilerine yönelik vizyonu izleyicilerle paylaşıldı. Yapay zekâ destekli çözümlerden web ve mobil uygulama geliştirme süreçlerine kadar geniş bir yelpazede sunulan hizmetler detaylı olarak anlatıldı.</p>
-      <p>Şirket temsilcileri, teknolojinin yalnızca iş süreçlerinde değil, eğitim ve toplumsal gelişim açısından da büyük bir potansiyele sahip olduğunu vurguladı:</p>
-      <blockquote><div class="bi-q">{icon('quote', 22)}</div>“Yapay zekâ, gençlere yeni fırsatlar sunuyor. Önemli olan bu teknolojiyi doğru anlamak ve üretken şekilde kullanmak.”</blockquote>
-      <p>CYF Tech’in Ülke TV’deki bu özel röportajı, hem yazılım sektörüne ilgi duyan gençler hem de dijital dönüşüm yolculuğuna çıkmak isteyen işletmeler için ilham verici bir içerik oldu.</p>
+      <div class="article-img"><img src="{post['img']}" alt="{img_alt}"></div>
+      {article}
       <div class="bi-foot">
         <a class="bi-back" href="blog.html">{icon('back')}Tüm yazılar</a>
         <div class="bi-share"><div class="bi-share-l">{icon('share')}Paylaş</div>{share}</div>
       </div>
     </article>
     <aside class="bi-aside">
-      <div class="bi-box">
-        <div class="eyebrow">// PROGRAM BİLGİLERİ</div>
-        <ul class="bi-facts">{facts}</ul>
-      </div>
+      {aside_box}
       <div class="bi-box">
         <div class="eyebrow">// DİĞER YAZILAR</div>
         <ul class="bi-others">{others}</ul>
@@ -1341,9 +1391,166 @@ def blog_inside():
 </section>
 
 {cta(dark=True)}'''
-    doc('blog-inside.html', "CYF Tech ÜLKE TV'de — CYF Tech Blog",
-        'CYF Tech, Ülke TV’de Aycan Gül ile Yeni Nesil İşler programına konuk oldu: kuruluş hikâyesi, projeler ve yapay zekânın iş dünyasına etkisi.',
-        body, 'blog', css=('blog.css',))
+    doc(post['href'], f"{post['title']} — CYF Tech Blog", desc, body, 'blog', css=('blog.css',), head=post_ld(post, desc, faq), og_type='article')
+
+
+def blog_inside():
+    post = next(p for p in POSTS if p['href'] == 'blog-inside.html')
+    facts = ''.join(f'<li>{icon(i, 18)}<div><span>{k}</span><b>{v}</b></div></li>' for i, k, v in [
+        ('tv', 'Kanal', 'Ülke TV'), ('mic', 'Program', 'Yeni Nesil İşler'), ('user', 'Sunucu', 'Aycan Gül'), ('calendar', 'Yayın tarihi', post['date'])])
+    article = f'''<p>CYF Tech, 24 Ağustos 2025 tarihinde Ülke TV’de yayınlanan Aycan Gül ile Yeni Nesil İşler programına konuk oldu. Programda şirketin kuruluş hikâyesi, inovasyon odaklı projeleri ve Türkiye’de yazılım sektörüne kazandırdığı yenilikçi çözümler ele alındı.</p>
+      <p>CYF Tech kurucuları programda yazılım geliştirme süreçlerinden, dijital dönüşüm projelerinden ve yapay zekânın iş dünyasındaki dönüştürücü etkilerinden bahsetti. Ayrıca gençlerin yazılım dünyasına adım atarken dikkat etmeleri gereken noktalar ve kariyer planlaması üzerine tavsiyelerde bulunuldu.</p>
+      <p>Program boyunca CYF Tech’in yazılım sektöründe edindiği tecrübeler, müşteri odaklı yaklaşımı ve geleceğin teknolojilerine yönelik vizyonu izleyicilerle paylaşıldı. Yapay zekâ destekli çözümlerden web ve mobil uygulama geliştirme süreçlerine kadar geniş bir yelpazede sunulan hizmetler detaylı olarak anlatıldı.</p>
+      <p>Şirket temsilcileri, teknolojinin yalnızca iş süreçlerinde değil, eğitim ve toplumsal gelişim açısından da büyük bir potansiyele sahip olduğunu vurguladı:</p>
+      <blockquote><div class="bi-q">{icon('quote', 22)}</div>“Yapay zekâ, gençlere yeni fırsatlar sunuyor. Önemli olan bu teknolojiyi doğru anlamak ve üretken şekilde kullanmak.”</blockquote>
+      <p>CYF Tech’in Ülke TV’deki bu özel röportajı, hem yazılım sektörüne ilgi duyan gençler hem de dijital dönüşüm yolculuğuna çıkmak isteyen işletmeler için ilham verici bir içerik oldu.</p>'''
+    box = f'''<div class="bi-box">
+        <div class="eyebrow">// PROGRAM BİLGİLERİ</div>
+        <ul class="bi-facts">{facts}</ul>
+      </div>'''
+    post_page(post, 'HABER', "CYF Tech ÜLKE TV'de.", 'CYF Tech, Ülke TV Yeni Nesil İşler programında', article, box,
+              'CYF Tech, Ülke TV’de Aycan Gül ile Yeni Nesil İşler programına konuk oldu: kuruluş hikâyesi, projeler ve yapay zekânın iş dünyasına etkisi.')
+
+
+# "Kurumsal web sitesi" guide: (id, aside label, heading, body html)
+GUIDE = [
+    ('amac', 'Amacı netleştirin', 'Önce amacı yazın, sonra tasarımı konuşun', '''
+      <p>Bir web sitesinin tek bir ana görevi olmalı: teklif talebi toplamak, ürün satmak, randevu almak ya da kurumsal güven oluşturmak. Ana görev belli olmadan yapılan tasarım, güzel görünen ama ziyaretçiye hiçbir şey yaptırmayan bir vitrine dönüşür.</p>
+      <p>Projeye başlamadan önce şu üç soruyu birer cümleyle yanıtlayın:</p>
+      <ul class="bi-list">
+        <li>{ic}<span><b>Kim</b> ziyaret edecek? Mevcut müşteri mi, yeni bir alıcı mı, iş ortağı mı?</span></li>
+        <li>{ic}<span>Ziyaretçi sitede <b>ne yapmalı</b>? Aramalı mı, form doldurmalı mı, satın almalı mı?</span></li>
+        <li>{ic}<span>Başarıyı <b>nasıl ölçeceğiz</b>? Aylık talep sayısıyla mı, satışla mı, geri dönen ziyaretçiyle mi?</span></li>
+      </ul>
+      <p>Bu cevaplar sayfa yapısını, menüyü, butonların yerini, hatta hangi fotoğrafların kullanılacağını belirler. Ajansınızla ilk toplantıya bu notlarla gitmek, hem süreyi hem bütçeyi doğrudan kısaltır.</p>'''),
+    ('mobil', 'Mobil öncelik', 'Mobil öncelikli düşünün', '''
+      <p>Bugün web trafiğinin büyük çoğunluğu telefondan geliyor. Ziyaretçiniz sitenizi büyük ihtimalle bir toplantı arasında, yolda ya da akşam kanepede, tek eliyle açacak. Masaüstünde kusursuz görünen ama telefonda menüsü açılmayan, yazıları büyütmeden okunmayan bir site, müşterilerinin yarısından fazlasını daha kapıda kaybeder.</p>
+      <p>Mobil uyum yalnızca ekrana sığmak değildir: telefon numarası tek dokunuşla aranabilmeli, WhatsApp butonu başparmağın ulaştığı yerde durmalı, formlar kısa ve klavye dostu olmalıdır. Tasarımı onaylamadan önce mutlaka telefon görünümünü de isteyin.</p>
+      <div class="bi-note">{tip}<div><b>Küçük bir test:</b> Kendi sitenizi ve bir rakibinizin sitesini telefonda açın, birine “bu firmayı arayın” deyin ve kaç saniye sürdüğünü ölçün. Sonuç çoğu zaman şaşırtıcıdır.</div></div>'''),
+    ('hiz', 'Hız', 'Hız, tasarım kadar önemli', '''
+      <p>Sayfanın açılması birkaç saniyeyi geçtiğinde ziyaretçilerin önemli bir kısmı beklemeden geri döner. Üstelik Google, sayfa deneyimini (Core Web Vitals) sıralama sinyalleri arasında değerlendiriyor; yavaş bir site hem müşteri hem görünürlük kaybettirir.</p>
+      <p>Hızın büyük kısmı, proje başında alınan kararlarla kazanılır:</p>
+      <ul class="bi-list">
+        <li>{ic}<span>Görselleri WebP gibi modern biçimlerde ve gösterildikleri boyutta sunmak</span></li>
+        <li>{ic}<span>Gereksiz eklentilerden ve her şeyi yüklemeye çalışan ağır hazır temalardan kaçınmak</span></li>
+        <li>{ic}<span>Kaliteli bir sunucu, SSL sertifikası ve önbellekleme kullanmak</span></li>
+        <li>{ic}<span>Yazı tiplerini ve betikleri yalnızca gerektiği sayfada yüklemek</span></li>
+      </ul>'''),
+    ('seo', 'SEO temeli', 'SEO sonradan eklenen bir şey değil', '''
+      <p>Birçok firma siteyi yayına aldıktan sonra “şimdi de SEO yapalım” der. Oysa arama motoru uyumunun temeli sitenin iskeletinde atılır: anlamlı sayfa başlıkları, temiz adresler, doğru başlık hiyerarşisi, açıklama etiketleri, site haritası ve hızlı açılan sayfalar.</p>
+      <p>Her hizmetiniz için ayrı ve dolu bir sayfa, her şeyi anlatmaya çalışan tek bir sayfadan çok daha iyi sıralanır. Yerel çalışıyorsanız Google İşletme Profilinizi güncel tutmak ve adres, telefon bilgilerinizi sitede her yerde aynı biçimde yazmak da görünürlüğünüzü doğrudan etkiler.</p>'''),
+    ('metin', 'Önce içerik', 'İçeriği tasarımdan önce hazırlayın', '''
+      <p>Projelerin en sık uzayan aşaması kod değil, içeriktir. Metinler, ürün listeleri, referanslar ve fotoğraflar son ana kaldığında site ya gecikir ya da “buraya metin gelecek” yazan alanlarla yayına girer.</p>
+      <p>Ziyaretçiye kendinizi değil, onun sorununu nasıl çözdüğünüzü anlatın. Kısa paragraflar, net başlıklar, gerçek fotoğraflar ve somut rakamlar; stok görsellerle süslenmiş genel cümlelerden her zaman daha ikna edicidir.</p>
+      <blockquote><div class="bi-q">{quote}</div>İyi bir web sitesi çok şey söyleyen değil, ziyaretçinin aradığını en kısa yoldan bulduran sitedir.</blockquote>'''),
+    ('guven', 'Güven unsurları', 'Güven unsurlarını görünür kılın', '''
+      <p>İnsanlar tanımadıkları bir firmaya yazmadan önce ipucu arar. Bu ipuçlarını sayfanın görünür yerlerine koyun:</p>
+      <ul class="bi-list">
+        <li>{ic}<span>Gerçek referanslar, tamamlanmış projeler ve müşteri yorumları</span></li>
+        <li>{ic}<span>Açık adres, telefon, e-posta ve harita</span></li>
+        <li>{ic}<span>SSL sertifikası (adres çubuğundaki kilit) ve KVKK aydınlatma metni</span></li>
+        <li>{ic}<span>Ekibinizi ve çalışma sürecinizi anlatan bir “Hakkımızda” sayfası</span></li>
+      </ul>'''),
+    ('bakim', 'Bakım ve destek', 'Yayın günü bitiş değil, başlangıçtır', '''
+      <p>Bir web sitesi yayına alındığı gün eskimeye başlar: yazılımlar güncellenir, güvenlik açıkları ortaya çıkar, hizmetleriniz ve fiyatlarınız değişir. Bakımı yapılmayan bir site zamanla yavaşlar, güvenlik riski taşır ve arama sonuçlarında geriler.</p>
+      <p>Teklif alırken şunları mutlaka sorun: Alan adı ve barındırma kimin adına kayıtlı olacak? Yedekler ne sıklıkla alınıyor? İçeriği kendiniz güncelleyebilecek misiniz? Yayından sonra destek ve bakım nasıl sağlanıyor?</p>'''),
+]
+GUIDE_CHECK = ['Sitenin ana amacı ve hedef kitlesi yazılı mı?', 'Mobil görünüm tasarım aşamasında gösteriliyor mu?',
+               'Hız ve SEO için hangi teknik adımlar atılacak?', 'Metinleri ve görselleri kim hazırlayacak, takvim belli mi?',
+               'Alan adı, barındırma ve site dosyaları kimin mülkiyetinde olacak?', 'Yayın sonrası bakım ve destek kapsamı net mi?']
+
+
+def blog_guide():
+    post = next(p for p in POSTS if p['href'] == 'kurumsal-web-sitesi-rehberi.html')
+    fill = dict(ic=icon('check', 18), tip=icon('bolt', 20), quote=icon('quote', 22))
+    secs = ''.join(f'''
+      <h2 id="{k}" class="bi-h2" data-n="0{i}">{h}</h2>{html.format(**fill)}''' for i, (k, _, h, html) in enumerate(GUIDE, 1))
+    checks = ''.join(f'<li>{icon("check", 18)}<span>{c}</span></li>' for c in GUIDE_CHECK)
+    article = f'''<p class="bi-lead">Web siteniz, müşterilerinizin çoğunun sizinle ilk karşılaştığı yer. Telefonu açmadan, ofisinize gelmeden, teklif istemeden önce sitenize bakıyor ve birkaç saniye içinde karar veriyorlar: Güvenilir mi? Ne iş yapıyor? Benim işimi çözebilir mi?</p>
+      <p>Buna rağmen web sitesi projelerinin çoğu yanlış sorudan başlıyor: “Kaça yaparsınız?” Fiyat elbette önemli; ama doğru bütçeyi belirleyen şey, sitenin neyi başarması gerektiği. Farklı sektörlerden firmalarla yaptığımız projelerde en sık karşılaştığımız hataları ve bunlardan kaçınmanın yollarını bu yazıda topladık.</p>{secs}
+      <div class="bi-check">
+        <div class="eyebrow">// TEKLİF ALMADAN ÖNCE KONTROL LİSTESİ</div>
+        <ul class="bi-list">{checks}</ul>
+      </div>
+      <h2 id="sonuc">Son söz</h2>
+      <p>Doğru planlanmış bir web sitesi, günün her saati çalışan en iyi satış temsilcinizdir. Yeni bir site düşünüyorsanız ya da mevcut sitenizin neden beklediğiniz sonucu vermediğini merak ediyorsanız bize yazın; ihtiyacınızı birlikte netleştirip size özel bir yol haritası çıkaralım.</p>'''
+    toc = ''.join(f'<li><a href="#{k}" data-n="0{i}">{t}</a></li>' for i, (k, t, _, _) in enumerate(GUIDE, 1))
+    box = f'''<nav class="bi-box" aria-label="İçindekiler">
+        <div class="eyebrow">// BU YAZIDA</div>
+        <ol class="bi-toc">{toc}</ol>
+      </nav>'''
+    post_page(post, 'WEB TASARIM', 'Kurumsal web sitesi yaptırmadan önce bilmeniz gereken 7 şey.', 'Ekranında kod açık bir dizüstü bilgisayar', article, box,
+              'Yeni bir kurumsal web sitesi yaptırmadan önce bilmeniz gerekenler: amaç, mobil uyum, hız, SEO, içerik, güven unsurları ve yayın sonrası bakım.')
+
+
+# cover art for data posts: a dark "HUD" card per post, tinted by category, pattern seeded by the slug (no text to translate)
+KAT_HUE = {'Web Tasarım': '#38BDF8', 'SEO': '#34D399', 'Dijital Pazarlama': '#F59E0B', 'Yazılım': '#818CF8',
+           'Mobil Uygulama': '#22D3EE', 'E-Ticaret': '#FB7185', 'Güvenlik': '#A3E635', 'Yapay Zekâ': '#C084FC', 'Haber': '#38BDF8'}
+
+
+def cover_svg(post):
+    h = hashlib.sha1(post['href'].encode()).digest()
+    c = KAT_HUE.get(post['kat'], '#38BDF8')
+    W, H = 1200, 675
+    rnd = (b / 255 for b in h * 4)
+    nodes = [(640 + next(rnd) * 520, 70 + next(rnd) * 535) for _ in range(9)]
+    nodes.sort(key=lambda n: math.atan2(n[1] - 337, n[0] - 900))  # a closed ring around the centre, no crossing lines
+    links = ''.join(f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}"/>' for (x1, y1), (x2, y2) in zip(nodes, nodes[1:] + nodes[:1]))
+    dots = ''.join(f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{3 + (i % 3) * 2}"/>' for i, (x, y) in enumerate(nodes))
+    bars = ''.join(f'<rect x="96" y="{430 + i * 34}" width="{90 + h[i] * 1.4:.0f}" height="12" rx="6" opacity="{.55 - i * .1:.2f}"/>' for i in range(4))
+    rings = ''.join(f'<circle cx="300" cy="250" r="{r}" stroke-dasharray="{d}"/>' for r, d in ((150, '4 10'), (190, '1 8'), (232, '60 14')))
+    ic = ICONS[KAT_ICON.get(post['kat'], 'code')]
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="{c}" stop-opacity=".34"/><stop offset=".55" stop-color="{c}" stop-opacity=".06"/><stop offset="1" stop-color="{c}" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="{W}" height="{H}" fill="url(#b)"/><rect width="{W}" height="{H}" fill="url(#p)" opacity=".55"/><rect width="{W}" height="{H}" fill="url(#g)"/>
+<g fill="none" stroke="{c}" stroke-opacity=".35" stroke-width="1.5">{rings}</g>
+<g stroke="{c}" stroke-opacity=".28" stroke-width="1.5">{links}</g><g fill="{c}" fill-opacity=".8">{dots}</g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="{c}" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="{c}" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">{ic}</g>
+<g fill="{c}">{bars}</g>
+<g fill="none" stroke="{c}" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="{c}" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/{post['href'][:-5]}</text><text x="1104" y="612" text-anchor="end">{post_hash(post)}</text></g>
+</svg>
+'''
+
+
+def data_post(post):
+    """A long-form post from tools/posts/<slug>.py: lead, numbered sections, checklist, FAQ, conclusion, sources."""
+    fill = dict(ic=icon('check', 18), tip=icon('bolt', 20), quote=icon('quote', 22), warn=icon('shield', 20))
+    secs = list(post['sections'])
+    body = ''.join(f'''
+      <h2 id="{k}" class="bi-h2" data-n="{i:02d}">{h}</h2>{html.format(**fill)}''' for i, (k, _, h, html) in enumerate(secs, 1))
+    if post.get('checks'):
+        body += f'''
+      <div class="bi-check">
+        <div class="eyebrow">{post.get('check_title', '// KONTROL LİSTESİ')}</div>
+        <ul class="bi-list">{''.join(f'<li>{icon("check", 18)}<span>{c}</span></li>' for c in post['checks'])}</ul>
+      </div>'''
+    faq = ''.join(f'<details class="bi-faq-i"><summary>{q}</summary><p>{a}</p></details>' for q, a in post['faq'])
+    body += f'''
+      <h2 id="sss" class="bi-h2" data-n="{len(secs) + 1:02d}">Sık sorulan sorular</h2>
+      <div class="bi-faq">{faq}</div>
+      <h2 id="sonuc">Son söz</h2>
+      {post['outro'].format(**fill)}'''
+    if post.get('sources'):
+        src = ''.join(f'<li><a href="{u}" target="_blank" rel="noopener nofollow">{t}</a></li>' for t, u in post['sources'])
+        body += f'''
+      <div class="bi-src"><div class="eyebrow">// KAYNAKLAR</div><ol>{src}</ol></div>'''
+    article = f'''<p class="bi-lead">{post['lead']}</p>
+      {post['intro'].format(**fill)}{body}'''
+    toc = ''.join(f'<li><a href="#{k}" data-n="{i:02d}">{t}</a></li>' for i, (k, t, _, _) in enumerate(secs, 1))
+    toc += f'<li><a href="#sss" data-n="{len(secs) + 1:02d}">Sık sorulan sorular</a></li>'
+    box = f'''<nav class="bi-box" aria-label="İçindekiler">
+        <div class="eyebrow">// BU YAZIDA</div>
+        <ol class="bi-toc">{toc}</ol>
+      </nav>'''
+    with open(os.path.join(OUT, post['img']), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(cover_svg(post))
+    post_page(post, post['crumb'], post['h1'], '', article, box, post['desc'], faq=post['faq'])
 
 
 home()
@@ -1354,6 +1561,9 @@ references()
 references_list()
 blog()
 blog_inside()
+blog_guide()
+for _p in DATA_POSTS:
+    data_post(_p)
 exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scrolly_pages.py'), encoding='utf-8').read())
 # translated copies in /en/, /de/, ... from tools/i18n/<code>.json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

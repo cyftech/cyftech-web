@@ -162,3 +162,75 @@ a.bl-row:hover .bl-thumb img{transform:scale(1.05)}
   .bl-row{grid-template-columns:34px minmax(0,1fr)}
   .bl-node{width:34px;height:34px;margin-top:0}
 }
+
+/* ============================================================
+   long-form posts: numbered headings, check lists, tip box, checklist card, table of contents
+   ============================================================ */
+.article .bi-lead{font-size:21px;line-height:1.65;color:var(--text)}
+.article h2{display:flex;align-items:baseline;gap:14px;margin:56px 0 18px;font-size:clamp(24px,3vw,30px);line-height:1.25;font-weight:600;letter-spacing:-.01em;scroll-margin-top:calc(var(--head-h) + 24px)}
+.article .bi-h2::before{content:attr(data-n);flex:none;font-family:var(--mono);font-size:14px;font-weight:500;color:var(--accent);padding:4px 8px;border-radius:8px;border:1px solid var(--accent-line);background:var(--accent-faint);transform:translateY(-3px)}
+.article ul.bi-list{list-style:none;margin:0 0 26px;padding:0;display:grid;gap:12px}
+.bi-list li{display:flex;gap:12px;align-items:flex-start;font-size:17px;line-height:1.6;color:var(--muted)}
+.bi-list li .ic{margin-top:4px;color:var(--accent)}
+.bi-list li b{color:var(--text);font-weight:600}
+.bi-note{display:flex;gap:14px;align-items:flex-start;margin:4px 0 26px;padding:18px 20px;border-radius:14px;border:1px dashed var(--accent-line);background:var(--accent-faint);font-size:16px;line-height:1.6;color:var(--muted)}
+.bi-note .ic{margin-top:2px;color:var(--accent)}
+.bi-note b{color:var(--text)}
+.bi-check{margin:56px 0 0;padding:28px;border-radius:18px;border:1px solid var(--accent-line);background:linear-gradient(160deg,color-mix(in srgb,var(--accent) 12%,transparent),transparent 65%)}
+.bi-check .eyebrow{margin-bottom:18px}
+.bi-check ul.bi-list{margin:0}
+.bi-check .bi-list li{color:var(--text)}
+.bi-toc{list-style:none;margin:0;padding:0;counter-reset:none}
+.bi-toc li{border-top:1px solid var(--line)}
+.bi-toc li:first-child{border-top:0}
+.bi-toc a{display:flex;align-items:center;gap:12px;padding:10px 0;text-decoration:none;color:var(--muted);font-weight:500;transition:color .2s ease,padding .2s ease}
+.bi-toc li:first-child a{padding-top:0}
+.bi-toc a::before{content:attr(data-n);font-family:var(--mono);font-size:12px;color:var(--dim);transition:color .2s ease}
+.bi-toc a:hover,.bi-toc a.on{color:var(--text);padding-inline-start:4px}
+.bi-toc a:hover::before,.bi-toc a.on::before{color:var(--accent)}
+.bi-others a{display:flex;gap:14px;text-decoration:none;color:inherit}
+.bi-others a:hover b{color:var(--accent)}
+.bi-read{display:block;font-family:var(--mono);font-size:11px;color:var(--accent)}
+.bi-others a b{margin-bottom:4px;transition:color .2s ease}
+@media (max-width: 640px){
+  .article .bi-lead{font-size:19px}
+  .bi-check{padding:22px 18px}
+}
+
+/* ============================================================
+   data posts: tables, FAQ accordion, sources; blog list category filter
+   ============================================================ */
+.article table{width:100%;margin:8px 0 28px;border-collapse:separate;border-spacing:0;border:1px solid var(--line-2);border-radius:14px;overflow:hidden;font-size:15px;line-height:1.5;display:block;overflow-x:auto}
+.article thead th{background:var(--accent-faint);color:var(--text);font-weight:600;text-align:start;font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-transform:uppercase}
+.article th,.article td{padding:12px 16px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--muted);min-width:140px}
+.article tbody tr:last-child td{border-bottom:0}
+.article tbody td:first-child{color:var(--text);font-weight:500}
+.article tbody tr:hover td{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.article h3{margin:30px 0 12px;font-size:20px;font-weight:600;line-height:1.35}
+.bi-faq{display:grid;gap:10px;margin:0 0 12px}
+.bi-faq-i{border:1px solid var(--line-2);border-radius:14px;background:rgba(8,16,32,.55);transition:border-color .2s ease}
+.bi-faq-i[open]{border-color:var(--accent-line)}
+.bi-faq-i summary{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:18px 20px;cursor:pointer;list-style:none;font-weight:600;font-size:17px;line-height:1.4}
+.bi-faq-i summary::-webkit-details-marker{display:none}
+.bi-faq-i summary::after{content:"+";flex:none;display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:8px;border:1px solid var(--accent-line);color:var(--accent);font-family:var(--mono);font-weight:500;transition:transform .25s ease}
+.bi-faq-i[open] summary::after{transform:rotate(45deg)}
+.bi-faq-i summary:hover{color:var(--accent)}
+.article .bi-faq-i p{margin:0;padding:0 20px 20px;font-size:16px;line-height:1.7;color:var(--muted)}
+.bi-src{margin:44px 0 0;padding:22px 24px;border-radius:14px;border:1px solid var(--line-2)}
+.bi-src .eyebrow{margin-bottom:12px}
+.bi-src ol{margin:0;padding-inline-start:20px;display:grid;gap:6px;font-size:14px;color:var(--dim)}
+.bi-src a{color:var(--muted);text-decoration-color:var(--line-3);word-break:break-word}
+.bi-src a:hover{color:var(--accent)}
+.bl-filter{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.bl-chip{display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);background:rgba(8,16,32,.6);color:var(--muted);font:500 14px var(--sans);cursor:pointer;transition:border-color .2s ease,color .2s ease,background .2s ease}
+.bl-chip i{font-style:normal;font-family:var(--mono);font-size:11px;color:var(--dim)}
+.bl-chip:hover{border-color:var(--accent-line);color:var(--text)}
+.bl-chip[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-faint);color:var(--accent)}
+.bl-chip[aria-pressed="true"] i{color:var(--accent)}
+.bl-row.is-off{display:none}
+@media (max-width: 640px){
+  .bl-filter{flex-wrap:nowrap;overflow-x:auto;margin-inline:-16px;padding:0 16px 4px;scrollbar-width:none}
+  .bl-chip{flex:none}
+  .bi-faq-i summary{font-size:16px;padding:16px}
+  .article .bi-faq-i p{padding:0 16px 16px}
+}

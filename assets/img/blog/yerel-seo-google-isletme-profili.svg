@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#34D399" stop-opacity=".34"/><stop offset=".55" stop-color="#34D399" stop-opacity=".06"/><stop offset="1" stop-color="#34D399" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#34D399" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#34D399" stroke-opacity=".28" stroke-width="1.5"><line x1="879" y1="156" x2="899" y2="322"/><line x1="899" y1="322" x2="946" y2="208"/><line x1="946" y1="208" x2="1154" y2="150"/><line x1="1154" y1="150" x2="1025" y2="315"/><line x1="1025" y1="315" x2="1138" y2="498"/><line x1="1138" y1="498" x2="940" y2="406"/><line x1="940" y1="406" x2="707" y2="500"/><line x1="707" y1="500" x2="693" y2="504"/><line x1="693" y1="504" x2="879" y2="156"/></g><g fill="#34D399" fill-opacity=".8"><circle cx="879" cy="156" r="3"/><circle cx="899" cy="322" r="5"/><circle cx="946" cy="208" r="7"/><circle cx="1154" cy="150" r="3"/><circle cx="1025" cy="315" r="5"/><circle cx="1138" cy="498" r="7"/><circle cx="940" cy="406" r="3"/><circle cx="707" cy="500" r="5"/><circle cx="693" cy="504" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#34D399" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#34D399" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></g>
+<g fill="#34D399"><rect x="96" y="430" width="254" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="147" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="136" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="377" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#34D399" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#34D399" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/yerel-seo-google-isletme-profili</text><text x="1104" y="612" text-anchor="end">8f0b6dd</text></g>
+</svg>

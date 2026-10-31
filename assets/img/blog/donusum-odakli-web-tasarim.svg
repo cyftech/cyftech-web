@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#38BDF8" stop-opacity=".34"/><stop offset=".55" stop-color="#38BDF8" stop-opacity=".06"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#38BDF8" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#38BDF8" stroke-opacity=".28" stroke-width="1.5"><line x1="644" y1="232" x2="877" y2="181"/><line x1="877" y1="181" x2="903" y2="131"/><line x1="903" y1="131" x2="1005" y2="137"/><line x1="1005" y1="137" x2="1142" y2="259"/><line x1="1142" y1="259" x2="1076" y2="408"/><line x1="1076" y1="408" x2="981" y2="446"/><line x1="981" y1="446" x2="966" y2="534"/><line x1="966" y1="534" x2="942" y2="494"/><line x1="942" y1="494" x2="644" y2="232"/></g><g fill="#38BDF8" fill-opacity=".8"><circle cx="644" cy="232" r="3"/><circle cx="877" cy="181" r="5"/><circle cx="903" cy="131" r="7"/><circle cx="1005" cy="137" r="3"/><circle cx="1142" cy="259" r="5"/><circle cx="1076" cy="408" r="7"/><circle cx="981" cy="446" r="3"/><circle cx="966" cy="534" r="5"/><circle cx="942" cy="494" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#38BDF8" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></g>
+<g fill="#38BDF8"><rect x="96" y="430" width="252" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="164" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="93" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="198" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#38BDF8" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#38BDF8" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/donusum-odakli-web-tasarim</text><text x="1104" y="612" text-anchor="end">f017d9e</text></g>
+</svg>

@@ -166,3 +166,35 @@
   }, { rootMargin: '0px 0px -8% 0px' });
   items.forEach(function (el) { io.observe(el); });
 })();
+
+/* blog post table of contents: highlight the section being read */
+(function () {
+  var links = [].slice.call(document.querySelectorAll('.bi-toc a[href^="#"]'));
+  if (!links.length) return;
+  var secs = links.map(function (a) { return document.getElementById(a.getAttribute('href').slice(1)); });
+  function spy() {
+    var cur = -1, edge = Math.min(innerHeight * 0.35, 220);
+    secs.forEach(function (s, i) { if (s && s.getBoundingClientRect().top < edge) cur = i; });
+    links.forEach(function (a, i) { a.classList.toggle('on', i === cur); });
+  }
+  addEventListener('scroll', spy, { passive: true });
+  spy();
+})();
+
+// blog list: category filter chips
+(function () {
+  var box = document.querySelector('.bl-filter');
+  if (!box) return;
+  var chips = box.querySelectorAll('.bl-chip'), rows = document.querySelectorAll('.bl-row');
+  box.addEventListener('click', function (e) {
+    var b = e.target.closest('.bl-chip');
+    if (!b) return;
+    var k = b.getAttribute('data-kat');
+    chips.forEach(function (c) { c.setAttribute('aria-pressed', c === b ? 'true' : 'false'); });
+    rows.forEach(function (r) {
+      var off = !!k && r.getAttribute('data-kat') !== k;
+      r.classList.toggle('is-off', off);
+      if (!off) r.classList.add('in');
+    });
+  });
+})();

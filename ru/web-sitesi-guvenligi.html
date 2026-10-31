@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Безопасность сайта и SSL: руководство для малого и среднего бизнеса на 2026 год — CYF Tech Blog</title>
+<meta name="description" content="Руководство по безопасности сайта: типы SSL-сертификатов и сокращение сроков в 2026 году, обновления, 2FA, резервное копирование, WAF, OWASP Top 10 и уведомление об утечках по KVKK.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Безопасность сайта и SSL: руководство для малого и среднего бизнеса на 2026 год — CYF Tech Blog">
+<meta property="og:description" content="Руководство по безопасности сайта: типы SSL-сертификатов и сокращение сроков в 2026 году, обновления, 2FA, резервное копирование, WAF, OWASP Top 10 и уведомление об утечках по KVKK.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/ru/web-sitesi-guvenligi.html">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://cyftech.com.tr/ru/web-sitesi-guvenligi.html">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Безопасность сайта и SSL: руководство для МСБ на 2026 год", "description": "Руководство по безопасности сайта: типы SSL-сертификатов и сокращение сроков в 2026 году, обновления, 2FA, резервное копирование, WAF, OWASP Top 10 и уведомление об утечках по KVKK.", "image": "https://cyftech.com.tr/assets/img/blog/web-sitesi-guvenligi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "ru", "mainEntityOfPage": "https://cyftech.com.tr/ru/web-sitesi-guvenligi.html", "url": "https://cyftech.com.tr/ru/web-sitesi-guvenligi.html", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/ru/index.html"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://cyftech.com.tr/ru/blog.html"}, {"@type": "ListItem", "position": 3, "name": "Безопасность сайта и SSL: руководство для МСБ на 2026 год", "item": "https://cyftech.com.tr/ru/web-sitesi-guvenligi.html"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ru", "mainEntity": [{"@type": "Question", "name": "Делает ли SSL-сертификат сайт полностью безопасным?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. SSL шифрует трафик между посетителем и сервером, но не закрывает уязвимости ПО, слабые пароли или необновлённые плагины. Помимо SSL для безопасности нужны регулярные обновления, строгий контроль доступа и резервное копирование."}}, {"@type": "Question", "name": "Достаточно ли бесплатного SSL-сертификата?", "acceptedAnswer": {"@type": "Answer", "text": "Для большинства корпоративных сайтов и интернет-магазинов — да. Бесплатные DV-сертификаты вроде Let’s Encrypt обеспечивают ту же стойкость шифрования, что и платные. Платные OV и EV добавляют проверку организации, но соединение безопаснее не делают."}}, {"@type": "Question", "name": "Сколько действует SSL-сертификат?", "acceptedAnswer": {"@type": "Answer", "text": "По решению CA/Browser Forum с 15 марта 2026 года максимальный срок действия новых сертификатов — 200 дней. 15 марта 2027 года он сократится до 100 дней, а 15 марта 2029 года — до 47 дней. Поэтому автоматическое продление становится обязательным."}}, {"@type": "Question", "name": "Как понять, что сайт взломали?", "acceptedAnswer": {"@type": "Answer", "text": "Самые распространённые признаки: незнакомые страницы или ссылки на сайте, заголовки на иностранном языке в результатах Google, перенаправление посетителей на другие сайты, предупреждение о безопасности в Search Console и уведомления о спаме от хостинг-провайдера."}}, {"@type": "Question", "name": "Как часто нужно обновлять сайт для безопасности?", "acceptedAnswer": {"@type": "Answer", "text": "Обновления безопасности нужно устанавливать как можно скорее после выхода. Общее правило — проверяйте сайт хотя бы раз в месяц, а критические патчи безопасности ставьте без промедления. Не забывайте делать резервную копию перед обновлением."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/web-sitesi-guvenligi.html">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/web-sitesi-guvenligi.html">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>:root{--sans:'Space Grotesk','Inter',system-ui,sans-serif}</style>
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Перейти к содержимому</a>
+<header class="site-head">
+  <a class="logo" href="index.html" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Главное меню">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Услуги <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri.html"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Веб-решения</b><small>Веб-дизайн, разработка, e-commerce и SEO — в одних руках.</small></span></a><a href="masaustu-uygulamalar.html"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Десктопные приложения</b><small>Программы под Ваш бизнес, работающие и без интернета.</small></span></a><a href="mobil-uygulamalar.html"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Мобильные приложения</b><small>Быстрые и удобные приложения для iOS и Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz.html">Проекты</a>
+    <a href="referanslar.html">Референсы</a>
+    <a href="blog.html" aria-current="page">Блог</a>
+    <a href="hakkimizda.html">О нас</a>
+    <a href="iletisim.html">Контакты</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Выберите язык"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>RU</span></button>
+      <div class="lang-menu"><a href="../web-sitesi-guvenligi.html" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/web-sitesi-guvenligi.html" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="../de/web-sitesi-guvenligi.html" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/web-sitesi-guvenligi.html" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/web-sitesi-guvenligi.html" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="web-sitesi-guvenligi.html" hreflang="ru" lang="ru" data-lang="ru" aria-current="true"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Тёмная / светлая тема" title="Тёмная / светлая тема"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim.html">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" data-label-open="Открыть меню" data-label-close="Закрыть меню" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Мобильное меню">
+  <a href="index.html">Главная</a>
+  <div class="mnav-label">УСЛУГИ</div>
+  <a href="web-cozumleri.html"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a><a href="masaustu-uygulamalar.html"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a><a href="mobil-uygulamalar.html"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a>
+  <div class="mnav-label">КОМПАНИЯ</div>
+  <a href="projelerimiz.html">Проекты</a>
+  <a href="referanslar.html">Референсы</a>
+  <a href="blog.html" aria-current="page">Блог</a>
+  <a href="hakkimizda.html">О нас</a>
+  <a href="iletisim.html">Контакты</a>
+  <a class="btn btn-primary" href="iletisim.html">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="index.html">CYF TECH</a><span>/</span><a href="blog.html">БЛОГ</a><span>/</span><span>БЕЗОПАСНОСТЬ</span></div>
+    <h1 class="h1" style="max-width:900px">Безопасность сайта и SSL: руководство для малого и среднего бизнеса на 2026 год.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Безопасность</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 октября 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10 мин чтения</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/web-sitesi-guvenligi.svg" alt=""></div>
+      <p class="bi-lead">«Мы маленькая компания, кому нужен наш сайт?» Эту фразу мы слышим часто. Однако большинство атак проводится автоматическими инструментами, которые нацелены не на конкретную компанию, а на любой сайт с уязвимостью. <b>Безопасность сайта</b> касается всех, независимо от размера.</p>
+      <p>В этом руководстве мы рассказываем, почему сайт становится мишенью, зачем нужен SSL-сертификат и как вас затронет сокращение сроков действия сертификатов с 2026 года, о базовых мерах — обновлениях, доступе, резервном копировании и файрволе, — о рисках OWASP Top 10, которые нужно учитывать при разработке ПО, и о том, что делать, если атака всё же произошла.</p>
+      <p>Цель — не сделать из вас специалиста по безопасности, а помочь задавать правильные вопросы агентству, хостинг-провайдеру или команде разработчиков и избежать самых частых ошибок.</p>
+      <h2 id="tehdit" class="bi-h2" data-n="01">Почему атакуют даже небольшие сайты?</h2>
+      <p>Для злоумышленников ценен не только сам сайт, но и его ресурсы. Взломанный сайт можно использовать для:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Спама и фишинга:</b> с вашего сервера рассылаются тысячи поддельных писем, а ваш домен попадает в чёрные списки.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>SEO-спама:</b> на сайт добавляются скрытые страницы и ссылки; Google может пометить сайт как «взломанный».</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Кражи данных:</b> похищаются данные из форм обратной связи, сведения о пользователях и заказах; по KVKK это означает утечку данных.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Вымогательства и вредоносного ПО:</b> файлы шифруются, или посетителям распространяется вредоносное ПО.</span></li>
+      </ul>
+      <p>Есть и невидимые затраты: очистка взломанного сайта, восстановление доверия, возврат позиций в поиске и объяснения клиентам чаще всего обходятся гораздо дороже профилактики. К тому же, когда ваш почтовый домен попадает в чёрный список, даже обычные письма с предложениями и счетами перестают доходить до клиентов.</p>
+      <p>Большинство таких атак ищет известные уязвимости, исправления для которых давно выпущены. То есть безопасность обеспечивается в основном не сложными технологиями, а регулярной поддержкой и дисциплиной.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Злоумышленник не выбирает вас — он находит сайт с открытой дверью.</blockquote>
+      <h2 id="ssl" class="bi-h2" data-n="02">Что такое SSL-сертификат и какой тип выбрать?</h2>
+      <p>SSL-сертификат (сегодня технически — TLS) шифрует трафик между браузером посетителя и вашим сервером и обеспечивает <b>https</b> и значок замка в адресной строке. Номер телефона или пароль, отправленный через форму без SSL, может прочитать кто-то в сети. Браузеры помечают страницы без SSL как «не защищённые», а Google считает HTTPS частью оценки удобства страниц.</p>
+      <table>
+        <thead><tr><th>Тип</th><th>Что подтверждает?</th><th>Для кого?</th></tr></thead>
+        <tbody>
+          <tr><td>DV (проверка домена)</td><td>Только то, что домен находится под вашим контролем</td><td>Корпоративные сайты, блоги; бесплатные варианты вроде Let’s Encrypt относятся к этому типу</td></tr>
+          <tr><td>OV (проверка организации)</td><td>Помимо домена — существование компании</td><td>Компании, которые хотят показывать свою корпоративную идентичность в сертификате</td></tr>
+          <tr><td>EV (расширенная проверка)</td><td>Всесторонняя проверка компании</td><td>Некоторые финансовые и корпоративные структуры; браузеры больше не показывают отдельную зелёную строку</td></tr>
+        </tbody>
+      </table>
+      <p>По стойкости шифрования между тремя типами разницы нет. Разница — в проверке личности, стоящей за сертификатом. Для большинства сайтов малого и среднего бизнеса и интернет-магазинов достаточно правильно настроенного DV-сертификата с автоматическим продлением.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Значок замка не означает «безопасный сайт»:</b> SSL лишь шифрует соединение. Он не закрывает уязвимости в ПО сайта, слабые пароли или необновлённые плагины. У большинства фишинговых сайтов тоже есть действующий SSL-сертификат.</div></div>
+      <h2 id="sure" class="bi-h2" data-n="03">В 2026 году сроки действия SSL-сертификатов сокращаются: что делать?</h2>
+      <p>CA/Browser Forum, объединяющий производителей браузеров и удостоверяющие центры, в апреле 2025 года принял решение SC-081 о поэтапном сокращении максимального срока действия публичных SSL/TLS-сертификатов:</p>
+      <table>
+        <thead><tr><th>Дата</th><th>Максимальный срок сертификата</th></tr></thead>
+        <tbody>
+          <tr><td>С 15 марта 2026 года</td><td>200 дней</td></tr>
+          <tr><td>С 15 марта 2027 года</td><td>100 дней</td></tr>
+          <tr><td>С 15 марта 2029 года</td><td>47 дней</td></tr>
+        </tbody>
+      </table>
+      <p>На практике это означает конец эпохи «раз в год купить сертификат и установить вручную». Период в 200 дней уже действует; к 2029 году сертификаты придётся продлевать семь-восемь раз в год.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Переходите на автоматическое продление:</b> используйте провайдера с поддержкой протокола ACME (например, Let’s Encrypt) или функцию автоматического SSL в панели хостинга.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Отслеживайте сертификаты:</b> установите инструмент мониторинга, предупреждающий об истекающих сертификатах.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Составьте список сертификатов, установленных вручную:</b> если используете платные OV/EV-сертификаты, уже сейчас спросите провайдера о вариантах автоматизации.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Включите HSTS:</b> заголовок HSTS, предписывающий браузеру всегда подключаться к сайту по HTTPS, блокирует атаки с понижением до незашифрованного соединения.</span></li>
+      </ul>
+      <h2 id="temel" class="bi-h2" data-n="04">5 базовых мер безопасности сайта</h2>
+      <p>Технически самые простые меры останавливают больше всего атак:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. Актуальное ПО —</b> CMS, тема, плагины, серверное ПО и используемые библиотеки должны регулярно обновляться. Отключить неиспользуемые плагины недостаточно — удалите их полностью.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. Надёжный доступ —</b> используйте уникальные длинные пароли для админ-панели, панели хостинга, FTP и базы данных, менеджер паролей и везде, где возможно, двухфакторную аутентификацию (2FA).</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. Минимальные права —</b> давайте каждому пользователю только необходимые права. Сразу закрывайте аккаунты уволившихся сотрудников и агентств, завершивших проект.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Регулярные резервные копии —</b> следуйте правилу 3-2-1: минимум три копии, два разных носителя, одна копия вне сервера. Несколько раз в год проверяйте, что копию можно восстановить.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. Мониторинг —</b> получайте уведомления о доступности сайта, изменениях файлов и неудачных попытках входа. Регулярно проверяйте отчёт «Проблемы безопасности» в Google Search Console.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Самый быстрый выигрыш:</b> сегодня же включите двухфакторную аутентификацию в админ-панели и закройте все аккаунты, не входившие в систему последние шесть месяцев. Эти два шага в значительной мере нейтрализуют самый распространённый путь атаки — украденные или подобранные пароли.</div></div>
+      <h2 id="waf" class="bi-h2" data-n="05">Файрвол (WAF), защита от DDoS и заголовки безопасности</h2>
+      <p>Второй слой поверх базовых мер — остановить вредоносный трафик до того, как он достигнет сайта.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Файрвол веб-приложений (WAF):</b> фильтрует SQL-инъекции, перебор паролей и известные шаблоны атак. Большинство CDN-сервисов предлагает его в базовых пакетах.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Защита от DDoS:</b> защита на уровне CDN или хостинга от попыток обрушить сайт потоком запросов особенно важна в периоды акций.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ограничение входа и CAPTCHA:</b> ограничение числа попыток в админ-панели и формах усложняет жизнь ботам.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Заголовки безопасности:</b> HTTP-заголовки вроде Content-Security-Policy, X-Frame-Options (или CSP frame-ancestors), X-Content-Type-Options и Referrer-Policy сообщают браузеру, каким ресурсам доверять, и заранее блокируют многие типы атак.</span></li>
+      </ul>
+      <p>CDN и кеширование заодно ускоряют сайт; здесь безопасность и производительность улучшаются одной инвестицией. О скорости мы рассказали <a href="site-hizi-core-web-vitals.html">скорость сайта и Core Web Vitals</a> в отдельной статье.</p>
+      <h2 id="owasp" class="bi-h2" data-n="06">Безопасность заказного ПО: OWASP Top 10:2025</h2>
+      <p>Если на сайте есть разработанные на заказ разделы — регистрация, оплата, бронирование или личный кабинет, — безопасность во многом зависит от того, как написан код. Мировой ориентир в этой области — <b>OWASP Top 10</b>, список самых критичных рисков веб-приложений от OWASP. В версии 2025 года, впервые обновлённой с 2021-го, выделяются следующие пункты:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Нарушение контроля доступа:</b> ошибки вроде возможности увидеть чужой счёт, изменив номер в адресной строке. По-прежнему на первом месте.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ошибки конфигурации безопасности:</b> открытые админ-экраны, пароли по умолчанию, подробные сообщения об ошибках. В списке 2025 года поднялись на второе место.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Сбои в цепочке поставок ПО:</b> новая категория; охватывает безопасность сторонних пакетов, плагинов и инструментов сборки, используемых в проекте.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Криптографические ошибки и инъекции:</b> хранение паролей открытым текстом или вставка пользовательского ввода в запрос к базе без проверки.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Неправильная обработка исключительных ситуаций:</b> тоже новая категория; описывает переход системы в небезопасное состояние при сбое.</span></li>
+      </ul>
+      <p>Работая с командой разработчиков, используйте этот список как инструмент проверки: спрашивайте, какая мера принята против какого риска. Для критичных проектов хорошая практика — независимый тест на проникновение (пентест) перед запуском. Именно поэтому в наших продуктах KATSİS и RestaurantBill, обрабатывающих платежи и персональные данные, ролевая авторизация, зашифрованные соединения и ведение журналов (логов) заложены с первого дня проектирования. Подробнее об этих продуктах — на странице <a href="projelerimiz.html">наши проекты</a>.</p>
+      <h2 id="ihlal" class="bi-h2" data-n="07">Что делать, если сайт взломали?</h2>
+      <p>Даже при лучших мерах инцидент может случиться. Действия в панике часто стирают следы и усугубляют проблему. Действуйте спокойно и по порядку:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 1 —</b> переведите сайт в режим обслуживания или временно закройте доступ, чтобы не пострадали посетители.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 2 —</b> смените все пароли (панель, хостинг, FTP, база данных, почта) и завершите все сеансы.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 3 —</b> изучите серверные журналы и изменённые файлы, чтобы найти источник атаки; восстановление из копии без закрытия уязвимости приведёт к повторной атаке.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 4 —</b> восстановитесь из чистой резервной копии, обновите всё ПО и запросите проверку в Search Console.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 5 —</b> если затронуты персональные данные, оцените ситуацию с юридической точки зрения. KVKK обязывает операторов данных уведомить Совет по защите персональных данных как можно скорее после обнаружения утечки — согласно решению Совета, не позднее 72 часов, — а затронутых лиц — в разумный срок.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Важно:</b> информация о KVKK носит общий характер и не является юридической консультацией. При утечке данных действуйте вместе с юристом. Об уведомлении об обработке данных и работе с cookie на сайте вы можете <a href="kvkk-uyumlu-web-sitesi.html">Сайт в соответствии с KVKK</a> прочитать в нашей статье.</div></div>
+      <p>Национальный центр реагирования на киберинциденты Турции (USOM) публикует предупреждения о киберугрозах и принимает сообщения об инцидентах. Следить за касающимися вашей организации объявлениями — полезная привычка.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// ЧЕК-ЛИСТ БЕЗОПАСНОСТИ</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Все ли страницы открываются по HTTPS, продлевается ли SSL автоматически?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Актуальны ли CMS, тема и плагины?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Включена ли двухфакторная аутентификация в админ-панели?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Закрыты ли старые аккаунты пользователей и агентств?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Хранятся ли резервные копии вне сервера и проверено ли восстановление?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Включены ли WAF/CDN и заголовки безопасности?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Прописано ли, кто и что делает в случае утечки?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="08">Частые вопросы</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Делает ли SSL-сертификат сайт полностью безопасным?</summary><p>Нет. SSL шифрует трафик между посетителем и сервером, но не закрывает уязвимости ПО, слабые пароли или необновлённые плагины. Помимо SSL для безопасности нужны регулярные обновления, строгий контроль доступа и резервное копирование.</p></details><details class="bi-faq-i"><summary>Достаточно ли бесплатного SSL-сертификата?</summary><p>Для большинства корпоративных сайтов и интернет-магазинов — да. Бесплатные DV-сертификаты вроде Let’s Encrypt обеспечивают ту же стойкость шифрования, что и платные. Платные OV и EV добавляют проверку организации, но соединение безопаснее не делают.</p></details><details class="bi-faq-i"><summary>Сколько действует SSL-сертификат?</summary><p>По решению CA/Browser Forum с 15 марта 2026 года максимальный срок действия новых сертификатов — 200 дней. 15 марта 2027 года он сократится до 100 дней, а 15 марта 2029 года — до 47 дней. Поэтому автоматическое продление становится обязательным.</p></details><details class="bi-faq-i"><summary>Как понять, что сайт взломали?</summary><p>Самые распространённые признаки: незнакомые страницы или ссылки на сайте, заголовки на иностранном языке в результатах Google, перенаправление посетителей на другие сайты, предупреждение о безопасности в Search Console и уведомления о спаме от хостинг-провайдера.</p></details><details class="bi-faq-i"><summary>Как часто нужно обновлять сайт для безопасности?</summary><p>Обновления безопасности нужно устанавливать как можно скорее после выхода. Общее правило — проверяйте сайт хотя бы раз в месяц, а критические патчи безопасности ставьте без промедления. Не забывайте делать резервную копию перед обновлением.</p></details></div>
+      <h2 id="sonuc">В заключение</h2>
+      <p>Безопасность сайта — не разовая настройка, а постоянная привычка: SSL с автопродлением, актуальное ПО, двухфакторная аутентификация, резервные копии вне сервера и файрвол. Эти базовые слои останавливают большую часть автоматических атак ещё на пороге.</p>
+      <p>В CYF Tech мы разрабатываем <a href="web-cozumleri.html">сайты и заказные веб-приложения</a> с учётом безопасности с самого начала, а после запуска обеспечиваем поддержку и обновления. Если хотите вместе проверить безопасность текущего сайта, <a href="iletisim.html">напишите нам</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// ИСТОЧНИКИ</div><ol><li><a href="https://owasp.org/Top10/2025/0x00_2025-Introduction/" target="_blank" rel="noopener nofollow">OWASP Top 10:2025</a></li><li><a href="https://www.digicert.com/faq/tls-ssl-certificate-validity" target="_blank" rel="noopener nofollow">DigiCert — TLS/SSL certificate validity changes</a></li><li><a href="https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/" target="_blank" rel="noopener nofollow">CA/Browser Forum — Ballot SC-081v3</a></li><li><a href="https://letsencrypt.org/how-it-works/" target="_blank" rel="noopener nofollow">Let’s Encrypt — How it works</a></li><li><a href="https://developers.google.com/search/docs/crawling-indexing/https" target="_blank" rel="noopener nofollow">Google Search Central — Secure your site with HTTPS</a></li><li><a href="https://developers.google.com/search/docs/monitor-debug/security/hacked" target="_blank" rel="noopener nofollow">Google Search Central — Hacked sites</a></li><li><a href="https://www.kvkk.gov.tr/" target="_blank" rel="noopener nofollow">KVKK — уведомление об утечках персональных данных</a></li><li><a href="https://www.usom.gov.tr/" target="_blank" rel="noopener nofollow">USOM — Национальный центр реагирования на киберинциденты Турции</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog.html"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Все статьи</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Поделиться</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Поделиться в WhatsApp" title="Поделиться в WhatsApp"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Поделиться в LinkedIn" title="Поделиться в LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Поделиться в X" title="Поделиться в X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Отправить по e-mail" title="Отправить по e-mail"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Содержание">
+        <div class="eyebrow">// В ЭТОЙ СТАТЬЕ</div>
+        <ol class="bi-toc"><li><a href="#tehdit" data-n="01">Почему вы мишень?</a></li><li><a href="#ssl" data-n="02">SSL и HTTPS</a></li><li><a href="#sure" data-n="03">Сокращение сроков SSL</a></li><li><a href="#temel" data-n="04">Базовые меры</a></li><li><a href="#waf" data-n="05">WAF и заголовки</a></li><li><a href="#owasp" data-n="06">OWASP Top 10</a></li><li><a href="#ihlal" data-n="07">Если случилась атака</a></li><li><a href="#sss" data-n="08">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// ДРУГИЕ СТАТЬИ</div>
+        <ul class="bi-others"><li><a href="kvkk-uyumlu-web-sitesi.html"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><div><span class="d">31 октября 2026</span><b>Сайт в соответствии с KVKK: уведомление, cookie и явное согласие</b><span class="bi-read">9 мин чтения</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi.html"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>7 вещей, которые нужно знать перед заказом корпоративного сайта</b><span class="bi-read">6 мин чтения</span></div></a></li><li><a href="web-sitesi-fiyatlari.html"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>Стоимость сайта в 2026 году: 9 факторов, определяющих цену</b><span class="bi-read">10 мин чтения</span></div></a></li><li><a href="seo-nedir.html"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 октября 2026</span><b>Что такое SEO? Простое и практичное руководство для начинающих на 2026 год</b><span class="bi-read">8 мин чтения</span></div></a></li><li><a href="e-ticaret-sitesi-kurma-rehberi.html"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/></svg></span><div><span class="d">31 октября 2026</span><b>Как создать интернет-магазин в 2026 году: пошаговая дорожная карта</b><span class="bi-read">10 мин чтения</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim.html"><b>Давайте обсудим ваш проект.</b><span>Расскажите о своей идее — мы подготовим индивидуальное предложение.</span><div class="bi-go">Получить предложение<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// ДАВАЙТЕ НАЧНЁМ</div>
+        <h2 class="h2">Воплотим Ваш проект вместе.</h2>
+        <p class="lead" style="margin-top:20px">Расскажите о своём проекте — мы подготовим индивидуальное предложение.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim.html">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Написать в WhatsApp</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">тел</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">почта</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">адрес</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="index.html" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Надёжная точка цифрового мира. Веб-дизайн, разработка ПО и цифровые решения.</p>
+      </div>
+      <div>
+        <h2>БЫСТРОЕ МЕНЮ</h2>
+        <ul><li><a href="index.html">Главная</a></li><li><a href="projelerimiz.html">Проекты</a></li><li><a href="referanslar.html">Референсы</a></li><li><a href="blog.html">Блог</a></li><li><a href="hakkimizda.html">О нас</a></li><li><a href="iletisim.html">Контакты</a></li></ul>
+      </div>
+      <div>
+        <h2>УСЛУГИ</h2>
+        <ul><li><a href="web-cozumleri.html"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a></li><li><a href="masaustu-uygulamalar.html"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a></li><li><a href="mobil-uygulamalar.html"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a></li></ul>
+      </div>
+      <div>
+        <h2>КОНТАКТЫ</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — надёжная точка цифрового мира.</span> <span>Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

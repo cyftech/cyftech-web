@@ -21,6 +21,16 @@ Türkçe bir metni değiştirdiğinizde veya yeni metin eklediğinizde:
 Eksik çeviriler `<dil>.json`'a eklenmezse o metin o dilde Türkçe kalır (build sayısını yazar).
 Arapça sayfalar `dir="rtl"` ile sağdan sola gösterilir. Türkçe sayfalara ilk kez gelen ziyaretçi tarayıcı diline (desteklenmiyorsa İngilizceye) yönlendirilir; menüden dil seçince o tercih saklanır ve yönlendirme ona göre yapılır. Arama motoru botları yönlendirilmez.
 
+## Blog yazıları
+
+Uzun rehber yazıları veri olarak tutulur: `tools/posts/<slug>.py` dosyasında tek bir `POST = dict(...)` (alanlar ve HTML
+kuralları `tools/posts/_check.py` içinde). Yeni yazı için dosyayı ekleyin, `python tools/posts/_check.py tools/posts/<slug>.py`
+ile doğrulayın, sıralamayı `build.py` içindeki `POST_ORDER`'a ekleyin ve build alın. Sayfa (`<slug>.html`), kapak görseli
+(`assets/img/blog/<slug>.svg`), blog listesi, içindekiler, SSS ve yapılandırılmış veri (BlogPosting, FAQPage,
+BreadcrumbList) otomatik üretilir; `i18n.py` yazıyı sayfa listesine kendisi ekler. Ardından çevirileri ekleyin (yukarıda).
+
+Her build `sitemap.xml` (tüm diller, hreflang ile) ve `robots.txt` dosyalarını da yeniden yazar; her sayfada canonical bağlantı vardır.
+
 ## Diğer
 
 - Gece / gündüz teması: `assets/css/theme-light.css` (`<html data-theme="light">`). Ziyaretçi butona basana kadar sistemin açık/koyu ayarını izler; basınca seçimi tarayıcıda saklanır.

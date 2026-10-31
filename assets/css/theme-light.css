@@ -96,3 +96,8 @@
 [data-theme="light"] .pj-subnav{background:rgba(243,246,250,.85)}
 [data-theme="light"] :is(.pj-tile-meta,.pj-tile-go){color:color-mix(in srgb,var(--c) 75%,#000)}
 [data-theme="light"] .map-hint{background:rgba(255,255,255,.94);box-shadow:0 12px 30px rgba(11,20,36,.15)}
+/* blog posts: body text was hard-coded for the night palette */
+[data-theme="light"] .article p{color:#2B3A4F}
+[data-theme="light"] .article .bi-lead{color:var(--text)}
+[data-theme="light"] .bi-faq-i,[data-theme="light"] .bl-chip{background:#FFFFFF}
+[data-theme="light"] .bl-chip[aria-pressed="true"]{background:var(--accent-faint)}

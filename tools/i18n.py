@@ -19,7 +19,11 @@ DICT_DIR = os.path.join(HERE, 'i18n')
 SITE = 'https://cyftech.com.tr'
 
 PAGES = ['index.html', 'web-cozumleri.html', 'masaustu-uygulamalar.html', 'mobil-uygulamalar.html', 'projelerimiz.html',
-         'referanslar.html', 'blog.html', 'blog-inside.html', 'hakkimizda.html', 'iletisim.html']
+         'referanslar.html', 'blog.html', 'blog-inside.html', 'kurumsal-web-sitesi-rehberi.html', 'hakkimizda.html', 'iletisim.html']
+_POSTS = os.path.join(HERE, 'posts')  # data posts (build.py): tools/posts/<slug>.py -> <slug>.html
+PAGES += sorted(f[:-3] + '.html' for f in os.listdir(_POSTS) if f.endswith('.py') and not f.startswith('_')) if os.path.isdir(_POSTS) else []
+OG_LOCALE = {'tr': 'tr_TR', 'en': 'en_US', 'de': 'de_DE', 'ar': 'ar_AR', 'zh': 'zh_CN', 'ru': 'ru_RU'}
+LD_TEXT = {'headline', 'description', 'name', 'text'}
 LANGS = ['en', 'de', 'ar', 'zh', 'ru']
 RTL = {'ar'}
 # Space Grotesk covers Latin only; these fill in the other scripts (browsers fall back per glyph)
@@ -195,6 +199,8 @@ def translate_page(html, page, lang, table, missing):
         return t
 
     def on_tag(tag):
+        if tag.startswith('<script type="application/ld+json">'):
+            return translate_ld(tag, lang, table)
         if tag.startswith('<script'):
             for k in SCRIPT_KEYS:
                 if k in tag:
@@ -211,7 +217,14 @@ def translate_page(html, page, lang, table, missing):
         return tag
 
     html = re.sub(r'<script id="cyf-lang-redirect">.*?</script>\n?', '', html, flags=re.S)
+    html = re.sub(r'(<link rel="canonical" href="|<meta property="og:url" content=")' + re.escape(SITE) + '/',
+                  lambda m: m.group(1) + f'{SITE}/{lang}/', html)
+    html = html.replace('<meta property="og:locale" content="tr_TR">', f'<meta property="og:locale" content="{OG_LOCALE[lang]}">')
     out = walk(html, tr, on_tag)
+    # sentences split around a link: a translated tail may start with punctuation (" ." -> ".") or lose its space
+    out = re.sub(r'</a>\s+([.,;:!?。，、؛،)])', r'</a>\1', out)
+    if lang != 'zh':
+        out = re.sub(r'</a>(?=[^\W\d_])', '</a> ', out)
     out = out.replace('<html lang="tr">', f'<html lang="{lang}"' + (' dir="rtl"' if lang in RTL else '') + '>', 1)
     out = mark_current(out, lang)
     head_extra = '' if 'hreflang="x-default"' in out else alternates(page)
@@ -220,6 +233,49 @@ def translate_page(html, page, lang, table, missing):
         head_extra += (f'\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family={fam}&amp;display=swap">'
                        f"\n<style>:root{{--sans:'Space Grotesk',{name},system-ui,sans-serif}}</style>")
     return out.replace('</head>', head_extra + '\n</head>', 1)
+
+
+def translate_ld(tag, lang, table):
+    """Structured data: translate the text fields (they repeat visible units) and point page URLs at /<lang>/."""
+    head, body = tag[:tag.index('>') + 1], tag[tag.index('>') + 1:-len('</script>')]
+    page_url = re.compile('^' + re.escape(SITE) + r'/([\w-]+\.html)$')
+
+    def fix(k, v):
+        if isinstance(v, dict):
+            return {kk: fix(kk, vv) for kk, vv in v.items()}
+        if isinstance(v, list):
+            return [fix(k, x) for x in v]
+        if not isinstance(v, str):
+            return v
+        if k in LD_TEXT:
+            return table.get(norm(v), v)
+        if k == 'inLanguage':
+            return lang
+        if k in ('url', 'item', 'mainEntityOfPage'):
+            return page_url.sub(lambda m: f'{SITE}/{lang}/{m.group(1)}', v)
+        return v
+    data = fix('', json.loads(body.replace('<\\/', '</')))
+    return head + json.dumps(data, ensure_ascii=False).replace('</', '<\\/') + '</script>'
+
+
+def sitemap(root):
+    """sitemap.xml (every page in every language, with hreflang alternates) and robots.txt pointing at it."""
+    import datetime
+    today = datetime.date.today().isoformat()
+    href = lambda c, page: f'{SITE}/{"" if c == "tr" else c + "/"}{page}'
+    urls = []
+    for page in PAGES:
+        alts = ''.join(f'<xhtml:link rel="alternate" hreflang="{c}" href="{href(c, page)}"/>' for c in ['tr'] + LANGS)
+        alts += f'<xhtml:link rel="alternate" hreflang="x-default" href="{href("tr", page)}"/>'
+        for c in ['tr'] + LANGS:
+            if c == 'tr' or os.path.exists(os.path.join(root, c, page)):
+                urls.append(f'<url><loc>{href(c, page)}</loc><lastmod>{today}</lastmod>{alts}</url>')
+    with open(os.path.join(root, 'sitemap.xml'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" '
+                'xmlns:xhtml="http://www.w3.org/1999/xhtml">\n' + '\n'.join(urls) + '\n</urlset>\n')
+    with open(os.path.join(root, 'robots.txt'), 'w', encoding='utf-8', newline='\n') as f:
+        f.write(f'User-agent: *\nAllow: /\nDisallow: /tools/\n\nSitemap: {SITE}/sitemap.xml\n')
+    print(f'sitemap: {len(urls)} urls')
 
 
 def build(root):
@@ -250,6 +306,7 @@ def build(root):
         print(f'i18n: {lang} written' + (f', {len(missing)} untranslated units (kept in Turkish)' if missing else ''))
         for s in sorted(missing)[:10]:
             print('   -', s[:100])
+    sitemap(root)
 
 
 # ------------------------------------------------------------------ check

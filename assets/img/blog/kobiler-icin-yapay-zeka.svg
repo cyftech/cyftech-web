@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#C084FC" stop-opacity=".34"/><stop offset=".55" stop-color="#C084FC" stop-opacity=".06"/><stop offset="1" stop-color="#C084FC" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#C084FC" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#C084FC" stroke-opacity=".28" stroke-width="1.5"><line x1="679" y1="211" x2="854" y2="93"/><line x1="854" y1="93" x2="1062" y2="133"/><line x1="1062" y1="133" x2="1154" y2="110"/><line x1="1154" y1="110" x2="1011" y2="376"/><line x1="1011" y1="376" x2="840" y2="527"/><line x1="840" y1="527" x2="693" y2="536"/><line x1="693" y1="536" x2="734" y2="456"/><line x1="734" y1="456" x2="677" y2="485"/><line x1="677" y1="485" x2="679" y2="211"/></g><g fill="#C084FC" fill-opacity=".8"><circle cx="679" cy="211" r="3"/><circle cx="854" cy="93" r="5"/><circle cx="1062" cy="133" r="7"/><circle cx="1154" cy="110" r="3"/><circle cx="1011" cy="376" r="5"/><circle cx="840" cy="527" r="7"/><circle cx="693" cy="536" r="3"/><circle cx="734" cy="456" r="5"/><circle cx="677" cy="485" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#C084FC" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#C084FC" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></g>
+<g fill="#C084FC"><rect x="96" y="430" width="117" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="184" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="126" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="401" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#C084FC" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#C084FC" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/kobiler-icin-yapay-zeka</text><text x="1104" y="612" text-anchor="end">5179c62</text></g>
+</svg>

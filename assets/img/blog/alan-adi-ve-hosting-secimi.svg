@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+<radialGradient id="g" cx="25%" cy="37%" r="70%"><stop offset="0" stop-color="#38BDF8" stop-opacity=".34"/><stop offset=".55" stop-color="#38BDF8" stop-opacity=".06"/><stop offset="1" stop-color="#38BDF8" stop-opacity="0"/></radialGradient>
+<linearGradient id="b" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#071025"/><stop offset="1" stop-color="#03060f"/></linearGradient>
+<pattern id="p" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#1A2944" stroke-width="1"/></pattern>
+</defs>
+<rect width="1200" height="675" fill="url(#b)"/><rect width="1200" height="675" fill="url(#p)" opacity=".55"/><rect width="1200" height="675" fill="url(#g)"/>
+<g fill="none" stroke="#38BDF8" stroke-opacity=".35" stroke-width="1.5"><circle cx="300" cy="250" r="150" stroke-dasharray="4 10"/><circle cx="300" cy="250" r="190" stroke-dasharray="1 8"/><circle cx="300" cy="250" r="232" stroke-dasharray="60 14"/></g>
+<g stroke="#38BDF8" stroke-opacity=".28" stroke-width="1.5"><line x1="671" y1="282" x2="805" y2="313"/><line x1="805" y1="313" x2="715" y2="135"/><line x1="715" y1="135" x2="1021" y2="580"/><line x1="1021" y1="580" x2="923" y2="523"/><line x1="923" y1="523" x2="930" y2="605"/><line x1="930" y1="605" x2="640" y2="590"/><line x1="640" y1="590" x2="685" y2="508"/><line x1="685" y1="508" x2="648" y2="527"/><line x1="648" y1="527" x2="671" y2="282"/></g><g fill="#38BDF8" fill-opacity=".8"><circle cx="671" cy="282" r="3"/><circle cx="805" cy="313" r="5"/><circle cx="715" cy="135" r="7"/><circle cx="1021" cy="580" r="3"/><circle cx="923" cy="523" r="5"/><circle cx="930" cy="605" r="7"/><circle cx="640" cy="590" r="3"/><circle cx="685" cy="508" r="5"/><circle cx="648" cy="527" r="7"/></g>
+<rect x="210" y="160" width="180" height="180" rx="36" fill="#071025" stroke="#38BDF8" stroke-opacity=".6" stroke-width="2"/>
+<g transform="translate(240 190) scale(5)" fill="none" stroke="#38BDF8" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></g>
+<g fill="#38BDF8"><rect x="96" y="430" width="289" height="12" rx="6" opacity="0.55"/><rect x="96" y="464" width="447" height="12" rx="6" opacity="0.45"/><rect x="96" y="498" width="121" height="12" rx="6" opacity="0.35"/><rect x="96" y="532" width="383" height="12" rx="6" opacity="0.25"/></g>
+<g fill="none" stroke="#38BDF8" stroke-opacity=".7" stroke-width="3"><path d="M40 80V40h40M1160 80V40h-40M40 595v40h40M1160 595v40h-40"/></g>
+<g font-family="JetBrains Mono,Consolas,monospace" font-size="20" fill="#38BDF8" fill-opacity=".75"><text x="96" y="400">~/cyftech/blog/alan-adi-ve-hosting-secimi</text><text x="1104" y="612" text-anchor="end">dc66376</text></g>
+</svg>
