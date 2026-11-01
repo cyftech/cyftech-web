@@ -366,30 +366,7 @@ def mobil():
     scrolly_page('mobil-uygulamalar.html', meta, 'Fikir', 'Kaydırın — bir uygulamanın cebe yolculuğunu izleyin', steps, stage, below, 'mobil-uygulamalar.css')
 
 
-# ================================================================== old service URLs → new sections
-def redirect(old, target, title):
-    html = f'''<!DOCTYPE html>
-<html lang="tr">
-<head>
-<meta charset="UTF-8">
-<title>{title} — CYF Tech</title>
-<meta name="robots" content="noindex">
-<link rel="canonical" href="https://cyftech.com.tr/{target.split('#')[0]}">
-<meta http-equiv="refresh" content="0; url={target}">
-<script>location.replace('{target}');</script>
-</head>
-<body style="background:#040814;color:#E6EDF3;font-family:system-ui,sans-serif">
-<p>{title} sayfası taşındı: <a href="{target}" style="color:#38BDF8">{target}</a></p>
-</body>
-</html>
-'''
-    with open(os.path.join(OUT, old), 'w', encoding='utf-8', newline='\n') as f:
-        f.write(html)
-
-
+# the old service URLs (web-tasarim, seo-hizmetleri, ...) are 301 rules in .htaccess (tools/cleanurls.py MOVED)
 web()
 masaustu()
 mobil()
-for old, anchor, title in [('web-tasarim.html', 'web-tasarim', 'Web Tasarım'), ('web-gelistirme.html', 'web-gelistirme', 'Web Geliştirme'),
-                           ('seo-hizmetleri.html', 'seo', 'SEO Hizmetleri'), ('e-ticaret-siteleri.html', 'e-ticaret', 'E-Ticaret Siteleri')]:
-    redirect(old, f'web-cozumleri.html#{anchor}', title)

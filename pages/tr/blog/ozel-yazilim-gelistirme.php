@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<script id="cyf-lang-redirect">try{var L=["en", "de", "ar", "zh", "ru", "tr"],s=localStorage.getItem("cyf-lang");if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Özel Yazılım Geliştirme: Ne Zaman Gerekir, Süreç Nasıl İşler? — CYF Tech Blog</title>
+<meta name="description" content="Özel yazılım geliştirme ne zaman gerekir? Hazır yazılımla karşılaştırma, adım adım süreç, maliyet kalemleri, kaynak kod ve sözleşme konularında KOBİ rehberi.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Özel Yazılım Geliştirme: Ne Zaman Gerekir, Süreç Nasıl İşler? — CYF Tech Blog">
+<meta property="og:description" content="Özel yazılım geliştirme ne zaman gerekir? Hazır yazılımla karşılaştırma, adım adım süreç, maliyet kalemleri, kaynak kod ve sözleşme konularında KOBİ rehberi.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/ozel-yazilim-gelistirme">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="https://cyftech.com.tr/ozel-yazilim-gelistirme">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Özel Yazılım Geliştirme: Ne Zaman Gerekir, Süreç Nasıl İşler?", "description": "Özel yazılım geliştirme ne zaman gerekir? Hazır yazılımla karşılaştırma, adım adım süreç, maliyet kalemleri, kaynak kod ve sözleşme konularında KOBİ rehberi.", "image": "https://cyftech.com.tr/assets/img/blog/ozel-yazilim-gelistirme.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "tr", "mainEntityOfPage": "https://cyftech.com.tr/ozel-yazilim-gelistirme", "url": "https://cyftech.com.tr/ozel-yazilim-gelistirme", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/blog"}, {"@type": "ListItem", "position": 3, "name": "Özel Yazılım Geliştirme: Ne Zaman Gerekir, Süreç Nasıl İşler?", "item": "https://cyftech.com.tr/ozel-yazilim-gelistirme"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "tr", "mainEntity": [{"@type": "Question", "name": "Özel yazılım geliştirmek ne kadar sürer?", "acceptedAnswer": {"@type": "Answer", "text": "Kapsama göre değişir. Tek bir iş akışını otomatikleştiren küçük bir panel birkaç haftada, web paneli ve mobil uygulamadan oluşan orta ölçekli bir sistem genellikle birkaç ayda hayata geçer. Süreyi en çok kısaltan şey net bir kapsam ve hızlı geri bildirimdir."}}, {"@type": "Question", "name": "Özel yazılım mı daha pahalı, hazır yazılım mı?", "acceptedAnswer": {"@type": "Answer", "text": "Başlangıçta özel yazılım daha pahalıdır. Ancak kullanıcı başına lisans ödenen, ek modüllerle büyüyen hazır çözümlerde birkaç yıllık toplam maliyet özel bir çözümü geçebilir. Karşılaştırmayı en az üç yıllık toplam sahip olma maliyeti üzerinden yapmak gerekir."}}, {"@type": "Question", "name": "Kaynak kod bana mı ait olur?", "acceptedAnswer": {"@type": "Answer", "text": "Bu tamamen sözleşmeye bağlıdır. Fikir ve Sanat Eserleri Kanunu gereği mali hakların devri yazılı olmalı ve devredilen haklar ayrı ayrı belirtilmelidir. Kaynak kodun teslimini ve kullanım haklarını sözleşmeye açıkça yazdırın."}}, {"@type": "Question", "name": "Küçük bir işletme için özel yazılım mantıklı mı?", "acceptedAnswer": {"@type": "Answer", "text": "Tekrarlayan işlere ciddi zaman harcanıyorsa ya da hazır yazılımlar sürecinize uymuyorsa evet. Küçük ve odaklı bir MVP ile başlamak, riski ve bütçeyi sınırlı tutar."}}, {"@type": "Question", "name": "Yazılım teslim edildikten sonra ne olur?", "acceptedAnswer": {"@type": "Answer", "text": "Yazılım düzenli bakım ister: güvenlik güncellemeleri, hata düzeltmeleri, sunucu ve yedekleme takibi, yeni ihtiyaçlar için geliştirmeler. Bu nedenle sözleşmede yayın sonrası destek kapsamı ve ücreti baştan belirlenmelidir."}}]}</script>
+<link rel="icon" type="image/png" href="assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/theme-light.css?v=20261031d">
+<script src="assets/js/site.js?v=20261031d" defer></script>
+<script src="assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/ozel-yazilim-gelistirme">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/ozel-yazilim-gelistirme">
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">İçeriğe geç</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Ana menü">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Hizmetler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Çözümleri</b><small>Web tasarım, yazılım, e-ticaret ve SEO — tek çatı altında.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Masaüstü Uygulamalar</b><small>İşinize özel, çevrimdışı da çalışan masaüstü yazılımlar.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobil Uygulamalar</b><small>iOS ve Android için hızlı, kullanıcı dostu uygulamalar.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projeler</a>
+    <a href="referanslar">Referanslar</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">Hakkımızda</a>
+    <a href="iletisim">İletişim</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Dil seçin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>TR</span></button>
+      <div class="lang-menu"><a href="ozel-yazilim-gelistirme" hreflang="tr" lang="tr" data-lang="tr" aria-current="true"><b>TR</b><span>Türkçe</span></a><a href="en/ozel-yazilim-gelistirme" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="de/ozel-yazilim-gelistirme" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="ar/ozel-yazilim-gelistirme" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="zh/ozel-yazilim-gelistirme" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="ru/ozel-yazilim-gelistirme" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Gece / gündüz teması" title="Gece / gündüz teması"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menüyü aç" data-label-open="Menüyü aç" data-label-close="Menüyü kapat" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobil menü">
+  <a href="./">Ana Sayfa</a>
+  <div class="mnav-label">HİZMETLER</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a>
+  <div class="mnav-label">KURUMSAL</div>
+  <a href="projelerimiz">Projeler</a>
+  <a href="referanslar">Referanslar</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">Hakkımızda</a>
+  <a href="iletisim">İletişim</a>
+  <a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>YAZILIM</span></div>
+    <h1 class="h1" style="max-width:900px">Özel yazılım geliştirme: ne zaman gerekir, süreç nasıl işler?</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Yazılım</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 Ekim 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 dk okuma</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="assets/img/blog/ozel-yazilim-gelistirme.svg" alt=""></div>
+      <p class="bi-lead">Excel dosyaları birbirine bağlanmış, üç farklı hazır program aynı veriyi ayrı ayrı tutuyor, ekip her ay sonunda aynı raporu elle hazırlıyor. Bu tablo size tanıdık geliyorsa, sorun çoğu zaman personelde değil, <b>işinize uymayan yazılımda</b>dır.</p>
+      <p><b>Özel yazılım geliştirme</b>, bir işletmenin kendi süreçlerine göre tasarlanan ve yalnızca o işletme için yazılan yazılımdır: bir sipariş portalı, saha ekibi için mobil uygulama, üretim takip sistemi ya da birkaç programı tek panelde birleştiren bir yönetim ekranı. Kulağa büyük şirketlere özgü bir lüks gibi gelse de doğru kapsamla başlandığında KOBİ’ler için de en verimli yatırımlardan biri olabilir.</p>
+      <p>Bu yazıda özel yazılımın hangi durumlarda gerçekten gerektiğini, hangi durumlarda hazır bir çözümün daha akıllıca olduğunu, bir projenin baştan sona hangi adımlardan geçtiğini, maliyeti neyin belirlediğini ve sözleşmeye mutlaka yazdırmanız gereken maddeleri anlatıyoruz. Kendi ürünlerimizi ve müşteri projelerimizi geliştirirken edindiğimiz deneyimi de yer yer paylaşacağız.</p>
+      <h2 id="ne-zaman" class="bi-h2" data-n="01">Özel yazılım ne zaman gerekir? Beş net işaret</h2>
+      <p>Her işletmenin özel yazılıma ihtiyacı yoktur. Muhasebe, e-Fatura, e-posta, CRM gibi pek çok alanda olgun ve uygun fiyatlı hazır çözümler var; bunları sıfırdan yazmak çoğu zaman para ve zaman israfıdır. Özel yazılımın gündeme gelmesi gereken durumlar ise oldukça belirgindir:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Süreciniz rekabet avantajınız.</b> Teklif hazırlama, üretim planlama ya da müşteriye hizmet verme biçiminiz sizi rakiplerden ayırıyorsa, bu süreci hazır bir programın kalıbına sokmak avantajı da kalıba sokar.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Veriler adalara bölünmüş.</b> Satış bir programda, stok başka bir programda, saha ekibi WhatsApp’ta, raporlar Excel’de. Her ay aynı veriyi elle birleştiren biri varsa, otomasyonun geri dönüşü genellikle hızlı olur.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Hazır yazılımı “ama”larla kullanıyorsunuz.</b> “Şu alanı başka amaçla kullanıyoruz”, “bu raporu dışarı alıp düzeltiyoruz” gibi geçici çözümler birikmişse, yazılım işinize değil, işiniz yazılıma uyuyor demektir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Lisans maliyetleri büyüyor.</b> Kullanıcı başına ödenen abonelikler çalışan sayısıyla birlikte katlanıyorsa, birkaç yıllık toplam maliyet özel bir çözümün yatırımını geçebilir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Müşteriye ya da bayiye açılan bir ekran gerekiyor.</b> Bayi sipariş portalı, müşteri takip paneli, randevu sistemi gibi markanızla sunulan dijital hizmetler, hazır araçlarla genellikle istediğiniz deneyimi vermez.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Kısa bir test:</b> Ekibinize “Her hafta tekrar eden ve bilgisayarın yapabileceği hangi işi elle yapıyorsunuz?” diye sorun ve harcanan saatleri toplayın. Bu sayı, özel yazılım bütçesini konuşurken en sağlam başlangıç noktanız olur.</div></div>
+      <h2 id="hazir-mi-ozel-mi" class="bi-h2" data-n="02">Hazır yazılım mı, özel yazılım mı? Karşılaştırma</h2>
+      <p>Karar çoğu zaman siyah-beyaz değildir. Aşağıdaki tablo iki yaklaşımın tipik farklarını özetliyor:</p>
+      <table>
+        <thead><tr><th>Kriter</th><th>Hazır yazılım (paket / SaaS)</th><th>Özel yazılım</th></tr></thead>
+        <tbody>
+          <tr><td>Başlangıç maliyeti</td><td>Düşük; aylık veya yıllık abonelik</td><td>Yüksek; proje bazlı yatırım</td></tr>
+          <tr><td>Devreye alma süresi</td><td>Günler, birkaç hafta</td><td>Kapsama göre birkaç ay</td></tr>
+          <tr><td>Süreçlere uyum</td><td>Siz yazılıma uyarsınız</td><td>Yazılım size uyar</td></tr>
+          <tr><td>Uzun vadeli maliyet</td><td>Kullanıcı ve modül arttıkça büyür</td><td>Bakım ve geliştirme bütçesiyle öngörülebilir</td></tr>
+          <tr><td>Mülkiyet ve veri</td><td>Sağlayıcının platformunda</td><td>Sözleşmeye göre sizde</td></tr>
+          <tr><td>Entegrasyon</td><td>Sağlayıcının izin verdiği kadar</td><td>İhtiyacınız kadar</td></tr>
+        </tbody>
+      </table>
+      <p>Pratikte en sağlıklı yol çoğu zaman <b>hibrit</b> yaklaşımdır: muhasebe, e-Fatura, e-posta gibi standart işler için hazır çözümleri kullanmak; işinizi farklılaştıran süreci özel yazılımla kurmak ve ikisini entegrasyonla birbirine bağlamak. Web tarafında benzer bir ikilemi <a href="wordpress-mi-ozel-yazilim-mi">WordPress mi özel yazılım mı</a> yazımızda ayrıca ele aldık.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Standart işi hazır araçlara, sizi farklı kılan işi özel yazılıma bırakın.</blockquote>
+      <h2 id="surec" class="bi-h2" data-n="03">Özel yazılım geliştirme süreci adım adım</h2>
+      <p>İyi yönetilen bir projede sürpriz azdır, çünkü her aşamanın bir çıktısı ve bir onay noktası vardır. Tipik bir süreç şöyle işler:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. Keşif ve analiz —</b> Mevcut süreç yerinde dinlenir, kullanıcılarla konuşulur, sorunlar ve hedefler yazıya dökülür. Çıktısı: kapsam dokümanı, kullanıcı rolleri ve öncelikli özellik listesi.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. MVP kapsamının belirlenmesi —</b> Her şeyi ilk sürüme sığdırmak yerine, işe en çok değer katan çekirdek özellikler seçilir. “Olmazsa olmaz” ile “sonra da olur” ayrımı burada yapılır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. UX ve arayüz tasarımı —</b> Ekranlar önce taslak (wireframe), sonra tıklanabilir prototip olarak hazırlanır. Kod yazılmadan önce kullanıcıların prototip üzerinde denemesi, en pahalı hataları en ucuz aşamada yakalar.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Mimari ve teknoloji seçimi —</b> Web mi, mobil mi, masaüstü mü; veritabanı, barındırma, güvenlik ve entegrasyonlar netleşir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. Sprintlerle geliştirme —</b> İş genellikle iki haftalık dilimlere bölünür. Her sprint sonunda çalışan bir sürüm gösterilir; geri bildirim hemen bir sonraki sprinte yansır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>6. Test ve kabul —</b> Fonksiyonel testler, farklı cihaz ve tarayıcı testleri, yük ve güvenlik kontrolleri yapılır. Son adım, sizin gerçek senaryolarla yaptığınız kabul testidir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>7. Yayın, eğitim ve geçiş —</b> Eski sistemdeki veriler aktarılır, kullanıcılar eğitilir, gerekirse eski ve yeni sistem kısa bir süre paralel çalıştırılır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>8. Bakım ve sürekli geliştirme —</b> Yazılım yayın günü bitmez; güvenlik güncellemeleri, hata düzeltmeleri ve yeni ihtiyaçlar için düzenli bir bakım planı gerekir.</span></li>
+      </ul>
+      <p>Sürenin yarısından fazlasının kod dışı işlere (analiz, tasarım, test, eğitim) gitmesi şaşırtıcı değildir; aksine sağlıklı bir projenin işaretidir.</p>
+      <h2 id="teknoloji" class="bi-h2" data-n="04">Web, mobil mi masaüstü mü? Platform seçimi</h2>
+      <p>Özel yazılımın hangi platformda çalışacağı, kullanım senaryosuna göre belirlenmelidir:</p>
+      <h3>Web uygulaması</h3>
+      <p>Tarayıcıdan her yerden erişilir, kurulum gerektirmez, güncellemeler tek noktadan yapılır. Panel, portal, CRM benzeri iç sistemler için çoğu zaman ilk tercihtir. Bu alanda yaptığımız işleri <a href="web-cozumleri">web çözümleri</a> sayfamızda görebilirsiniz.</p>
+      <h3>Mobil uygulama</h3>
+      <p>Saha ekipleri, kurye ve servis personeli ya da müşterilerinize sunacağınız bir hizmet varsa mobil uygulama gerekir. Kamera, konum, bildirim gibi telefon özellikleri burada devreye girer. Ayrıntılar için <a href="mobil-uygulamalar">mobil uygulama</a> hizmetimize bakabilirsiniz.</p>
+      <h3>Masaüstü uygulama</h3>
+      <p>Yazarkasa, terazi, barkod okuyucu gibi cihazlarla doğrudan çalışma, internet kesintisinde kesintisiz kullanım ya da yoğun veri işleme gerekiyorsa Windows uygulaması hâlâ güçlü bir seçenektir. Karşılaştırmanın tamamı için <a href="masaustu-mu-web-uygulamasi-mi">masaüstü mü web uygulaması mı</a> yazımıza göz atın.</p>
+      <p>Birçok projede doğru cevap “hepsi”dir: ortak bir sunucu ve veritabanı üzerinde çalışan web paneli, mobil uygulama ve gerektiğinde masaüstü istemci. Önemli olan, bu yapının baştan planlanmasıdır.</p>
+      <h2 id="maliyet" class="bi-h2" data-n="05">Özel yazılım maliyeti neye göre belirlenir?</h2>
+      <p>“Bir yazılım kaça olur?” sorusunun tek bir cevabı yoktur; tıpkı “bir ev kaça olur?” sorusu gibi. Fiyatı belirleyen başlıca kalemler şunlardır:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kapsam ve ekran sayısı:</b> Kaç kullanıcı rolü, kaç ekran, kaç iş akışı var?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Platform sayısı:</b> Yalnızca web mi, yanında iOS / Android ve masaüstü de var mı?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Entegrasyonlar:</b> Muhasebe programı, e-Fatura sağlayıcısı, sanal POS, SMS, kargo, banka gibi dış sistemlerle bağlantılar.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Veri taşıma:</b> Eski sistemden ya da dağınık Excel dosyalarından verinin temizlenip aktarılması.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Güvenlik ve performans gereksinimleri:</b> Kişisel veri işleme, yetkilendirme, kayıt (log) tutma, yüksek eş zamanlı kullanıcı sayısı.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Bakım ve barındırma:</b> Sunucu, yedekleme, izleme ve yıllık bakım bütçesi.</span></li>
+      </ul>
+      <p>Bütçeyi kontrol altında tutmanın en etkili yolu, işe küçük ama çalışan bir MVP ile başlamak ve sonraki aşamaları gerçek kullanım verisine göre planlamaktır. Tek seferde “her şeyi yapan” bir sistem istemek, hem maliyeti hem riski katlar.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Destekleri takip edin:</b> KOSGEB ve kalkınma ajansları dönem dönem dijital dönüşüm ve yazılım yatırımlarına yönelik destek çağrıları açabiliyor. Proje bütçenizi çıkarırken güncel çağrıları ve uygunluk şartlarını resmi sitelerden kontrol etmeye değer.</div></div>
+      <h2 id="sozlesme" class="bi-h2" data-n="06">Sözleşmede olması gerekenler: kaynak kod, haklar, bakım</h2>
+      <p>Özel yazılım projelerinde anlaşmazlıkların çoğu teknik değil, sözleşmeden kaynaklanır. Teklifi imzalamadan önce şu maddeleri netleştirin:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kaynak kod ve fikri haklar:</b> Kaynak kodun size teslim edilip edilmeyeceği, hangi kullanım haklarının devredildiği açıkça yazılmalı. 5846 sayılı Fikir ve Sanat Eserleri Kanunu’na göre mali haklara ilişkin sözleşmelerin yazılı olması ve devredilen hakların ayrı ayrı gösterilmesi gerekir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kapsam ve değişiklik yönetimi:</b> Kapsam dokümanı sözleşmenin eki olmalı; proje sırasında gelen yeni taleplerin nasıl fiyatlanacağı ve takvime etkisi baştan belirlenmeli.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kabul kriterleri:</b> Bir aşamanın “bitti” sayılması için hangi testlerin geçilmesi gerektiği yazılı olmalı.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ödeme planı:</b> Ödemelerin teslim edilen ve onaylanan aşamalara bağlanması iki taraf için de en adil yöntemdir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Alan adı, sunucu ve hesaplar:</b> Alan adı, sunucu, uygulama mağazası ve bulut hesaplarının sizin adınıza açılması, ileride firma değiştirmeyi kolaylaştırır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Garanti ve bakım:</b> Yayın sonrası ücretsiz hata düzeltme süresi, sonrasındaki bakım ücreti ve müdahale süreleri (SLA).</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kişisel veriler:</b> Yazılım kişisel veri işliyorsa, geliştirici ve barındırma firmasının KVKK kapsamındaki rolleri ve veri güvenliği yükümlülükleri tanımlanmalı.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Not:</b> Bu bölüm genel bilgilendirme amaçlıdır, hukuki danışmanlık değildir. Sözleşmenizi imzalamadan önce bir hukukçuya göstermenizi öneririz.</div></div>
+      <h2 id="firma-secimi" class="bi-h2" data-n="07">Doğru yazılım firmasını nasıl seçersiniz?</h2>
+      <p>En düşük teklif çoğu zaman en pahalı sonuçtur; ama en yüksek teklif de kaliteyi garanti etmez. Firmaları karşılaştırırken şu sorulara cevap arayın:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Canlıda çalışan işleri var mı?</b> Ekran görüntüsü değil, gerçekten kullanılan ürünler ve ulaşabileceğiniz referanslar isteyin.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Önce dinliyor mu?</b> İlk görüşmede fiyat vermek yerine sürecinizi anlamaya çalışan firma, doğru kapsamı çıkarma ihtimali en yüksek firmadır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Güvenliği nasıl ele alıyor?</b> Yetkilendirme, şifreleme, yedekleme ve güncel tehdit listeleri (ör. OWASP Top 10) hakkında net cevap verebilmeli.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Teslim sonrası kim destek verecek?</b> Projeyi yapan ekip ile bakımı yapacak ekip aynı mı, iletişim kanalı ne?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Dokümantasyon veriyor mu?</b> Kurulum, mimari ve kullanıcı dokümanı olmadan teslim edilen yazılım, firmaya bağımlılık yaratır.</span></li>
+      </ul>
+      <p>Biz de CYF Tech olarak müşteri projelerinin yanında kendi ürünlerimizi geliştiriyoruz: apartman ve site yönetimi için KATSİS ile çok şubeli restoranlar için RestaurantBill, web, mobil ve masaüstü bileşenleri olan, sahada her gün kullanılan sistemler. Bu ürünleri <a href="projelerimiz">projelerimiz</a> sayfasında, müşteri işlerimizi ise <a href="referanslar">referanslarımızda</a> inceleyebilirsiniz.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>İyi bir yazılım ortağı size ne istediğinizi değil, neye ihtiyacınız olduğunu sorar.</blockquote>
+      <div class="bi-check">
+        <div class="eyebrow">// PROJEYE BAŞLAMADAN ÖNCE KONTROL LİSTESİ</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Çözmek istediğiniz sorun ve ölçülebilir hedef yazılı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>MVP kapsamı ve sonraki aşamalar ayrıldı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Kullanıcı rolleri ve öncelikli ekranlar belli mi?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Entegre olunacak sistemlerin listesi çıkarıldı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Kaynak kod, haklar ve hesapların mülkiyeti sözleşmede net mi?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Kabul kriterleri ve ödeme planı aşamalara bağlandı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Yayın sonrası bakım, yedekleme ve destek kapsamı tanımlı mı?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="08">Sık sorulan sorular</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Özel yazılım geliştirmek ne kadar sürer?</summary><p>Kapsama göre değişir. Tek bir iş akışını otomatikleştiren küçük bir panel birkaç haftada, web paneli ve mobil uygulamadan oluşan orta ölçekli bir sistem genellikle birkaç ayda hayata geçer. Süreyi en çok kısaltan şey net bir kapsam ve hızlı geri bildirimdir.</p></details><details class="bi-faq-i"><summary>Özel yazılım mı daha pahalı, hazır yazılım mı?</summary><p>Başlangıçta özel yazılım daha pahalıdır. Ancak kullanıcı başına lisans ödenen, ek modüllerle büyüyen hazır çözümlerde birkaç yıllık toplam maliyet özel bir çözümü geçebilir. Karşılaştırmayı en az üç yıllık toplam sahip olma maliyeti üzerinden yapmak gerekir.</p></details><details class="bi-faq-i"><summary>Kaynak kod bana mı ait olur?</summary><p>Bu tamamen sözleşmeye bağlıdır. Fikir ve Sanat Eserleri Kanunu gereği mali hakların devri yazılı olmalı ve devredilen haklar ayrı ayrı belirtilmelidir. Kaynak kodun teslimini ve kullanım haklarını sözleşmeye açıkça yazdırın.</p></details><details class="bi-faq-i"><summary>Küçük bir işletme için özel yazılım mantıklı mı?</summary><p>Tekrarlayan işlere ciddi zaman harcanıyorsa ya da hazır yazılımlar sürecinize uymuyorsa evet. Küçük ve odaklı bir MVP ile başlamak, riski ve bütçeyi sınırlı tutar.</p></details><details class="bi-faq-i"><summary>Yazılım teslim edildikten sonra ne olur?</summary><p>Yazılım düzenli bakım ister: güvenlik güncellemeleri, hata düzeltmeleri, sunucu ve yedekleme takibi, yeni ihtiyaçlar için geliştirmeler. Bu nedenle sözleşmede yayın sonrası destek kapsamı ve ücreti baştan belirlenmelidir.</p></details></div>
+      <h2 id="sonuc">Son söz</h2>
+      <p>Özel yazılım geliştirme, doğru zamanda ve doğru kapsamla yapıldığında işletmenize yalnızca zaman kazandırmaz; veriye dayalı karar almanızı, büyürken aynı ekip ile daha fazla iş yapmanızı sağlar. Başarının anahtarı, kodu yazmadan önce sorunu netleştirmek, küçük başlayıp gerçek kullanıma göre büyümek ve sözleşmeyi en baştan sağlam kurmaktır.</p>
+      <p>Aklınızdaki projenin özel yazılım gerektirip gerektirmediğinden emin değilseniz, birlikte değerlendirelim. Sürecinizi dinleyip size en uygun yolu, gerekiyorsa hazır bir çözümü öneririz: <a href="iletisim">bizimle iletişime geçin</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// KAYNAKLAR</div><ol><li><a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.3.5846.pdf" target="_blank" rel="noopener nofollow">5846 sayılı Fikir ve Sanat Eserleri Kanunu (mevzuat.gov.tr)</a></li><li><a href="https://owasp.org/Top10/2025/" target="_blank" rel="noopener nofollow">OWASP Top 10:2025</a></li><li><a href="https://www.kosgeb.gov.tr" target="_blank" rel="noopener nofollow">KOSGEB destek programları</a></li><li><a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener nofollow">Kişisel Verileri Koruma Kurumu</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Tüm yazılar</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Paylaş</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp ile paylaş" title="WhatsApp ile paylaş"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn’de paylaş" title="LinkedIn’de paylaş"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="X’te paylaş" title="X’te paylaş"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="E-posta ile gönder" title="E-posta ile gönder"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="İçindekiler">
+        <div class="eyebrow">// BU YAZIDA</div>
+        <ol class="bi-toc"><li><a href="#ne-zaman" data-n="01">Ne zaman gerekir?</a></li><li><a href="#hazir-mi-ozel-mi" data-n="02">Hazır mı, özel mi?</a></li><li><a href="#surec" data-n="03">Süreç adım adım</a></li><li><a href="#teknoloji" data-n="04">Web, mobil, masaüstü</a></li><li><a href="#maliyet" data-n="05">Maliyeti ne belirler?</a></li><li><a href="#sozlesme" data-n="06">Sözleşme ve kaynak kod</a></li><li><a href="#firma-secimi" data-n="07">Firma seçimi</a></li><li><a href="#sss" data-n="08">Sık sorulan sorular</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// DİĞER YAZILAR</div>
+        <ul class="bi-others"><li><a href="wordpress-mi-ozel-yazilim-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 Ekim 2026</span><b>WordPress mi Özel Yazılım mı? Doğru Altyapıyı Seçme Rehberi</b><span class="bi-read">10 dk okuma</span></div></a></li><li><a href="masaustu-mu-web-uygulamasi-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Masaüstü Uygulama mı Web Uygulaması mı? Doğru Seçim İçin Rehber</b><span class="bi-read">8 dk okuma</span></div></a></li><li><a href="apartman-yonetim-yazilimi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Apartman Yönetim Yazılımı Seçerken Dikkat Edilmesi Gereken 9 Şey</b><span class="bi-read">8 dk okuma</span></div></a></li><li><a href="restoran-adisyon-sistemi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Restoran Adisyon Sistemi Seçimi: POS ve Adisyon Programı Rehberi</b><span class="bi-read">8 dk okuma</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Kurumsal Web Sitesi Yaptırmadan Önce Bilmeniz Gereken 7 Şey</b><span class="bi-read">6 dk okuma</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Projenizi konuşalım.</b><span>Aklınızdaki fikri anlatın, size özel teklifimizi hazırlayalım.</span><div class="bi-go">Teklif Al<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// HAYDİ BAŞLAYALIM</div>
+        <h2 class="h2">Projenizi birlikte hayata geçirelim.</h2>
+        <p class="lead" style="margin-top:20px">Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp'tan yazın</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">adres</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
+      </div>
+      <div>
+        <h2>HIZLI MENÜ</h2>
+        <ul><li><a href="./">Ana Sayfa</a></li><li><a href="projelerimiz">Projeler</a></li><li><a href="referanslar">Referanslar</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">Hakkımızda</a></li><li><a href="iletisim">İletişim</a></li></ul>
+      </div>
+      <div>
+        <h2>HİZMETLER</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a></li></ul>
+      </div>
+      <div>
+        <h2>İLETİŞİM</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Dijitalin güvenilir noktası.</span>
+      <span>Tüm hakları saklıdır.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

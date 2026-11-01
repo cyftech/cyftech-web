@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9 Dinge, auf die Sie bei der Wahl einer Hausverwaltungssoftware achten sollten – CYF Tech Blog</title>
+<meta name="description" content="Worauf achten bei der Wahl einer Hausverwaltungssoftware? Hausgeld und Verzugsentschädigung, Wirtschaftsplan, Online-Zahlung, KVKK, mobile App und Checkliste.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="9 Dinge, auf die Sie bei der Wahl einer Hausverwaltungssoftware achten sollten – CYF Tech Blog">
+<meta property="og:description" content="Worauf achten bei der Wahl einer Hausverwaltungssoftware? Hausgeld und Verzugsentschädigung, Wirtschaftsplan, Online-Zahlung, KVKK, mobile App und Checkliste.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/de/apartman-yonetim-yazilimi">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="de_DE">
+<link rel="canonical" href="https://cyftech.com.tr/de/apartman-yonetim-yazilimi">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "9 Dinge, auf die Sie bei der Wahl einer Hausverwaltungssoftware achten sollten", "description": "Worauf achten bei der Wahl einer Hausverwaltungssoftware? Hausgeld und Verzugsentschädigung, Wirtschaftsplan, Online-Zahlung, KVKK, mobile App und Checkliste.", "image": "https://cyftech.com.tr/assets/img/blog/apartman-yonetim-yazilimi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/apartman-yonetim-yazilimi", "url": "https://cyftech.com.tr/de/apartman-yonetim-yazilimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/de/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/de/blog"}, {"@type": "ListItem", "position": 3, "name": "9 Dinge, auf die Sie bei der Wahl einer Hausverwaltungssoftware achten sollten", "item": "https://cyftech.com.tr/de/apartman-yonetim-yazilimi"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Wie hoch sind die Verzugszinsen beim Hausgeld?", "acceptedAnswer": {"@type": "Answer", "text": "Nach Artikel 20 des Wohnungseigentumsgesetzes Nr. 634 zahlt ein Eigentümer, der seinen Kosten- oder Vorschussanteil nicht pünktlich begleicht, für die Verzugstage eine Verzugsentschädigung von 5 Prozent pro Monat. Bei Unklarheiten zur Berechnungsmethode empfiehlt sich der Rat eines Juristen."}}, {"@type": "Question", "name": "Darf eine Liste der Hausgeldschuldner im Aufzug ausgehängt werden?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Die türkische Datenschutzbehörde hat das Aushängen von Daten säumiger Hausgeldzahler in Gemeinschaftsbereichen wie Aufzug, Eingang und Flur für rechtswidrig erklärt. Informiert werden sollte nur über Kanäle, auf die allein die Betroffenen Zugriff haben."}}, {"@type": "Question", "name": "Braucht ein kleines Haus überhaupt eine Verwaltungssoftware?", "acceptedAnswer": {"@type": "Answer", "text": "Zwingend ist es nicht, aber selbst in Häusern mit wenigen Wohnungen erleichtern Online-Zahlung, persönliche Kontoauszüge und eine Ankündigungsfunktion die Arbeit des Verwalters erheblich und verhindern, dass beim Verwalterwechsel Unterlagen verloren gehen."}}, {"@type": "Question", "name": "Wonach richten sich die Preise für Hausverwaltungssoftware?", "acceptedAnswer": {"@type": "Answer", "text": "Meist nach der Zahl der Wohnungen bzw. Einheiten, den gewählten Modulen und Plattformen. SMS-Pakete und POS-Provisionen werden oft separat berechnet; vergleichen sollten Sie daher die jährlichen Gesamtkosten."}}, {"@type": "Question", "name": "Was ist vor einer Klage wegen Hausgeldschulden zu tun?", "acceptedAnswer": {"@type": "Answer", "text": "Seit dem 1. September 2023 ist bei Streitigkeiten aus dem Wohnungseigentumsgesetz vor einer Klage ein Mediationsversuch verpflichtend. Für Forderungen auf Basis eines bestandskräftigen Wirtschaftsplans ist auch die Zwangsvollstreckung eine Option; lassen Sie sich dabei von einem Anwalt unterstützen."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/apartman-yonetim-yazilimi">
+
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Zum Inhalt springen</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Hauptmenü">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Leistungen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Weblösungen</b><small>Webdesign, Software, E-Commerce und SEO – alles aus einer Hand.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Desktop-Apps</b><small>Maßgeschneiderte Desktop-Software, die auch offline funktioniert.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobile Apps</b><small>Schnelle, benutzerfreundliche Apps für iOS und Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projekte</a>
+    <a href="referanslar">Referenzen</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">Über uns</a>
+    <a href="iletisim">Kontakt</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>DE</span></button>
+      <div class="lang-menu"><a href="../apartman-yonetim-yazilimi" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/apartman-yonetim-yazilimi" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="apartman-yonetim-yazilimi" hreflang="de" lang="de" data-lang="de" aria-current="true"><b>DE</b><span>Deutsch</span></a><a href="../ar/apartman-yonetim-yazilimi" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/apartman-yonetim-yazilimi" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="../ru/apartman-yonetim-yazilimi" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Hell-/Dunkelmodus" title="Hell-/Dunkelmodus"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menü öffnen" data-label-open="Menü öffnen" data-label-close="Menü schließen" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobiles Menü">
+  <a href="./">Startseite</a>
+  <div class="mnav-label">LEISTUNGEN</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Weblösungen</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop-Apps</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Apps</a>
+  <div class="mnav-label">UNTERNEHMEN</div>
+  <a href="projelerimiz">Projekte</a>
+  <a href="referanslar">Referenzen</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">Über uns</a>
+  <a href="iletisim">Kontakt</a>
+  <a class="btn btn-primary" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>SOFTWARE</span></div>
+    <h1 class="h1" style="max-width:900px">9 Dinge, auf die Sie bei der Wahl einer Hausverwaltungssoftware achten sollten.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Software</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31. Oktober 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 Min. Lesezeit</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/apartman-yonetim-yazilimi.svg" alt=""></div>
+      <p class="bi-lead">Das Hausgeldbuch an einem Ort, der Kontoauszug an einem anderen, die Schuldnerliste in der WhatsApp-Gruppe, Störungsmeldungen auf dem Handy des Verwalters. Hausverwaltung wirkt wie ein Ehrenamt, doch im Kern geht es um <b>Geld, Recht und Kommunikation</b>; die richtige Software bündelt alle drei an einem Ort.</p>
+      <p>Vom Haus mit wenigen Wohnungen bis zur Großanlage mit Hunderten Einheiten stellen sich Verwaltungen dieselben Fragen: Wird das Hausgeld pünktlich eingezogen, wer schuldet wie viel, wofür wurde das Geld ausgegeben, werden die Bewohner informiert? Eine <b>Hausverwaltungssoftware</b> verwandelt die Antworten in eine transparente Ordnung, die alle einsehen können.</p>
+      <p>Es gibt zahlreiche Programme für die Wohnanlagenverwaltung, und ihre Werbung ähnelt sich. In diesem Beitrag geht es nicht um ein bestimmtes Produkt, sondern um die Kriterien für Ihre Wahl: Konformität mit dem türkischen Wohnungseigentumsgesetz, Berechnung von Hausgeld und Verzugsentschädigung, Online-Zahlung, KVKK, mobiler Zugriff, Reporting und Support. Am Ende finden Sie außerdem eine Checkliste für den Vergleich der Lösungen.</p>
+      <h2 id="neden" class="bi-h2" data-n="01">Warum braucht man eine Hausverwaltungssoftware?</h2>
+      <p>Verwaltung mit Kassenbuch und Excel funktioniert in kleinen Häusern mit wenigen Wohnungen eine Zeit lang. Doch mit steigender Wohnungszahl, wechselnden Verwaltern und häufigem Mieterwechsel wachsen die Probleme:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Unübersichtliche Konten:</b> Es wird unklar, welche Zahlung zu welchem Monat und welchem Kostenposten gehört; bei der Übergabe tauchen Fehlbeträge auf.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Mangelnde Transparenz:</b> Sehen die Bewohner nicht, wofür das Geld ausgegeben wird, sinkt das Vertrauen, Versammlungen werden zu Streitgesprächen und die Zahlungsmoral sinkt.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Zeit des Verwalters:</b> Einzelne Nachrichten verschicken, Quittungen schreiben, an Schulden erinnern und Störungen verfolgen ist für ehrenamtliche Verwalter eine erhebliche Last.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Rechtliches Risiko:</b> Eine falsch berechnete Verzugsentschädigung oder das öffentliche Aushängen von Schuldnern in Gemeinschaftsbereichen kann die Verwaltung in rechtliche Schwierigkeiten bringen.</span></li>
+      </ul>
+      <p>Gute Software reduziert diese Last und stärkt zugleich das Vertrauen in die Verwaltung, weil jeder Eigentümer sein eigenes Konto einsehen kann.</p>
+      <h2 id="aidat-ve-borc" class="bi-h2" data-n="02">Hausgeld und Verzugsentschädigung: gesetzeskonform berechnen</h2>
+      <p>Das Herzstück einer Software für die Wohnanlagenverwaltung ist die Hausgeld- und Forderungsverwaltung. Nach Artikel 20 des türkischen Wohnungseigentumsgesetzes Nr. 634 zahlt ein Eigentümer, der seinen Kosten- und Vorschussanteil nicht pünktlich begleicht, für die Verzugstage eine Verzugsentschädigung von <b>5 Prozent pro Monat</b>. Dieser Satz wurde 2007 von 10 auf 5 Prozent gesenkt; noch immer begegnet man Vorlagen, die mit dem alten Satz rechnen.</p>
+      <p>Achten Sie bei der Bewertung der Software auf Folgendes:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Flexible Umlage:</b> Lässt sich das Hausgeld nach Miteigentumsanteil, zu gleichen Teilen oder nach einem besonderen Verteilerschlüssel aus der Gemeinschaftsordnung festlegen? Lassen sich Posten wie Heizung, Aufzug und Inventar getrennt umlegen?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Einstellung der Verzugsentschädigung:</b> Lassen sich Satz, Fälligkeitstag und Berechnungsmethode (monatlich oder tageweise) gemäß Verwaltungsbeschluss einstellen? Ist im Kontoauszug klar ersichtlich, wie gerechnet wurde?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Trennung von Eigentümer und Mieter:</b> Das Gesetz macht unter bestimmten Bedingungen auch den Mieter gemeinsam mit dem Eigentümer für den Kostenanteil haftbar. Die Software sollte Eigentümer und Mieter getrennt erfassen und die Forderung der richtigen Person zuordnen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Teilzahlung und Verrechnung:</b> Auf welche Schuld Teilzahlungen angerechnet werden, sowie Vorschüsse und Erstattungen müssen klar erfasst werden.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Persönlicher Kontoauszug:</b> Jede Wohnung sollte ihre eigene Schulden-, Zahlungs- und Verzugshistorie sehen können.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Test vor der Versammlung:</b> Geben Sie im Demokonto zwei echte Fälle aus Ihrem Haus ein (eine Wohnung, die spät zahlt, und eine mit Teilzahlung) und prüfen Sie, ob das Ergebnis mit Ihrem bisherigen Buch übereinstimmt. So verstehen Sie die Rechenlogik am schnellsten.</div></div>
+      <h2 id="isletme-projesi" class="bi-h2" data-n="03">Wirtschaftsplan, Beschlussbuch und Rechenschaft</h2>
+      <p>Das Gesetz verlangt von der Verwaltung einen jährlichen <b>Wirtschaftsplan</b>. Nach Artikel 37 des Wohnungseigentumsgesetzes kann binnen sieben Tagen nach Bekanntgabe Einspruch gegen den Wirtschaftsplan erhoben werden; der bestandskräftige Wirtschaftsplan und die Beschlüsse der Eigentümerversammlung zu den Betriebskosten gelten als Urkunden im Sinne von Artikel 68 Absatz 1 des türkischen Vollstreckungs- und Konkursgesetzes. Das zeigt, wie wichtig der Wirtschaftsplan für die Beitreibung von Hausgeldforderungen ist.</p>
+      <p>Diese Erleichterungen sollte die Software dabei bieten:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Budget und Planerstellung:</b> Aus den tatsächlichen Kosten des Vorjahres den Wirtschaftsplan für das neue Jahr erstellen und auf die Wohnungen aufteilen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Soll-Ist-Vergleich:</b> Berichte, die zeigen, bei welchem Posten es im Jahresverlauf wie viel Abweichung gibt.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kassen- und Bankbewegungen:</b> Die eingenommenen Gelder werden, wie vom Gesetz vorgesehen, auf einem vom Verwalter im Namen der Liegenschaft eröffneten Konto geführt, und die Bewegungen werden in der Software erfasst.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Belegarchiv:</b> Digitale Kopien von Rechnungen, Verträgen, Versammlungsprotokollen und Beschlüssen aufbewahren. Denken Sie daran, dass das Beschlussbuch notariell beglaubigt sein muss; die Software ersetzt dieses Buch nicht, sie sorgt für Ordnung.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Jahresabrechnung:</b> Die Einnahmen-Ausgaben-Übersicht für die Eigentümerversammlung mit einem Klick erstellen.</span></li>
+      </ul>
+      <p>Seit dem 1. September 2023 ist bei Streitigkeiten aus dem Wohnungseigentumsgesetz vor einer Klage ein Mediationsversuch verpflichtend. Sauber geführte Kontoauszüge und Aufzeichnungen stärken die Position der Verwaltung sowohl in der Mediation als auch in der Zwangsvollstreckung.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Hinweis:</b> Die rechtlichen Informationen in diesem Beitrag dienen der allgemeinen Information und sind keine Rechtsberatung. Holen Sie zu Verzugsentschädigung, Vollstreckung und Mediation den Rat eines Anwalts ein.</div></div>
+      <h2 id="tahsilat" class="bi-h2" data-n="04">Online-Hausgeldzahlung: virtuelles POS, Überweisungsabgleich und Erinnerungen</h2>
+      <p>Der wirksamste Weg, den Zahlungseingang zu verbessern, ist eine mühelose Zahlung. Können Bewohner ihr Hausgeld per Karte am Handy bezahlen, entfällt die Ausrede „Ich zahle es bei der Bank ein“.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Kartenzahlung über virtuelles POS:</b> Die Zahlung sollte sofort von der Forderung abgebucht und die Quittung automatisch erstellt werden. Klären Sie vorab die Provisionssätze und wer diese Provision trägt.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Abgleich von Überweisungen / EFT:</b> Überweisungen ohne Verwendungszweck sind das größte Ärgernis für Verwaltungen. Ein wohnungsspezifischer Referenzcode oder die Funktion, Bankbewegungen zu importieren und abzugleichen, spart viel Zeit.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Automatische Erinnerung:</b> Persönliche Erinnerungen per SMS, E-Mail oder App-Benachrichtigung vor und nach dem Fälligkeitstag.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Zahlungssicherheit:</b> Kartendaten sollten nicht in der Software, sondern in der Infrastruktur eines lizenzierten Zahlungsinstituts verarbeitet werden; 3D Secure muss unterstützt werden.</span></li>
+      </ul>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Die stärkste Erinnerung beim Hausgeld ist eine Zahlung, die mit zwei Fingertipps erledigt ist.</blockquote>
+      <h2 id="kvkk" class="bi-h2" data-n="05">KVKK-Konformität: Schuldnerlisten, Kameras und Bewohnerdaten</h2>
+      <p>Haus- und Wohnanlagenverwaltungen verarbeiten viele personenbezogene Daten wie Name, Telefonnummer, Wohnungsnummer, Schuldenstand, Kfz-Kennzeichen und Kamerabilder. Die türkische Datenschutzbehörde hat zuletzt auf zwei wichtige Punkte in diesem Bereich hingewiesen:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Schuldnerlisten gehören nicht in Gemeinschaftsbereiche:</b> Laut einer 2026 veröffentlichten Entscheidung der Behörde verstößt das Aushängen von Daten säumiger Hausgeldzahler in Gemeinschaftsbereichen wie Aufzug, Hauseingang oder Flur gegen das Gesetz Nr. 6698. Empfohlen wird, nur über Kanäle zu informieren, auf die allein die Betroffenen Zugriff haben, etwa über eine persönliche App oder einen geschlossenen Kanal.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Einsatz von Überwachungskameras:</b> Die öffentliche Bekanntmachung der Behörde zu Überwachungskameras in Wohngebäuden betont, dass das Kamerasystem sowohl KVKK- als auch wohnungseigentumsrechtskonform eingerichtet werden muss.</span></li>
+      </ul>
+      <p>Diese Garantien sollte die Software bieten:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Rollenbasierte Berechtigungen:</b> Verwalter, Prüfer, Hausmeister und Bewohner sollten unterschiedliche Ansichten und Daten sehen. Ein Bewohner darf nur seine eigenen Schulden sehen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Datenstandort und Backups:</b> Wo die Daten gehostet werden, wie oft sie gesichert werden und wie sie Ihnen bei Vertragsende übergeben werden, sollte schriftlich festgehalten sein.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Datenschutzhinweis:</b> Es sollte einen Datenschutzhinweis geben, der den Bewohnern erklärt, zu welchem Zweck ihre Daten verarbeitet werden, und bei Bedarf einen Mechanismus für die ausdrückliche Einwilligung.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Änderungsprotokoll:</b> Es sollte nachvollziehbar sein, wer welchen Eintrag wann geändert hat; das ist für die Sicherheit und für Verwalterwechsel wichtig.</span></li>
+      </ul>
+      <p>Mehr über eine KVKK-konforme digitale Infrastruktur erfahren Sie in unserem Beitrag <a href="kvkk-uyumlu-web-sitesi">KVKK-konforme Website</a> – schauen Sie gern hinein.</p>
+      <h2 id="iletisim-mobil" class="bi-h2" data-n="06">Bewohnerkommunikation, Serviceanfragen und mobile App</h2>
+      <p>Ein Großteil der Kommunikation zwischen Verwaltung und Bewohnern läuft heute in unübersichtlichen Messenger-Gruppen. Dort gehen Ankündigungen unter, persönliche Daten werden für alle sichtbar geteilt und Störungsmeldungen bleiben unbearbeitet. Achten Sie in der Software auf diese Funktionen:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ankündigungsmodul:</b> Mitteilungen wie Wasserabstellung, Einladung zur Versammlung oder Wartungsarbeiten per App-Benachrichtigung und bei Bedarf per SMS an alle Bewohner oder an bestimmte Gebäudeblöcke senden.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Serviceanfragen:</b> Ein Ticketsystem, in dem Bewohner Störungen mit Foto melden und den Status (eingegangen, in Bearbeitung, erledigt) verfolgen können.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Mobile App:</b> Eine iOS- und Android-App, mit der Bewohner ihre Schulden einsehen, bezahlen, Ankündigungen lesen und Anfragen stellen. Eine mobilfreundliche Webseite reicht auch, für Push-Benachrichtigungen ist eine App aber wirksamer.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Verwalteransicht:</b> Ein Desktop- oder Web-Panel für Verwaltung und Buchhaltung mit detaillierten Funktionen. In großen Anlagen erfolgt umfangreiche Dateneingabe nicht am Handy.</span></li>
+      </ul>
+      <h2 id="karsilastirma" class="bi-h2" data-n="07">Vergleichstabelle für Hausverwaltungsprogramme</h2>
+      <p>Mit der folgenden Tabelle können Sie die angebotenen Lösungen nebeneinanderstellen:</p>
+      <table>
+        <thead><tr><th>Kriterium</th><th>Was fragen?</th></tr></thead>
+        <tbody>
+          <tr><td>Hausgeld und Umlage</td><td>Werden Miteigentumsanteil, gleiche Teile und besondere Verteilerschlüssel unterstützt?</td></tr>
+          <tr><td>Verzugsentschädigung</td><td>Sind Satz und Methode einstellbar, werden sie im Kontoauszug angezeigt?</td></tr>
+          <tr><td>Zahlungseingang</td><td>Gibt es virtuelles POS, Überweisungsabgleich und automatische Quittungen? Wer trägt die Provision?</td></tr>
+          <tr><td>Reporting</td><td>Lassen sich Wirtschaftsplan, Soll-Ist-Vergleich und Jahresabrechnung erstellen?</td></tr>
+          <tr><td>KVKK</td><td>Wie sind rollenbasierte Rechte, Datenstandort, Backups und Änderungsprotokoll geregelt?</td></tr>
+          <tr><td>Plattformen</td><td>Welche Optionen gibt es für Web, iOS, Android und Desktop?</td></tr>
+          <tr><td>Umstieg</td><td>Lassen sich vorhandene Excel-Daten und Eröffnungssalden übernehmen?</td></tr>
+          <tr><td>Preisgestaltung</td><td>Pro Wohnung oder pauschal? Sind SMS- und POS-Gebühren enthalten?</td></tr>
+          <tr><td>Support</td><td>Telefon, E-Mail, Schulung; gibt es Übergabe-Support beim Verwalterwechsel?</td></tr>
+        </tbody>
+      </table>
+      <p>Achten Sie bei den Preisen nicht nur auf die Monatsgebühr, sondern auf die jährlichen Gesamtkosten inklusive SMS-Paketen, POS-Provisionen und Zusatzmodulen. Ein günstig wirkendes Paket kann mit Zusatzposten teuer werden.</p>
+      <h2 id="ornek" class="bi-h2" data-n="08">Ein Beispiel: Wie wir KATSİS aufgebaut haben</h2>
+      <p>Einige dieser Kriterien haben wir bei der Entwicklung unseres eigenen Produkts selbst erlebt. <b>KATSİS</b>, entwickelt von CYF Tech, wurde konzipiert, um die Verwaltung von Häusern und Wohnanlagen in einem Panel zu bündeln: Hausgeld- und Forderungsverwaltung, Kasse, Ankündigungen, Serviceanfragen, Online-Zahlung per virtuellem POS und SMS-Module arbeiten zusammen. Für Verwalter gibt es ein Web-Panel und eine Windows-App, für Bewohner Apps für iOS und Android.</p>
+      <p>Die wichtigste Lektion aus der Entwicklung: Verwaltungen brauchen nicht möglichst viele Funktionen, sondern eine korrekte Hausgeldberechnung, einfache Zahlungen und geordnete Kommunikation. Das Produkt und unsere weiteren Arbeiten finden Sie auf unserer Seite <a href="projelerimiz">Projekte</a>. Welche Software Sie auch wählen, wir empfehlen Ihnen die obige Checkliste.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// CHECKLISTE VOR DER SOFTWAREWAHL</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Werden Verteilerschlüssel für das Hausgeld (Miteigentumsanteil, gleiche Teile, individuell) unterstützt?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Lassen sich Satz und Methode der Verzugsentschädigung gemäß Verwaltungsbeschluss einstellen?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Gibt es Online-Zahlung, Überweisungsabgleich und automatische Quittungen?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Werden Schuldendaten nur der betroffenen Person angezeigt?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Sind Datenstandort, Backups und Datenübergabe bei Vertragsende schriftlich geregelt?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Lassen sich vorhandene Einträge und Eröffnungssalden übernehmen?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Wurden die jährlichen Gesamtkosten inklusive SMS, POS und Zusatzmodulen berechnet?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="09">Häufig gestellte Fragen</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Wie hoch sind die Verzugszinsen beim Hausgeld?</summary><p>Nach Artikel 20 des Wohnungseigentumsgesetzes Nr. 634 zahlt ein Eigentümer, der seinen Kosten- oder Vorschussanteil nicht pünktlich begleicht, für die Verzugstage eine Verzugsentschädigung von 5 Prozent pro Monat. Bei Unklarheiten zur Berechnungsmethode empfiehlt sich der Rat eines Juristen.</p></details><details class="bi-faq-i"><summary>Darf eine Liste der Hausgeldschuldner im Aufzug ausgehängt werden?</summary><p>Nein. Die türkische Datenschutzbehörde hat das Aushängen von Daten säumiger Hausgeldzahler in Gemeinschaftsbereichen wie Aufzug, Eingang und Flur für rechtswidrig erklärt. Informiert werden sollte nur über Kanäle, auf die allein die Betroffenen Zugriff haben.</p></details><details class="bi-faq-i"><summary>Braucht ein kleines Haus überhaupt eine Verwaltungssoftware?</summary><p>Zwingend ist es nicht, aber selbst in Häusern mit wenigen Wohnungen erleichtern Online-Zahlung, persönliche Kontoauszüge und eine Ankündigungsfunktion die Arbeit des Verwalters erheblich und verhindern, dass beim Verwalterwechsel Unterlagen verloren gehen.</p></details><details class="bi-faq-i"><summary>Wonach richten sich die Preise für Hausverwaltungssoftware?</summary><p>Meist nach der Zahl der Wohnungen bzw. Einheiten, den gewählten Modulen und Plattformen. SMS-Pakete und POS-Provisionen werden oft separat berechnet; vergleichen sollten Sie daher die jährlichen Gesamtkosten.</p></details><details class="bi-faq-i"><summary>Was ist vor einer Klage wegen Hausgeldschulden zu tun?</summary><p>Seit dem 1. September 2023 ist bei Streitigkeiten aus dem Wohnungseigentumsgesetz vor einer Klage ein Mediationsversuch verpflichtend. Für Forderungen auf Basis eines bestandskräftigen Wirtschaftsplans ist auch die Zwangsvollstreckung eine Option; lassen Sie sich dabei von einem Anwalt unterstützen.</p></details></div>
+      <h2 id="sonuc">Fazit</h2>
+      <p>Die richtige Hausverwaltungssoftware entlastet den Verwalter, beschleunigt den Hausgeldeingang und stärkt vor allem das Vertrauen in die Verwaltung. Konzentrieren Sie sich bei der Wahl weniger auf glänzende Funktionslisten als auf gesetzeskonforme Hausgeldberechnung, einfache Zahlungen, KVKK-Garantien sowie Umstieg und Support.</p>
+      <p>Möchten Sie über die passende Lösung für Ihre Anlage oder die von Ihnen verwalteten Gebäude sprechen, KATSİS aus der Nähe sehen oder den Bedarf an einer individuellen Software für Ihre Verwaltungsprozesse prüfen, dann <a href="iletisim">kontaktieren Sie uns</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// QUELLEN</div><ol><li><a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.5.634.pdf" target="_blank" rel="noopener nofollow">Wohnungseigentumsgesetz Nr. 634 (mevzuat.gov.tr)</a></li><li><a href="https://www.kvkk.gov.tr/Icerik/8769/apartmanlarda-guvenlik-kamerasi-sistemi-kullaniminda-dikkat-edilecek-hususlara-dair-kamuoyu-duyurusu" target="_blank" rel="noopener nofollow">KVKK — Öffentliche Bekanntmachung zu Überwachungskameras in Wohngebäuden</a></li><li><a href="https://www.alomaliye.com/2026/03/31/toplu-yapilarda-apartman-site-sakinlerine-ait-borc-bilgilerinin-ortak-yerlere-asilmasi-hakkinda-kvkk-duyurusu/" target="_blank" rel="noopener nofollow">KVKK-Bekanntmachung zum Aushängen von Schuldendaten in Gemeinschaftsbereichen (Alomaliye)</a></li><li><a href="https://adb.adalet.gov.tr" target="_blank" rel="noopener nofollow">Mediation als Prozessvoraussetzung nach Gesetz Nr. 7445 (Mediationsabteilung des Justizministeriums)</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Alle Beiträge</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Teilen</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Per WhatsApp teilen" title="Per WhatsApp teilen"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Auf LinkedIn teilen" title="Auf LinkedIn teilen"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Auf X teilen" title="Auf X teilen"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Per E-Mail senden" title="Per E-Mail senden"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Inhalt">
+        <div class="eyebrow">// IN DIESEM BEITRAG</div>
+        <ol class="bi-toc"><li><a href="#neden" data-n="01">Warum Software?</a></li><li><a href="#aidat-ve-borc" data-n="02">Hausgeld- und Forderungsverwaltung</a></li><li><a href="#isletme-projesi" data-n="03">Wirtschaftsplan</a></li><li><a href="#tahsilat" data-n="04">Online-Zahlung</a></li><li><a href="#kvkk" data-n="05">KVKK und Datensicherheit</a></li><li><a href="#iletisim-mobil" data-n="06">Kommunikation und Mobile</a></li><li><a href="#karsilastirma" data-n="07">Wie vergleichen?</a></li><li><a href="#ornek" data-n="08">Ein Beispiel: KATSİS</a></li><li><a href="#sss" data-n="09">Häufig gestellte Fragen</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// WEITERE BEITRÄGE</div>
+        <ul class="bi-others"><li><a href="wordpress-mi-ozel-yazilim-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31. Oktober 2026</span><b>WordPress oder Individualsoftware? Leitfaden zur Wahl der richtigen Plattform</b><span class="bi-read">10 Min. Lesezeit</span></div></a></li><li><a href="ozel-yazilim-gelistirme"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Individualsoftware-Entwicklung: Wann lohnt sie sich und wie läuft sie ab?</b><span class="bi-read">8 Min. Lesezeit</span></div></a></li><li><a href="masaustu-mu-web-uygulamasi-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Desktop-App oder Web-App? Leitfaden für die richtige Wahl</b><span class="bi-read">8 Min. Lesezeit</span></div></a></li><li><a href="restoran-adisyon-sistemi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Restaurant-Kassensystem wählen: Leitfaden für POS- und Bestellsoftware</b><span class="bi-read">8 Min. Lesezeit</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31. Oktober 2026</span><b>7 Dinge, die Sie vor dem Auftrag für eine Unternehmenswebsite wissen sollten</b><span class="bi-read">6 Min. Lesezeit</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Lassen Sie uns über Ihr Projekt sprechen.</b><span>Erzählen Sie uns von Ihrer Idee – wir erstellen Ihnen ein individuelles Angebot.</span><div class="bi-go">Angebot anfragen<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// LEGEN WIR LOS</div>
+        <h2 class="h2">Lassen Sie uns Ihr Projekt gemeinsam umsetzen.</h2>
+        <p class="lead" style="margin-top:20px">Erzählen Sie uns von Ihrem Projekt – wir erstellen Ihnen ein individuelles Angebot.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Per WhatsApp schreiben</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">adresse</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Ihr verlässlicher digitaler Partner. Webdesign, Softwareentwicklung und digitale Lösungen.</p>
+      </div>
+      <div>
+        <h2>SCHNELLMENÜ</h2>
+        <ul><li><a href="./">Startseite</a></li><li><a href="projelerimiz">Projekte</a></li><li><a href="referanslar">Referenzen</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">Über uns</a></li><li><a href="iletisim">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h2>LEISTUNGEN</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Weblösungen</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop-Apps</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Apps</a></li></ul>
+      </div>
+      <div>
+        <h2>KONTAKT</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Ihr verlässlicher digitaler Partner.</span> <span>Alle Rechte vorbehalten.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

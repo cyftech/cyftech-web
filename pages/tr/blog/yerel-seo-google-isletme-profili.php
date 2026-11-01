@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<script id="cyf-lang-redirect">try{var L=["en", "de", "ar", "zh", "ru", "tr"],s=localStorage.getItem("cyf-lang");if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yerel SEO ve Google İşletme Profili: Haritalarda Öne Çıkma Rehberi — CYF Tech Blog</title>
+<meta name="description" content="Yerel SEO nedir, Google İşletme Profili nasıl optimize edilir? Haritalarda sıralamayı belirleyen 3 sinyal, yorum kuralları ve Yandex Haritalar için adım adım rehber.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Yerel SEO ve Google İşletme Profili: Haritalarda Öne Çıkma Rehberi — CYF Tech Blog">
+<meta property="og:description" content="Yerel SEO nedir, Google İşletme Profili nasıl optimize edilir? Haritalarda sıralamayı belirleyen 3 sinyal, yorum kuralları ve Yandex Haritalar için adım adım rehber.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/yerel-seo-google-isletme-profili">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="https://cyftech.com.tr/yerel-seo-google-isletme-profili">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Yerel SEO ve Google İşletme Profili: Haritalarda Öne Çıkma Rehberi", "description": "Yerel SEO nedir, Google İşletme Profili nasıl optimize edilir? Haritalarda sıralamayı belirleyen 3 sinyal, yorum kuralları ve Yandex Haritalar için adım adım rehber.", "image": "https://cyftech.com.tr/assets/img/blog/yerel-seo-google-isletme-profili.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "tr", "mainEntityOfPage": "https://cyftech.com.tr/yerel-seo-google-isletme-profili", "url": "https://cyftech.com.tr/yerel-seo-google-isletme-profili", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/blog"}, {"@type": "ListItem", "position": 3, "name": "Yerel SEO ve Google İşletme Profili: Haritalarda Öne Çıkma Rehberi", "item": "https://cyftech.com.tr/yerel-seo-google-isletme-profili"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "tr", "mainEntity": [{"@type": "Question", "name": "Google İşletme Profili ücretli mi?", "acceptedAnswer": {"@type": "Answer", "text": "Hayır. Google İşletme Profili açmak, doğrulamak ve yönetmek ücretsizdir. Google ayrıca yerel sıralamanın ödeme yapılarak yükseltilemeyeceğini belirtir; harita sonuçlarındaki reklamlar ayrı bir ücretli hizmettir ve reklam olarak işaretlenir."}}, {"@type": "Question", "name": "Adresim olmadan Google Haritalar’a kayıt olabilir miyim?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Müşterinin adresine giderek hizmet veriyorsanız hizmet bölgesi işletmesi olarak kayıt olabilir, adresinizi gizleyip hizmet verdiğiniz ilçe ve şehirleri belirtebilirsiniz. Sanal ofis ve posta kutusu adresleri ise profil için uygun kabul edilmez."}}, {"@type": "Question", "name": "Google yorumları sıralamayı etkiler mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Google’ın yardım sayfasına göre daha fazla yorum ve olumlu puan, işletmenin öne çıkma sinyaline katkıda bulunabilir. Yorumlara yanıt vermek de önerilir. Ancak yorum karşılığında indirim veya hediye vermek ve sahte yorum toplamak kurallara aykırıdır."}}, {"@type": "Question", "name": "Haritalarda neden rakibim benden üstte çıkıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Genellikle üç sebepten biridir: rakip arayan kişiye daha yakındır, profili daha eksiksiz ve kategorisi daha isabetlidir ya da daha çok ve daha güncel yorumu vardır. Mesafeyi değiştiremezsiniz ama profil bilgilerinizi, yorum akışınızı ve web sitenizi güçlendirebilirsiniz."}}, {"@type": "Question", "name": "Google İşletme Profili doğrulaması ne kadar sürer?", "acceptedAnswer": {"@type": "Answer", "text": "Doğrulama yöntemi işletmeye göre değişir; çoğu zaman işletmeyi gösteren kısa bir video istenir ve inceleme birkaç gün sürebilir. İnceleme sürerken bilgileri sık sık değiştirmemek, sürecin uzamasını önler."}}]}</script>
+<link rel="icon" type="image/png" href="assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/theme-light.css?v=20261031d">
+<script src="assets/js/site.js?v=20261031d" defer></script>
+<script src="assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/yerel-seo-google-isletme-profili">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/yerel-seo-google-isletme-profili">
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">İçeriğe geç</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Ana menü">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Hizmetler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Çözümleri</b><small>Web tasarım, yazılım, e-ticaret ve SEO — tek çatı altında.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Masaüstü Uygulamalar</b><small>İşinize özel, çevrimdışı da çalışan masaüstü yazılımlar.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobil Uygulamalar</b><small>iOS ve Android için hızlı, kullanıcı dostu uygulamalar.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projeler</a>
+    <a href="referanslar">Referanslar</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">Hakkımızda</a>
+    <a href="iletisim">İletişim</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Dil seçin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>TR</span></button>
+      <div class="lang-menu"><a href="yerel-seo-google-isletme-profili" hreflang="tr" lang="tr" data-lang="tr" aria-current="true"><b>TR</b><span>Türkçe</span></a><a href="en/yerel-seo-google-isletme-profili" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="de/yerel-seo-google-isletme-profili" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="ar/yerel-seo-google-isletme-profili" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="zh/yerel-seo-google-isletme-profili" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="ru/yerel-seo-google-isletme-profili" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Gece / gündüz teması" title="Gece / gündüz teması"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menüyü aç" data-label-open="Menüyü aç" data-label-close="Menüyü kapat" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobil menü">
+  <a href="./">Ana Sayfa</a>
+  <div class="mnav-label">HİZMETLER</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a>
+  <div class="mnav-label">KURUMSAL</div>
+  <a href="projelerimiz">Projeler</a>
+  <a href="referanslar">Referanslar</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">Hakkımızda</a>
+  <a href="iletisim">İletişim</a>
+  <a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>SEO</span></div>
+    <h1 class="h1" style="max-width:900px">Yerel SEO ve Google İşletme Profili: haritalarda öne çıkma rehberi.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>SEO</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 Ekim 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 dk okuma</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="assets/img/blog/yerel-seo-google-isletme-profili.svg" alt=""></div>
+      <p class="bi-lead">Biri telefonunda “yakınımda tesisatçı” ya da “Beşiktaş kahvaltı” yazdığında, sonuçların en üstünde bir harita ve üç işletme görür. Tıklamaların büyük kısmı bu üç işletmeye gider. <b>Yerel SEO</b>, o üç işletmeden biri olmanın işidir.</p>
+      <p>Bu rehberde Google’ın yerel sonuçları nasıl sıraladığını, Google İşletme Profili’ni adım adım nasıl kurup güçlendireceğinizi, yorumlarda nelerin serbest nelerin yasak olduğunu ve web sitenizin yerel görünürlüğe nasıl katkı verdiğini anlatıyoruz. Türkiye’ye özgü bir ayrıntıyı da atlamıyoruz: Yandex Haritalar.</p>
+      <p>SEO’nun genel mantığına yabancıysanız önce <a href="seo-nedir">SEO nedir</a> yazımıza göz atmanızı öneririz; burada doğrudan yerel tarafa odaklanıyoruz.</p>
+      <h2 id="yerel-seo-nedir" class="bi-h2" data-n="01">Yerel SEO nedir, kimler için önemlidir?</h2>
+      <p>Yerel SEO, bir işletmenin belirli bir bölgede yapılan aramalarda, özellikle Google Haritalar’da ve arama sonuçlarındaki harita kutusunda (yerel paket) görünür olmasını sağlayan çalışmalardır. Klasik SEO’dan farkı, burada <b>konumun</b> ve <b>işletme profilinin</b> belirleyici olmasıdır.</p>
+      <p>İki tür işletme için doğrudan gelir meselesidir:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Fiziksel mekânı olanlar:</b> restoran, kafe, klinik, kuaför, mağaza, otel, oto servis. Müşteri kapınıza gelir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Hizmet bölgesi işletmeleri:</b> tesisatçı, elektrikçi, temizlik firması, nakliyat, site yönetim şirketi. Siz müşterinin adresine gidersiniz.</span></li>
+      </ul>
+      <p>Yerel aramalar genellikle satın alma kararına çok yakındır. “Yakınımda eczane” yazan kişi bir makale okumak istemez; yol tarifi almak ya da aramak ister. Bu yüzden yerel görünürlük, az ziyaretle bile doğrudan telefon ve ziyaret getirebilir.</p>
+      <h2 id="uc-sinyal" class="bi-h2" data-n="02">Google yerel sonuçları neye göre sıralar? Üç sinyal</h2>
+      <p>Google İşletme Profili yardım sayfası yerel sonuçların çoğunlukla üç etkene göre belirlendiğini açıkça yazar: <b>alaka düzeyi</b>, <b>mesafe</b> ve <b>öne çıkma</b> (popülerlik).</p>
+      <table>
+        <thead><tr><th>Sinyal</th><th>Ne ölçer?</th><th>Sizin kontrolünüz</th></tr></thead>
+        <tbody>
+          <tr><td><b>Alaka düzeyi</b></td><td>Profilinizin aranan şeye ne kadar uyduğu</td><td>Yüksek: kategori, açıklama, hizmetler, ürünler, eksiksiz bilgi</td></tr>
+          <tr><td><b>Mesafe</b></td><td>İşletmenin arayan kişiye uzaklığı</td><td>Düşük: adresinizi değiştiremezsiniz; hizmet bölgesini doğru tanımlarsınız</td></tr>
+          <tr><td><b>Öne çıkma</b></td><td>İşletmenin ne kadar tanındığı</td><td>Orta: yorum sayısı ve puanı, sitenize verilen bağlantılar, internetteki bahisler</td></tr>
+        </tbody>
+      </table>
+      <p>Google aynı sayfada iki önemli not düşer: daha iyi bir yerel sıralama için istekte bulunmak ya da ödeme yapmak mümkün değildir; ayrıca daha fazla yorum ve olumlu puan yerel sıralamaya katkıda bulunabilir. Yani yerel SEO’da “paket satın alarak” öne geçilmez, profil emekle güçlendirilir.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Gerçekçi beklenti:</b> Mesafe sinyali yüzünden şehrin öbür ucundaki aramalarda üst sıraya çıkmanız zordur. Hedefiniz, hizmet verdiğiniz çevrede en güçlü profil olmaktır.</div></div>
+      <h2 id="profil-kurulumu" class="bi-h2" data-n="03">Google İşletme Profili adım adım nasıl kurulur?</h2>
+      <p>Profil ücretsizdir ve Google hesabınızla business.google.com üzerinden açılır. Kurulumda en çok hata yapılan noktalar şunlar:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. İşletme adı —</b> Tabeladaki, faturadaki gerçek adınızı yazın. “Ahmet Usta Kombi Servisi En Ucuz 7/24” gibi anahtar kelime eklemek Google kurallarına aykırıdır ve profilin askıya alınmasına yol açabilir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. Ana kategori —</b> İşinizi en iyi anlatan tek kategoriyi seçin, ardından az sayıda ek kategori ekleyin. Kategoriler sıralamada en etkili alanlardan biridir; ama kurallar gereği anahtar kelime gibi doldurulamaz.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. Adres veya hizmet bölgesi —</b> Müşteri kabul ettiğiniz bir adresiniz varsa onu girin. Müşterinin yanına gidiyorsanız adresi gizleyip ilçe ve şehir bazında hizmet bölgesi tanımlayın. Sanal ofis ve posta kutusu adresleri profil için uygun değildir.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Telefon, web sitesi, çalışma saatleri —</b> Bayram ve resmi tatiller için özel saatleri de girin; kapalı olduğunuz bir günde “açık” görünmek kötü yorumların en hızlı yoludur.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. Doğrulama —</b> Google, işletmeye göre farklı yöntemler sunar; çoğu zaman işletmeyi ve tabelayı gösteren kısa bir video istenir. Doğrulanmamış profil yerel sonuçlarda düzgün görünmez.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>6. Açıklama, hizmetler ve ürünler —</b> Ne yaptığınızı, nerede hizmet verdiğinizi müşterinin diliyle anlatın. Açıklamaya bağlantı ve indirim duyurusu koymayın; bunlar kurallarla kısıtlanmıştır.</span></li>
+      </ul>
+      <p>Bir işletme için yalnızca bir profil açılabilir. Aynı adreste ikinci bir profil ya da her ilçe için ayrı sahte profil açmak, en sık görülen askıya alma sebepleri arasındadır.</p>
+      <h2 id="yorumlar" class="bi-h2" data-n="04">Google yorumları: daha fazla yorum nasıl alınır, nelere dikkat edilir?</h2>
+      <p>Yorumlar hem sıralamayı hem de tıklama kararını etkiler. 4,8 puanlı ve son ay yorum almış bir işletmeyle, 3,9 puanlı ve en son yorumu iki yıl önce gelmiş bir işletme arasında seçim yapan müşterinin kararı bellidir.</p>
+      <h3>Serbest olanlar</h3>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Hizmeti tamamlamış her müşteriden, olumlu ya da olumsuz fark etmeksizin, deneyimini paylaşmasını istemek</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Profilin “yorum iste” bağlantısını veya QR kodunu fatura, kartvizit, e-posta ve WhatsApp mesajlarına eklemek</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Her yoruma, özellikle olumsuzlara, kibar ve çözüm odaklı yanıt vermek</span></li>
+      </ul>
+      <h3>Yasak olanlar</h3>
+      <p>Google Haritalar katkı politikası, sahte etkileşimi açıkça yasaklar. Şunları yapmayın:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Yorum karşılığında indirim, hediye, ücretsiz ürün veya hizmet sunmak</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Yalnızca memnun müşterilerden yorum istemek ya da olumsuz yorumları engellemeye çalışmak</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Müşterinin işletmedeyken puan vermesini şart koşmak, çalışanlara yorum kotası koymak</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Çalışanların, akrabaların veya ücretli hizmetlerin yorum yazması</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Dikkat:</b> Google sahte yorumları toplu olarak silebilir ve profile uyarı ekleyebilir. Kısa yoldan alınan yüzlerce yorum, yıllar içinde biriken gerçek yorumların güvenini bir günde yok edebilir.</div></div>
+      <h2 id="aktif-profil" class="bi-h2" data-n="05">Profili canlı tutmak: fotoğraflar, gönderiler, sorular</h2>
+      <p>Google, profilinize fotoğraf ve video eklemenizi önerilen adımlar arasında sayar. Mekânın dışı, içi, ekibiniz, ürünleriniz ve tamamlanmış işlerinizin gerçek fotoğrafları; stok görsellerden çok daha ikna edicidir. Dış cephe fotoğrafı ayrıca ilk kez gelecek müşterinin sizi bulmasını kolaylaştırır.</p>
+      <p>Gönderiler (kampanya, etkinlik, yenilik) sıralamayı doğrudan yükseltmese de profilin güncel olduğunu gösterir ve müşteriye bir sebep daha verir. Ayda birkaç gönderi, düzenli bir ritim için yeterlidir.</p>
+      <h3>Özellikler, hizmetler ve ürünler</h3>
+      <p>Profildeki “özellikler” alanı küçük ama etkili bir ayrıntıdır: engelli erişimi, otopark, Wi-Fi, randevuyla hizmet, kartla ödeme gibi seçenekler, bu ayrıntıları önemseyen müşterilerin aramalarında sizi daha alakalı kılar. Hizmetler bölümüne de yalnızca ana hizmetinizi değil, müşterilerin tek tek aradığı alt hizmetleri ekleyin. Bir diş kliniği için “implant”, “diş beyazlatma” ve “çocuk diş hekimliği” ayrı ayrı yazıldığında, her biri ayrı bir aramayla eşleşme şansı doğurur.</p>
+      <p>Bir de şunu unutmayın: profildeki bilgileri yalnızca siz değil, kullanıcılar da düzenleme önerisiyle değiştirebilir. Profilinizi ayda bir kontrol edip yanlış saat, kapalı işaretlemesi ya da hatalı telefon gibi değişiklikleri düzeltin.</p>
+      <h2 id="nap-site" class="bi-h2" data-n="06">Web sitenizin yerel SEO’daki rolü ve NAP tutarlılığı</h2>
+      <p>Profil tek başına yetmez; Google, profildeki bağlantının gittiği sitenin de alakalı ve güvenilir olmasına bakar. Yerel aramalarda güçlü bir site için:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>NAP tutarlılığı:</b> İşletme adı (Name), adres (Address) ve telefon (Phone) sitenizde, profilinizde, sosyal medya hesaplarınızda ve sektör rehberlerinde birebir aynı biçimde yazılmalı. “Cad.” ile “Caddesi”, eski ve yeni telefon numarası gibi farklılıklar güveni zayıflatır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Hizmet ve bölge sayfaları:</b> Her hizmetiniz için ayrı bir sayfa yazın. Birden fazla şubeniz varsa her şubeye adresi, saatleri, haritası ve ekibiyle ayrı bir sayfa açın. Yalnızca ilçe adı değiştirilmiş yüzlerce kopya sayfa ise spam sayılır.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Yapılandırılmış veri:</b> LocalBusiness türünde schema işaretlemesiyle adres, telefon ve çalışma saatlerinizi Google’a makinece okunur biçimde bildirin. İşaretleme, sayfada görünen bilgiyle aynı olmalı.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Mobil ve hız:</b> Yerel aramaların çoğu telefondan yapılır. Tek dokunuşla arama ve yol tarifi butonları, hızlı açılan sayfalar şarttır.</span></li>
+      </ul>
+      <p>Bu teknik ayrıntıların tamamını <a href="teknik-seo-kontrol-listesi">teknik SEO kontrol listemizde</a> bulabilirsiniz. Yerel sayfalarla uğraşan çok şubeli işletmeler için genellikle hazır şablon yerine <a href="web-cozumleri">ihtiyaca göre tasarlanmış bir web sitesi</a> daha esnek bir çözüm olur.</p>
+      <h2 id="yandex-apple" class="bi-h2" data-n="07">Yandex Haritalar ve diğer platformları atlamayın</h2>
+      <p>Türkiye’de arama trafiğinin önemli bir kısmı Yandex’e gider; Statcounter’ın Eylül 2026 verilerine göre Yandex’in Türkiye’deki arama payı yaklaşık yüzde 25. Yandex’in kendi işletme rehberi (Yandex Business) üzerinden ücretsiz kayıt açıp aynı NAP bilgileriyle doldurmak, az emekle ek görünürlük demektir.</p>
+      <p>iPhone kullanıcıları için Apple Haritalar’daki kaydınızı Apple Business Connect ile yönetebilirsiniz. Navigasyon ve taksi uygulamaları, yemek ve rezervasyon platformları gibi sektörünüze özgü listeler de aynı ilkeyle güncel tutulmalı: tek doğru bilgi, her yerde.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Yerel SEO’da en güçlü sinyal, müşterinin her yerde aynı ve doğru bilgiyle karşılaştığı bir işletmedir.</blockquote>
+      <h2 id="olcum-ai" class="bi-h2" data-n="08">Sonuçları ölçmek ve yapay zekâ aramalarında yerel görünürlük</h2>
+      <p>İşletme Profili’nin performans ekranı; profilinizin kaç kez görüntülendiğini, hangi aramalarla bulunduğunuzu, kaç arama, yol tarifi ve web sitesi tıklaması aldığınızı gösterir. Bunları aylık takip edin. Sitenize gelen ziyaretleri ayırt etmek için profildeki web sitesi bağlantısına bir UTM parametresi eklemek, Google Analytics’te bu trafiği ayrıca görmenizi sağlar.</p>
+      <p>Yapay zekâ tarafında da yerel bilgi önemli. Google’ın yapay zekâ özellikleri belgesi, iyi bir görünürlük için İşletme Profili bilgilerinin güncel tutulmasını temel öneriler arasında sayar. AI Modu’nda “Kadıköy’de çocuklu aileler için sakin bir kafe” gibi uzun ve doğal sorular sorulduğunda, yanıtlar profil bilgileri, yorumlardaki ifadeler ve sitenizdeki içerikten beslenir. Ayrıntılı bir hizmet listesi ve müşterilerin deneyimlerini anlatan gerçek yorumlar burada da avantaj sağlar.</p>
+      <p>Haritalarda görünmek zaman alıyorsa ve hemen telefon gerekiyorsa, yerel reklamlar kısa vadeli bir köprü olabilir. Ne zaman reklam, ne zaman organik yatırım mantıklı, <a href="google-ads-mi-seo-mu">Google Ads mi SEO mu</a> yazımızda karşılaştırdık.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// GOOGLE İŞLETME PROFİLİ KONTROL LİSTESİ</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Profil doğrulandı ve işletme adı tabeladakiyle birebir aynı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Ana kategori işinizi en doğru anlatan kategori mi?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Çalışma saatleri ve özel gün saatleri güncel mi?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Gerçek fotoğraflar (dış cephe, iç mekân, ekip, işler) yüklü mü?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Son bir aydaki tüm yorumlara yanıt verildi mi?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Ad, adres ve telefon sitede, Yandex’te ve sosyal medyada aynı mı?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Profilden siteye giden bağlantı ölçülebiliyor mu?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="09">Sık sorulan sorular</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Google İşletme Profili ücretli mi?</summary><p>Hayır. Google İşletme Profili açmak, doğrulamak ve yönetmek ücretsizdir. Google ayrıca yerel sıralamanın ödeme yapılarak yükseltilemeyeceğini belirtir; harita sonuçlarındaki reklamlar ayrı bir ücretli hizmettir ve reklam olarak işaretlenir.</p></details><details class="bi-faq-i"><summary>Adresim olmadan Google Haritalar’a kayıt olabilir miyim?</summary><p>Evet. Müşterinin adresine giderek hizmet veriyorsanız hizmet bölgesi işletmesi olarak kayıt olabilir, adresinizi gizleyip hizmet verdiğiniz ilçe ve şehirleri belirtebilirsiniz. Sanal ofis ve posta kutusu adresleri ise profil için uygun kabul edilmez.</p></details><details class="bi-faq-i"><summary>Google yorumları sıralamayı etkiler mi?</summary><p>Evet. Google’ın yardım sayfasına göre daha fazla yorum ve olumlu puan, işletmenin öne çıkma sinyaline katkıda bulunabilir. Yorumlara yanıt vermek de önerilir. Ancak yorum karşılığında indirim veya hediye vermek ve sahte yorum toplamak kurallara aykırıdır.</p></details><details class="bi-faq-i"><summary>Haritalarda neden rakibim benden üstte çıkıyor?</summary><p>Genellikle üç sebepten biridir: rakip arayan kişiye daha yakındır, profili daha eksiksiz ve kategorisi daha isabetlidir ya da daha çok ve daha güncel yorumu vardır. Mesafeyi değiştiremezsiniz ama profil bilgilerinizi, yorum akışınızı ve web sitenizi güçlendirebilirsiniz.</p></details><details class="bi-faq-i"><summary>Google İşletme Profili doğrulaması ne kadar sürer?</summary><p>Doğrulama yöntemi işletmeye göre değişir; çoğu zaman işletmeyi gösteren kısa bir video istenir ve inceleme birkaç gün sürebilir. İnceleme sürerken bilgileri sık sık değiştirmemek, sürecin uzamasını önler.</p></details></div>
+      <h2 id="sonuc">Son söz</h2>
+      <p>Yerel SEO’nun formülü karmaşık değil: doğrulanmış ve eksiksiz bir profil, kurallara uygun düzenli yorum akışı, her yerde aynı iletişim bilgileri ve yerel aramalara gerçekten yanıt veren bir web sitesi. Bunları bir kez kurup ayda bir kontrol etmek, haritalardaki yerinizi korumanın en garantili yoludur.</p>
+      <p>CYF Tech olarak hem yerel aramaya uygun web siteleri tasarlıyor hem de işletmelerin profil ve site tarafını birlikte ele alıyoruz. Haritalarda neden görünmediğinizi birlikte incelemek isterseniz <a href="iletisim">bizimle iletişime geçin</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// KAYNAKLAR</div><ol><li><a href="https://support.google.com/business/answer/7091?hl=tr" target="_blank" rel="noopener nofollow">Google İşletme Profili Yardım — Google’da yerel sıralamanızı iyileştirme</a></li><li><a href="https://support.google.com/business/answer/3038177?hl=tr" target="_blank" rel="noopener nofollow">Google İşletme Profili Yardım — Google’da işletmenizi temsil etme yönergeleri</a></li><li><a href="https://support.google.com/contributionpolicy/answer/7400114?hl=tr" target="_blank" rel="noopener nofollow">Google Haritalar — Yasaklanmış ve kısıtlanmış içerik (sahte etkileşim)</a></li><li><a href="https://developers.google.com/search/docs/appearance/structured-data/local-business?hl=tr" target="_blank" rel="noopener nofollow">Google Search Central — Yerel işletme (LocalBusiness) yapılandırılmış verisi</a></li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener nofollow">Google Search Central — AI features and your website</a></li><li><a href="https://gs.statcounter.com/search-engine-market-share/all/turkey" target="_blank" rel="noopener nofollow">Statcounter — Türkiye arama motoru pazar payı</a></li><li><a href="https://businessconnect.apple.com/" target="_blank" rel="noopener nofollow">Apple Business Connect</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Tüm yazılar</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Paylaş</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp ile paylaş" title="WhatsApp ile paylaş"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="LinkedIn’de paylaş" title="LinkedIn’de paylaş"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="X’te paylaş" title="X’te paylaş"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="E-posta ile gönder" title="E-posta ile gönder"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="İçindekiler">
+        <div class="eyebrow">// BU YAZIDA</div>
+        <ol class="bi-toc"><li><a href="#yerel-seo-nedir" data-n="01">Yerel SEO nedir?</a></li><li><a href="#uc-sinyal" data-n="02">Sıralamayı ne belirler?</a></li><li><a href="#profil-kurulumu" data-n="03">Profil kurulumu</a></li><li><a href="#yorumlar" data-n="04">Yorum yönetimi</a></li><li><a href="#aktif-profil" data-n="05">Fotoğraf ve gönderiler</a></li><li><a href="#nap-site" data-n="06">Web sitesi ve NAP</a></li><li><a href="#yandex-apple" data-n="07">Yandex ve diğer haritalar</a></li><li><a href="#olcum-ai" data-n="08">Ölçüm ve yapay zekâ</a></li><li><a href="#sss" data-n="09">Sık sorulan sorular</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// DİĞER YAZILAR</div>
+        <ul class="bi-others"><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>SEO Nedir? 2026 İçin Sade ve Uygulanabilir Başlangıç Rehberi</b><span class="bi-read">8 dk okuma</span></div></a></li><li><a href="site-hizi-core-web-vitals"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Core Web Vitals ve Site Hızı: LCP, INP, CLS Rehberi (2026)</b><span class="bi-read">10 dk okuma</span></div></a></li><li><a href="teknik-seo-kontrol-listesi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Teknik SEO Kontrol Listesi 2026: Sitenizi Denetlemek İçin 30 Madde</b><span class="bi-read">8 dk okuma</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Kurumsal Web Sitesi Yaptırmadan Önce Bilmeniz Gereken 7 Şey</b><span class="bi-read">6 dk okuma</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 Ekim 2026</span><b>Web Sitesi Fiyatları 2026: Maliyeti Belirleyen 9 Faktör</b><span class="bi-read">10 dk okuma</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Projenizi konuşalım.</b><span>Aklınızdaki fikri anlatın, size özel teklifimizi hazırlayalım.</span><div class="bi-go">Teklif Al<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// HAYDİ BAŞLAYALIM</div>
+        <h2 class="h2">Projenizi birlikte hayata geçirelim.</h2>
+        <p class="lead" style="margin-top:20px">Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp'tan yazın</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">adres</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
+      </div>
+      <div>
+        <h2>HIZLI MENÜ</h2>
+        <ul><li><a href="./">Ana Sayfa</a></li><li><a href="projelerimiz">Projeler</a></li><li><a href="referanslar">Referanslar</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">Hakkımızda</a></li><li><a href="iletisim">İletişim</a></li></ul>
+      </div>
+      <div>
+        <h2>HİZMETLER</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a></li></ul>
+      </div>
+      <div>
+        <h2>İLETİŞİM</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Dijitalin güvenilir noktası.</span>
+      <span>Tüm hakları saklıdır.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

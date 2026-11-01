@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<script id="cyf-lang-redirect">try{var L=["en", "de", "ar", "zh", "ru", "tr"],s=localStorage.getItem("cyf-lang");if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Web Çözümleri — Web Tasarım, Yazılım, E-Ticaret ve SEO | CYF Tech</title>
+<meta name="description" content="CYF Tech web çözümleri: web tasarım, özel web yazılımı, e-ticaret siteleri ve SEO hizmetleri tek çatı altında. Tasarımdan yayına uçtan uca.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Web Çözümleri — Web Tasarım, Yazılım, E-Ticaret ve SEO | CYF Tech">
+<meta property="og:description" content="CYF Tech web çözümleri: web tasarım, özel web yazılımı, e-ticaret siteleri ve SEO hizmetleri tek çatı altında. Tasarımdan yayına uçtan uca.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyftech.com.tr/web-cozumleri">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="tr_TR">
+<link rel="canonical" href="https://cyftech.com.tr/web-cozumleri">
+<link rel="icon" type="image/png" href="assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/scrolly.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/web-cozumleri.css?v=20261031d">
+<link rel="stylesheet" href="assets/css/theme-light.css?v=20261031d">
+<script src="assets/js/site.js?v=20261031d" defer></script>
+<script src="assets/js/ambient.js?v=20261031d" defer></script>
+<script src="assets/js/scrolly.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/web-cozumleri">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/web-cozumleri">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/web-cozumleri">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/web-cozumleri">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/web-cozumleri">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/web-cozumleri">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/web-cozumleri">
+</head>
+<body class="tone">
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">İçeriğe geç</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Ana menü">
+    <div class="nav-dd is-current">
+      <button type="button" aria-haspopup="true">Hizmetler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri" aria-current="page"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Çözümleri</b><small>Web tasarım, yazılım, e-ticaret ve SEO — tek çatı altında.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Masaüstü Uygulamalar</b><small>İşinize özel, çevrimdışı da çalışan masaüstü yazılımlar.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobil Uygulamalar</b><small>iOS ve Android için hızlı, kullanıcı dostu uygulamalar.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projeler</a>
+    <a href="referanslar">Referanslar</a>
+    <a href="blog">Blog</a>
+    <a href="hakkimizda">Hakkımızda</a>
+    <a href="iletisim">İletişim</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Dil seçin"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>TR</span></button>
+      <div class="lang-menu"><a href="web-cozumleri" hreflang="tr" lang="tr" data-lang="tr" aria-current="true"><b>TR</b><span>Türkçe</span></a><a href="en/web-cozumleri" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="de/web-cozumleri" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="ar/web-cozumleri" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="zh/web-cozumleri" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="ru/web-cozumleri" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Gece / gündüz teması" title="Gece / gündüz teması"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menüyü aç" data-label-open="Menüyü aç" data-label-close="Menüyü kapat" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobil menü">
+  <a href="./">Ana Sayfa</a>
+  <div class="mnav-label">HİZMETLER</div>
+  <a href="web-cozumleri" aria-current="page"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a>
+  <div class="mnav-label">KURUMSAL</div>
+  <a href="projelerimiz">Projeler</a>
+  <a href="referanslar">Referanslar</a>
+  <a href="blog">Blog</a>
+  <a href="hakkimizda">Hakkımızda</a>
+  <a href="iletisim">İletişim</a>
+  <a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="wt tone" aria-label="Web Çözümleri süreci" style="--accent:#38BDF8">
+  <div class="wt-bg" aria-hidden="true"><div class="floor"><div><div></div></div></div><div class="grid sq"></div></div>
+
+  <div class="wt-steps">
+    <div class="wt-step tone on" data-name="Boş sayfa" data-state="" data-tone="#38BDF8" style="--accent:#38BDF8">
+      <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><span>HİZMETLER</span><span>/</span><span>WEB ÇÖZÜMLERI</span></div>
+      <div class="eyebrow">// HİZMETLER · 01 — WEB ÇÖZÜMLERI</div>
+      <h1 class="h1">Web’de ihtiyacınız olan her şey, tek çatı altında.</h1>
+      <p class="lead">Web tasarımdan özel yazılıma, e-ticaretten SEO’ya kadar markanızın web’deki bütün ihtiyaçlarını tek ekip olarak, uçtan uca üstleniyoruz.</p>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="projelerimiz">Projelerimize Göz At</a></div>
+      <div class="wt-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg>Kaydırın — tasarımdan yayına bir web projesini izleyin</div>
+    </div>
+      <div class="wt-step tone" data-name="Web Tasarım" data-state="is-brief is-wire is-styled is-tasarim is-draw" data-tone="#A78BFA" style="--accent:#A78BFA">
+        <div class="eyebrow">01 — WEB TASARIM</div>
+        <h2>Modern ve kullanıcı dostu web siteleri.</h2>
+        <p>Markanızın dijital yüzünü, ziyaretçinin ilk saniyede güven duyacağı sade ve net bir arayüzle tasarlıyoruz.</p>
+        <ul class="arrow-list"><li>Tüm ekranlarda mobil uyumlu</li><li>Arama motorlarına uygun yapı</li><li>Hızlı açılan sayfalar</li></ul>
+      </div>
+      <div class="wt-step tone" data-name="Web Geliştirme" data-state="is-wire" data-tone="#34D399" style="--accent:#34D399">
+        <div class="eyebrow">02 — WEB GELIŞTIRME</div>
+        <h2>Özel, güvenli ve ölçeklenebilir yazılım.</h2>
+        <p>Hazır kalıplara sığmayan ihtiyaçlarınız için iş süreçlerinize göre şekillenen web uygulamaları geliştiriyoruz.</p>
+        <ul class="arrow-list"><li>Özel web uygulamaları ve yönetim panelleri</li><li>API ve sistem entegrasyonları</li><li>Bakım ve sürekli destek</li></ul>
+      </div>
+      <div class="wt-step tone" data-name="E-Ticaret" data-state="is-wire is-buy" data-tone="#FBBF24" style="--accent:#FBBF24">
+        <div class="eyebrow">03 — E-TICARET</div>
+        <h2>Satışa hazır mağazalar.</h2>
+        <p>Ürün vitrininden ödeme adımına kadar her ekranı, ziyaretçiyi müşteriye dönüştürmek için kurguluyoruz.</p>
+        <ul class="arrow-list"><li>Güvenli ödeme altyapısı</li><li>Sipariş, stok ve kargo yönetimi</li><li>Kampanya ve indirim kurguları</li></ul>
+      </div>
+      <div class="wt-step tone" data-name="SEO" data-state="is-wire is-seo" data-tone="#FB7185" style="--accent:#FB7185">
+        <div class="eyebrow">04 — SEO</div>
+        <h2>Aramalarda üst sıralara.</h2>
+        <p>Sitenizi arama motorlarının anladığı, kullanıcıların kolayca bulduğu bir yapıya kavuşturuyor; sıralamanızı adım adım yükseltiyoruz.</p>
+        <ul class="arrow-list"><li>Teknik SEO ve site hızı</li><li>Anahtar kelime ve içerik stratejisi</li><li>Düzenli raporlama ve takip</li></ul>
+      </div>
+      <div class="wt-step tone" data-name="Yayın ve Destek" data-state="is-wire is-styled is-live is-resp" data-tone="#38BDF8" style="--accent:#38BDF8">
+        <div class="eyebrow">05 — YAYIN VE DESTEK</div>
+        <h2>Yayındayız. Ve yanınızdayız.</h2>
+        <p>Siteyi yayına alıyor, her ekranda sorunsuz çalıştığından emin oluyor ve 7/24 teknik destekle yanınızda kalıyoruz.</p>
+        <ul class="arrow-list"><li>Alan adı ve SSL kurulumu</li><li>Bakım ve güncellemeler</li><li>7/24 teknik destek</li></ul><div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp'tan yazın</a></div>
+      </div>
+  </div>
+
+  <div class="wt-stage" data-wt-stage aria-hidden="true">
+    <div class="wt-label"><b data-wt-num>00</b><span>/ 05</span><i></i><span data-wt-name>Boş sayfa</span></div>
+    <div class="wt-fit" data-wt-fit>
+      <div class="wt-rig" data-wt-rig>
+        <div class="wt-browser">
+          <div class="wt-bar">
+            <div class="wt-dots"><i></i><i></i><i></i></div>
+            <div class="wt-url"><span class="draft">taslak — markaniz.com.tr</span><span class="lock">●</span><span class="live">https://markaniz.com.tr</span></div>
+            <div class="wt-badge">YAYINDA</div>
+          </div>
+          <div class="wt-vp">
+            <div class="wt-empty"><b>+</b>Boş sayfa — her şey bir fikirle başlar</div>
+            <div class="sx-layer wb-page" data-on="1 5"><div class="wt-page">
+              <div class="wt-nav"><i class="b wt-logo" style="--d:0"></i><span class="wt-links"><i class="b" style="--d:1"></i><i class="b" style="--d:2"></i><i class="b" style="--d:3"></i></span><i class="b wt-nbtn" style="--d:4"></i></div>
+              <div class="wt-hero">
+                <div class="wt-txt"><i class="b wt-t1" style="--d:5"></i><i class="b wt-t2" style="--d:6"></i><i class="b wt-p1" style="--d:7"></i><i class="b wt-p2" style="--d:8"></i><i class="b wt-cta" style="--d:9"></i></div>
+                <div class="b wt-img" style="--d:10"><svg viewBox="0 0 200 80" preserveAspectRatio="none" aria-hidden="true"><path d="M0 80 L45 30 L80 60 L120 18 L200 80 Z" fill="#38BDF8" opacity=".55"/><path d="M0 80 L60 50 L100 70 L150 40 L200 80 Z" fill="#0EA5E9" opacity=".7"/><circle cx="160" cy="16" r="8" fill="#E6EDF3" opacity=".8"/></svg></div>
+              </div>
+              <div class="wt-cards"><i class="b wt-card" style="--d:11"></i><i class="b wt-card" style="--d:12"></i><i class="b wt-card" style="--d:13"></i></div>
+            </div></div>
+            <div class="sx-layer" data-on="2"><div class="wg-arch">
+              <svg viewBox="0 0 560 342" aria-hidden="true">
+                <path class="wg-link" style="--i:0" d="M150 92 C210 92 220 171 262 171"/>
+                <path class="wg-link" style="--i:1" d="M150 252 C210 252 220 171 262 171"/>
+                <path class="wg-link" style="--i:2" d="M330 171 C370 171 380 92 418 92"/>
+                <path class="wg-link" style="--i:3" d="M330 171 C370 171 380 252 418 252"/>
+                <path class="wg-flow" d="M150 92 C210 92 220 171 262 171"/>
+                <path class="wg-flow rev" d="M150 252 C210 252 220 171 262 171"/>
+                <path class="wg-flow" d="M330 171 C370 171 380 92 418 92"/>
+                <path class="wg-flow rev" d="M330 171 C370 171 380 252 418 252"/>
+              </svg>
+              <div class="wg-node" style="--i:0;left:30px;top:70px"><span class="tag">ui</span><div>Web arayüzü<small>tarayıcı</small></div></div>
+              <div class="wg-node" style="--i:1;left:30px;top:230px"><span class="tag">app</span><div>Yönetim paneli<small>sizin ekibiniz</small></div></div>
+              <div class="wg-node core" style="--i:2;left:240px;top:146px"><span class="tag">{ }</span><div>API<small>iş kuralları</small></div></div>
+              <div class="wg-node" style="--i:3;left:410px;top:70px"><span class="tag">db</span><div>Veritabanı<small>güvenli kayıt</small></div></div>
+              <div class="wg-node" style="--i:4;left:380px;top:230px"><span class="tag">↔</span><div>Entegrasyonlar<small>ödeme · kargo · ERP</small></div></div>
+            </div></div>
+            <div class="sx-layer" data-on="3">
+              <div class="ec-store">
+                <div class="ec-head pop" style="--i:0"><i class="ec-logo"></i><i class="ec-search"></i><span class="ec-cart"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11h11.2L21 8H6.2"/><circle cx="9" cy="19" r="1.4"/><circle cx="18" cy="19" r="1.4"/></svg><b class="ec-count">1</b></span></div>
+                <div class="ec-pills pop" style="--i:1"><i></i><i></i><i></i><i></i></div>
+                <div class="ec-grid"><div class="ec-p pop" style="--i:3"><div class="ec-img" style="background:#1E3A5F"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="14" fill="#38BDF8" opacity=".8"/></svg></div><i class="ec-nm"></i><i class="ec-pr"></i><div class="ec-add">Sepete ekle</div></div><div class="ec-p pop" style="--i:4"><div class="ec-img" style="background:#3A2A4F"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="6" width="24" height="30" rx="6" fill="#C084FC" opacity=".8"/></svg></div><i class="ec-nm"></i><i class="ec-pr"></i><div class="ec-add">Sepete ekle</div></div><div class="ec-p pop" style="--i:5"><div class="ec-img" style="background:#1F3D33"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M6 34 L20 6 L34 34 Z" fill="#4ADE80" opacity=".8"/></svg></div><i class="ec-nm"></i><i class="ec-pr"></i><div class="ec-add">Sepete ekle</div></div><div class="ec-p pop" style="--i:6"><div class="ec-img" style="background:#4A3520"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="12" width="28" height="18" rx="9" fill="#F2B33D" opacity=".85"/></svg></div><i class="ec-nm"></i><i class="ec-pr"></i><div class="ec-add">Sepete ekle</div></div></div>
+              </div>
+              <div class="ec-drawer">
+                <h5>Sepetiniz · 1 ürün</h5>
+                <div class="ec-line"><i></i><span><b></b><em></em></span></div>
+                <div class="ec-pay"><span>Ödeme</span><b>3D Secure ✓</b></div>
+                <div class="ec-done"><span>Siparişi tamamla</span><span>Sipariş alındı ✓</span></div>
+              </div>
+            </div>
+            <div class="sx-layer wb-serp" data-on="4">
+              <div class="wb-q"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>web tasarım manisa</div>
+              <div class="se-list">
+                <div class="se-r" style="--c:0"><span class="u">rakip-ajans.com</span><i class="tt"></i><i class="d"></i></div><div class="se-r" style="--c:1"><span class="u">dijital-firma.com</span><i class="tt"></i><i class="d"></i></div><div class="se-r" style="--c:2"><span class="u">ornek-site.com.tr</span><i class="tt"></i><i class="d"></i></div><div class="se-r" style="--c:3"><span class="u">baska-ajans.net</span><i class="tt"></i><i class="d"></i></div><div class="se-r" style="--c:4"><span class="u">web-hizmet.com</span><i class="tt"></i><i class="d"></i></div>
+                <div class="se-r me"><span class="u">markaniz.com.tr</span><span class="tt">Markanız — Web Tasarım Manisa</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wt-ov wt-brief1"><div class="chip float"><div><b>Renk paleti</b><div class="wt-swatches" style="margin-top:6px"><i style="background:#38BDF8"></i><i style="background:#0B1B33"></i><i style="background:#E6EDF3"></i><i style="background:#F2B33D"></i></div></div></div></div>
+        <div class="wt-ov wt-brief2"><div class="chip float" style="animation-delay:-1.2s"><span class="wt-aa">Aa</span><div><b>Tipografi</b><small>Okunaklı ve karakterli</small></div></div></div>
+        <div class="wt-ov wb-o-l" data-on="2"><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><div><b>Güvenli altyapı</b><small>Şifreli bağlantı ve yetki</small></div></div></div>
+        <div class="wt-ov wb-o-br" data-on="2"><div class="chip float" style="animation-delay:-1.4s"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>Ölçeklenebilir</b><small>Büyüdükçe genişler</small></div></div></div>
+        <div class="wt-ov wb-o-l" data-on="3"><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div><b>Güvenli ödeme</b><small>3D Secure ile korunur</small></div></div></div>
+        <div class="wt-ov wb-rank sx-panel" data-on="4"><span class="n"></span><div><b>Sıralamanız</b><small>"web tasarım manisa"</small></div></div>
+        <div class="wt-ov wb-o-br" data-on="4"><div class="chip float" style="animation-delay:-1.4s"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>Organik trafik</b><small>Yükselişte</small></div></div></div>
+        <div class="wt-devices"><span>Masaüstü</span><span>Tablet</span><span>Mobil</span></div>
+        <div class="wt-ov wt-live1"><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><div><b>Güvenli bağlantı</b><small>SSL ile korunur</small></div></div></div>
+        <div class="wt-ov wt-live2"><div class="chip float" style="animation-delay:-1.5s"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg><div><b>7/24 destek</b><small>Yayından sonra da yanınızda</small></div></div></div>
+        <div class="wt-cursor"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l16 10-7 1.5L9.5 21z" fill="#E6EDF3" stroke="#040814" stroke-width="1.5" stroke-linejoin="round"/></svg><span>CYF</span></div>
+        <div class="ec-fly"></div>
+        <div class="ec-cursor"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 2l16 10-7 1.5L9.5 21z" fill="#E6EDF3" stroke="#040814" stroke-width="1.5" stroke-linejoin="round"/></svg></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="svc-intro" style="--stripe:linear-gradient(90deg,#A78BFA,#34D399,#FBBF24,#FB7185)">
+  <div class="wrap">
+    <div class="svc-intro-head"><div class="eyebrow">// WEB HİZMETLERİMİZ</div><h2 class="h2">Dört hizmet, tek ekip.</h2><p class="muted">Her biri tek başına da alınabilir; birlikte olduklarında siteniz tasarımdan sıralamaya kadar uyum içinde çalışır.</p></div>
+    <nav class="svc-index" aria-label="Web hizmetleri"><a class="tone" href="#web-tasarim" style="--accent:#A78BFA"><b>01</b><span>Web Tasarım</span><small>Modern ve kullanıcı dostu web siteleri.</small><em>↓</em></a><a class="tone" href="#web-gelistirme" style="--accent:#34D399"><b>02</b><span>Web Geliştirme</span><small>Özel, güvenli ve ölçeklenebilir web uygulamaları.</small><em>↓</em></a><a class="tone" href="#e-ticaret" style="--accent:#FBBF24"><b>03</b><span>E-Ticaret Siteleri</span><small>Satış odaklı ve kullanıcı dostu e-ticaret.</small><em>↓</em></a><a class="tone" href="#seo" style="--accent:#FB7185"><b>04</b><span>SEO Hizmetleri</span><small>Görünürlüğünüzü artırıp müşteri kazandırıyoruz.</small><em>↓</em></a></nav>
+  </div>
+</section>
+
+<section class="svc-block tone" id="web-tasarim" style="--accent:#A78BFA">
+  <div class="wrap split">
+    <div class="reveal" data-num="01">
+      <div class="eyebrow">// 01 — WEB TASARIM</div>
+      <h2 class="h2">Modern ve kullanıcı dostu web siteleri.</h2>
+      <p class="lead" style="margin-top:20px">Profesyonel web tasarım hizmetimizle çevrimiçi varlığınızı güçlendirin. Markanızın dijital yüzünü, ziyaretçinin ilk saniyede güven duyacağı sade ve net bir arayüzle tasarlıyoruz.</p>
+      <div class="svc-flow" aria-label="Süreç"><span><b>01</b>Keşif ve Analiz</span><span><b>02</b>Tasarım Planlama</span><span><b>03</b>Geliştirme ve Kodlama</span><span><b>04</b>Test ve Optimizasyon</span><span><b>05</b>Yayınlama ve Destek</span></div>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="svc-cards"><div class="card tone reveal" style="--accent:#A78BFA"><div class="demo demo-resp" aria-hidden="true"><div class="dev"><i></i><i></i><i></i><i></i></div></div><div><h3 class="h3">Responsive</h3><p style="margin-top:8px">Mobil, tablet ve masaüstünde kusursuz görünüm. Ekran küçüldükçe içerik kendini yeniden düzenler.</p></div></div><div class="card tone reveal" style="--accent:#818CF8"><div class="demo demo-seo" aria-hidden="true"><div class="q">web tasarım manisa</div><div class="rs"><div class="r o" style="--y0:0px;--y1:31px">rakip-site.com</div><div class="r o" style="--y0:31px;--y1:62px">baska-firma.com</div><div class="r o" style="--y0:62px;--y1:93px">ornek-ajans.com</div><div class="r me"><b>↑</b> markaniz.com.tr</div></div></div><div><h3 class="h3">SEO Dostu</h3><p style="margin-top:8px">Arama motorlarının kolayca anladığı yapı; doğru aramalarda üst sıralarda görünmenin temeli.</p></div></div><div class="card tone reveal" style="--accent:#E879F9"><div class="demo demo-perf" aria-hidden="true"><div class="ring"><svg viewBox="0 0 110 110"><circle class="bg" cx="55" cy="55" r="45"/><circle class="fg" cx="55" cy="55" r="45"/></svg><span>hız</span></div><ul><li>Optimize görseller</li><li>Hafif kod</li><li>Hızlı açılış</li></ul></div><div><h3 class="h3">Yüksek Performans</h3><p style="margin-top:8px">Hızlı açılan, akıcı sayfalar. Ziyaretçi beklemez, siteniz de bekletmez.</p></div></div></div>
+  </div>
+</section>
+<section class="svc-block tone" id="web-gelistirme" style="--accent:#34D399">
+  <div class="wrap split">
+    <div class="reveal" data-num="02">
+      <div class="eyebrow">// 02 — WEB GELIŞTIRME</div>
+      <h2 class="h2">Özel, güvenli ve ölçeklenebilir web uygulamaları.</h2>
+      <p class="lead" style="margin-top:20px">Markanızın dijital gücünü artırmak için modern, ölçeklenebilir ve yüksek performanslı web uygulamaları geliştiriyoruz. İster kurumsal web sitesi, ister özel bir portal ya da e-ticaret altyapısı olsun; sizin için doğru teknolojiyi seçip kusursuz bir yazılım geliştiriyoruz.</p>
+      <div class="svc-flow" aria-label="Süreç"><span><b>01</b>Analiz ve Planlama</span><span><b>02</b>Tasarım ve Prototipleme</span><span><b>03</b>Kodlama ve Geliştirme</span><span><b>04</b>Test ve Optimizasyon</span><span><b>05</b>Yayınlama ve Destek</span></div>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="svc-cards"><div class="card tone reveal" style="--accent:#34D399"><div class="demo demo-api" aria-hidden="true"><div class="rq">GET /api/siparisler</div><div class="rs">200 OK · 24ms</div><div class="rs">[ {"durum": "kargoda"}, … ]</div></div><div><h3 class="h3">Özel Web Uygulamaları</h3><p style="margin-top:8px">Hazır kalıplara sığmayan ihtiyaçlarınız için iş süreçlerinize göre şekillenen yazılımlar.</p></div></div><div class="card tone reveal" style="--accent:#2DD4BF"><div class="demo demo-int" aria-hidden="true"><svg viewBox="0 0 300 200" preserveAspectRatio="none"><path d="M60 40 L150 100"/><path d="M240 40 L150 100"/><path d="M60 160 L150 100"/><path d="M240 160 L150 100"/></svg><span class="sat" style="left:10%;top:12%">ödeme</span><span class="sat" style="right:10%;top:12%">kargo</span><span class="sat" style="left:12%;bottom:12%">ERP</span><span class="sat" style="right:12%;bottom:12%">CRM</span><div class="hub">{ }</div></div><div><h3 class="h3">API ve Sistem Entegrasyonları</h3><p style="margin-top:8px">Kullandığınız ödeme, kargo, ERP ve CRM sistemleriyle konuşan bir altyapı.</p></div></div><div class="card tone reveal" style="--accent:#A3E635"><div class="demo demo-care" aria-hidden="true"><div class="row"><span>sistem durumu</span><b>● çalışıyor</b></div><div class="bars"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i><i style="--i:16"></i><i style="--i:17"></i><i style="--i:18"></i><i style="--i:19"></i><i style="--i:20"></i><i style="--i:21"></i><i style="--i:22"></i><i style="--i:23"></i></div><div class="row"><span>son yedek</span><b>bugün</b></div></div><div><h3 class="h3">Bakım ve Sürekli Destek</h3><p style="margin-top:8px">Yayından sonra da güncelleme, yedekleme ve izlemeyle yanınızdayız.</p></div></div></div>
+  </div>
+</section>
+<section class="svc-block tone" id="e-ticaret" style="--accent:#FBBF24">
+  <div class="wrap split">
+    <div class="reveal" data-num="03">
+      <div class="eyebrow">// 03 — E-TICARET SITELERI</div>
+      <h2 class="h2">Satış odaklı ve kullanıcı dostu e-ticaret.</h2>
+      <p class="lead" style="margin-top:20px">Markanızın çevrimiçi satış gücünü artıran modern e-ticaret çözümleri geliştiriyoruz. Güvenli ödeme sistemleri, mobil uyumluluk ve hızlı altyapıyla dijital mağazanızı yalnızca bir web sitesi değil, güçlü bir satış kanalına dönüştürüyoruz.</p>
+      <div class="svc-flow" aria-label="Süreç"><span><b>01</b>İhtiyaç Analizi ve Strateji</span><span><b>02</b>Tasarım ve UX/UI</span><span><b>03</b>Altyapı ve Entegrasyon</span><span><b>04</b>Test ve Optimizasyon</span><span><b>05</b>Yayınlama ve Sürekli Destek</span></div>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="svc-cards"><div class="card tone reveal" style="--accent:#FBBF24"><div class="demo demo-shop" aria-hidden="true"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i></div><div><h3 class="h3">Özel E-Ticaret Tasarımı</h3><p style="margin-top:8px">Markanıza özel vitrin, ürün ve kategori sayfaları; ziyaretçiyi müşteriye dönüştürmek için kurgulanır.</p></div></div><div class="card tone reveal" style="--accent:#FB923C"><div class="demo demo-pay" aria-hidden="true"><div class="cc"><span>KART</span><b>•••• •••• •••• 4242</b></div><div class="ok">● 3D Secure doğrulandı</div><div class="ok" style="animation-delay:.4s">● Ödeme alındı</div></div><div><h3 class="h3">Güvenli Ödeme ve Entegrasyonlar</h3><p style="margin-top:8px">Güvenli ödeme altyapısı; kargo, muhasebe ve CRM sistemleriyle tam entegrasyon.</p></div></div><div class="card tone reveal" style="--accent:#F87171"><div class="demo demo-order" aria-hidden="true"><div class="steps3"><span style="--i:0">hazırlanıyor</span><span style="--i:1">kargoda</span><span style="--i:2">teslim</span></div><div class="stock">stok<span><i></i></span></div></div><div><h3 class="h3">Sipariş ve Stok Yönetimi</h3><p style="margin-top:8px">Siparişlerinizi, stoklarınızı ve kargo süreçlerinizi tek panelden kolayca yönetin.</p></div></div></div>
+  </div>
+</section>
+<section class="svc-block tone" id="seo" style="--accent:#FB7185">
+  <div class="wrap split">
+    <div class="reveal" data-num="04">
+      <div class="eyebrow">// 04 — SEO HIZMETLERI</div>
+      <h2 class="h2">Görünürlüğünüzü artırıp müşteri kazandırıyoruz.</h2>
+      <p class="lead" style="margin-top:20px">Markanızı arama motorlarında üst sıralara taşıyan, sürdürülebilir ve sonuç odaklı SEO çözümleri sunuyoruz. Teknik optimizasyondan içerik stratejisine kadar her adımda görünürlüğünüzü artırıyor; yalnızca trafik değil, gerçek dönüşüm sağlıyoruz.</p>
+      <div class="svc-flow" aria-label="Süreç"><span><b>01</b>Durum Analizi ve Hedef Belirleme</span><span><b>02</b>Teknik Optimizasyon</span><span><b>03</b>Anahtar Kelime ve İçerik Planı</span><span><b>04</b>Bağlantı ve Otorite Geliştirme</span><span><b>05</b>Raporlama ve Sürekli İyileştirme</span></div>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+    </div>
+    <div class="svc-cards"><div class="card tone reveal" style="--accent:#FB7185"><div class="demo demo-audit" aria-hidden="true"><div><i style="--i:0"></i>Sayfa hızı</div><div><i style="--i:1"></i>Meta etiketleri</div><div><i style="--i:2"></i>Mobil uyum</div><div><i style="--i:3"></i>Site haritası</div></div><div><h3 class="h3">Teknik SEO Analizi</h3><p style="margin-top:8px">Site yapısını, hızı ve taranabilirliği inceleyip sorunları tek tek gideriyoruz.</p></div></div><div class="card tone reveal" style="--accent:#F472B6"><div class="demo demo-kw" aria-hidden="true"><div>web tasarım manisa<span><i style="--w:92%;--i:0"></i></span></div><div>kurumsal web sitesi<span><i style="--w:78%;--i:1"></i></span></div><div>e-ticaret sitesi<span><i style="--w:70%;--i:2"></i></span></div><div>seo hizmeti<span><i style="--w:64%;--i:3"></i></span></div></div><div><h3 class="h3">Anahtar Kelime ve Rakip Analizi</h3><p style="margin-top:8px">Hedef kitlenizin gerçekten aradığı kelimeleri ve rakiplerinizin durumunu ortaya koyuyoruz.</p></div></div><div class="card tone reveal" style="--accent:#C084FC"><div class="demo demo-links" aria-hidden="true"><svg viewBox="0 0 300 200"><line x1="50" y1="40" x2="150" y2="100" style="--i:0"/><line x1="250" y1="50" x2="150" y2="100" style="--i:1"/><line x1="40" y1="150" x2="150" y2="100" style="--i:2"/><line x1="260" y1="160" x2="150" y2="100" style="--i:3"/><line x1="150" y1="25" x2="150" y2="100" style="--i:4"/><circle cx="50" cy="40" r="8"/><circle cx="250" cy="50" r="8"/><circle cx="40" cy="150" r="8"/><circle cx="260" cy="160" r="8"/><circle cx="150" cy="25" r="8"/><circle class="me" cx="150" cy="100" r="13"/></svg></div><div><h3 class="h3">İçerik ve Backlink Stratejisi</h3><p style="margin-top:8px">Kaliteli içerik ve güvenilir bağlantılarla sitenizin otoritesini adım adım büyütüyoruz.</p></div></div></div>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="wrap">
+    <div class="sec-head" data-num="05"><div><div class="eyebrow">// DİĞER HİZMETLER</div><h2 class="h2">Birlikte daha güçlü.</h2></div></div>
+    <div class="cards c2"><a class="card tone reveal" href="masaustu-uygulamalar" style="--accent:#FB923C"><div class="card-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div><span class="num">02</span><h3 class="h3">Masaüstü Uygulamalar</h3><p>İşinize özel, çevrimdışı da çalışan masaüstü yazılımlar.</p><span class="more">İncele →</span></a><a class="card tone reveal" href="mobil-uygulamalar" style="--accent:#F472B6"><div class="card-icon"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div><span class="num">03</span><h3 class="h3">Mobil Uygulamalar</h3><p>iOS ve Android için hızlı, kullanıcı dostu uygulamalar.</p><span class="more">İncele →</span></a></div>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// HAYDİ BAŞLAYALIM</div>
+        <h2 class="h2">Projenizi birlikte hayata geçirelim.</h2>
+        <p class="lead" style="margin-top:20px">Aklınızdaki projeyi anlatın, size özel teklifimizi hazırlayalım.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Teklif Al<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp'tan yazın</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">adres</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
+      </div>
+      <div>
+        <h2>HIZLI MENÜ</h2>
+        <ul><li><a href="./">Ana Sayfa</a></li><li><a href="projelerimiz">Projeler</a></li><li><a href="referanslar">Referanslar</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">Hakkımızda</a></li><li><a href="iletisim">İletişim</a></li></ul>
+      </div>
+      <div>
+        <h2>HİZMETLER</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Çözümleri</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Masaüstü Uygulamalar</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobil Uygulamalar</a></li></ul>
+      </div>
+      <div>
+        <h2>İLETİŞİM</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Dijitalin güvenilir noktası.</span>
+      <span>Tüm hakları saklıdır.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

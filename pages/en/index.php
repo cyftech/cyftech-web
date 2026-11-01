@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYF Tech — Your Trusted Partner in Software and Digital</title>
+<meta name="description" content="CYF Tech grows your business online with web design, web development, SEO and e-commerce solutions. Software and digital solutions based in Manisa.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="CYF Tech — Your Trusted Partner in Software and Digital">
+<meta property="og:description" content="CYF Tech grows your business online with web design, web development, SEO and e-commerce solutions. Software and digital solutions based in Manisa.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyftech.com.tr/en/">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://cyftech.com.tr/en/">
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/home.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/home.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/">
+
+</head>
+<body class="home">
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Skip to content</a>
+<header class="site-head overlay">
+  <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Main menu">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Solutions</b><small>Web design, software, e-commerce and SEO — all under one roof.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Desktop Applications</b><small>Desktop software tailored to your business that works offline too.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobile Applications</b><small>Fast, user-friendly apps for iOS and Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projects</a>
+    <a href="referanslar">References</a>
+    <a href="blog">Blog</a>
+    <a href="hakkimizda">About Us</a>
+    <a href="iletisim">Contact</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>EN</span></button>
+      <div class="lang-menu"><a href="../" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="./" hreflang="en" lang="en" data-lang="en" aria-current="true"><b>EN</b><span>English</span></a><a href="../de/" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="../ru/" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Dark / light theme" title="Dark / light theme"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="head-prog" aria-hidden="true"></div>
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile menu">
+  <a href="./" aria-current="page">Home</a>
+  <div class="mnav-label">SERVICES</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a>
+  <div class="mnav-label">COMPANY</div>
+  <a href="projelerimiz">Projects</a>
+  <a href="referanslar">References</a>
+  <a href="blog">Blog</a>
+  <a href="hakkimizda">About Us</a>
+  <a href="iletisim">Contact</a>
+  <a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<canvas class="pc-canvas" data-pc-canvas aria-hidden="true"></canvas>
+<div class="pc-track">
+  <section id="p0" class="pc-sec hero">
+    <div class="bg-layer hero-floor" aria-hidden="true"><div><div><div></div></div></div></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">// CYF TECH · SOFTWARE &amp; DIGITAL SOLUTIONS</div>
+      <h1 class="pc-h1">Your trusted partner in software <span class="accent">and digital.</span></h1>
+      <p class="pc-p">We bring scattered ideas together and turn them into fast, secure and scalable digital products.</p>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="projelerimiz">Explore Our Projects</a></div>
+    </div>
+    <div class="pc-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg>Scroll — watch the dots scatter and come back together</div>
+  </section>
+
+  <section id="p1" class="pc-sec">
+    <div class="bg-layer bg-grid bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">01 — WEB DESIGN</div>
+      <h2 class="pc-h2">Modern, user-friendly websites.</h2>
+      <p class="pc-p">We design your brand's digital face with a clean, clear interface that visitors trust from the very first second.</p>
+      <ul class="arrow-list"><li>User experience (UX) focused interface</li><li>Mobile-friendly design on every screen</li><li>A visual language tailored to your brand</li></ul>
+      <a class="link-arrow" href="web-cozumleri#web-tasarim">Explore our web design service →</a>
+    </div>
+  </section>
+
+  <section id="p2" class="pc-sec">
+    <div class="bg-layer bg-lines bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">02 — WEB DEVELOPMENT</div>
+      <h2 class="pc-h2">Custom, secure and scalable web applications.</h2>
+      <p class="pc-p">For needs that don't fit off-the-shelf templates, we build software shaped around your business processes.</p>
+      <ul class="arrow-list"><li>Custom architecture and admin panel</li><li>API and system integrations</li><li>Infrastructure that scales as you grow</li></ul>
+      <a class="link-arrow" href="web-cozumleri#web-gelistirme">Explore our web development service →</a>
+    </div>
+  </section>
+
+  <section id="p3" class="pc-sec">
+    <div class="bg-layer bg-diag bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">03 — SEO SERVICES</div>
+      <h2 class="pc-h2">We boost your visibility and win you customers.</h2>
+      <p class="pc-p">We give your site a structure that search engines understand and users find with ease.</p>
+      <ul class="arrow-list"><li>Technical SEO and site speed optimization</li><li>Keyword and content strategy</li><li>Regular reporting and tracking</li></ul>
+      <a class="link-arrow" href="web-cozumleri#seo">Explore our SEO service →</a>
+    </div>
+  </section>
+
+  <section id="p4" class="pc-sec">
+    <div class="bg-layer bg-dots bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">04 — E-COMMERCE SITES</div>
+      <h2 class="pc-h2">Sales-driven, user-friendly e-commerce.</h2>
+      <p class="pc-p">From the product showcase to the checkout step, we craft every screen to turn visitors into customers.</p>
+      <ul class="arrow-list"><li>Secure payment infrastructure integration</li><li>Easy product, stock and order management</li><li>Campaign and discount setups</li></ul>
+      <a class="link-arrow" href="web-cozumleri#e-ticaret">Explore our e-commerce service →</a>
+    </div>
+  </section>
+
+  <section id="p5" class="pc-sec">
+    <div class="bg-layer bg-rows bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">05 — OUR PROCESS</div>
+      <h2 class="pc-h2">From idea to launch in four steps.</h2>
+      <ol class="steps">
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg><small>01</small></span><div><b>Planning</b><span>We clarify your needs and goals together.</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg><small>02</small></span><div><b>Design</b><span>We sketch the interface and the user flow.</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><small>03</small></span><div><b>Development</b><span>We turn the design into fast, secure code.</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-3-3c1-4 4-8 10-9 0 6-4 9-9 10z"/><circle cx="14" cy="9" r="1.5"/><path d="M9 15l1 4 3-2M6 12l-4-1 2-3M5 15c-1 1-1.5 4-1.5 4.5 0 0 3.5-.5 4.5-1.5"/></svg><small>04</small></span><div><b>Launch</b><span>We take the site live and stand by you with 24/7 support.</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="p6" class="pc-sec">
+    <div class="bg-layer bg-grid-lg" aria-hidden="true"></div>
+    <div class="pc-txt l" style="max-width:540px">
+      <div class="eyebrow">06 — CONTACT</div>
+      <h2 class="pc-h2 xl">Let's bring your project to life together.</h2>
+      <p class="pc-p">Tell us about the project you have in mind, and we'll prepare a quote tailored to you.</p>
+      <div class="contact-lines">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+      </div>
+      <div class="btn-row" style="margin-top:32px"><a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Message us on WhatsApp</a></div>
+      <div class="pc-recent">Recent projects: <a href="referanslar">KA Mühendislik</a> · <a href="referanslar">Zumer Gayrimenkul</a> · <a href="referanslar">MÜSİAD Gebze</a> · <a href="referanslar">Nurella Spa & Masaj</a> · <a href="referanslar">Softrue Solutions</a></div>
+    </div>
+  </section>
+</div>
+
+<div class="pc-chips" aria-hidden="true">
+  <div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Reliability</b><small>Long-term partnership</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Fast delivery</b><small>On the planned schedule</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4a2 2 0 1 1 4 0v1h4a1 1 0 0 1 1 1v4h-1a2 2 0 1 0 0 4h1v4a1 1 0 0 1-1 1h-4v-1a2 2 0 1 0-4 0v1H6a1 1 0 0 1-1-1v-4h1a2 2 0 1 0 0-4H5V6a1 1 0 0 1 1-1h4V4z"/></svg><div><b>Custom solutions</b><small>Shaped around your business</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg><div><b>24/7 support</b><small>By your side after launch too</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><b>UI / UX</b><small>User flow</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="14" height="10" rx="1.5"/><path d="M5 19h8"/><rect x="17" y="9" width="5" height="11" rx="1.5"/></svg><div><b>Responsive</b><small>Mobile · Tablet · Desktop</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-1-1-1.6-1-2.6 0-1.1.9-2 2-2h2.4A4.6 4.6 0 0 0 22 10c0-3.9-4.5-7-10-7z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg><div><b>Brand identity</b><small>Color, typography, voice</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg><div><b>Prototype</b><small>Tested before coding</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0V8zM12 17v5"/></svg><div><b>API</b><small>Integrations</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><div><b>Security</b><small>Secure infrastructure</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>Scalable</b><small>Ready for growth</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><div><b>Admin panel</b><small>Manage your own content</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><div><b>Technical SEO</b><small>Crawlable structure</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18a9 9 0 1 1 16 0"/><path d="M12 14l4-5"/></svg><div><b>Site speed</b><small>Fast loading</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><div><b>Keywords</b><small>Show up in the right searches</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b>Reporting</b><small>Measurable results</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div><b>Payment</b><small>Secure checkout step</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg><div><b>Product management</b><small>Stock and variants</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><div><b>Order tracking</b><small>Shipping processes</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg><div><b>Campaigns</b><small>Discounts and coupons</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg><div><b>Planning</b><small>Needs analysis</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg><div><b>Design</b><small>Interface and flow</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><div><b>Development</b><small>Coding and testing</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-3-3c1-4 4-8 10-9 0 6-4 9-9 10z"/><circle cx="14" cy="9" r="1.5"/><path d="M9 15l1 4 3-2M6 12l-4-1 2-3M5 15c-1 1-1.5 4-1.5 4.5 0 0 3.5-.5 4.5-1.5"/></svg><div><b>Launch</b><small>Going live</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div><b>Phone</b><small>0543 791 10 61</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><b>E-mail</b><small>info@cyftech.com.tr</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg><div><b>WhatsApp</b><small>Quick contact</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><b>Quote</b><small>Pricing tailored to you</small></div></div></div></div>
+  <div class="pc-drag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M4 12h16"/></svg>drag to rotate</div>
+</div>
+<nav class="pc-rail" aria-label="Sections"><a href="#p0" aria-label="Intro">00<span></span></a><a href="#p1" aria-label="Web Design">01<span></span></a><a href="#p2" aria-label="Web Development">02<span></span></a><a href="#p3" aria-label="SEO">03<span></span></a><a href="#p4" aria-label="E-Commerce">04<span></span></a><a href="#p5" aria-label="Process">05<span></span></a><a href="#p6" aria-label="Contact">06<span></span></a></nav>
+<div class="pc-counter" aria-hidden="true"><span class="accent" data-cur-num>00</span><span>/ 06</span><span class="bar"></span><span style="color:var(--text)" data-cur-name>Intro</span></div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Your trusted partner in digital. Web design, software development and digital solutions.</p>
+      </div>
+      <div>
+        <h2>QUICK MENU</h2>
+        <ul><li><a href="./">Home</a></li><li><a href="projelerimiz">Projects</a></li><li><a href="referanslar">References</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">About Us</a></li><li><a href="iletisim">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>SERVICES</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a></li></ul>
+      </div>
+      <div>
+        <h2>CONTACT</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Your trusted partner in digital.</span> <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

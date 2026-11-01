@@ -1569,4 +1569,7 @@ exec(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'scrolly_page
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import i18n
 i18n.build(OUT)
+# <page>.html -> <page>.php, links without extensions, .htaccess
+import cleanurls
+cleanurls.convert(OUT)
 print('ok')

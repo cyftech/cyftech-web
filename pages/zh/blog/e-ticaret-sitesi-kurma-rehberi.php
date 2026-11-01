@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2026 年电商网站搭建指南：分步路线图 — CYF Tech 博客</title>
+<meta name="description" content="电商网站搭建指南：公司与税务、平台选择、虚拟 POS、ETBİS 登记、远程销售合同、物流与 SEO 等步骤（2026）。">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="2026 年电商网站搭建指南：分步路线图 — CYF Tech 博客">
+<meta property="og:description" content="电商网站搭建指南：公司与税务、平台选择、虚拟 POS、ETBİS 登记、远程销售合同、物流与 SEO 等步骤（2026）。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="zh_CN">
+<link rel="canonical" href="https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "2026 年电商网站搭建指南：分步路线图", "description": "电商网站搭建指南：公司与税务、平台选择、虚拟 POS、ETBİS 登记、远程销售合同、物流与 SEO 等步骤（2026）。", "image": "https://cyftech.com.tr/assets/img/blog/e-ticaret-sitesi-kurma-rehberi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi", "url": "https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "2026 年电商网站搭建指南：分步路线图", "item": "https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "搭建电商网站必须注册公司吗？", "acceptedAnswer": {"@type": "Answer", "text": "如果要定期、持续地销售，答案是肯定的。申请虚拟 POS、签订物流协议和 ETBİS 登记都需要税务登记。小规模销售家庭自制产品的人可以选择小商户免税，但请向您的财务顾问确认是否符合条件。"}}, {"@type": "Question", "name": "ETBİS 登记是强制的吗？收费吗？", "acceptedAnswer": {"@type": "Answer", "text": "对于通过自有网站或移动应用销售的企业，ETBİS 登记是强制性的，且必须在开始经营前完成。登记通过 eticaret.gov.tr 使用 e-Devlet 免费办理。仅在国内电商平台销售的商家无需另行登记。"}}, {"@type": "Question", "name": "虚拟 POS 和支付机构，哪个更划算？", "acceptedAnswer": {"@type": "Answer", "text": "对于刚起步的企业，支付机构申请快，一次集成即可为所有银行卡提供分期付款。随着营业额增长，直接与银行签订虚拟 POS 协议在手续费上可能更有优势。做决定时，除了手续费，还要比较结算周期和固定费用。"}}, {"@type": "Question", "name": "电商网站的撤回期是多少天？", "acceptedAnswer": {"@type": "Answer", "text": "根据《远程合同条例》，原则上消费者可在收货之日起 14 天内无理由撤回。卖方也必须在收到撤回通知之日起 14 天内退款。定制商品等例外情形在条例中有明确列举。"}}, {"@type": "Question", "name": "搭建电商网站需要多长时间？", "acceptedAnswer": {"@type": "Answer", "text": "使用现成平台，如果内容和商品都已准备好，几周内即可上线。需要定制设计或系统集成的项目，周期通常长达数月。最拖延进度的通常是商品内容和虚拟 POS 审批流程。"}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/e-ticaret-sitesi-kurma-rehberi">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/e-ticaret-sitesi-kurma-rehberi">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap">
+<style>:root{--sans:'Space Grotesk','Noto Sans SC',system-ui,sans-serif}</style>
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">跳到正文</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="主菜单">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>网站解决方案</b><small>网站设计、软件开发、电商与 SEO，一站式完成。</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>桌面应用</b><small>为您的业务量身定制，离线也能运行的桌面软件。</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>移动应用</b><small>适用于 iOS 和 Android 的快速、易用的应用。</small></span></a></div>
+    </div>
+    <a href="projelerimiz">项目</a>
+    <a href="referanslar">客户案例</a>
+    <a href="blog" aria-current="page">博客</a>
+    <a href="hakkimizda">关于我们</a>
+    <a href="iletisim">联系我们</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="选择语言"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>ZH</span></button>
+      <div class="lang-menu"><a href="../e-ticaret-sitesi-kurma-rehberi" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/e-ticaret-sitesi-kurma-rehberi" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="../de/e-ticaret-sitesi-kurma-rehberi" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/e-ticaret-sitesi-kurma-rehberi" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="e-ticaret-sitesi-kurma-rehberi" hreflang="zh" lang="zh" data-lang="zh" aria-current="true"><b>ZH</b><span>中文</span></a><a href="../ru/e-ticaret-sitesi-kurma-rehberi" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="夜间 / 日间主题" title="夜间 / 日间主题"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="移动端菜单">
+  <a href="./">首页</a>
+  <div class="mnav-label">服务</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>网站解决方案</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>桌面应用</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>移动应用</a>
+  <div class="mnav-label">企业</div>
+  <a href="projelerimiz">项目</a>
+  <a href="referanslar">客户案例</a>
+  <a href="blog" aria-current="page">博客</a>
+  <a href="hakkimizda">关于我们</a>
+  <a href="iletisim">联系我们</a>
+  <a class="btn btn-primary" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">博客</a><span>/</span><span>电商</span></div>
+    <h1 class="h1" style="max-width:900px">2026 年电商网站搭建指南：分步路线图。</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>电商</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">2026年10月31日</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10 分钟阅读</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/e-ticaret-sitesi-kurma-rehberi.svg" alt=""></div>
+      <p class="bi-lead">产品准备好了，价格也有竞争力，但“如何开始在网上销售？”这个问题却始终理不清？<b>搭建电商网站</b>远不止拍几张漂亮的产品照片：税务、支付系统、法律文本和配送都必须作为一个整体正确搭建。</p>
+      <p>在这份指南中，我们按顺序介绍在土耳其开设自己的网店需要遵循的步骤：公司与税务基础、平台选择、虚拟 POS 与支付机构、ETBİS 登记与远程销售法规、物流与退货流程，最后是带来第一批订单的商品页面与 SEO。</p>
+      <p>我们还把 CYF Tech 在基于现成平台和从零开发的电商项目中最常见的错误，作为提示穿插在各个章节中。目的是让您在网站上线后不必感叹“要是早知道就好了”。</p>
+      <h2 id="sirket" class="bi-h2" data-n="01">开始电商之前：公司与税务基础</h2>
+      <p>如果要通过自己的网站持续销售，就需要一个商业身份。申请虚拟 POS、签订物流协议和 ETBİS 登记等步骤都需要税号。因此，第一件事是选择适合您业务的公司类型。</p>
+      <table>
+        <thead><tr><th>选项</th><th>适合谁？</th><th>注意事项</th></tr></thead>
+        <tbody>
+          <tr><td>个体工商户</td><td>刚起步、预期营业额中低的创业者</td><td>注册快、成本低；责任延伸至个人财产</td></tr>
+          <tr><td>有限责任公司</td><td>有合伙人、有发展和融资计划的企业</td><td>注册和记账成本较高；责任以公司为限</td></tr>
+          <tr><td>小商户免税</td><td>小规模销售家庭自制产品的人</td><td>适用范围和金额上限都很窄；请向您的财务顾问确认是否符合条件</td></tr>
+        </tbody>
+      </table>
+      <p>完成税务登记后，还要考虑开票方式。在网上销售的企业营业额超过一定门槛后，必须使用 e-Arşiv 和 e-Fatura（电子发票）；由于土耳其税务局（GİB）会不时调整门槛，请与您的会计师确认最新情况。让电商系统与电子发票集成商对接，可以从一开始就免去逐单手工开票的负担。</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>实用建议：</b>与财务顾问首次会面时，带上预估的月订单量、平均客单价，以及是否计划向海外销售。公司类型和开票方式都取决于这三个数字。</div></div>
+      <h2 id="altyapi" class="bi-h2" data-n="02">电商平台：现成套餐、开源还是定制软件？</h2>
+      <p>搭建电商网站最关键的技术决策就是平台。在土耳其主要有三条路，每条路在成本、灵活性和依赖性之间的平衡各不相同：</p>
+      <table>
+        <thead><tr><th>方式</th><th>优点</th><th>缺点</th></tr></thead>
+        <tbody>
+          <tr><td>现成电商套餐（租用）</td><td>上线快，虚拟 POS 和物流集成现成可用，技术维护由服务商负责</td><td>按月/按年付租金，设计和功能受限，依赖平台</td></tr>
+          <tr><td>开源（WooCommerce 等）</td><td>许可成本低，插件生态丰富</td><td>更新、安全和速度由您负责；插件堆积会拖慢网站</td></tr>
+          <tr><td>定制软件</td><td>与您的业务流程完全契合，可集成 ERP/库存/B2B，完全拥有所有权</td><td>初始投入和开发周期较高</td></tr>
+        </tbody>
+      </table>
+      <p>对于用少量产品试水市场的品牌，现成套餐是合理的起点。但如果需要经销商定价、多仓库存、特殊促销规则，或者与财务和生产系统集成，您很快就会碰到现成套餐的天花板。关于这一决定的详细比较，请参阅 <a href="wordpress-mi-ozel-yazilim-mi">现成平台还是定制软件</a> 一文。</p>
+      <h3>无论选择哪种方式，都一定要问清楚</h3>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>我的商品、客户和订单数据<b>能否导出</b>？如果更换平台会怎样？</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>域名登记在谁名下？谁能访问<b>管理后台</b>？</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>我想用的虚拟 POS、物流公司和电子发票集成商<b>是否支持</b>？</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>网站在移动端打开有多快？能否看看某个示例店铺的 PageSpeed 结果？</span></li>
+      </ul>
+      <h2 id="odeme" class="bi-h2" data-n="03">虚拟 POS 与支付机构的选择</h2>
+      <p>要接受银行卡付款，您有两个选择：直接从银行获取<b>虚拟 POS</b>，或通过土耳其共和国中央银行（TCMB）许可的<b>支付机构</b>收款。支付机构依据第 6493 号法律运营，获许机构的最新名单发布在 TCMB 网站上。</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>银行虚拟 POS：</b>手续费率通常可以谈判，但申请时银行可能要求公司有一定的经营历史和营业额。与多家银行合作可以增加分期付款选项。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>支付机构：</b>申请和集成更快，一次集成即可为所有银行卡提供分期付款。代价是手续费可能略高，资金到账时间（结算周期）因合同而异。</span></li>
+      </ul>
+      <p>比较报价时，不要只看手续费率。结算周期、分期销售的利息差由谁承担、退款与拒付（chargeback）流程、绑卡（一键支付）支持以及年度固定费用，共同决定了总成本。</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>安全提示：</b>切勿在自己的服务器上存储银行卡信息。保持 3D Secure 验证开启，并选择由支付服务商页面或安全支付表单直接处理卡数据的集成方式。这样，PCI DSS 的大部分合规负担都由支付服务商承担。详情请参阅我们的 <a href="web-sitesi-guvenligi">网站安全</a> 指南。</div></div>
+      <p>银行转账/EFT、货到付款和数字钱包也能提升转化；但货到付款会增加退货和虚假订单风险，因此应结合物流公司的收费政策一并考虑。</p>
+      <h2 id="yasal" class="bi-h2" data-n="04">ETBİS 登记、远程销售合同及其他法律义务</h2>
+      <p>在土耳其，电子商务受第 6563 号《电子商务监管法》和第 6502 号《消费者保护法》及其配套条例规范。如果您通过自己的网站销售，以下事项是强制性的：</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. ETBİS 登记 —</b>在开始经营前，通过 e-Devlet（电子政务）登录贸易部的电子商务信息系统（eticaret.gov.tr）完成登记。信息有变更时须在 30 日内更新。登记后获得的验证码/二维码需展示在网站底部。根据贸易部的说明，仅通过国内电商平台销售的商家无需另行登记。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. 预先告知表与远程销售合同 —</b>根据《远程合同条例》，消费者在确认订单前，必须获知卖方信息、商品基本特征、含税总价、配送及撤回权等内容；并且应在支付步骤中明确取得消费者的确认。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. 撤回权与退货 —</b>原则上，消费者可在收货之日起 14 天内无理由撤回。卖方须在收到撤回通知之日起 14 天内退还已收取的全部款项。定制商品或易腐商品等例外情形在条例中有明确列举。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. KVKK 文本 —</b>告知文本、必要时的明示同意文本以及 Cookie 政策。会员注册、订单和营销许可应分别处理 (参见 <a href="kvkk-uyumlu-web-sitesi">符合 KVKK 的网站</a>).</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. 商业电子信息同意 —</b>发送促销邮件和短信须取得收件人同意，并将同意记录登记到信息管理系统（İYS）。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>6. 商户信息 —</b>公司名称、地址、税号、MERSİS 号（如有）、联系方式以及消费者投诉渠道，都应放在网站上便于查找的位置。</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>重要提示：</b>本节仅供一般参考，不构成法律意见。法规会不时变化；请让律师或有电商法律经验的顾问审核您的合同文本，并关注参考资料中列出的官方页面。</div></div>
+      <h2 id="kargo" class="bi-h2" data-n="05">从一开始就规划好物流、库存和退货流程</h2>
+      <p>一半的客户体验发生在下单之后。快速、透明的配送是促成回头客的最有力因素之一。</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>物流协议：</b>向多家物流公司索取按体积重量计价的报价。通过系统集成，自动生成运单条码和追踪号，并通过短信/邮件发送给客户。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>包邮门槛：</b>把门槛设在略高于平均客单价的位置，是提高客单价最简单的方法之一。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>库存同步：</b>如果您同时在门店、网站和电商平台销售，库存应由一个数据源统一管理；否则就会卖出没货的商品，最后只能取消订单。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>退货流程：</b>客户应能在自己的账户中发起退货申请，系统自动生成退货运单码。在后台跟踪退货流程，避免错过法定的 14 天退货期限。</span></li>
+      </ul>
+      <p>包装也是品牌的一部分：结实但不过度的包装、发票和一张简短的感谢卡，能降低退货率和差评。</p>
+      <h2 id="urun-seo" class="bi-h2" data-n="06">能带来销售的商品页面与电商 SEO</h2>
+      <p>在电商网站上，真正带来流量和销售的是商品页面和分类页面。由于访客无法亲手触摸商品，页面必须弥补这一缺憾。</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>原创商品描述：</b>不要照搬厂家文案，而是用自己的话写出使用场景、尺寸、材质和保养信息。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>真实、多角度的照片：</b>除了白底商品图，再加上使用场景照片，如有可能再加一段短视频；图片请压缩为 WebP/AVIF 格式。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>价格、库存与配送时间：</b>“明天发货”这样明确的配送信息能提高加购率。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>结构化数据：</b>借助 Product、Offer 和 Review 结构化标记，价格和评分信息可以显示在搜索结果中。</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>速度：</b>加载缓慢的商品页面，尤其是在移动端，会让您在排名和转化上双双失分。测量与优化的步骤请参阅 <a href="site-hizi-core-web-vitals">网站速度与 Core Web Vitals</a> 一文。</span></li>
+      </ul>
+      <p>为分类页面也写一段简短的介绍文字，并用 canonical 标签防止筛选页面在搜索引擎中产生成千上万的重复页面。支付步骤要尽量简短：游客购买选项、地址自动补全和单页结账，能显著降低购物车放弃率。</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>电商中最好的商品页面，是在客户提出问题之前就给出答案的页面。</blockquote>
+      <h2 id="yayin" class="bi-h2" data-n="07">上线之后：流量、衡量与电商平台的平衡</h2>
+      <p>网站上线当天并不会自动产生销售；流量需要您自己去争取。在最初几个月，以下组合通常效果不错：</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>通过 <b>Google 购物和搜索广告</b>快速测试，同时通过 <b>SEO</b> 获取长期自然流量</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>在社交媒体发布商品使用内容，并向现有客户发送邮件营销</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>借助<b>电商平台</b>提升知名度，同时把回头客引导到自己的网站</span></li>
+      </ul>
+      <p>电商平台能带来快速销售，但佣金高昂，而且客户关系不归您所有。自己的网站则意味着品牌价值、客户数据和利润空间。健康的策略通常是两者并行。</p>
+      <p>无法衡量就无法改进：在 Google Analytics 4 中设置电商事件（商品浏览、加入购物车、开始结账、购买），关联 Search Console，并每月集中优化放弃率最高的那一步。</p>
+      <div class="bi-check">
+        <div class="eyebrow">// 上线前检查清单</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>是否已完成税务登记，并确定了 e-Arşiv/e-Fatura 开票方式？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>是否已完成 ETBİS 登记，验证码是否展示在网站底部？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>预先告知表和远程销售合同是否在支付步骤中让客户确认？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>KVKK 告知文本、Cookie 政策和 İYS 同意流程是否已准备就绪？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>虚拟 POS 是否已通过 3D Secure 测试，退款场景是否已试过？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>物流集成、追踪短信和退货码是否正常工作？</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>商品页面在移动端是否加载迅速，是否添加了结构化数据？</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="08">常见问题</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>搭建电商网站必须注册公司吗？</summary><p>如果要定期、持续地销售，答案是肯定的。申请虚拟 POS、签订物流协议和 ETBİS 登记都需要税务登记。小规模销售家庭自制产品的人可以选择小商户免税，但请向您的财务顾问确认是否符合条件。</p></details><details class="bi-faq-i"><summary>ETBİS 登记是强制的吗？收费吗？</summary><p>对于通过自有网站或移动应用销售的企业，ETBİS 登记是强制性的，且必须在开始经营前完成。登记通过 eticaret.gov.tr 使用 e-Devlet 免费办理。仅在国内电商平台销售的商家无需另行登记。</p></details><details class="bi-faq-i"><summary>虚拟 POS 和支付机构，哪个更划算？</summary><p>对于刚起步的企业，支付机构申请快，一次集成即可为所有银行卡提供分期付款。随着营业额增长，直接与银行签订虚拟 POS 协议在手续费上可能更有优势。做决定时，除了手续费，还要比较结算周期和固定费用。</p></details><details class="bi-faq-i"><summary>电商网站的撤回期是多少天？</summary><p>根据《远程合同条例》，原则上消费者可在收货之日起 14 天内无理由撤回。卖方也必须在收到撤回通知之日起 14 天内退款。定制商品等例外情形在条例中有明确列举。</p></details><details class="bi-faq-i"><summary>搭建电商网站需要多长时间？</summary><p>使用现成平台，如果内容和商品都已准备好，几周内即可上线。需要定制设计或系统集成的项目，周期通常长达数月。最拖延进度的通常是商品内容和虚拟 POS 审批流程。</p></details></div>
+      <h2 id="sonuc">结语</h2>
+      <p>搭建电商网站，意味着同时建立合适的公司架构、符合需求的平台、安全的支付、完备的法律文本和顺畅的配送链条。其中任何一环缺失，销售要么根本无法开始，要么在第一次退货申请时就出问题。</p>
+      <p>在现成平台无法满足需求时，CYF Tech 会根据您的需要开发定制的 <a href="web-cozumleri">电商与 Web 软件</a>，并端到端完成支付和物流集成。如果您想聊聊您的项目，欢迎 <a href="iletisim">给我们留言</a>，让我们一起评估您的现状。</p>
+      <div class="bi-src"><div class="eyebrow">// 参考资料</div><ol><li><a href="https://ticaret.gov.tr/ic-ticaret/elektronik-ticaret/elektronik-ticaret-bilgi-sistemi-etbis" target="_blank" rel="noopener nofollow">土耳其贸易部 — 电子商务信息系统（ETBİS）</a></li><li><a href="https://ticaret.gov.tr/ic-ticaret/sikca-sorulan-sorular/elektronik-ticaret" target="_blank" rel="noopener nofollow">土耳其贸易部 — 电子商务常见问题</a></li><li><a href="https://ticaret.gov.tr/haberler/internet-ve-telefon-vasitasiyla-yapilan-satislara-yeni-standartlar-geldi" target="_blank" rel="noopener nofollow">土耳其贸易部 — 网络和电话销售的新标准</a></li><li><a href="https://www.lexpera.com.tr/mevzuat/yonetmelikler/mesafeli-sozlesmeler-yonetmeligi" target="_blank" rel="noopener nofollow">《远程合同条例》（现行文本，Lexpera）</a></li><li><a href="https://www.tcmb.gov.tr/wps/wcm/connect/TR/TCMB+TR/Main+Menu/Temel+Faaliyetler/Odeme+Hizmetleri/Elektronik+Para+Kuruluslari" target="_blank" rel="noopener nofollow">TCMB — 支付服务：电子货币机构</a></li><li><a href="https://iys.org.tr/" target="_blank" rel="noopener nofollow">信息管理系统（İYS）</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>全部文章</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>分享</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="通过 WhatsApp 分享" title="通过 WhatsApp 分享"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="分享到 LinkedIn" title="分享到 LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="分享到 X" title="分享到 X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="通过电子邮件发送" title="通过电子邮件发送"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="目录">
+        <div class="eyebrow">// 本文内容</div>
+        <ol class="bi-toc"><li><a href="#sirket" data-n="01">公司与税务</a></li><li><a href="#altyapi" data-n="02">平台选择</a></li><li><a href="#odeme" data-n="03">虚拟 POS 与支付</a></li><li><a href="#yasal" data-n="04">法律义务</a></li><li><a href="#kargo" data-n="05">物流与退货</a></li><li><a href="#urun-seo" data-n="06">商品页面与 SEO</a></li><li><a href="#yayin" data-n="07">上线与增长</a></li><li><a href="#sss" data-n="08">常见问题</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// 其他文章</div>
+        <ul class="bi-others"><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">2026年10月31日</span><b>建企业网站之前必须了解的 7 件事</b><span class="bi-read">6 分钟阅读</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">2026年10月31日</span><b>2026 年网站价格：决定成本的 9 个因素</b><span class="bi-read">10 分钟阅读</span></div></a></li><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">2026年10月31日</span><b>什么是 SEO？2026 年简明实用入门指南</b><span class="bi-read">8 分钟阅读</span></div></a></li><li><a href="mobil-uygulama-gelistirme-maliyeti"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><div><span class="d">2026年10月31日</span><b>2026 年移动应用开发成本：决定价格的 8 项内容</b><span class="bi-read">8 分钟阅读</span></div></a></li><li><a href="wordpress-mi-ozel-yazilim-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">2026年10月31日</span><b>WordPress 还是定制软件？选择合适技术架构的指南</b><span class="bi-read">10 分钟阅读</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>聊聊您的项目。</b><span>告诉我们您的想法，我们将为您准备专属报价。</span><div class="bi-go">获取报价<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// 现在就开始吧</div>
+        <h2 class="h2">携手实现您的项目。</h2>
+        <p class="lead" style="margin-top:20px">告诉我们您的项目构想，我们将为您准备专属报价。</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>通过 WhatsApp 联系</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">电话</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">邮箱</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">地址</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
+      </div>
+      <div>
+        <h2>快速导航</h2>
+        <ul><li><a href="./">首页</a></li><li><a href="projelerimiz">项目</a></li><li><a href="referanslar">客户案例</a></li><li><a href="blog">博客</a></li><li><a href="hakkimizda">关于我们</a></li><li><a href="iletisim">联系我们</a></li></ul>
+      </div>
+      <div>
+        <h2>服务</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>网站解决方案</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>桌面应用</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>移动应用</a></li></ul>
+      </div>
+      <div>
+        <h2>联系我们</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — 值得信赖的数字化伙伴。</span> <span>保留所有权利。</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="通过 WhatsApp 联系"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

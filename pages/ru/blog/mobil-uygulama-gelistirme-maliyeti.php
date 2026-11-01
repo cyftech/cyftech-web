@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов — блог CYF Tech</title>
+<meta name="description" content="От чего зависит стоимость разработки мобильного приложения в 2026 году? Платформа, функции, бэкенд, сборы App Store и Google Play, поддержка и советы по бюджету.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов — блог CYF Tech">
+<meta property="og:description" content="От чего зависит стоимость разработки мобильного приложения в 2026 году? Платформа, функции, бэкенд, сборы App Store и Google Play, поддержка и советы по бюджету.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов", "description": "От чего зависит стоимость разработки мобильного приложения в 2026 году? Платформа, функции, бэкенд, сборы App Store и Google Play, поддержка и советы по бюджету.", "image": "https://cyftech.com.tr/assets/img/blog/mobil-uygulama-gelistirme-maliyeti.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "ru", "mainEntityOfPage": "https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti", "url": "https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/ru/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://cyftech.com.tr/ru/blog"}, {"@type": "ListItem", "position": 3, "name": "Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов", "item": "https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ru", "mainEntity": [{"@type": "Question", "name": "Сколько времени занимает разработка мобильного приложения?", "acceptedAnswer": {"@type": "Answer", "text": "Простой MVP обычно готов за 2–3 месяца, приложение среднего масштаба с оплатой и панелью — за 3–6 месяцев. Сложные интеграции и многоролевая структура увеличивают этот срок. На график напрямую влияет и своевременная подготовка контента и согласований."}}, {"@type": "Question", "name": "Платная ли публикация приложения в App Store и Google Play?", "acceptedAnswer": {"@type": "Answer", "text": "Да. Членство в Apple Developer Program стоит 99 долларов США в год. Для Google Play Console взимается единоразовый регистрационный сбор 25 долларов США. Если в приложении продаётся цифровой контент, дополнительно взимается комиссия."}}, {"@type": "Question", "name": "Вдвое ли дороже заказать приложение и для iOS, и для Android?", "acceptedAnswer": {"@type": "Answer", "text": "При нативной разработке пишутся две отдельные кодовые базы, поэтому стоимость может приблизиться к двойной. В кроссплатформенных технологиях, таких как Flutter или React Native, используется единая кодовая база, поэтому две платформы обычно обходятся заметно дешевле, чем удвоенная стоимость одной."}}, {"@type": "Question", "name": "Сколько стоит ежегодная поддержка приложения?", "acceptedAnswer": {"@type": "Answer", "text": "Распространённое в отрасли правило — закладывать примерно 15–20 процентов от стоимости первоначальной разработки на ежегодную поддержку и небольшие доработки. К этому добавляются ежемесячные платежи за серверы, SMS и уведомления, а также ежегодный взнос Apple."}}, {"@type": "Question", "name": "Есть ли толк от бесплатных конструкторов приложений?", "acceptedAnswer": {"@type": "Answer", "text": "No-code инструменты могут пригодиться для проверки идеи или простых внутренних приложений. Но как только нужны особые бизнес-правила, интеграции, производительность и масштабирование, их пределы быстро достигаются, а вы попадаете в зависимость от платформы."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/mobil-uygulama-gelistirme-maliyeti">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/mobil-uygulama-gelistirme-maliyeti">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>:root{--sans:'Space Grotesk','Inter',system-ui,sans-serif}</style>
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Перейти к содержимому</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Главное меню">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Услуги <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Веб-решения</b><small>Веб-дизайн, разработка, e-commerce и SEO — в одних руках.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Десктопные приложения</b><small>Программы под Ваш бизнес, работающие и без интернета.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Мобильные приложения</b><small>Быстрые и удобные приложения для iOS и Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Проекты</a>
+    <a href="referanslar">Референсы</a>
+    <a href="blog" aria-current="page">Блог</a>
+    <a href="hakkimizda">О нас</a>
+    <a href="iletisim">Контакты</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Выберите язык"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>RU</span></button>
+      <div class="lang-menu"><a href="../mobil-uygulama-gelistirme-maliyeti" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/mobil-uygulama-gelistirme-maliyeti" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="../de/mobil-uygulama-gelistirme-maliyeti" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/mobil-uygulama-gelistirme-maliyeti" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/mobil-uygulama-gelistirme-maliyeti" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="mobil-uygulama-gelistirme-maliyeti" hreflang="ru" lang="ru" data-lang="ru" aria-current="true"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Тёмная / светлая тема" title="Тёмная / светлая тема"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" data-label-open="Открыть меню" data-label-close="Закрыть меню" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Мобильное меню">
+  <a href="./">Главная</a>
+  <div class="mnav-label">УСЛУГИ</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a>
+  <div class="mnav-label">КОМПАНИЯ</div>
+  <a href="projelerimiz">Проекты</a>
+  <a href="referanslar">Референсы</a>
+  <a href="blog" aria-current="page">Блог</a>
+  <a href="hakkimizda">О нас</a>
+  <a href="iletisim">Контакты</a>
+  <a class="btn btn-primary" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">БЛОГ</a><span>/</span><span>МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</span></div>
+    <h1 class="h1" style="max-width:900px">Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Мобильные приложения</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 октября 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 мин чтения</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/mobil-uygulama-gelistirme-maliyeti.svg" alt=""></div>
+      <p class="bi-lead">Вопрос «сколько стоит сделать приложение?» похож на вопрос «сколько стоит построить дом?»: ответ зависит от площади, материалов и этажности. <b>Стоимость разработки мобильного приложения</b> тоже складывается из нескольких ключевых решений, и знание их заранее бережёт ваш бюджет.</p>
+      <p>В этой статье разбираем по пунктам, из чего складывается цена мобильного приложения: объём и функции, выбор платформ iOS и Android, бэкенд, дизайн, интеграции, тестирование, сборы магазинов приложений и поддержка после запуска. В конце — ориентировочные диапазоны стоимости и наши советы, как разумно расходовать бюджет.</p>
+      <p>Примечание: приведённые ниже суммы в TL — приблизительные ориентировочные диапазоны для условий Турции 2026 года; точную цену можно назвать только после уточнения списка функций.</p>
+      <h2 id="kapsam" class="bi-h2" data-n="01">Главный фактор стоимости: объём работ и список функций</h2>
+      <p>Сильнее всего на цену приложения влияет не число экранов, а <b>сложность бизнес-логики</b>. Приложение на пять экранов с синхронизацией в реальном времени, платежами и ролевым доступом может стоить дороже простого каталога на двадцать экранов.</p>
+      <p>Типичные функции, увеличивающие бюджет:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Аккаунты и роли:</b> вход, сброс пароля, вход через соцсети, типы пользователей с разными правами.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Оплата:</b> встроенные покупки, подписки или интеграция с интернет-эквайрингом.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Функции реального времени:</b> чат, геолокация в реальном времени, push-уведомления, синхронизация данных между устройствами.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Работа с оборудованием:</b> камера, сканирование QR/штрихкодов, Bluetooth, NFC, геолокация в фоне.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Работа офлайн:</b> ввод данных без интернета и синхронизация при появлении связи.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Панель управления:</b> веб-панель для управления контентом, пользователями и отчётами.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Короткий совет:</b> прежде чем запрашивать предложение, разделите функции на три колонки: «обязательно», «желательно» и «потом». Выпуск первой версии только с первой колонкой (MVP) заметно снижает стоимость и рано даёт обратную связь от реальных пользователей.</div></div>
+      <h2 id="platform" class="bi-h2" data-n="02">Выбор платформы: iOS, Android или обе</h2>
+      <p>В Турции примерно три четверти мобильных пользователей пользуются Android и четверть — iOS (Statcounter, 2026). Но в зависимости от вашей аудитории соотношение меняется; например, в некоторых премиальных услугах доля пользователей iOS и их склонность к тратам выше. Для большинства компаний правильный ответ — присутствовать на обеих платформах.</p>
+      <p>Главное решение, определяющее стоимость, — технология:</p>
+      <table>
+        <thead><tr><th>Подход</th><th>Влияние на стоимость</th><th>Когда разумно?</th></tr></thead>
+        <tbody>
+          <tr><td>Нативная разработка (Swift + Kotlin)</td><td>Две отдельные кодовые базы; самая высокая стоимость</td><td>Интенсивная работа с оборудованием, максимальная производительность</td></tr>
+          <tr><td>Кроссплатформенная разработка (Flutter, React Native)</td><td>Одна кодовая база; обычно заметная экономия</td><td>Бизнес-приложения, e-commerce, бронирование, большинство проектов МСБ</td></tr>
+          <tr><td>PWA (веб-приложение)</td><td>Минимальная стоимость; ограничения в магазинах и некоторых функциях устройства</td><td>Простые задачи с упором на контент</td></tr>
+        </tbody>
+      </table>
+      <p>Подробно этот выбор мы сравнили <a href="native-mi-cross-platform-mu">в статье «Нативная или кроссплатформенная разработка?»</a>.</p>
+      <h2 id="backend" class="bi-h2" data-n="03">Невидимая статья расходов: бэкенд, API и панель управления</h2>
+      <p>Приложение — это лицо, которое видят клиенты; основная работа часто идёт в фоне. База данных с пользовательскими данными, API для связи с приложением, инфраструктура уведомлений и панель управления для бизнеса могут составлять значительную часть общего бюджета.</p>
+      <p>Здесь есть два пути:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Готовые сервисы (BaaS):</b> платформы вроде Firebase предлагают готовые блоки — аутентификацию, базу данных, уведомления. На старте это быстро и дёшево, но с ростом числа пользователей ежемесячные расходы могут вырасти, а обработку данных за рубежом нужно отдельно оценить с точки зрения KVKK.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Собственный бэкенд:</b> инфраструктура под ваши бизнес-правила, работающая на вашем сервере. Начальные вложения выше; зато проще контроль, масштабирование и интеграция с текущими системами (ERP, бухгалтерия, CRM).</span></li>
+      </ul>
+      <p>Если у вас уже есть сайт или ПО, использование одного бэкенда для веба и мобильных приложений снижает общую стоимость. В нашем продукте KATSİS веб-панель, приложения для iOS / Android и Windows используют общую инфраструктуру; благодаря этому функция пишется один раз и работает везде. Подробности <a href="projelerimiz">— на странице наших проектов</a>.</p>
+      <h2 id="tasarim" class="bi-h2" data-n="04">UI/UX-дизайн, тестирование и контроль качества</h2>
+      <p>Хороший дизайн мобильного приложения — это не только красивые экраны: пользовательские сценарии, пустые состояния, сообщения об ошибках, разные размеры экранов и доступность — тоже часть дизайна. Готовый UI-кит снижает стоимость; анимированный дизайн под бренд — увеличивает.</p>
+      <p>Тестирование часто упускают из виду в предложениях, хотя именно оно определяет, получит ли приложение низкий рейтинг в магазине. Нужно тестировать устройства разных производителей Android, старые версии iOS, слабое интернет-соединение и прерванные платежи. Запрашивая предложение, обязательно спросите, как будет организовано тестирование и на скольких устройствах.</p>
+      <h3>Чей труд входит в цену?</h3>
+      <p>В проекте мобильного приложения обычно работают менеджер проекта, UI/UX-дизайнер, один-два мобильных разработчика, бэкенд-разработчик и тестировщик. Сумма в предложении — это, грубо говоря, общее количество часов, которые эта команда посвятит проекту. Поэтому просьбы «сделать точно такое же приложение, как это» недостаточно для оценки; главный вопрос — какие части этого приложения вам действительно нужны. Работа с фрилансером может снизить ставку, но совмещение в одном человеке дизайна, бэкенда и тестирования повышает риски проекта.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Самое дорогое приложение — то, которое после запуска приходится переписывать с нуля.</blockquote>
+      <h2 id="magaza" class="bi-h2" data-n="05">Сборы и комиссии App Store и Google Play</h2>
+      <p>Помимо стоимости разработки, у публикации в магазинах есть и официальные сборы:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Apple Developer Program:</b> 99 долларов США за год участия (отображается в местной валюте в зависимости от региона). Для аккаунта на компанию нужен номер D-U-N-S.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Google Play Console:</b> единоразовый регистрационный сбор 25 долларов США. Для личных аккаунтов разработчиков, созданных после 13 ноября 2023 года, перед публикацией требуется закрытое тестирование не менее чем с 12 тестировщиками в течение 14 дней без перерыва; корпоративный аккаунт снимает это требование.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Комиссии:</b> если вы продаёте в приложении цифровой контент или подписки, магазины берут комиссию. Apple Small Business Program и Google Play применяют ставку 15% к доходу до 1 миллиона долларов в год; на доход сверх этого стандартная ставка — 30%. На продажу физических товаров и услуг (например, e-commerce, заказ еды) эта комиссия не распространяется.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Внимание:</b> обязательно регистрируйте аккаунты разработчика на свою компанию. Передача приложения, опубликованного в аккаунте агентства, занимает время и иногда приводит к потере отзывов пользователей.</div></div>
+      <h2 id="bakim" class="bi-h2" data-n="06">После запуска: стоимость поддержки, серверов и обновлений</h2>
+      <p>С запуском приложения бюджет не заканчивается. Apple и Google каждый год выпускают новые версии ОС, меняются правила магазинов и минимальные требования к SDK. Приложение без обновлений через несколько лет может начать падать или быть удалено из магазина.</p>
+      <p>Запланируйте в годовом бюджете следующие статьи:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Серверы и сервисы:</b> хостинг, база данных, уведомления, SMS и e-mail-сервисы, картографические API.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Техническая поддержка:</b> совместимость с ОС, обновления библиотек, патчи безопасности, исправление ошибок.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Новые функции:</b> доработки по отзывам пользователей.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Продление в магазине:</b> ежегодный членский взнос Apple.</span></li>
+      </ul>
+      <p>Распространённое в отрасли эмпирическое правило — закладывать на ежегодную поддержку около 15–20% от стоимости первоначальной разработки. Эта доля зависит от сложности приложения и от того, насколько быстро вы хотите добавлять новые функции.</p>
+      <h2 id="fiyat" class="bi-h2" data-n="07">Цены на мобильные приложения: ориентировочные диапазоны на 2026 год</h2>
+      <p>Приведённые ниже диапазоны рассчитаны исходя из кроссплатформенной разработки под две платформы, базовой панели управления и поддержки публикации. Они ориентировочные, отражают условия Турции на 2026 год и зависят от опыта команды, уровня дизайна и интеграций.</p>
+      <table>
+        <thead><tr><th>Тип приложения</th><th>Пример</th><th>Ориентировочный бюджет</th><th>Срок</th></tr></thead>
+        <tbody>
+          <tr><td>Простое / MVP</td><td>Каталог, запрос на запись, информационное приложение</td><td>250 тыс. – 600 тыс. TL</td><td>2–3 месяца</td></tr>
+          <tr><td>Среднее</td><td>Регистрация, оплата, уведомления, панель и отчёты</td><td>600 тыс. – 1,5 млн TL</td><td>3–6 месяцев</td></tr>
+          <tr><td>Сложное</td><td>Синхронизация в реальном времени, многоролевая структура, интеграция с ERP, маркетплейс</td><td>От 1,5 млн TL</td><td>От 6 месяцев</td></tr>
+        </tbody>
+      </table>
+      <p>Слишком низкие предложения обычно представляют собой слегка изменённые готовые шаблоны; такие позиции, как бэкенд, тестирование и передача исходного кода, могут в них вообще не входить. Сравнивая предложения, смотрите не столько на итоговую сумму, сколько на то, совпадает ли объём работ. Если вам нужна похожая разбивка бюджета для сайта, загляните в <a href="web-sitesi-fiyatlari">нашу статью о ценах на сайты</a>.</p>
+      <h2 id="tasarruf" class="bi-h2" data-n="08">6 разумных способов снизить стоимость мобильного приложения</h2>
+      <p>Снижение затрат не обязательно означает отказ от качества. Большая часть бюджета теряется из-за неопределённости и решений, которые меняются по ходу. Самые эффективные способы экономии, которые мы видим в проектах:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. Начните с MVP:</b> пусть приложение делает одну главную задачу как можно лучше. Значительная часть функций, созданных до появления реальных данных о пользователях, так и не используется.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. Выберите единую кодовую базу:</b> если продукт не требует интенсивной работы с оборудованием, кроссплатформенная разработка позволяет выпустить обе платформы силами одной команды.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. Используйте существующую инфраструктуру:</b> если у вашего сайта или внутренней системы есть API, подключить к нему мобильное приложение намного дешевле, чем писать бэкенд с нуля.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Зафиксируйте объём письменно:</b> документ на несколько страниц со списком экранов, ролями пользователей и примерами сценариев делает предложения сопоставимыми и сокращает запросы «давайте добавим ещё и это» посреди проекта.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. С умом выбирайте готовые сервисы:</b> зрелые сервисы для карт, оплаты, SMS и уведомлений сокращают сроки разработки; но заранее посчитайте и ежемесячные расходы, которые возникнут при росте числа пользователей.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>6. Составьте поэтапный план оплаты и сдачи:</b> платежи, привязанные к вехам — дизайн, первая тестовая версия, публикация в магазине, — позволяют видеть прогресс и при необходимости менять курс.</span></li>
+      </ul>
+      <p>И наконец, обязательно пропишите в предложении, кому будут принадлежать <b>исходный код и интеллектуальные права</b>. Приложение, исходный код которого вам не передан, при желании развивать его с другой командой, возможно, придётся писать с нуля — и это самый большой скрытый риск для бюджета.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// ЧЕК-ЛИСТ ПЕРЕД ЗАПРОСОМ ПРЕДЛОЖЕНИЯ</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Разделены ли функции на «обязательные / на потом»?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Определены ли целевые платформы и технология (нативная / кроссплатформенная)?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Входят ли бэкенд и панель управления в предложение?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Описаны ли процесс и объём тестирования письменно?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Будут ли аккаунты разработчика открыты на имя компании?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Кому будут принадлежать исходный код и интеллектуальные права?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Запланированы ли поддержка после запуска и расходы на серверы?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="09">Частые вопросы</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Сколько времени занимает разработка мобильного приложения?</summary><p>Простой MVP обычно готов за 2–3 месяца, приложение среднего масштаба с оплатой и панелью — за 3–6 месяцев. Сложные интеграции и многоролевая структура увеличивают этот срок. На график напрямую влияет и своевременная подготовка контента и согласований.</p></details><details class="bi-faq-i"><summary>Платная ли публикация приложения в App Store и Google Play?</summary><p>Да. Членство в Apple Developer Program стоит 99 долларов США в год. Для Google Play Console взимается единоразовый регистрационный сбор 25 долларов США. Если в приложении продаётся цифровой контент, дополнительно взимается комиссия.</p></details><details class="bi-faq-i"><summary>Вдвое ли дороже заказать приложение и для iOS, и для Android?</summary><p>При нативной разработке пишутся две отдельные кодовые базы, поэтому стоимость может приблизиться к двойной. В кроссплатформенных технологиях, таких как Flutter или React Native, используется единая кодовая база, поэтому две платформы обычно обходятся заметно дешевле, чем удвоенная стоимость одной.</p></details><details class="bi-faq-i"><summary>Сколько стоит ежегодная поддержка приложения?</summary><p>Распространённое в отрасли правило — закладывать примерно 15–20 процентов от стоимости первоначальной разработки на ежегодную поддержку и небольшие доработки. К этому добавляются ежемесячные платежи за серверы, SMS и уведомления, а также ежегодный взнос Apple.</p></details><details class="bi-faq-i"><summary>Есть ли толк от бесплатных конструкторов приложений?</summary><p>No-code инструменты могут пригодиться для проверки идеи или простых внутренних приложений. Но как только нужны особые бизнес-правила, интеграции, производительность и масштабирование, их пределы быстро достигаются, а вы попадаете в зависимость от платформы.</p></details></div>
+      <h2 id="sonuc">В заключение</h2>
+      <p>Стоимость разработки мобильного приложения — это не одна цифра, а сумма ваших решений: что войдёт в первую версию, какую технологию вы выберете, как построите бэкенд и как будете поддерживать приложение после запуска. Если определиться с этими решениями заранее, вы избежите сюрпризов в бюджете, а приложением действительно будут пользоваться. В CYF Tech в рамках <a href="mobil-uygulamalar">нашей услуги по разработке мобильных приложений</a> для iOS и Android мы сначала вместе с вами уточняем объём работ, а затем даём прозрачное предложение. Чтобы обсудить вашу идею, <a href="iletisim">напишите нам</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// ИСТОЧНИКИ</div><ol><li><a href="https://developer.apple.com/programs/enroll/" target="_blank" rel="noopener nofollow">Apple — регистрация и стоимость Developer Program</a></li><li><a href="https://developer.apple.com/app-store/small-business-program/" target="_blank" rel="noopener nofollow">Apple — App Store Small Business Program</a></li><li><a href="https://support.google.com/googleplay/android-developer/answer/6112435?hl=tr" target="_blank" rel="noopener nofollow">Справка Google Play Console — регистрация аккаунта разработчика</a></li><li><a href="https://support.google.com/googleplay/android-developer/answer/14151465?hl=tr" target="_blank" rel="noopener nofollow">Справка Google Play Console — требования к тестированию для личных аккаунтов</a></li><li><a href="https://support.google.com/googleplay/android-developer/answer/112622?hl=tr" target="_blank" rel="noopener nofollow">Справка Google Play Console — сервисные сборы</a></li><li><a href="https://gs.statcounter.com/os-market-share/mobile/turkey" target="_blank" rel="noopener nofollow">Statcounter — доли мобильных ОС в Турции</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Все статьи</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Поделиться</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Поделиться в WhatsApp" title="Поделиться в WhatsApp"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Поделиться в LinkedIn" title="Поделиться в LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Поделиться в X" title="Поделиться в X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Отправить по e-mail" title="Отправить по e-mail"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Содержание">
+        <div class="eyebrow">// В ЭТОЙ СТАТЬЕ</div>
+        <ol class="bi-toc"><li><a href="#kapsam" data-n="01">Объём и функции</a></li><li><a href="#platform" data-n="02">iOS, Android или обе</a></li><li><a href="#backend" data-n="03">Бэкенд и панель</a></li><li><a href="#tasarim" data-n="04">Дизайн и тестирование</a></li><li><a href="#magaza" data-n="05">Сборы магазинов</a></li><li><a href="#bakim" data-n="06">Расходы на поддержку</a></li><li><a href="#fiyat" data-n="07">Ориентировочные диапазоны цен</a></li><li><a href="#tasarruf" data-n="08">Разумное использование бюджета</a></li><li><a href="#sss" data-n="09">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// ДРУГИЕ СТАТЬИ</div>
+        <ul class="bi-others"><li><a href="native-mi-cross-platform-mu"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><div><span class="d">31 октября 2026</span><b>Нативная или кроссплатформенная разработка? Сравнение Flutter и React Native</b><span class="bi-read">8 мин чтения</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>7 вещей, которые нужно знать перед заказом корпоративного сайта</b><span class="bi-read">6 мин чтения</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>Стоимость сайта в 2026 году: 9 факторов, определяющих цену</b><span class="bi-read">10 мин чтения</span></div></a></li><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 октября 2026</span><b>Что такое SEO? Простое и практичное руководство для начинающих на 2026 год</b><span class="bi-read">8 мин чтения</span></div></a></li><li><a href="e-ticaret-sitesi-kurma-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/></svg></span><div><span class="d">31 октября 2026</span><b>Как создать интернет-магазин в 2026 году: пошаговая дорожная карта</b><span class="bi-read">10 мин чтения</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Давайте обсудим ваш проект.</b><span>Расскажите о своей идее — мы подготовим индивидуальное предложение.</span><div class="bi-go">Получить предложение<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// ДАВАЙТЕ НАЧНЁМ</div>
+        <h2 class="h2">Воплотим Ваш проект вместе.</h2>
+        <p class="lead" style="margin-top:20px">Расскажите о своём проекте — мы подготовим индивидуальное предложение.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Написать в WhatsApp</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">тел</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">почта</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">адрес</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Надёжная точка цифрового мира. Веб-дизайн, разработка ПО и цифровые решения.</p>
+      </div>
+      <div>
+        <h2>БЫСТРОЕ МЕНЮ</h2>
+        <ul><li><a href="./">Главная</a></li><li><a href="projelerimiz">Проекты</a></li><li><a href="referanslar">Референсы</a></li><li><a href="blog">Блог</a></li><li><a href="hakkimizda">О нас</a></li><li><a href="iletisim">Контакты</a></li></ul>
+      </div>
+      <div>
+        <h2>УСЛУГИ</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a></li></ul>
+      </div>
+      <div>
+        <h2>КОНТАКТЫ</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — надёжная точка цифрового мира.</span> <span>Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

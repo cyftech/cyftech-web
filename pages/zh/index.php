@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CYF Tech — 值得信赖的软件与数字化伙伴</title>
+<meta name="description" content="CYF Tech 提供网站设计、网站开发、SEO 与电商解决方案，助力您的企业在数字世界中成长。总部位于马尼萨的软件与数字化解决方案公司。">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="CYF Tech — 值得信赖的软件与数字化伙伴">
+<meta property="og:description" content="CYF Tech 提供网站设计、网站开发、SEO 与电商解决方案，助力您的企业在数字世界中成长。总部位于马尼萨的软件与数字化解决方案公司。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cyftech.com.tr/zh/">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="zh_CN">
+<link rel="canonical" href="https://cyftech.com.tr/zh/">
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/home.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/home.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&amp;display=swap">
+<style>:root{--sans:'Space Grotesk','Noto Sans SC',system-ui,sans-serif}</style>
+</head>
+<body class="home">
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">跳到正文</a>
+<header class="site-head overlay">
+  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="主菜单">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>网站解决方案</b><small>网站设计、软件开发、电商与 SEO，一站式完成。</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>桌面应用</b><small>为您的业务量身定制，离线也能运行的桌面软件。</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>移动应用</b><small>适用于 iOS 和 Android 的快速、易用的应用。</small></span></a></div>
+    </div>
+    <a href="projelerimiz">项目</a>
+    <a href="referanslar">客户案例</a>
+    <a href="blog">博客</a>
+    <a href="hakkimizda">关于我们</a>
+    <a href="iletisim">联系我们</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="选择语言"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>ZH</span></button>
+      <div class="lang-menu"><a href="../" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="../de/" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="./" hreflang="zh" lang="zh" data-lang="zh" aria-current="true"><b>ZH</b><span>中文</span></a><a href="../ru/" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="夜间 / 日间主题" title="夜间 / 日间主题"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="打开菜单" data-label-open="打开菜单" data-label-close="关闭菜单" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  <div class="head-prog" aria-hidden="true"></div>
+</header>
+<nav class="mnav" id="mnav" aria-label="移动端菜单">
+  <a href="./" aria-current="page">首页</a>
+  <div class="mnav-label">服务</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>网站解决方案</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>桌面应用</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>移动应用</a>
+  <div class="mnav-label">企业</div>
+  <a href="projelerimiz">项目</a>
+  <a href="referanslar">客户案例</a>
+  <a href="blog">博客</a>
+  <a href="hakkimizda">关于我们</a>
+  <a href="iletisim">联系我们</a>
+  <a class="btn btn-primary" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<canvas class="pc-canvas" data-pc-canvas aria-hidden="true"></canvas>
+<div class="pc-track">
+  <section id="p0" class="pc-sec hero">
+    <div class="bg-layer hero-floor" aria-hidden="true"><div><div><div></div></div></div></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">// CYF TECH · 软件与数字化解决方案</div>
+      <h1 class="pc-h1">值得信赖的软件与数字化<span class="accent">伙伴。</span></h1>
+      <p class="pc-p">我们将零散的想法整合起来，打造快速、安全、可扩展的数字产品。</p>
+      <div class="btn-row"><a class="btn btn-primary" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="projelerimiz">浏览我们的项目</a></div>
+    </div>
+    <div class="pc-hint"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v16M6 14l6 6 6-6"/></svg>向下滚动——看点阵散开又重新聚合</div>
+  </section>
+
+  <section id="p1" class="pc-sec">
+    <div class="bg-layer bg-grid bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">01 — 网站设计</div>
+      <h2 class="pc-h2">现代、易用的网站。</h2>
+      <p class="pc-p">我们以简洁清晰的界面设计您品牌的数字形象，让访客在第一秒就产生信任。</p>
+      <ul class="arrow-list"><li>以用户体验（UX）为核心的界面</li><li>适配所有屏幕的响应式设计</li><li>专属于您品牌的视觉语言</li></ul>
+      <a class="link-arrow" href="web-cozumleri#web-tasarim">了解网站设计服务 →</a>
+    </div>
+  </section>
+
+  <section id="p2" class="pc-sec">
+    <div class="bg-layer bg-lines bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">02 — 网站开发</div>
+      <h2 class="pc-h2">定制、安全、可扩展的 Web 应用。</h2>
+      <p class="pc-p">当现成模板无法满足需求时，我们根据您的业务流程开发量身定制的软件。</p>
+      <ul class="arrow-list"><li>按需定制的架构与管理后台</li><li>API 与系统集成</li><li>随业务增长而扩展的基础架构</li></ul>
+      <a class="link-arrow" href="web-cozumleri#web-gelistirme">了解网站开发服务 →</a>
+    </div>
+  </section>
+
+  <section id="p3" class="pc-sec">
+    <div class="bg-layer bg-diag bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">03 — SEO 服务</div>
+      <h2 class="pc-h2">提升曝光度，为您带来客户。</h2>
+      <p class="pc-p">我们优化网站结构，让搜索引擎读得懂、用户找得到。</p>
+      <ul class="arrow-list"><li>技术 SEO 与网站速度优化</li><li>关键词与内容策略</li><li>定期报告与跟踪</li></ul>
+      <a class="link-arrow" href="web-cozumleri#seo">了解 SEO 服务 →</a>
+    </div>
+  </section>
+
+  <section id="p4" class="pc-sec">
+    <div class="bg-layer bg-dots bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt l">
+      <div class="eyebrow">04 — 电商网站</div>
+      <h2 class="pc-h2">以销售为导向、易于使用的电商平台。</h2>
+      <p class="pc-p">从商品展示到支付环节，我们精心设计每一个页面，将访客转化为客户。</p>
+      <ul class="arrow-list"><li>安全支付系统集成</li><li>轻松管理商品、库存与订单</li><li>促销与折扣活动配置</li></ul>
+      <a class="link-arrow" href="web-cozumleri#e-ticaret">了解电商服务 →</a>
+    </div>
+  </section>
+
+  <section id="p5" class="pc-sec">
+    <div class="bg-layer bg-rows bg-fade" aria-hidden="true"></div>
+    <div class="pc-txt r">
+      <div class="eyebrow">05 — 工作流程</div>
+      <h2 class="pc-h2">从构想到上线，只需四步。</h2>
+      <ol class="steps">
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg><small>01</small></span><div><b>规划</b><span>与您一起明确需求和目标。</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg><small>02</small></span><div><b>设计</b><span>绘制界面与用户流程。</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><small>03</small></span><div><b>开发</b><span>将设计转化为快速、安全的代码。</span></div></li>
+        <li><span class="n"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-3-3c1-4 4-8 10-9 0 6-4 9-9 10z"/><circle cx="14" cy="9" r="1.5"/><path d="M9 15l1 4 3-2M6 12l-4-1 2-3M5 15c-1 1-1.5 4-1.5 4.5 0 0 3.5-.5 4.5-1.5"/></svg><small>04</small></span><div><b>上线</b><span>网站正式上线，7×24 小时支持始终相伴。</span></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="p6" class="pc-sec">
+    <div class="bg-layer bg-grid-lg" aria-hidden="true"></div>
+    <div class="pc-txt l" style="max-width:540px">
+      <div class="eyebrow">06 — 联系我们</div>
+      <h2 class="pc-h2 xl">携手实现您的项目。</h2>
+      <p class="pc-p">告诉我们您的项目构想，我们将为您准备专属报价。</p>
+      <div class="contact-lines">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">电话</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">邮箱</span>info@cyftech.com.tr</a>
+      </div>
+      <div class="btn-row" style="margin-top:32px"><a class="btn btn-primary" href="iletisim">获取报价<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>通过 WhatsApp 联系</a></div>
+      <div class="pc-recent">近期项目： <a href="referanslar">KA Mühendislik</a> · <a href="referanslar">Zumer Gayrimenkul</a> · <a href="referanslar">MÜSİAD Gebze</a> · <a href="referanslar">Nurella Spa & Masaj</a> · <a href="referanslar">Softrue Solutions</a></div>
+    </div>
+  </section>
+</div>
+
+<div class="pc-chips" aria-hidden="true">
+  <div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>值得信赖</b><small>长期合作伙伴</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>快速交付</b><small>按计划如期完成</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 4a2 2 0 1 1 4 0v1h4a1 1 0 0 1 1 1v4h-1a2 2 0 1 0 0 4h1v4a1 1 0 0 1-1 1h-4v-1a2 2 0 1 0-4 0v1H6a1 1 0 0 1-1-1v-4h1a2 2 0 1 0 0-4H5V6a1 1 0 0 1 1-1h4V4z"/></svg><div><b>定制方案</b><small>贴合您的业务</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2"/><rect x="3" y="14" width="4" height="6" rx="1.5"/><rect x="17" y="14" width="4" height="6" rx="1.5"/></svg><div><b>7×24 支持</b><small>上线后依然相伴</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><div><b>UI / UX</b><small>用户流程</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="14" height="10" rx="1.5"/><path d="M5 19h8"/><rect x="17" y="9" width="5" height="11" rx="1.5"/></svg><div><b>响应式</b><small>手机 · 平板 · 桌面</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.1 0 2-.9 2-2 0-1-1-1.6-1-2.6 0-1.1.9-2 2-2h2.4A4.6 4.6 0 0 0 22 10c0-3.9-4.5-7-10-7z"/><circle cx="7.5" cy="11" r="1"/><circle cx="10" cy="7" r="1"/><circle cx="15" cy="7" r="1"/></svg><div><b>品牌形象</b><small>色彩、字体、语言</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg><div><b>原型</b><small>编码前先测试</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2v6M15 2v6M7 8h10v4a5 5 0 0 1-10 0V8zM12 17v5"/></svg><div><b>API</b><small>系统集成</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg><div><b>安全</b><small>安全的基础架构</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg><div><b>可扩展</b><small>为增长做好准备</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/></svg><div><b>管理后台</b><small>自主管理内容</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><div><b>技术 SEO</b><small>易于抓取的结构</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 18a9 9 0 1 1 16 0"/><path d="M12 14l4-5"/></svg><div><b>网站速度</b><small>快速加载</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><div><b>关键词</b><small>出现在正确的搜索中</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><div><b>数据报告</b><small>可衡量的成果</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg><div><b>支付</b><small>安全的支付环节</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z"/><path d="M3 8v8l9 5 9-5V8M12 13v8"/></svg><div><b>商品管理</b><small>库存与规格</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></svg><div><b>订单跟踪</b><small>物流流程</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg><div><b>促销活动</b><small>折扣与优惠券</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4V3h6v1M9 10h6M9 14h6M9 18h3"/></svg><div><b>规划</b><small>需求分析</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg><div><b>设计</b><small>界面与流程</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg><div><b>开发</b><small>编码与测试</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 15l-3-3c1-4 4-8 10-9 0 6-4 9-9 10z"/><circle cx="14" cy="9" r="1.5"/><path d="M9 15l1 4 3-2M6 12l-4-1 2-3M5 15c-1 1-1.5 4-1.5 4.5 0 0 3.5-.5 4.5-1.5"/></svg><div><b>上线</b><small>正式发布</small></div></div></div></div><div class="pc-chipset"><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><div><b>电话</b><small>0543 791 10 61</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><b>电子邮件</b><small>info@cyftech.com.tr</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg><div><b>WhatsApp</b><small>快速沟通</small></div></div></div><div><div class="chip float"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg><div><b>报价</b><small>专属定价</small></div></div></div></div>
+  <div class="pc-drag"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M4 12h16"/></svg>拖动即可旋转</div>
+</div>
+<nav class="pc-rail" aria-label="章节"><a href="#p0" aria-label="开篇">00<span></span></a><a href="#p1" aria-label="网站设计">01<span></span></a><a href="#p2" aria-label="网站开发">02<span></span></a><a href="#p3" aria-label="SEO">03<span></span></a><a href="#p4" aria-label="电商">04<span></span></a><a href="#p5" aria-label="流程">05<span></span></a><a href="#p6" aria-label="联系我们">06<span></span></a></nav>
+<div class="pc-counter" aria-hidden="true"><span class="accent" data-cur-num>00</span><span>/ 06</span><span class="bar"></span><span style="color:var(--text)" data-cur-name>开篇</span></div>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
+      </div>
+      <div>
+        <h2>快速导航</h2>
+        <ul><li><a href="./">首页</a></li><li><a href="projelerimiz">项目</a></li><li><a href="referanslar">客户案例</a></li><li><a href="blog">博客</a></li><li><a href="hakkimizda">关于我们</a></li><li><a href="iletisim">联系我们</a></li></ul>
+      </div>
+      <div>
+        <h2>服务</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>网站解决方案</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>桌面应用</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>移动应用</a></li></ul>
+      </div>
+      <div>
+        <h2>联系我们</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — 值得信赖的数字化伙伴。</span> <span>保留所有权利。</span>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

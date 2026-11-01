@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ИИ для малого и среднего бизнеса: 10 практических сценариев и дорожная карта — блог CYF Tech</title>
+<meta name="description" content="Где МСБ применять искусственный интеллект: клиентский сервис, маркетинг, бухгалтерия, склад и отчётность. Данные TÜİK 2026, риски KVKK и план старта.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="ИИ для малого и среднего бизнеса: 10 практических сценариев и дорожная карта — блог CYF Tech">
+<meta property="og:description" content="Где МСБ применять искусственный интеллект: клиентский сервис, маркетинг, бухгалтерия, склад и отчётность. Данные TÜİK 2026, риски KVKK и план старта.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="ru_RU">
+<link rel="canonical" href="https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "ИИ для малого и среднего бизнеса: 10 практических сценариев и дорожная карта", "description": "Где МСБ применять искусственный интеллект: клиентский сервис, маркетинг, бухгалтерия, склад и отчётность. Данные TÜİK 2026, риски KVKK и план старта.", "image": "https://cyftech.com.tr/assets/img/blog/kobiler-icin-yapay-zeka.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "ru", "mainEntityOfPage": "https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka", "url": "https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/ru/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://cyftech.com.tr/ru/blog"}, {"@type": "ListItem", "position": 3, "name": "ИИ для малого и среднего бизнеса: 10 практических сценариев и дорожная карта", "item": "https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ru", "mainEntity": [{"@type": "Question", "name": "В каких сферах МСБ чаще всего используют ИИ?", "acceptedAnswer": {"@type": "Answer", "text": "По статистике ИИ TÜİK за 2025 год самая распространённая цель среди компаний, использующих ИИ, — маркетинг и продажи (46,5%); за ними с показателями около 40% следуют производственные и сервисные процессы, НИОКР и управление бизнес-процессами, а бухгалтерия и финансовое управление — 33,7%. На практике МСБ часто начинают также с клиентской поддержки, обработки документов и отчётности."}}, {"@type": "Question", "name": "Дорого ли использовать ИИ?", "acceptedAnswer": {"@type": "Answer", "text": "Для старта — не обязательно. Корпоративные тарифы универсальных ИИ-инструментов предлагаются по ежемесячной подписке за пользователя. Расходы растут при индивидуальных интеграциях с данными компании и при больших объёмах использования."}}, {"@type": "Question", "name": "Заменит ли ИИ сотрудников?", "acceptedAnswer": {"@type": "Answer", "text": "В масштабе МСБ самый частый эффект — сотрудники освобождаются от рутины и уделяют больше времени клиентам и принятию решений. Контроль и ответственность всегда должны оставаться за человеком."}}, {"@type": "Question", "name": "Нарушает ли KVKK ввод данных клиентов в ИИ-инструменты?", "acceptedAnswer": {"@type": "Answer", "text": "Передача персональных данных в такие инструменты без правового основания, уведомления и соблюдения условий трансграничной передачи рискованна с точки зрения KVKK. Рекомендуется изучить руководство Ведомства по защите персональных данных о генеративном ИИ и при необходимости получить мнение специалиста."}}, {"@type": "Question", "name": "Сколько данных нужно, чтобы начать работу с ИИ?", "acceptedAnswer": {"@type": "Answer", "text": "Для генерации текста, резюме и переводов данные компании не нужны. А в прогнозировании, аналитике и внутренних ассистентах качество результатов напрямую зависит от упорядоченных и единообразно записанных данных."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/kobiler-icin-yapay-zeka">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/kobiler-icin-yapay-zeka">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<style>:root{--sans:'Space Grotesk','Inter',system-ui,sans-serif}</style>
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Перейти к содержимому</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Главное меню">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Услуги <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Веб-решения</b><small>Веб-дизайн, разработка, e-commerce и SEO — в одних руках.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Десктопные приложения</b><small>Программы под Ваш бизнес, работающие и без интернета.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Мобильные приложения</b><small>Быстрые и удобные приложения для iOS и Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Проекты</a>
+    <a href="referanslar">Референсы</a>
+    <a href="blog" aria-current="page">Блог</a>
+    <a href="hakkimizda">О нас</a>
+    <a href="iletisim">Контакты</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Выберите язык"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>RU</span></button>
+      <div class="lang-menu"><a href="../kobiler-icin-yapay-zeka" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/kobiler-icin-yapay-zeka" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="../de/kobiler-icin-yapay-zeka" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/kobiler-icin-yapay-zeka" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/kobiler-icin-yapay-zeka" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="kobiler-icin-yapay-zeka" hreflang="ru" lang="ru" data-lang="ru" aria-current="true"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Тёмная / светлая тема" title="Тёмная / светлая тема"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Открыть меню" data-label-open="Открыть меню" data-label-close="Закрыть меню" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Мобильное меню">
+  <a href="./">Главная</a>
+  <div class="mnav-label">УСЛУГИ</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a>
+  <div class="mnav-label">КОМПАНИЯ</div>
+  <a href="projelerimiz">Проекты</a>
+  <a href="referanslar">Референсы</a>
+  <a href="blog" aria-current="page">Блог</a>
+  <a href="hakkimizda">О нас</a>
+  <a href="iletisim">Контакты</a>
+  <a class="btn btn-primary" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">БЛОГ</a><span>/</span><span>ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ</span></div>
+    <h1 class="h1" style="max-width:900px">ИИ для малого и среднего бизнеса: 10 практических сценариев и дорожная карта.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Искусственный интеллект</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 октября 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 мин чтения</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/kobiler-icin-yapay-zeka.svg" alt=""></div>
+      <p class="bi-lead">Ваш конкурент теперь готовит предложения не за полчаса, а за пять минут, отвечает клиентам даже в полночь и получает ежемесячный отчёт в один клик. За этим стоит не большой бюджет, а <b>правильно применённый искусственный интеллект</b>.</p>
+      <p>Для многих владельцев МСБ искусственный интеллект выглядит либо раздутой модой, либо дорогой технологией «не для нас». Между тем сегодня <b>ИИ для малого и среднего бизнеса</b> — вполне конкретный набор инструментов: начать можно с нескольких ежемесячных подписок, а при грамотной настройке он экономит часы каждую неделю.</p>
+      <p>В этой статье — актуальные данные о том, как используется ИИ в Турции, 10 сценариев, которые малый и средний бизнес может применить уже сейчас, юридические и практические риски, а также пошаговая дорожная карта для компании, начинающей с нуля.</p>
+      <h2 id="turkiye-verileri" class="bi-h2" data-n="01">Использование ИИ компаниями в Турции: данные 2026 года</h2>
+      <p>Статистика искусственного интеллекта, опубликованная TÜİK в октябре 2026 года, показывает, что картина быстро меняется. Среди компаний с 10 и более сотрудниками доля использующих ИИ выросла с 2,7% в 2021 году до 7,5% в 2025-м и до 14% в 2026-м — то есть почти вдвое за год.</p>
+      <table>
+        <thead><tr><th>Размер компании</th><th>Доля использующих ИИ (2026)</th></tr></thead>
+        <tbody>
+          <tr><td>10–49 сотрудников</td><td>%12,8</td></tr>
+          <tr><td>50–249 сотрудников</td><td>%17,0</td></tr>
+          <tr><td>250 сотрудников и более</td><td>%37,1</td></tr>
+        </tbody>
+      </table>
+      <p>Разрыв заметен: в крупных компаниях доля использования почти втрое выше, чем в малых. Среди частных лиц доля пользующихся генеративным ИИ за тот же период выросла с 19,2% до 37,6% — то есть значительная часть ваших сотрудников уже пользуется этими инструментами в личной жизни.</p>
+      <p>72,3% компаний, которые думают о внедрении ИИ, но ещё не начали, главным препятствием называют <b>нехватку экспертизы</b>; за ней следуют правовая неопределённость и опасения о конфиденциальности данных. Короче говоря, проблема не в доступе к технологии, а в понимании, с чего начать.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Главное препятствие для МСБ в ИИ — не технология, а нехватка знаний и дорожной карты.</blockquote>
+      <h2 id="kullanim-alanlari" class="bi-h2" data-n="02">10 практических сценариев ИИ для малого и среднего бизнеса</h2>
+      <p>Общее у этих направлений то, что начать можно без крупного проекта по разработке — чаще всего с готовыми инструментами или небольшими интеграциями:</p>
+      <h3>Клиенты и продажи</h3>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. Ассистент клиентской поддержки:</b> чат-ассистент, отвечающий на частые вопросы с сайта и WhatsApp (цена, срок доставки, часы работы, статус заказа) и передающий сложные запросы человеку.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. Черновики предложений и писем:</b> подготовка текста предложения, письма-напоминания и проекта договора за минуты с помощью шаблонов на основе вашего каталога и прошлых предложений.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. Маркетинговый контент:</b> описания товаров, посты в соцсетях, черновики статей и рекламные тексты. По бюллетеню TÜİK за 2025 год 46,5% компаний, использующих ИИ, применяют его в маркетинге и продажах — это самая распространённая цель в списке.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Анализ отзывов клиентов:</b> группировка жалоб из отзывов Google, опросов и обращений в поддержку по темам; раннее выявление повторяющихся проблем.</span></li>
+      </ul>
+      <h3>Операции и финансы</h3>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. Распознавание документов и ввод данных:</b> автоматическое извлечение данных из счетов, накладных, бланков заказов и перенос в систему. Это также сокращает ошибки ручного ввода.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>6. Бухгалтерия и предварительный контроль:</b> по тому же бюллетеню 33,7% компаний, использующих ИИ, применяют его в бухгалтерии, контроле или финансовом управлении. Категоризация расходов, пометка нетипичных сумм, сводки движения денежных средств. Последнее слово всегда должно оставаться за вашим финансовым консультантом.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>7. Прогноз остатков и спроса:</b> прогнозирование сезонного спроса по историческим продажам, чтобы снизить риск избытка или нехватки товара.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>8. Отчётность и анализ через вопросы:</b> задавать вопросы на естественном языке, например «Какой товар чаще всего возвращали в прошлом месяце?», и получать таблицы и графики.</span></li>
+      </ul>
+      <h3>Команда и управление знаниями</h3>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>9. Внутренний ассистент по знаниям:</b> ассистент, работающий с регламентами, документацией по продуктам и FAQ; сокращает срок адаптации новых сотрудников.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>10. Резюме встреч и переписки:</b> составление списка задач по заметкам со встреч, краткое изложение длинных цепочек писем, перевод текстов на другие языки.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>С чего начать?</b> Выберите из списка только одно направление: самое повторяющееся, самое простое для измерения и с наименьшим ущербом при ошибке. Внутренние процессы, не затрагивающие клиента напрямую, обычно самый безопасный старт.</div></div>
+      <h2 id="hazir-mi-ozel-mi" class="bi-h2" data-n="03">Готовые ИИ-инструменты или индивидуальная интеграция?</h2>
+      <p>Есть три уровня работы МСБ с ИИ. Для большинства компаний правильный путь — начать с первого и подниматься выше по мере необходимости:</p>
+      <table>
+        <thead><tr><th>Уровень</th><th>Пример</th><th>Когда подходит?</th></tr></thead>
+        <tbody>
+          <tr><td>1. Готовые инструменты</td><td>Универсальные чат-ассистенты, ИИ-функции, встроенные в офисные пакеты</td><td>Тексты, резюме, переводы, генерация идей; чтобы начать сразу</td></tr>
+          <tr><td>2. Функции, добавленные в текущее ПО</td><td>ИИ-модули CRM, e-commerce и бухгалтерских программ</td><td>Если данные уже есть в используемой системе</td></tr>
+          <tr><td>3. Индивидуальная интеграция</td><td>Ассистент, подключённый к вашим данным, распознавание документов, чат-бот, связанный с системой заказов</td><td>Если процесс уникален и объёмы высоки</td></tr>
+        </tbody>
+      </table>
+      <p>Третий уровень требует безопасного подключения ИИ к данным компании, системе заказов или складу. На этом этапе работа фактически превращается в проект <a href="ozel-yazilim-gelistirme">индивидуальной разработки ПО</a>: авторизация, ведение журналов, передача человеку при ошибке не менее важны, чем сама модель.</p>
+      <h2 id="riskler" class="bi-h2" data-n="04">Риски использования ИИ: KVKK, точность и безопасность</h2>
+      <p>ИИ — мощный помощник, но ответственность он на себя не берёт. Прежде чем начать, учтите следующие риски:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Персональные данные:</b> вставлять в универсальные инструменты имена и телефоны клиентов, медицинские сведения, зарплатные ведомости сотрудников — серьёзный риск с точки зрения KVKK. В ноябре 2025 года Ведомство по защите персональных данных опубликовало по этой теме «Руководство по генеративному ИИ и защите персональных данных».</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Трансграничная передача данных:</b> большинство облачных ИИ-сервисов обрабатывают данные на зарубежных серверах. Статья 9 Закона № 6698 была изменена в 2024 году, появились новые механизмы трансграничной передачи, например стандартные договоры; проверяйте, на каких условиях каждый инструмент обрабатывает данные.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Неверные, но уверенные ответы:</b> модели ИИ иногда убедительно выдают несуществующие сведения. Критичный контент — цены, законодательство, технические требования — обязательно должен проверять человек.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Коммерческая тайна:</b> цены предложений, таблицы себестоимости и списки клиентов не следует передавать вне корпоративных тарифов, гарантирующих, что данные не используются для обучения моделей.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Бесконтрольное использование:</b> сотрудники, возможно, уже пользуются этими инструментами. Вместо запретов эффективнее написать короткую политику компании: какой инструмент, с какими данными и в какой работе можно использовать.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Примечание:</b> этот раздел носит общий ознакомительный характер и не является юридической консультацией. В ИИ-проектах, обрабатывающих персональные данные, рекомендуем получить заключение специалиста по KVKK.</div></div>
+      <h2 id="yol-haritasi" class="bi-h2" data-n="05">Как начать работу с ИИ? Дорожная карта из 5 шагов</h2>
+      <p>Двигаться небольшими измеримыми экспериментами вместо масштабного проекта трансформации — значит держать под контролем и риски, и бюджет:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 1 — Составьте карту времени:</b> перечислите задачи, которые команда повторяет каждую неделю, и время на них. Лучшие кандидаты для ИИ — частые задачи с большим объёмом текста или данных.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 2 — Выберите один пилот:</b> например, «подготовка черновика первого ответа на письма клиентов». Сразу запишите критерий успеха: время ответа, затраченные часы, доля ошибок.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 3 — Определите правила:</b> какими данными можно делиться, какие результаты нельзя выпускать без одобрения человека? Напишите короткую политику использования.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 4 — Тестируйте 4–6 недель и измеряйте:</b> сравните показатели до и после пилота. Соберите отзывы команды; вы часто будете видеть, что менять нужно не инструмент, а процесс.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Шаг 5 — Масштабируйте или откажитесь:</b> если результат хороший, закрепите его и при необходимости интегрируйте с текущими системами. Если слабый — переходите к следующему направлению из списка.</span></li>
+      </ul>
+      <h3>Не принимайте решений без измерений</h3>
+      <p>Оценивайте успех пилота по цифрам, а не по ощущениям. Например, если среднее время первого ответа на письма клиентов сократилось с четырёх часов до менее чем часа, а команда экономит несколько часов в неделю, сравнение этой экономии в месяц со стоимостью подписки облегчает решение. Так же фиксируйте долю ошибочных или требующих правки результатов; если она высока, проблема чаще не в инструменте, а в инструкциях или качестве исходных данных.</p>
+      <p>Вовлечь команду не менее важно, чем измерять. Те, кто будет пользоваться инструментом каждый день, лучше всех знают, где он действительно экономит время, а где добавляет работы. Короткое обучение, общий документ с удачными примерами инструкций (промптов) и десятиминутный еженедельный разбор заметно ускоряют внедрение.</p>
+      <p>Условие пользы от ИИ — упорядоченные данные. Если у вас нет системы, где заказы, клиенты и остатки фиксируются единообразно, разумнее сначала вложиться именно туда.</p>
+      <h2 id="sektor-ornekleri" class="bi-h2" data-n="06">Примеры использования ИИ по отраслям</h2>
+      <p>Одна и та же технология решает разные задачи в разных отраслях. Несколько типичных примеров:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>E-commerce:</b> массовое создание описаний товаров, анализ причин возвратов, автоответы клиентам о статусе заказа. Если вы только начинаете в e-commerce, <a href="e-ticaret-sitesi-kurma-rehberi">наше руководство по созданию интернет-магазина</a> описывает основные шаги.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Рестораны и кафе:</b> понимать по данным продаж, какие блюда в какие дни и часы продаются лучше, планировать закупки продуктов, суммировать отзывы гостей.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Услуги и консалтинг:</b> резюме встреч, черновики предложений и отчётов, ассистент по внутренней базе знаний.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Производство и торговля:</b> анализ технической документации и спецификаций, сравнение предложений поставщиков, прогноз спроса.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Управление жилыми комплексами:</b> классификация обращений жильцов по темам, автоответы на частые вопросы, подготовка текстов объявлений.</span></li>
+      </ul>
+      <p>Во всех этих примерах ИИ создаёт ценность как слой поверх уже работающей цифровой инфраструктуры. Примеры наших продуктов для ресторанов и управления жилыми комплексами можно посмотреть на странице <a href="projelerimiz">наши проекты</a>.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// ЧЕК-ЛИСТ ПЕРЕД ВНЕДРЕНИЕМ ИИ</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Перечислены ли повторяющиеся задачи и затраты времени на них?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Выбраны ли один процесс для пилота и критерий успеха?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Зафиксировано ли письменно, какими данными делиться нельзя?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Прочитаны ли условия обработки и хранения данных выбранного инструмента?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Есть ли шаг одобрения человеком для критичных результатов?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Подготовлена ли короткая политика использования для сотрудников?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="07">Частые вопросы</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>В каких сферах МСБ чаще всего используют ИИ?</summary><p>По статистике ИИ TÜİK за 2025 год самая распространённая цель среди компаний, использующих ИИ, — маркетинг и продажи (46,5%); за ними с показателями около 40% следуют производственные и сервисные процессы, НИОКР и управление бизнес-процессами, а бухгалтерия и финансовое управление — 33,7%. На практике МСБ часто начинают также с клиентской поддержки, обработки документов и отчётности.</p></details><details class="bi-faq-i"><summary>Дорого ли использовать ИИ?</summary><p>Для старта — не обязательно. Корпоративные тарифы универсальных ИИ-инструментов предлагаются по ежемесячной подписке за пользователя. Расходы растут при индивидуальных интеграциях с данными компании и при больших объёмах использования.</p></details><details class="bi-faq-i"><summary>Заменит ли ИИ сотрудников?</summary><p>В масштабе МСБ самый частый эффект — сотрудники освобождаются от рутины и уделяют больше времени клиентам и принятию решений. Контроль и ответственность всегда должны оставаться за человеком.</p></details><details class="bi-faq-i"><summary>Нарушает ли KVKK ввод данных клиентов в ИИ-инструменты?</summary><p>Передача персональных данных в такие инструменты без правового основания, уведомления и соблюдения условий трансграничной передачи рискованна с точки зрения KVKK. Рекомендуется изучить руководство Ведомства по защите персональных данных о генеративном ИИ и при необходимости получить мнение специалиста.</p></details><details class="bi-faq-i"><summary>Сколько данных нужно, чтобы начать работу с ИИ?</summary><p>Для генерации текста, резюме и переводов данные компании не нужны. А в прогнозировании, аналитике и внутренних ассистентах качество результатов напрямую зависит от упорядоченных и единообразно записанных данных.</p></details></div>
+      <h2 id="sonuc">В заключение</h2>
+      <p>ИИ для малого и среднего бизнеса начинается не с больших бюджетов и сложных проектов, а с одного правильно выбранного процесса. Пока доля компаний в Турции, использующих ИИ, за год удвоилась, малый бизнес, начавший рано, получает серьёзное преимущество в скорости и клиентском опыте. Главное — держать данные в порядке, двигаться, понимая риски, и измерять результаты.</p>
+      <p>Если хотите обсудить, как подключить ИИ к вашему сайту, системе заказов или управления, <a href="iletisim">напишите нам</a>— вместе определим первый шаг, подходящий вашему бизнесу.</p>
+      <div class="bi-src"><div class="eyebrow">// ИСТОЧНИКИ</div><ol><li><a href="https://www.cnbce.com/yapay-zeka/tuik-olctu-turkiye-yapay-zekayi-en-cok-hangi-alanda-kullaniyor-h38638" target="_blank" rel="noopener nofollow">TÜİK — Статистика искусственного интеллекта 2026 (новость CNBC-e)</a></li><li><a href="https://bloomberght.com/turkiye-de-yapay-zeka-kullanimi-yaklasik-iki-kat-artti-3790100" target="_blank" rel="noopener nofollow">TÜİK — Статистика искусственного интеллекта 2026 (новость Bloomberg HT)</a></li><li><a href="https://www.alomaliye.com/2025/10/01/yapay-zeka-istatistikleri-2025/" target="_blank" rel="noopener nofollow">TÜİK — Статистика искусственного интеллекта 2025 (Alomaliye)</a></li><li><a href="https://www.tuik.gov.tr" target="_blank" rel="noopener nofollow">Турецкий статистический институт (TÜİK)</a></li><li><a href="https://www.kvkk.gov.tr/Icerik/8547/uretken-yapay-zeka-ve-kisisel-verilerin-korunmasi-rehberi-15-soruda" target="_blank" rel="noopener nofollow">KVKK — Руководство по генеративному ИИ и защите персональных данных (в 15 вопросах)</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Все статьи</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Поделиться</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Поделиться в WhatsApp" title="Поделиться в WhatsApp"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Поделиться в LinkedIn" title="Поделиться в LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Поделиться в X" title="Поделиться в X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Отправить по e-mail" title="Отправить по e-mail"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Содержание">
+        <div class="eyebrow">// В ЭТОЙ СТАТЬЕ</div>
+        <ol class="bi-toc"><li><a href="#turkiye-verileri" data-n="01">Ситуация в Турции</a></li><li><a href="#kullanim-alanlari" data-n="02">10 сценариев</a></li><li><a href="#hazir-mi-ozel-mi" data-n="03">Готовое или своё?</a></li><li><a href="#riskler" data-n="04">Риски и KVKK</a></li><li><a href="#yol-haritasi" data-n="05">План старта</a></li><li><a href="#sektor-ornekleri" data-n="06">Отраслевые примеры</a></li><li><a href="#sss" data-n="07">Частые вопросы</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// ДРУГИЕ СТАТЬИ</div>
+        <ul class="bi-others"><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>7 вещей, которые нужно знать перед заказом корпоративного сайта</b><span class="bi-read">6 мин чтения</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 октября 2026</span><b>Стоимость сайта в 2026 году: 9 факторов, определяющих цену</b><span class="bi-read">10 мин чтения</span></div></a></li><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 октября 2026</span><b>Что такое SEO? Простое и практичное руководство для начинающих на 2026 год</b><span class="bi-read">8 мин чтения</span></div></a></li><li><a href="e-ticaret-sitesi-kurma-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/></svg></span><div><span class="d">31 октября 2026</span><b>Как создать интернет-магазин в 2026 году: пошаговая дорожная карта</b><span class="bi-read">10 мин чтения</span></div></a></li><li><a href="mobil-uygulama-gelistirme-maliyeti"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></span><div><span class="d">31 октября 2026</span><b>Стоимость разработки мобильного приложения в 2026 году: 8 статей расходов</b><span class="bi-read">8 мин чтения</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Давайте обсудим ваш проект.</b><span>Расскажите о своей идее — мы подготовим индивидуальное предложение.</span><div class="bi-go">Получить предложение<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// ДАВАЙТЕ НАЧНЁМ</div>
+        <h2 class="h2">Воплотим Ваш проект вместе.</h2>
+        <p class="lead" style="margin-top:20px">Расскажите о своём проекте — мы подготовим индивидуальное предложение.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Получить предложение<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Написать в WhatsApp</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">тел</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">почта</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">адрес</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Надёжная точка цифрового мира. Веб-дизайн, разработка ПО и цифровые решения.</p>
+      </div>
+      <div>
+        <h2>БЫСТРОЕ МЕНЮ</h2>
+        <ul><li><a href="./">Главная</a></li><li><a href="projelerimiz">Проекты</a></li><li><a href="referanslar">Референсы</a></li><li><a href="blog">Блог</a></li><li><a href="hakkimizda">О нас</a></li><li><a href="iletisim">Контакты</a></li></ul>
+      </div>
+      <div>
+        <h2>УСЛУГИ</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Веб-решения</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Десктопные приложения</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Мобильные приложения</a></li></ul>
+      </div>
+      <div>
+        <h2>КОНТАКТЫ</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — надёжная точка цифрового мира.</span> <span>Все права защищены.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Написать в WhatsApp"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

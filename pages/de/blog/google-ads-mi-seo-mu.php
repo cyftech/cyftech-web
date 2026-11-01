@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Google Ads oder SEO? Wo Sie Ihr Budget investieren sollten (2026) – CYF Tech Blog</title>
+<meta name="description" content="Google Ads oder SEO? Wir vergleichen beide Kanäle nach Kosten, Tempo, Nachhaltigkeit und Einfluss der KI-Suche und zeigen die passende Budgetverteilung für Ihr Unternehmen.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Google Ads oder SEO? Wo Sie Ihr Budget investieren sollten (2026) – CYF Tech Blog">
+<meta property="og:description" content="Google Ads oder SEO? Wir vergleichen beide Kanäle nach Kosten, Tempo, Nachhaltigkeit und Einfluss der KI-Suche und zeigen die passende Budgetverteilung für Ihr Unternehmen.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/de/google-ads-mi-seo-mu">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="de_DE">
+<link rel="canonical" href="https://cyftech.com.tr/de/google-ads-mi-seo-mu">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Google Ads oder SEO? Wo Sie Ihr Budget investieren sollten (2026)", "description": "Google Ads oder SEO? Wir vergleichen beide Kanäle nach Kosten, Tempo, Nachhaltigkeit und Einfluss der KI-Suche und zeigen die passende Budgetverteilung für Ihr Unternehmen.", "image": "https://cyftech.com.tr/assets/img/blog/google-ads-mi-seo-mu.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/google-ads-mi-seo-mu", "url": "https://cyftech.com.tr/de/google-ads-mi-seo-mu", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/de/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/de/blog"}, {"@type": "ListItem", "position": 3, "name": "Google Ads oder SEO? Wo Sie Ihr Budget investieren sollten (2026)", "item": "https://cyftech.com.tr/de/google-ads-mi-seo-mu"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Was ist besser: Google Ads oder SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Was besser ist, hängt von der Situation des Unternehmens ab. Google Ads liefert schnelle Ergebnisse und ist ideal zum Testen, doch wenn das Budget aufgebraucht ist, endet der Traffic. SEO startet langsamer, aber die erarbeitete Sichtbarkeit summiert sich und senkt langfristig die Stückkosten. Für die meisten Unternehmen ist die kombinierte, schrittweise Nutzung beider der effizienteste Weg."}}, {"@type": "Question", "name": "Beeinflusst Werbung bei Google Ads mein SEO-Ranking?", "acceptedAnswer": {"@type": "Answer", "text": "Nein. Google trennt Anzeigen und organische Ergebnisse; Werbung verbessert das organische Ranking nicht, und das Pausieren von Anzeigen verschlechtert es nicht. Aus Werbedaten zu lernen, welche Keywords Umsatz bringen, kann Ihre SEO-Strategie aber indirekt stärken."}}, {"@type": "Question", "name": "Wie viel Budget braucht man für Google Ads?", "acceptedAnswer": {"@type": "Answer", "text": "Eine feste Zahl gibt es nicht; das Budget richtet sich nach den Klickkosten der Branche, der Zielregion und der erwarteten Kundenzahl. Der kostenlose Keyword-Planer von Google Ads zeigt geschätzte Kosten. Mit einem kleinen Testbudget zu starten und es anhand der Conversion-Daten zu erhöhen, ist meist der sicherste Weg."}}, {"@type": "Question", "name": "Sollte ich die Werbung stoppen, wenn ich mit SEO beginne?", "acceptedAnswer": {"@type": "Answer", "text": "In der Regel nicht. Da SEO-Ergebnisse Zeit brauchen, sichert fortgesetzte Werbung in dieser Phase den Kundenfluss. Bei Keywords, für die Sie organisch oben stehen, das Werbebudget schrittweise zu senken und auf organisch schwache Bereiche zu verlagern, sorgt für einen gesünderen Übergang."}}, {"@type": "Question", "name": "Wie beeinflusst die KI-Suche Werbung und SEO?", "acceptedAnswer": {"@type": "Answer", "text": "AI Overviews und der KI-Modus können organische Klicks bei einfachen Informationsfragen verringern; Google wiederum weitet die Anzeige von Werbung innerhalb und unterhalb von KI-Antworten schrittweise aus. Bei Suchen mit hoher Kaufabsicht organisch und in der Werbung sichtbar zu sein und originelle Inhalte zu produzieren, ist wichtiger denn je."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/google-ads-mi-seo-mu">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/google-ads-mi-seo-mu">
+
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Zum Inhalt springen</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Hauptmenü">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Leistungen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Weblösungen</b><small>Webdesign, Software, E-Commerce und SEO – alles aus einer Hand.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Desktop-Apps</b><small>Maßgeschneiderte Desktop-Software, die auch offline funktioniert.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobile Apps</b><small>Schnelle, benutzerfreundliche Apps für iOS und Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projekte</a>
+    <a href="referanslar">Referenzen</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">Über uns</a>
+    <a href="iletisim">Kontakt</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>DE</span></button>
+      <div class="lang-menu"><a href="../google-ads-mi-seo-mu" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="../en/google-ads-mi-seo-mu" hreflang="en" lang="en" data-lang="en"><b>EN</b><span>English</span></a><a href="google-ads-mi-seo-mu" hreflang="de" lang="de" data-lang="de" aria-current="true"><b>DE</b><span>Deutsch</span></a><a href="../ar/google-ads-mi-seo-mu" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/google-ads-mi-seo-mu" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="../ru/google-ads-mi-seo-mu" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Hell-/Dunkelmodus" title="Hell-/Dunkelmodus"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Menü öffnen" data-label-open="Menü öffnen" data-label-close="Menü schließen" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobiles Menü">
+  <a href="./">Startseite</a>
+  <div class="mnav-label">LEISTUNGEN</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Weblösungen</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop-Apps</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Apps</a>
+  <div class="mnav-label">UNTERNEHMEN</div>
+  <a href="projelerimiz">Projekte</a>
+  <a href="referanslar">Referenzen</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">Über uns</a>
+  <a href="iletisim">Kontakt</a>
+  <a class="btn btn-primary" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>DIGITALES MARKETING</span></div>
+    <h1 class="h1" style="max-width:900px">Google Ads oder SEO? Wo Sie Ihr Budget investieren sollten.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Digitales Marketing</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31. Oktober 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 Min. Lesezeit</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/google-ads-mi-seo-mu.svg" alt=""></div>
+      <p class="bi-lead">„Sollen wir in Werbung oder in SEO investieren?“ Das ist die Frage, die wir von Unternehmern am häufigsten hören. Die kurze Antwort: Beide erfüllen nicht dieselbe Aufgabe. Die richtige Antwort auf <b>Google Ads oder SEO</b> hängt vom Alter Ihrer Website, Ihrem Budget und davon ab, wie schnell Sie Kunden brauchen.</p>
+      <p>In diesem Beitrag stellen wir beide Kanäle nebeneinander: wie sie funktionieren, wo die Kosten entstehen, wann welcher Kanal vorn liegt und wie KI-Übersichten 2025–2026 beide beeinflussen. Am Ende finden Sie einen beispielhaften Budgetansatz für drei verschiedene Unternehmensszenarien.</p>
+      <p>Wenn Sie neu im Thema SEO sind, empfehlen wir Ihnen zuerst unseren Beitrag <a href="seo-nedir">Was ist SEO?</a>; hier konzentrieren wir uns auf den Vergleich und die Entscheidung.</p>
+      <h2 id="farki" class="bi-h2" data-n="01">Der grundlegende Unterschied zwischen Google Ads und SEO</h2>
+      <p>Wenn Sie bei Google suchen, sehen Sie auf der Ergebnisseite zwei Arten von Einträgen. Ergebnisse mit dem Label „Gesponsert“ sind <b>Google Ads</b>-Anzeigen; der Werbetreibende zahlt pro Klick. Die Ergebnisse ohne Label darunter oder dazwischen sind <b>organische</b> Ergebnisse; dort kommt man nicht durch Bezahlung hin, sondern durch SEO-Arbeit.</p>
+      <p>Google trennt beide Bereiche strikt: Werbung verbessert Ihr organisches Ranking nicht, und das Abschalten von Anzeigen verschlechtert es nicht. Beide Kanäle konkurrieren auf derselben Seite, folgen aber völlig unterschiedlichen Regeln.</p>
+      <table>
+        <thead><tr><th>Kriterium</th><th>Google Ads</th><th>SEO</th></tr></thead>
+        <tbody>
+          <tr><td><b>Tempo der Ergebnisse</b></td><td>Nach Freigabe der Kampagne, meist noch am selben Tag</td><td>Wochen bis Monate; je nach Wettbewerb</td></tr>
+          <tr><td><b>Kostenmodell</b></td><td>Bezahlung pro Klick + Verwaltungsaufwand</td><td>Inhalte, technische Arbeit und Zeit; Klicks kostenlos</td></tr>
+          <tr><td><b>Nachhaltigkeit</b></td><td>Ist das Budget aufgebraucht, endet die Sichtbarkeit</td><td>Erarbeitete Sichtbarkeit summiert sich und hält eine Weile an</td></tr>
+          <tr><td><b>Kontrolle</b></td><td>Keywords, Region, Uhrzeit, Gerät und Text liegen ganz bei Ihnen</td><td>Über das Ranking entscheidet Google; indirekte Kontrolle</td></tr>
+          <tr><td><b>Messung</b></td><td>Kosten pro Klick und pro Conversion sind klar ersichtlich</td><td>Die Wirkung verteilt sich über längere Zeit, die Messung ist schwieriger</td></tr>
+          <tr><td><b>Am besten geeignet für</b></td><td>Schnelle Nachfrage, Kampagnen, Tests, saisonale Verkäufe</td><td>Langfristigen, nachhaltigen Traffic mit niedrigen Stückkosten</td></tr>
+        </tbody>
+      </table>
+      <h2 id="ads-nasil" class="bi-h2" data-n="02">Wie funktioniert Google Ads und was bestimmt die Kosten?</h2>
+      <p>Google Ads ist ein Auktionssystem; doch wer am meisten zahlt, gewinnt nicht immer. Laut Google-Ads-Hilfe entscheidet der <b>Anzeigenrang</b>, ob eine Anzeige ausgeliefert wird und an welcher Position. Die wichtigsten Faktoren des Anzeigenrangs:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ihr Gebot:</b> Der Höchstbetrag, den Sie für einen Klick zu zahlen bereit sind. Der tatsächlich gezahlte Betrag liegt meist darunter.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Qualität von Anzeige und Landingpage:</b> Wie relevant die Anzeige für die Suche ist, die erwartete Klickrate und wie nützlich und benutzerfreundlich die Landingpage ist. Zusammengefasst wird das im Qualitätsfaktor.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Suchkontext:</b> Suchbegriff, Standort und Gerät des Nutzers, Zeitpunkt der Suche und die übrigen Ergebnisse auf der Seite.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Assets und Schwellenwerte:</b> Die erwartete Wirkung von Anzeigen-Assets wie Telefonnummer und Sitelinks sowie die Mindestqualität, die für jede Position erforderlich ist.</span></li>
+      </ul>
+      <p>Daraus folgt etwas Wichtiges: Nach Googles eigenen Worten führen hochwertige Anzeigen zu niedrigeren Kosten pro Klick. Ein Unternehmen, das Anzeigen auf eine schlechte Landingpage schaltet, zahlt also für denselben Klick mehr als sein Mitbewerber. Wie effizient Ihr Werbebudget ist, hängt stark von der Qualität Ihrer Website ab.</p>
+      <p>Die Kosten pro Klick variieren stark nach Branche, Stadt, Wettbewerb und Zeitraum; in Bereichen wie Rechtsberatung, Versicherungen oder Ästhetik kann ein einzelner Klick recht teuer sein, während er bei lokalen Nischensuchen deutlich günstiger bleibt. Aktuelle Schätzungen für Ihre Branche liefert der kostenlose Keyword-Planer von Google Ads.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Häufiger Fehler:</b> Den gesamten Anzeigen-Traffic auf die Startseite zu schicken. Jede Anzeigengruppe mit einer eigenen Landingpage zu verknüpfen, die die gesuchte Leistung direkt beschreibt und zu einer einzigen Aktion führt, steigert Conversion und Qualitätsfaktor. Wie das geht, erklären wir in <a href="landing-page-rehberi">unserem Landingpage-Leitfaden</a>.</div></div>
+      <h2 id="seo-maliyet" class="bi-h2" data-n="03">Wo entstehen die Kosten von SEO?</h2>
+      <p>Der Satz „SEO ist kostenlos“ ist nur halb wahr. Für organische Klicks zahlen Sie Google nichts; Sichtbarkeit zu gewinnen, erfordert aber Arbeit, und diese Arbeit hat ihren Preis:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Technische Basis:</b> Eine schnelle, mobilfreundliche, crawlbare Website. Details finden Sie in <a href="teknik-seo-kontrol-listesi">unserer technischen SEO-Checkliste</a>.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Inhalte:</b> Aussagekräftige Seiten für jede Leistung und Ratgeberbeiträge, die die Fragen der Kunden beantworten. Das ist meist der zeitaufwendigste Posten.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Autorität:</b> Natürliche Backlinks, Branchenverzeichnisse, Erwähnungen in der Presse und Bewertungen für lokale Unternehmen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Zeit:</b> Auch die Wartezeit auf Ergebnisse ist ein Kostenfaktor; in dieser Zeit müssen Sie Kunden über andere Kanäle gewinnen.</span></li>
+      </ul>
+      <p>Der wirtschaftliche Vorteil von SEO zeigt sich mit der Zeit. Eine gut rankende Leistungsseite bringt Monat für Monat Besucher, ohne zusätzliche Klickkosten. In der Werbung kostet der hundertste Kunde dagegen genauso viel wie der erste – bei steigendem Wettbewerb sogar mehr.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Werbung ist ein gemietetes Schaufenster, SEO Ihr eigener Besitz. Beides hat seinen Platz, aber Miete möchte man nicht ewig zahlen.</blockquote>
+      <h2 id="ne-zaman-ads" class="bi-h2" data-n="04">Wann ist Google Ads sinnvoller?</h2>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Ihre Website neu ist:</b> Solange es noch keine organische Sichtbarkeit gibt, verschafft es dem Unternehmen Luft, die ersten Kunden über Werbung zu gewinnen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Sie schnell Ergebnisse brauchen:</b> Bei einer neuen Filiale, Saisonprodukten, Aktionszeiträumen oder Monatszielen bleibt keine Zeit zum Warten.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Sie etwas testen möchten:</b> Ob es Nachfrage nach einer neuen Leistung gibt und welche Botschaft mehr Klicks bekommt, sehen Sie in wenigen Wochen. Diese Daten steuern später auch Ihre SEO-Inhalte.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn es organisch sehr starke Mitbewerber gibt:</b> Bei Suchen, die von großen Marken und Marktplätzen dominiert werden, kann Werbung kurzfristig der einzige Weg zur Sichtbarkeit sein.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Bei Notdiensten:</b> Bei Leistungen, die „sofort“ gesucht werden, wie Schlüsseldienst, Installateur oder Abschleppdienst, bringen Anzeigen mit Anruf-Option direkt Telefonate.</span></li>
+      </ul>
+      <h2 id="ne-zaman-seo" class="bi-h2" data-n="05">Wann ist SEO sinnvoller?</h2>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Sie langfristig denken:</b> Bietet Ihr Unternehmen jahrelang dieselben Leistungen an, wird organische Sichtbarkeit mit der Zeit zum Kanal mit den niedrigsten Stückkosten.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Ihre Kunden nach Recherche entscheiden:</b> In Bereichen wie Software, B2B-Dienstleistungen, Bildung oder Gesundheitstourismus lesen und vergleichen Kunden vor dem Kauf. Auf dieser Reise mit Ratgeberinhalten präsent zu sein, schafft Vertrauen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Klickpreise in Ihrer Branche sehr hoch sind:</b> Wo jeder Klick teuer ist, ist organischer Traffic entsprechend wertvoll.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Sie ein lokales Unternehmen sind:</b> Das Google-Unternehmensprofil und Sichtbarkeit in Maps können ohne Werbung kontinuierlich Anrufe und Besuche bringen. Dieses Thema behandeln wir in <a href="yerel-seo-google-isletme-profili">unserem Leitfaden für lokales SEO</a> ausführlich.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Wenn Ihr Budget nicht für dauerhafte Werbung reicht:</b> Kleine und unregelmäßige Werbebudgets können in der Auktion nicht mithalten und verpuffen. Dann ist es oft effizienter, die Arbeit in bleibende Werte zu investieren – also in Ihre Website und Ihre Inhalte.</span></li>
+      </ul>
+      <h2 id="yapay-zeka-etkisi" class="bi-h2" data-n="06">Wie beeinflussen KI-Übersichten beide Kanäle?</h2>
+      <p>Googles Funktionen AI Overviews (KI-Übersichten) und KI-Modus werden seit Februar 2026 in der Türkei schrittweise eingeführt. Diese Änderung wirkt sich auf beide Kanäle unterschiedlich aus.</p>
+      <h3>Auf der organischen Seite</h3>
+      <p>Bei einfachen Informationsfragen können Klicks zurückgehen, weil ein Teil der Antwort direkt auf der Ergebnisseite zusammengefasst wird. In einer Studie des Pew Research Center von 2025 in den USA klickten Nutzer bei Suchen mit KI-Übersicht bei 8 Prozent der Besuche auf klassische Ergebnisse, ohne Übersicht bei 15 Prozent. Google wiederum gibt an, dass Klicks über Links in AI Overviews tendenziell hochwertiger sind und Nutzer mehr Zeit auf der Website verbringen. Um in diesen Übersichten als Quelle zu erscheinen, gibt es keine besonderen technischen Anforderungen; indexierte, nützliche und originelle Inhalte genügen.</p>
+      <h3>Auf der Werbeseite</h3>
+      <p>Google testet, Anzeigen unter und innerhalb von KI-Antworten zu zeigen, wo es passt, und weitet das schrittweise aus. Zudem kann mit wachsendem Platz der Übersicht die Zahl der klassischen Ergebnisse und Anzeigen auf dem ersten Bildschirm sinken. Wichtiger als „auf der ersten Seite zu sein“ wird es dadurch, bei kommerziellen Suchen mit höchster Kaufabsicht sichtbar zu sein.</p>
+      <p>Praktische Schlussfolgerung: Akzeptieren Sie Traffic-Verluste bei informationsorientierten Suchen, produzieren Sie aber weiter Inhalte für die Markenbekanntheit; bei Suchen mit hoher Kaufabsicht sollten Sie organisch und in der Werbung stark sein. Wer sich zum Kauf entschieden hat, begnügt sich nicht mit der Übersicht, sondern klickt, um ein Angebot einzuholen.</p>
+      <h2 id="birlikte" class="bi-h2" data-n="07">Das beste Ergebnis: Google Ads und SEO gemeinsam nutzen</h2>
+      <p>Für die meisten Unternehmen lautet die richtige Frage nicht „entweder oder“, sondern „in welcher Phase wie viel“. Beide Kanäle befruchten sich gegenseitig:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Aus Werbedaten erfahren Sie, welche Keywords wirklich Umsatz bringen, und planen Ihre SEO-Inhalte danach.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Bei Keywords, für die Sie organisch bereits oben stehen, reduzieren Sie das Werbebudget und verlagern es auf Keywords, bei denen Sie organisch schwach sind.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>In Werbung und organisch zu erscheinen, also zweimal auf derselben Ergebnisseite, stärkt das Vertrauen.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Eine schnelle, gut gestaltete Website steigert die Effizienz beider: den Qualitätsfaktor in der Werbung, Ranking und Conversion im organischen Bereich.</span></li>
+      </ul>
+      <h3>Drei Szenarien, drei Ansätze</h3>
+      <table>
+        <thead><tr><th>Situation</th><th>Empfohlene Gewichtung</th><th>Warum?</th></tr></thead>
+        <tbody>
+          <tr><td><b>Neu gegründetes Unternehmen, neue Website</b></td><td>Anfangs werbelastig, parallel SEO-Grundlagen</td><td>Die ersten Kunden kommen über Werbung; Website und Inhalte reifen in dieser Zeit</td></tr>
+          <tr><td><b>Lokales Unternehmen seit einigen Jahren</b></td><td>Schwerpunkt lokales SEO und Unternehmensprofil, Werbung in der Saison</td><td>Maps und Bewertungen bringen laufend Nachfrage; Werbung unterstützt Spitzenzeiten</td></tr>
+          <tr><td><b>Wachsende Firma in einer wettbewerbsintensiven Branche</b></td><td>Beides ausgewogen, datenbasiert angepasst</td><td>Werbung sichert Marktanteile, SEO senkt mit der Zeit die Stückkosten</td></tr>
+        </tbody>
+      </table>
+      <p>Diese Verhältnisse sind keine starren Regeln, sondern Ausgangspunkte. Um zu sehen, wie viele Kunden ein Kanal tatsächlich bringt, ist ein Conversion-Tracking (Formular, Telefon, WhatsApp, Verkauf) von Anfang an unverzichtbar. Ein Budget, das Sie nicht messen, können Sie nicht optimieren.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// CHECKLISTE VOR DER BUDGETENTSCHEIDUNG</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Ist klar, wie schnell Sie Kunden brauchen?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Haben Sie die geschätzten Klickkosten Ihrer Branche geprüft?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Führt der Anzeigen-Traffic auf die passende Landingpage statt auf die Startseite?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Werden Formular-, Telefon- und WhatsApp-Conversions gemessen?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Kennen Sie die Keywords, bei denen Sie organisch bereits sichtbar sind?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Ist die Website schnell und mobil gut nutzbar?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="08">Häufig gestellte Fragen</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Was ist besser: Google Ads oder SEO?</summary><p>Was besser ist, hängt von der Situation des Unternehmens ab. Google Ads liefert schnelle Ergebnisse und ist ideal zum Testen, doch wenn das Budget aufgebraucht ist, endet der Traffic. SEO startet langsamer, aber die erarbeitete Sichtbarkeit summiert sich und senkt langfristig die Stückkosten. Für die meisten Unternehmen ist die kombinierte, schrittweise Nutzung beider der effizienteste Weg.</p></details><details class="bi-faq-i"><summary>Beeinflusst Werbung bei Google Ads mein SEO-Ranking?</summary><p>Nein. Google trennt Anzeigen und organische Ergebnisse; Werbung verbessert das organische Ranking nicht, und das Pausieren von Anzeigen verschlechtert es nicht. Aus Werbedaten zu lernen, welche Keywords Umsatz bringen, kann Ihre SEO-Strategie aber indirekt stärken.</p></details><details class="bi-faq-i"><summary>Wie viel Budget braucht man für Google Ads?</summary><p>Eine feste Zahl gibt es nicht; das Budget richtet sich nach den Klickkosten der Branche, der Zielregion und der erwarteten Kundenzahl. Der kostenlose Keyword-Planer von Google Ads zeigt geschätzte Kosten. Mit einem kleinen Testbudget zu starten und es anhand der Conversion-Daten zu erhöhen, ist meist der sicherste Weg.</p></details><details class="bi-faq-i"><summary>Sollte ich die Werbung stoppen, wenn ich mit SEO beginne?</summary><p>In der Regel nicht. Da SEO-Ergebnisse Zeit brauchen, sichert fortgesetzte Werbung in dieser Phase den Kundenfluss. Bei Keywords, für die Sie organisch oben stehen, das Werbebudget schrittweise zu senken und auf organisch schwache Bereiche zu verlagern, sorgt für einen gesünderen Übergang.</p></details><details class="bi-faq-i"><summary>Wie beeinflusst die KI-Suche Werbung und SEO?</summary><p>AI Overviews und der KI-Modus können organische Klicks bei einfachen Informationsfragen verringern; Google wiederum weitet die Anzeige von Werbung innerhalb und unterhalb von KI-Antworten schrittweise aus. Bei Suchen mit hoher Kaufabsicht organisch und in der Werbung sichtbar zu sein und originelle Inhalte zu produzieren, ist wichtiger denn je.</p></details></div>
+      <h2 id="sonuc">Fazit</h2>
+      <p>Google Ads und SEO sind keine Konkurrenten, sondern zwei Werkzeuge für unterschiedliche Zeithorizonte: Werbung trägt das Heute, SEO das Morgen. Die richtige Entscheidung hängt davon ab, wo Ihr Unternehmen heute steht und wohin es in den nächsten Monaten will; der gemeinsame Nenner für die Effizienz beider ist eine schnelle, verständliche und conversion-orientierte Website.</p>
+      <p>Bei CYF Tech entwickeln wir <a href="web-cozumleri">Websites und Landingpages</a>, auf denen Werbung und organischer Traffic am effizientesten wirken. Möchten Sie gemeinsam prüfen, wie gut Ihre Website für welchen Kanal gerüstet ist, dann <a href="iletisim">schreiben Sie uns</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// QUELLEN</div><ol><li><a href="https://support.google.com/google-ads/answer/1722122?hl=tr" target="_blank" rel="noopener nofollow">Google-Ads-Hilfe — Anzeigenrang</a></li><li><a href="https://support.google.com/google-ads/answer/6167118?hl=tr" target="_blank" rel="noopener nofollow">Google-Ads-Hilfe — Informationen zum Qualitätsfaktor</a></li><li><a href="https://ads.google.com/home/tools/keyword-planner/" target="_blank" rel="noopener nofollow">Google Ads — Keyword-Planer</a></li><li><a href="https://developers.google.com/search/docs/appearance/ai-features" target="_blank" rel="noopener nofollow">Google Search Central — AI features and your website</a></li><li><a href="https://developers.google.com/search/docs/fundamentals/how-search-works?hl=tr" target="_blank" rel="noopener nofollow">Google Search Central — So funktioniert die Google Suche</a></li><li><a href="https://www.pewresearch.org/short-reads/2025/07/22/google-users-are-less-likely-to-click-on-links-when-an-ai-summary-appears-in-the-results/" target="_blank" rel="noopener nofollow">Pew Research Center — Google users are less likely to click on links when an AI summary appears (2025)</a></li><li><a href="https://webrazzi.com/2026/02/18/google-ai-modu-ve-ai-bakisi-ozelliklerini-turkiye-de-de-kullanima-sunmaya-basladi/" target="_blank" rel="noopener nofollow">Webrazzi — Google KI-Modus und KI-Übersichten in der Türkei (Februar 2026)</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>Alle Beiträge</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Teilen</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Per WhatsApp teilen" title="Per WhatsApp teilen"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Auf LinkedIn teilen" title="Auf LinkedIn teilen"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Auf X teilen" title="Auf X teilen"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Per E-Mail senden" title="Per E-Mail senden"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Inhalt">
+        <div class="eyebrow">// IN DIESEM BEITRAG</div>
+        <ol class="bi-toc"><li><a href="#farki" data-n="01">Der grundlegende Unterschied</a></li><li><a href="#ads-nasil" data-n="02">Wie funktioniert Google Ads?</a></li><li><a href="#seo-maliyet" data-n="03">Die Kosten von SEO</a></li><li><a href="#ne-zaman-ads" data-n="04">Wann Werbung?</a></li><li><a href="#ne-zaman-seo" data-n="05">Wann SEO?</a></li><li><a href="#yapay-zeka-etkisi" data-n="06">Der Einfluss von KI</a></li><li><a href="#birlikte" data-n="07">Gemeinsam nutzen</a></li><li><a href="#sss" data-n="08">Häufig gestellte Fragen</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// WEITERE BEITRÄGE</div>
+        <ul class="bi-others"><li><a href="landing-page-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung</b><span class="bi-read">10 Min. Lesezeit</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31. Oktober 2026</span><b>7 Dinge, die Sie vor dem Auftrag für eine Unternehmenswebsite wissen sollten</b><span class="bi-read">6 Min. Lesezeit</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Website-Kosten 2026: 9 Faktoren, die den Preis bestimmen</b><span class="bi-read">10 Min. Lesezeit</span></div></a></li><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Was ist SEO? Ein einfacher, praxisnaher Einstiegsleitfaden für 2026</b><span class="bi-read">8 Min. Lesezeit</span></div></a></li><li><a href="e-ticaret-sitesi-kurma-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/></svg></span><div><span class="d">31. Oktober 2026</span><b>Onlineshop erstellen – Leitfaden 2026: Ihr Fahrplan Schritt für Schritt</b><span class="bi-read">10 Min. Lesezeit</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Lassen Sie uns über Ihr Projekt sprechen.</b><span>Erzählen Sie uns von Ihrer Idee – wir erstellen Ihnen ein individuelles Angebot.</span><div class="bi-go">Angebot anfragen<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// LEGEN WIR LOS</div>
+        <h2 class="h2">Lassen Sie uns Ihr Projekt gemeinsam umsetzen.</h2>
+        <p class="lead" style="margin-top:20px">Erzählen Sie uns von Ihrem Projekt – wir erstellen Ihnen ein individuelles Angebot.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Angebot anfragen<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Per WhatsApp schreiben</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">adresse</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Ihr verlässlicher digitaler Partner. Webdesign, Softwareentwicklung und digitale Lösungen.</p>
+      </div>
+      <div>
+        <h2>SCHNELLMENÜ</h2>
+        <ul><li><a href="./">Startseite</a></li><li><a href="projelerimiz">Projekte</a></li><li><a href="referanslar">Referenzen</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">Über uns</a></li><li><a href="iletisim">Kontakt</a></li></ul>
+      </div>
+      <div>
+        <h2>LEISTUNGEN</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Weblösungen</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop-Apps</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Apps</a></li></ul>
+      </div>
+      <div>
+        <h2>KONTAKT</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Ihr verlässlicher digitaler Partner.</span> <span>Alle Rechte vorbehalten.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Per WhatsApp schreiben"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Website Security and SSL: A 2026 Guide for SMEs — CYF Tech Blog</title>
+<meta name="description" content="Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="Website Security and SSL: A 2026 Guide for SMEs — CYF Tech Blog">
+<meta property="og:description" content="Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/en/web-sitesi-guvenligi">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://cyftech.com.tr/en/web-sitesi-guvenligi">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Website Security and SSL: A 2026 Guide for SMEs", "description": "Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.", "image": "https://cyftech.com.tr/assets/img/blog/web-sitesi-guvenligi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "en", "mainEntityOfPage": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "url": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/en/blog"}, {"@type": "ListItem", "position": 3, "name": "Website Security and SSL: A 2026 Guide for SMEs", "item": "https://cyftech.com.tr/en/web-sitesi-guvenligi"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does an SSL certificate make a website completely secure?", "acceptedAnswer": {"@type": "Answer", "text": "No. SSL encrypts data traffic between the visitor and the server; but it doesn’t close software vulnerabilities, weak passwords or outdated plugins. Security requires regular updates, strong access control and backups alongside SSL."}}, {"@type": "Question", "name": "Is a free SSL certificate enough?", "acceptedAnswer": {"@type": "Answer", "text": "For most corporate and e-commerce sites, yes. Free DV certificates like Let’s Encrypt offer the same encryption strength as paid certificates. Paid OV and EV certificates provide additional organisation validation but don’t make the connection more secure."}}, {"@type": "Question", "name": "How long is an SSL certificate valid?", "acceptedAnswer": {"@type": "Answer", "text": "Under the CA/Browser Forum decision, the maximum validity of new certificates is 200 days from 15 March 2026. This will drop to 100 days on 15 March 2027 and to 47 days on 15 March 2029. As a result, automatic renewal is becoming essential."}}, {"@type": "Question", "name": "How can I tell if my website has been hacked?", "acceptedAnswer": {"@type": "Answer", "text": "The most common signs are seeing pages or links on the site you don’t recognise, foreign-language titles appearing in Google search results, visitors being redirected to other sites, a security warning in Search Console and spam notices from your hosting company."}}, {"@type": "Question", "name": "How often should a website be updated for security?", "acceptedAnswer": {"@type": "Answer", "text": "Security updates should be applied as soon as possible after release. As a general rule, check your site at least once a month and install critical security patches without delay. Don’t forget to take a backup before updating."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/web-sitesi-guvenligi">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/web-sitesi-guvenligi">
+
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Skip to content</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Main menu">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Solutions</b><small>Web design, software, e-commerce and SEO — all under one roof.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Desktop Applications</b><small>Desktop software tailored to your business that works offline too.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobile Applications</b><small>Fast, user-friendly apps for iOS and Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projects</a>
+    <a href="referanslar">References</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">About Us</a>
+    <a href="iletisim">Contact</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>EN</span></button>
+      <div class="lang-menu"><a href="../web-sitesi-guvenligi" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="web-sitesi-guvenligi" hreflang="en" lang="en" data-lang="en" aria-current="true"><b>EN</b><span>English</span></a><a href="../de/web-sitesi-guvenligi" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/web-sitesi-guvenligi" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/web-sitesi-guvenligi" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="../ru/web-sitesi-guvenligi" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Dark / light theme" title="Dark / light theme"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile menu">
+  <a href="./">Home</a>
+  <div class="mnav-label">SERVICES</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a>
+  <div class="mnav-label">COMPANY</div>
+  <a href="projelerimiz">Projects</a>
+  <a href="referanslar">References</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">About Us</a>
+  <a href="iletisim">Contact</a>
+  <a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>SECURITY</span></div>
+    <h1 class="h1" style="max-width:900px">Website security and SSL: a 2026 guide for SMEs.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Security</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 October 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>10 min read</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/web-sitesi-guvenligi.svg" alt=""></div>
+      <p class="bi-lead">“We’re a small company, who would bother with our site?” We hear this a lot. Yet most attacks are carried out by automated tools that target not a specific company but any site with a vulnerability. <b>Website security</b> is everyone’s concern, regardless of size.</p>
+      <p>In this guide we explain why a website becomes a target, what an SSL certificate does and how shorter certificate lifetimes from 2026 affect you, basic measures such as updates, access, backups and firewalls, the OWASP Top 10 risks to consider when developing software, and what to do when an attack happens.</p>
+      <p>The aim isn’t to turn you into a security expert, but to help you ask your agency, hosting company or software team the right questions and avoid the most common mistakes.</p>
+      <h2 id="tehdit" class="bi-h2" data-n="01">Why do small sites get attacked?</h2>
+      <p>For attackers, the resources your site uses are as valuable as the site itself. A compromised site can be used for:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Spam and phishing:</b> Thousands of fake emails are sent through your server, and your domain ends up on blacklists.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>SEO spam:</b> Hidden pages and links are added to your site; Google may flag your site as “hacked”.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Data theft:</b> Contact forms, member details and order records are stolen; this constitutes a data breach under KVKK.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Ransomware and malware:</b> Files are encrypted or malware is distributed to visitors.</span></li>
+      </ul>
+      <p>There is also a hidden cost: cleaning up a compromised site, regaining trust, recovering search rankings and explaining things to customers usually costs far more than taking precautions. What’s more, when your email domain is blacklisted, even your normal quote and invoice emails stop reaching your customers.</p>
+      <p>Most of these attacks scan for known vulnerabilities whose patches were released long ago. In other words, most security comes from regular maintenance and discipline rather than complex technologies.</p>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>Attackers don’t choose you; they find the site whose door was left open.</blockquote>
+      <h2 id="ssl" class="bi-h2" data-n="02">What is an SSL certificate, and which type should you choose?</h2>
+      <p>An SSL (technically TLS today) certificate encrypts traffic between the visitor’s browser and your server and provides the <b>https</b> and padlock icon in the address bar. Without SSL, a phone number or password submitted through a form can be read by someone on the network. Browsers flag non-SSL pages as “not secure”, and Google considers HTTPS part of its page experience assessment.</p>
+      <table>
+        <thead><tr><th>Type</th><th>What does it verify?</th><th>Who is it for?</th></tr></thead>
+        <tbody>
+          <tr><td>DV (Domain Validated)</td><td>Only that you control the domain</td><td>Corporate sites, blogs; free options like Let’s Encrypt are of this type</td></tr>
+          <tr><td>OV (Organisation Validated)</td><td>The company’s existence in addition to the domain</td><td>Businesses that want to show their corporate identity in the certificate</td></tr>
+          <tr><td>EV (Extended Validation)</td><td>Comprehensive company verification</td><td>Some financial and corporate organisations; browsers no longer show a separate green bar</td></tr>
+        </tbody>
+      </table>
+      <p>There is no difference in encryption strength between the three types. The difference lies in the identity verification behind the certificate. For most SME and e-commerce sites, a correctly configured, automatically renewed DV certificate is enough.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>The padlock doesn’t mean “secure site”:</b> SSL only encrypts the connection. It doesn’t close vulnerabilities in the site’s software, weak passwords or outdated plugins. Most phishing sites also have a valid SSL certificate.</div></div>
+      <h2 id="sure" class="bi-h2" data-n="03">SSL certificate lifetimes are getting shorter in 2026: what should you do?</h2>
+      <p>The CA/Browser Forum, made up of browser makers and certificate authorities, decided with ballot SC-081, adopted in April 2025, to gradually shorten the maximum validity of public SSL/TLS certificates:</p>
+      <table>
+        <thead><tr><th>Date</th><th>Maximum certificate lifetime</th></tr></thead>
+        <tbody>
+          <tr><td>From 15 March 2026</td><td>200 days</td></tr>
+          <tr><td>From 15 March 2027</td><td>100 days</td></tr>
+          <tr><td>From 15 March 2029</td><td>47 days</td></tr>
+        </tbody>
+      </table>
+      <p>In practice, this means the era of “buying a certificate once a year and installing it by hand” is over. The 200-day period is already in effect; by 2029, certificates will need to be renewed seven or eight times a year.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Switch to automatic renewal:</b> Use a provider that supports the ACME protocol (e.g. Let’s Encrypt) or the automatic SSL feature in your hosting panel.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Monitor certificates:</b> Set up a monitoring tool that alerts you to certificates about to expire.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>List manually installed certificates:</b> If you use paid OV/EV certificates, ask your provider about automation options now.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Enable HSTS:</b> The HSTS header, which tells the browser always to connect to your site over HTTPS, prevents downgrade attacks to unencrypted connections.</span></li>
+      </ul>
+      <h2 id="temel" class="bi-h2" data-n="04">5 essential website security measures</h2>
+      <p>The measures that look simplest technically are the ones that stop the most attacks:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>1. Up-to-date software —</b> The content management system, theme, plugins, server software and libraries in use should be updated regularly. Deactivating unused plugins isn’t enough; remove them completely.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>2. Strong access —</b> Use unique, long passwords, a password manager and two-factor authentication (2FA) wherever possible for the admin panel, hosting panel, FTP and database.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>3. Least privilege —</b> Give each user only the permissions they need. Close the accounts of staff who leave and agencies whose projects have ended immediately.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>4. Regular backups —</b> Follow the 3-2-1 rule: at least three copies, on two different media, with one copy somewhere independent of the server. Test that backups can be restored a few times a year.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>5. Monitoring —</b> Get alerts for site availability, file changes and failed login attempts. Check the “Security issues” report in Google Search Console regularly.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>The quickest win:</b> Add two-factor authentication to your admin panel today and close all user accounts that haven’t logged in during the last six months. These two steps largely neutralise the most common attack route: stolen or guessed passwords.</div></div>
+      <h2 id="waf" class="bi-h2" data-n="05">Firewalls (WAF), DDoS protection and security headers</h2>
+      <p>The second layer on top of the basic measures is stopping malicious traffic before it reaches your site.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Web application firewall (WAF):</b> Filters SQL injection, brute-force login attempts and known attack patterns. Most CDN services offer this in their basic plans.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>DDoS protection:</b> Protection at CDN or hosting level against attempts to crash the site with excessive requests, which becomes especially important during campaigns.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Login limits and CAPTCHA:</b> Limiting the number of attempts on the admin panel and forms makes life harder for bots.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Security headers:</b> HTTP headers such as Content-Security-Policy, X-Frame-Options (or CSP frame-ancestors), X-Content-Type-Options and Referrer-Policy tell the browser which sources to trust and block many types of attack from the outset.</span></li>
+      </ul>
+      <p>A CDN and caching also speed up your site; here security and performance improve with the same investment. We covered the speed side in our article <a href="site-hizi-core-web-vitals">site speed and Core Web Vitals</a>.</p>
+      <h2 id="owasp" class="bi-h2" data-n="06">Security in custom software: OWASP Top 10:2025</h2>
+      <p>If your site has custom-built sections such as membership, payments, bookings or a customer panel, security depends largely on how the code is written. The globally referenced list in this area is the <b>OWASP Top 10</b>, in which OWASP ranks the most critical risks in web applications. The headline items in the 2025 edition, the first update since 2021, are:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Broken access control:</b> Errors such as a user being able to see someone else’s invoice by changing a number in the address bar. Still number one on the list.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Security misconfiguration:</b> Admin screens left open, default passwords, detailed error messages. It rose to second place on the 2025 list.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Software supply chain failures:</b> This newly added category covers the security of third-party packages, plugins and build tools used in the project.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Cryptographic failures and injection:</b> Storing passwords in plain text or adding user input to a database query without validation.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Mishandling of exceptional conditions:</b> Another new category; it describes the system falling into an insecure state when an error occurs.</span></li>
+      </ul>
+      <p>When working with your software team, use this list as a checklist: ask which measure has been taken against which risk. For critical projects, having an independent penetration test done before launch is also good practice. That is why, in systems that process payments and personal data such as our own products KATSİS and RestaurantBill, role-based authorisation, encrypted connections and logging have been part of the design from day one. For more about these products, see the <a href="projelerimiz">projects</a> page.</p>
+      <h2 id="ihlal" class="bi-h2" data-n="07">What should you do if your site is hacked?</h2>
+      <p>Despite the best precautions, you may face an incident. Panicked interventions often erase traces and make the problem worse. Follow a calm sequence:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Step 1 —</b> Put the site into maintenance mode or temporarily take it offline; prevent visitors from being harmed.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Step 2 —</b> Change all passwords (panel, hosting, FTP, database, email) and end all sessions.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Step 3 —</b> Find out where the attack came from by examining server logs and changed files; restoring from a backup without closing the vulnerability lets the attack happen again.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Step 4 —</b> Restore from a clean backup, update all software and request a review in Search Console.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Step 5 —</b> If personal data was affected, assess the situation from a legal perspective. KVKK requires data controllers to notify the Personal Data Protection Board as soon as possible after learning of a breach, and according to the Board’s decision within 72 hours at the latest, and to inform the data subjects within a reasonable time.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Important:</b> This information on KVKK is for general information only and is not legal advice. If you experience a data breach, act together with a lawyer. For the privacy notice and cookie processes on your website, you can read our article <a href="kvkk-uyumlu-web-sitesi">KVKK-compliant websites</a>.</div></div>
+      <p>The National Cyber Incident Response Center (USOM) publishes alerts about cyber threats in Türkiye and accepts incident reports. Following announcements relevant to your organisation is a good habit.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// SECURITY CHECKLIST</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Do all pages load over HTTPS, and does SSL renew automatically?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are the content management system, theme and plugins up to date?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Is two-factor authentication enabled on the admin panel?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Have old user and agency accounts been closed?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are backups kept off the server, and has restoring been tested?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are WAF/CDN and security headers enabled?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Is it written down who does what in the event of a breach?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="08">Frequently asked questions</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>Does an SSL certificate make a website completely secure?</summary><p>No. SSL encrypts data traffic between the visitor and the server; but it doesn’t close software vulnerabilities, weak passwords or outdated plugins. Security requires regular updates, strong access control and backups alongside SSL.</p></details><details class="bi-faq-i"><summary>Is a free SSL certificate enough?</summary><p>For most corporate and e-commerce sites, yes. Free DV certificates like Let’s Encrypt offer the same encryption strength as paid certificates. Paid OV and EV certificates provide additional organisation validation but don’t make the connection more secure.</p></details><details class="bi-faq-i"><summary>How long is an SSL certificate valid?</summary><p>Under the CA/Browser Forum decision, the maximum validity of new certificates is 200 days from 15 March 2026. This will drop to 100 days on 15 March 2027 and to 47 days on 15 March 2029. As a result, automatic renewal is becoming essential.</p></details><details class="bi-faq-i"><summary>How can I tell if my website has been hacked?</summary><p>The most common signs are seeing pages or links on the site you don’t recognise, foreign-language titles appearing in Google search results, visitors being redirected to other sites, a security warning in Search Console and spam notices from your hosting company.</p></details><details class="bi-faq-i"><summary>How often should a website be updated for security?</summary><p>Security updates should be applied as soon as possible after release. As a general rule, check your site at least once a month and install critical security patches without delay. Don’t forget to take a backup before updating.</p></details></div>
+      <h2 id="sonuc">Final word</h2>
+      <p>Website security is not a one-off setup but an ongoing habit: automatically renewed SSL, up-to-date software, two-factor authentication, backups kept off the server and a firewall. These basic layers stop most automated attacks at the door.</p>
+      <p>At CYF Tech, we develop <a href="web-cozumleri">websites and custom web software</a> with security in mind from the start, and provide maintenance and update support after launch. If you’d like to review your current site’s security together, <a href="iletisim">write to us</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// SOURCES</div><ol><li><a href="https://owasp.org/Top10/2025/0x00_2025-Introduction/" target="_blank" rel="noopener nofollow">OWASP Top 10:2025</a></li><li><a href="https://www.digicert.com/faq/tls-ssl-certificate-validity" target="_blank" rel="noopener nofollow">DigiCert — TLS/SSL certificate validity changes</a></li><li><a href="https://cabforum.org/2025/04/11/ballot-sc081v3-introduce-schedule-of-reducing-validity-and-data-reuse-periods/" target="_blank" rel="noopener nofollow">CA/Browser Forum — Ballot SC-081v3</a></li><li><a href="https://letsencrypt.org/how-it-works/" target="_blank" rel="noopener nofollow">Let’s Encrypt — How it works</a></li><li><a href="https://developers.google.com/search/docs/crawling-indexing/https" target="_blank" rel="noopener nofollow">Google Search Central — Secure your site with HTTPS</a></li><li><a href="https://developers.google.com/search/docs/monitor-debug/security/hacked" target="_blank" rel="noopener nofollow">Google Search Central — Hacked sites</a></li><li><a href="https://www.kvkk.gov.tr/" target="_blank" rel="noopener nofollow">KVKK — Notification of personal data breaches</a></li><li><a href="https://www.usom.gov.tr/" target="_blank" rel="noopener nofollow">USOM — National Cyber Incident Response Center</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All posts</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Share</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Send by email" title="Send by email"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Contents">
+        <div class="eyebrow">// IN THIS ARTICLE</div>
+        <ol class="bi-toc"><li><a href="#tehdit" data-n="01">Why would you be a target?</a></li><li><a href="#ssl" data-n="02">SSL and HTTPS</a></li><li><a href="#sure" data-n="03">Shorter SSL lifetimes</a></li><li><a href="#temel" data-n="04">Essential measures</a></li><li><a href="#waf" data-n="05">WAF and headers</a></li><li><a href="#owasp" data-n="06">OWASP Top 10</a></li><li><a href="#ihlal" data-n="07">If an attack happens</a></li><li><a href="#sss" data-n="08">Frequently asked questions</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// MORE POSTS</div>
+        <ul class="bi-others"><li><a href="kvkk-uyumlu-web-sitesi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></span><div><span class="d">31 October 2026</span><b>KVKK-Compliant Website: Privacy Notice, Cookies and Explicit Consent</b><span class="bi-read">9 min read</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 October 2026</span><b>7 Things to Know Before Commissioning a Corporate Website</b><span class="bi-read">6 min read</span></div></a></li><li><a href="web-sitesi-fiyatlari"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 October 2026</span><b>Website Prices in 2026: 9 Factors That Determine the Cost</b><span class="bi-read">10 min read</span></div></a></li><li><a href="seo-nedir"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></span><div><span class="d">31 October 2026</span><b>What Is SEO? A Simple, Practical Beginner’s Guide for 2026</b><span class="bi-read">8 min read</span></div></a></li><li><a href="e-ticaret-sitesi-kurma-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0V9zM5 13v8h14v-8M10 21v-5h4v5"/></svg></span><div><span class="d">31 October 2026</span><b>How to Set Up an E-Commerce Site in 2026: A Step-by-Step Roadmap</b><span class="bi-read">10 min read</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Let’s talk about your project.</b><span>Tell us about your idea, and we’ll prepare a quote tailored to you.</span><div class="bi-go">Get a Quote<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// LET'S GET STARTED</div>
+        <h2 class="h2">Let's bring your project to life together.</h2>
+        <p class="lead" style="margin-top:20px">Tell us about the project you have in mind, and we'll prepare a quote tailored to you.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Message us on WhatsApp</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">address</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Your trusted partner in digital. Web design, software development and digital solutions.</p>
+      </div>
+      <div>
+        <h2>QUICK MENU</h2>
+        <ul><li><a href="./">Home</a></li><li><a href="projelerimiz">Projects</a></li><li><a href="referanslar">References</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">About Us</a></li><li><a href="iletisim">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>SERVICES</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a></li></ul>
+      </div>
+      <div>
+        <h2>CONTACT</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Your trusted partner in digital.</span> <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Message us on WhatsApp"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

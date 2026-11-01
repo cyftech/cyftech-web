@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>9 Things to Consider When Choosing Apartment Management Software — CYF Tech Blog</title>
+<meta name="description" content="What to look for in apartment management software: dues and late fees, operating budget, online payments, KVKK, mobile app and a handy checklist.">
+<meta name="theme-color" content="#040814">
+<meta property="og:title" content="9 Things to Consider When Choosing Apartment Management Software — CYF Tech Blog">
+<meta property="og:description" content="What to look for in apartment management software: dues and late fees, operating budget, online payments, KVKK, mobile app and a handy checklist.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://cyftech.com.tr/en/apartman-yonetim-yazilimi">
+<meta property="og:site_name" content="CYF Tech">
+<meta property="og:locale" content="en_US">
+<link rel="canonical" href="https://cyftech.com.tr/en/apartman-yonetim-yazilimi">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "9 Things to Consider When Choosing Apartment Management Software", "description": "What to look for in apartment management software: dues and late fees, operating budget, online payments, KVKK, mobile app and a handy checklist.", "image": "https://cyftech.com.tr/assets/img/blog/apartman-yonetim-yazilimi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "en", "mainEntityOfPage": "https://cyftech.com.tr/en/apartman-yonetim-yazilimi", "url": "https://cyftech.com.tr/en/apartman-yonetim-yazilimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/en/blog"}, {"@type": "ListItem", "position": 3, "name": "9 Things to Consider When Choosing Apartment Management Software", "item": "https://cyftech.com.tr/en/apartman-yonetim-yazilimi"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "What is the late payment interest on apartment dues?", "acceptedAnswer": {"@type": "Answer", "text": "Under Article 20 of Condominium Law No. 634, a unit owner who fails to pay their share of expenses or advances on time pays a late fee of 5 percent per month for the days of delay. If there is any doubt about the calculation method, consulting a legal professional is recommended."}}, {"@type": "Question", "name": "Can a list of residents with unpaid dues be posted in the lift?", "acceptedAnswer": {"@type": "Answer", "text": "No. The Personal Data Protection Board found that posting the details of residents with unpaid dues in common areas such as lifts, entrances and corridors is unlawful. Notifications should only be made through channels accessible to the individuals concerned."}}, {"@type": "Question", "name": "Does a small apartment building need management software?", "acceptedAnswer": {"@type": "Answer", "text": "It isn’t mandatory, but even in buildings with a few flats, online payments, personal debt statements and announcements make the manager’s job much easier and prevent records from being lost when the manager changes."}}, {"@type": "Question", "name": "How is the price of apartment management software determined?", "acceptedAnswer": {"@type": "Answer", "text": "It is usually based on the number of units, the selected modules and platforms. SMS packages and virtual POS commissions are often charged separately; comparisons should be made on total annual cost."}}, {"@type": "Question", "name": "What should be done before suing over unpaid dues?", "acceptedAnswer": {"@type": "Answer", "text": "Since 1 September 2023, mediation has been mandatory before filing a lawsuit in disputes arising from the Condominium Law. Enforcement proceedings are also an option for receivables based on a finalised operating budget; seek a lawyer’s support for the process."}}]}</script>
+<link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
+<script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
+<script src="../assets/js/site.js?v=20261031d" defer></script>
+<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="ar" href="https://cyftech.com.tr/ar/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="zh" href="https://cyftech.com.tr/zh/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="ru" href="https://cyftech.com.tr/ru/apartman-yonetim-yazilimi">
+<link rel="alternate" hreflang="x-default" href="https://cyftech.com.tr/apartman-yonetim-yazilimi">
+
+</head>
+<body>
+<div class="boot" aria-hidden="true" translate="no">
+  <div class="boot-floor"><div><div></div></div></div>
+  <canvas class="boot-cv"></canvas>
+  <div class="boot-hud"><i></i><i></i><i></i><i></i><span class="bh-tl">CYF TECH // SYSTEM BOOT</span><span class="bh-tr">38.6144° N · 27.4265° E</span><span class="bh-bl">MANISA · TR</span><span class="bh-br">BUILD <b class="boot-fps">0000</b></span></div>
+  <div class="boot-core">
+    <div class="boot-word"><span class="boot-type"></span><i class="boot-caret"></i></div>
+    <div class="boot-meter"><div class="boot-bar"><i></i></div><span class="boot-pct">000</span></div>
+    <ul class="boot-log"><li><b>$</b> boot cyftech</li><li>modules<span>ok</span></li><li>assets<span>ok</span></li><li>ready<span>200</span></li></ul>
+  </div>
+</div>
+<script>(function () {
+  var R = document.documentElement, boot = document.querySelector('.boot');
+  if (!R.classList.contains('intro') || !boot) return;
+  var cv = boot.querySelector('.boot-cv'), ctx = cv.getContext('2d');
+  var light = R.getAttribute('data-theme') === 'light';
+  var AC = getComputedStyle(R).getPropertyValue('--accent').trim() || '#38BDF8';
+  var dpr = Math.min(window.devicePixelRatio || 1, 2), W, H;
+  function size() { W = innerWidth; H = innerHeight; cv.width = W * dpr; cv.height = H * dpr; cv.style.width = W + 'px'; cv.style.height = H + 'px'; ctx.setTransform(dpr, 0, 0, dpr, 0, 0); }
+  size(); addEventListener('resize', size);
+
+  // target shape: the </> glyph sampled from an offscreen canvas, plus a tilted ring around it
+  var g = document.createElement('canvas'), gw = 420, gh = 190, gx = g.getContext('2d');
+  g.width = gw; g.height = gh;
+  gx.fillStyle = '#fff'; gx.textAlign = 'center'; gx.textBaseline = 'middle';
+  gx.font = '700 170px "JetBrains Mono", ui-monospace, monospace';
+  gx.fillText('</>', gw / 2, gh / 2 + 8);
+  var px = gx.getImageData(0, 0, gw, gh).data, P = [];
+  for (var y = 0; y < gh; y += 4) for (var x = 0; x < gw; x += 4)
+    if (px[(y * gw + x) * 4 + 3] > 140) P.push({ tx: (x - gw / 2) / gw, ty: (y - gh / 2) / gw, tz: (Math.random() - .5) * .1, ring: 0 });
+  for (var i = 0; i < 240; i++) P.push({ a: i / 240 * Math.PI * 2, ring: 1 });
+  P.forEach(function (p) {
+    var u = Math.random() * Math.PI * 2, v = Math.acos(2 * Math.random() - 1), r = 1.4 + Math.random() * 1.6;
+    p.sx = r * Math.sin(v) * Math.cos(u); p.sy = r * Math.sin(v) * Math.sin(u); p.sz = r * Math.cos(v);
+    p.d = Math.random(); p.s = .6 + Math.random() * .8;
+  });
+
+  var ease = function (k) { return k < 0 ? 0 : k > 1 ? 1 : 1 - Math.pow(1 - k, 3); };
+  var word = boot.querySelector('.boot-type'), pct = boot.querySelector('.boot-pct'), fps = boot.querySelector('.boot-fps');
+  var GLY = '<>/{}[]#$%&*+=?!01';
+  var t0 = performance.now(), last = '';
+  (function frame(now) {
+    var t = (now - t0) / 1000;
+    if (!boot.isConnected || t > 4.6) return;
+    var S = Math.min(W * .95, H * 1.15, 860), cx = W / 2, cy = H * .4, F = 3.2;
+    var sp = Math.max(0, Math.min(1, (t - 1.6) / 1.7)), spin = (sp < .5 ? 4 * sp * sp * sp : 1 - Math.pow(-2 * sp + 2, 3) / 2) * Math.PI * 2;
+    var ry = (1 - ease((t - .2) / 1.3)) * 2.2 + Math.sin(t * 1.4) * .12 + spin, rx = -.18 + Math.sin(t * .9) * .05;
+    var cY = Math.cos(ry), sY = Math.sin(ry), cX = Math.cos(rx), sX = Math.sin(rx);
+    var burst = ease((t - 3.4) / .8);
+    ctx.clearRect(0, 0, W, H);
+    ctx.globalCompositeOperation = light ? 'source-over' : 'lighter';
+    ctx.fillStyle = AC;
+    for (var n = 0; n < P.length; n++) {
+      var p = P[n], k = ease((t - .15 - p.d * .55) / .95), x, y, z;
+      if (p.ring) {
+        var a = p.a + t * .9, rr = Math.min(.66, W * .46 / S);
+        x = Math.cos(a) * rr; y = Math.sin(a) * rr * .16; z = Math.sin(a) * rr;
+        k = ease((t - .7 - p.d * .4) / .8);
+      } else { x = p.tx; y = p.ty; z = p.tz; }
+      x = p.sx + (x - p.sx) * k; y = p.sy + (y - p.sy) * k; z = p.sz + (z - p.sz) * k;
+      var X = x * cY + z * sY, Z = -x * sY + z * cY, Y = y * cX - Z * sX; Z = y * sX + Z * cX;
+      X *= 1 + burst * 2.4; Y *= 1 + burst * 2.4; Z -= burst * 2.2;
+      var q = F / (F + Z + 1.2);
+      if (q <= 0) continue;
+      var sz = Math.max(1.2, 3.1 * q * p.s), al = Math.max(0, Math.min(1, (.4 + .6 * k) * q)) * (1 - burst * .9);
+      var sx = cx + X * S * q, sy = cy + Y * S * q;
+      ctx.globalAlpha = al * .13;
+      ctx.fillRect(sx - sz * 2, sy - sz * 2, sz * 4, sz * 4);  // soft halo
+      ctx.globalAlpha = al;
+      ctx.fillRect(sx - sz / 2, sy - sz / 2, sz, sz);
+    }
+    ctx.globalAlpha = 1;
+    // name decodes from random glyphs, counter climbs with the bar
+    var dk = Math.max(0, Math.min(1, (t - .95) / .6)), name = 'cyftech', out = '';
+    for (var c = 0; c < name.length; c++) out += c < Math.floor(dk * name.length + .001) ? name[c] : (t > .9 ? GLY[(Math.random() * GLY.length) | 0] : '');
+    if (out !== last) { word.textContent = out; last = out; }
+    if (dk >= 1 && !word.firstElementChild) word.innerHTML = 'cyf<b>tech</b>';
+    pct.textContent = ('00' + Math.round(100 * ease((t - .4) / 1.3))).slice(-3);
+    fps.textContent = ('000' + Math.round(t * 1173 % 10000)).slice(-4);
+    requestAnimationFrame(frame);
+  })(t0);
+})();</script>
+<a class="sr-only" href="#icerik">Skip to content</a>
+<header class="site-head">
+  <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <nav class="nav" aria-label="Main menu">
+    <div class="nav-dd">
+      <button type="button" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
+      <div class="dd-menu"><a href="web-cozumleri"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg><span class="num">01</span><span><b>Web Solutions</b><small>Web design, software, e-commerce and SEO — all under one roof.</small></span></a><a href="masaustu-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span class="num">02</span><span><b>Desktop Applications</b><small>Desktop software tailored to your business that works offline too.</small></span></a><a href="mobil-uygulamalar"><svg class="ic dd-ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><span class="num">03</span><span><b>Mobile Applications</b><small>Fast, user-friendly apps for iOS and Android.</small></span></a></div>
+    </div>
+    <a href="projelerimiz">Projects</a>
+    <a href="referanslar">References</a>
+    <a href="blog" aria-current="page">Blog</a>
+    <a href="hakkimizda">About Us</a>
+    <a href="iletisim">Contact</a>
+  </nav>
+  <div class="head-actions">
+    <div class="lang-dd" translate="no">
+      <button type="button" class="icon-btn lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Select language"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg><span data-lang-cur>EN</span></button>
+      <div class="lang-menu"><a href="../apartman-yonetim-yazilimi" hreflang="tr" lang="tr" data-lang="tr"><b>TR</b><span>Türkçe</span></a><a href="apartman-yonetim-yazilimi" hreflang="en" lang="en" data-lang="en" aria-current="true"><b>EN</b><span>English</span></a><a href="../de/apartman-yonetim-yazilimi" hreflang="de" lang="de" data-lang="de"><b>DE</b><span>Deutsch</span></a><a href="../ar/apartman-yonetim-yazilimi" hreflang="ar" lang="ar" data-lang="ar"><b>AR</b><span>العربية</span></a><a href="../zh/apartman-yonetim-yazilimi" hreflang="zh" lang="zh" data-lang="zh"><b>ZH</b><span>中文</span></a><a href="../ru/apartman-yonetim-yazilimi" hreflang="ru" lang="ru" data-lang="ru"><b>RU</b><span>Русский</span></a></div>
+    </div>
+    <button type="button" class="icon-btn theme-btn" aria-label="Dark / light theme" title="Dark / light theme"><svg class="i-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
+    <a class="btn btn-primary btn-sm" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <button class="menu-btn" type="button" aria-label="Open menu" data-label-open="Open menu" data-label-close="Close menu" aria-expanded="false" aria-controls="mnav"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+  
+</header>
+<nav class="mnav" id="mnav" aria-label="Mobile menu">
+  <a href="./">Home</a>
+  <div class="mnav-label">SERVICES</div>
+  <a href="web-cozumleri"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a><a href="masaustu-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a><a href="mobil-uygulamalar"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a>
+  <div class="mnav-label">COMPANY</div>
+  <a href="projelerimiz">Projects</a>
+  <a href="referanslar">References</a>
+  <a href="blog" aria-current="page">Blog</a>
+  <a href="hakkimizda">About Us</a>
+  <a href="iletisim">Contact</a>
+  <a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+</nav>
+<main id="icerik">
+<section class="page-hero" style="padding-bottom:48px">
+  <div class="floor" aria-hidden="true"><div><div></div></div></div>
+  <div class="wrap">
+    <div class="crumbs"><a href="./">CYF TECH</a><span>/</span><a href="blog">BLOG</a><span>/</span><span>SOFTWARE</span></div>
+    <h1 class="h1" style="max-width:900px">9 things to consider when choosing apartment management software.</h1>
+    <div class="bi-meta"><div class="bi-tag"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12V4a1 1 0 0 1 1-1h8l9 9-9 9-9-9z"/><circle cx="8" cy="8" r="1.5"/></svg>Software</div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><time datetime="2026-10-31">31 October 2026</time></div><div><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>8 min read</div></div>
+  </div>
+</section>
+
+<section class="section-tight" style="padding-top:0">
+  <div class="wrap bi-grid">
+    <article class="article">
+      <div class="article-img"><img src="../assets/img/blog/apartman-yonetim-yazilimi.svg" alt=""></div>
+      <p class="bi-lead">The dues ledger is in one place, the bank statement in another, the debtors’ list in a WhatsApp group and repair requests on the manager’s phone. Apartment management may look like volunteer work, but at its core it is about <b>money, law and communication</b>; the right software brings all three together in one place.</p>
+      <p>From buildings with a handful of flats to complexes with hundreds of units, management boards face the same questions: Are dues collected on time, who owes how much, where was the money spent, are residents kept informed? <b>Apartment management software</b> turns the answers into a transparent system everyone can see.</p>
+      <p>There are many residential management programs on the market, and their promotions look alike. In this article we don’t discuss a specific product but the criteria to look at when choosing: compliance with the Condominium Law, dues and late fee calculation, online payments, KVKK, mobile access, reporting and support. At the end you’ll also find a checklist you can use to compare software.</p>
+      <h2 id="neden" class="bi-h2" data-n="01">Why do you need apartment management software?</h2>
+      <p>Managing with a ledger and Excel works for a while in small buildings with a few flats. But as the number of units grows, managers change and tenant turnover increases, problems multiply:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Accounting confusion:</b> It becomes unclear which payment belongs to which month and expense item; gaps emerge during handovers.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Lack of transparency:</b> When residents can’t see where the money goes, trust drops, meetings turn into arguments and collection gets harder.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>The manager’s time:</b> Sending individual messages, writing receipts, chasing debts and tracking repairs is a heavy burden for volunteer managers.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Legal risk:</b> Miscalculating late fees or publicly posting debtors in common areas can expose the management to legal problems.</span></li>
+      </ul>
+      <p>Good software reduces this burden and, by letting every unit owner see their own account, also increases trust in the management.</p>
+      <h2 id="aidat-ve-borc" class="bi-h2" data-n="02">Dues tracking and late fees: calculations that comply with the law</h2>
+      <p>The heart of any residential management program is dues and debt tracking. Under Article 20 of Condominium Law No. 634, a unit owner who fails to pay their share of expenses and advances on time pays a late fee of <b>5 percent per month</b> for the days of delay. This rate was reduced from 10 percent to 5 percent by a 2007 amendment; you may still come across templates that calculate with the old rate.</p>
+      <p>When evaluating software, check the following:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Flexible accruals:</b> Can dues be set by land share, equally, or by a custom allocation key in the management plan? Can items like fuel, lifts and fixtures be allocated separately?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Late fee settings:</b> Can the rate, due date and calculation method (monthly or daily) be configured according to the board’s decision? Is the calculation clearly visible on the statement?</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Owner and tenant distinction:</b> Under certain conditions the law holds tenants jointly liable with owners for expense shares. The software should define owners and tenants separately and show the debt to the right person.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Partial payments and offsetting:</b> Which debt a partial payment is applied to, as well as advances and refunds, should be recorded clearly.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Individual statements:</b> Each unit should be able to see its own debt, payment and late payment history.</span></li>
+      </ul>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg><div><b>Pre-meeting check:</b> In the software’s demo account, enter two real examples from your own building (a unit that pays late and one that pays partially) and see whether the result matches your current ledger. It is the fastest way to understand the calculation logic.</div></div>
+      <h2 id="isletme-projesi" class="bi-h2" data-n="03">Operating budget, resolution book and accountability</h2>
+      <p>The law requires the management to prepare an annual <b>operating budget</b>. Under Article 37 of the Condominium Law, objections to the operating budget can be made within seven days of notification; a finalised operating budget and the owners’ assembly’s decisions on operating expenses are accepted as documents listed in the first paragraph of Article 68 of the Enforcement and Bankruptcy Law. This shows how important the operating budget is in collecting unpaid dues.</p>
+      <p>Features the software should offer in this process:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Budget and plan preparation:</b> Creating the new year’s operating budget from last year’s actual expenses and splitting it into shares per unit.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Budget vs. actual comparison:</b> Reports showing how much each item deviated during the year.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Cash and bank transactions:</b> Keeping collected funds, as the law requires, in an account opened in the name of the main property by the manager, and recording transactions in the software.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Document archive:</b> Storing digital copies of invoices, contracts, meeting minutes and resolutions. Remember that the resolution book must be notarised; the software doesn’t replace this book, it keeps it organised.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Year-end account report:</b> Generating the income and expense table for the owners’ assembly with a single click.</span></li>
+      </ul>
+      <p>Since 1 September 2023, mediation has been mandatory before filing a lawsuit in disputes arising from the Condominium Law. Well-kept statements and records strengthen the management’s hand in both mediation and enforcement.</p>
+      <div class="bi-note"><svg class="ic" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg><div><b>Note:</b> The legal information in this article is for general guidance only and is not legal advice. Consult a lawyer about late fees, enforcement and mediation procedures.</div></div>
+      <h2 id="tahsilat" class="bi-h2" data-n="04">Online dues payment: virtual POS, transfer matching and reminders</h2>
+      <p>The most effective way to make collection easier is to make payment effortless. Letting residents pay dues by card from their phones removes the “I’ll go to the bank and pay” excuse.</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Card payments via virtual POS:</b> The payment should be deducted from the debt instantly and a receipt generated automatically. Clarify commission rates and who will bear the commission in advance.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Bank transfer matching:</b> Transfers without a description are management boards’ biggest headache. A unit-specific reference code or the ability to import and match bank transactions saves a lot of time.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Automatic reminders:</b> Personalised reminders by SMS, email or app notification before and after the due date.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Payment security:</b> Card details should be processed not in the software but on a licensed payment institution’s infrastructure; 3D Secure should be supported.</span></li>
+      </ul>
+      <blockquote><div class="bi-q"><svg class="ic" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 7H5a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3M19 7h-4a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3v1a3 3 0 0 1-3 3"/></svg></div>The strongest reminder in dues collection is being able to pay in two taps.</blockquote>
+      <h2 id="kvkk" class="bi-h2" data-n="05">KVKK compliance: debtor lists, cameras and resident data</h2>
+      <p>Apartment and complex management boards process a great deal of personal data: names, phone numbers, unit numbers, debt information, licence plates, camera footage. The Personal Data Protection Board has recently highlighted two important issues in this area:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Debtor lists should not be posted in common areas:</b> According to a decision announced by the Board in 2026, posting the details of residents with unpaid dues in common areas such as lifts, building entrances and corridors was found to violate Law No. 6698. It recommends informing people only through channels accessible to the individuals concerned, such as a personal app or a closed channel.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Use of security cameras:</b> The Authority’s public announcement on security cameras in apartment buildings stresses that camera systems must be set up in compliance with both KVKK and the Condominium Law.</span></li>
+      </ul>
+      <p>Safeguards to look for in the software:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Role-based permissions:</b> Managers, auditors, staff and residents should see different screens and different data. A resident should only be able to see their own debt.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Data location and backups:</b> Where the data is hosted, how often it is backed up and how it will be handed over to you when the contract ends should be in writing.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Privacy notice:</b> There should be a privacy notice telling residents for what purpose their data is processed and, where necessary, an explicit consent mechanism.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Audit logs:</b> It should be possible to track who changed which record and when; this matters both for security and for handovers between managers.</span></li>
+      </ul>
+      <p>For more on KVKK-compliant digital infrastructure, see our article on <a href="kvkk-uyumlu-web-sitesi">KVKK-compliant websites</a>.</p>
+      <h2 id="iletisim-mobil" class="bi-h2" data-n="06">Resident communication, support requests and mobile app</h2>
+      <p>Today most communication between management and residents takes place in scattered messaging groups. Announcements get lost there, personal details are shared openly, and repair reports go untracked. Look for these features in the software:</p>
+      <ul class="bi-list">
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Announcements module:</b> Sending announcements such as water outages, meeting calls and maintenance work to all residents or specific blocks via app notification and, if needed, SMS.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Support requests:</b> A ticket system where residents can report a fault with a photo and track its status (received, in progress, resolved).</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Mobile app:</b> An iOS and Android app for residents to view their balance, pay, read announcements and open requests. A mobile-friendly web page also does the job, but an app is more effective thanks to notification support.</span></li>
+        <li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span><b>Manager screen:</b> A desktop or web panel for detailed work on the management and accounting side. In large complexes, heavy data entry isn’t done on a phone.</span></li>
+      </ul>
+      <h2 id="karsilastirma" class="bi-h2" data-n="07">Residential management software comparison table</h2>
+      <p>You can put the software you get quotes for side by side using the table below:</p>
+      <table>
+        <thead><tr><th>Criterion</th><th>What to ask?</th></tr></thead>
+        <tbody>
+          <tr><td>Dues and accruals</td><td>Are land share, equal and custom allocation keys supported?</td></tr>
+          <tr><td>Late fees</td><td>Can the rate and method be configured, and are they shown on the statement?</td></tr>
+          <tr><td>Collection</td><td>Is there virtual POS, transfer matching and automatic receipts? Who pays the commission?</td></tr>
+          <tr><td>Reporting</td><td>Can you generate the operating budget, budget vs. actual and year-end account reports?</td></tr>
+          <tr><td>KVKK</td><td>How are role-based permissions, data location, backups and audit logs handled?</td></tr>
+          <tr><td>Platforms</td><td>What web, iOS, Android and desktop options are there?</td></tr>
+          <tr><td>Migration</td><td>Can existing Excel data and opening balances be imported?</td></tr>
+          <tr><td>Pricing</td><td>Per unit or flat fee? Are SMS and POS fees included?</td></tr>
+          <tr><td>Support</td><td>Phone, email, training; is there handover support when the manager changes?</td></tr>
+        </tbody>
+      </table>
+      <p>When it comes to pricing, don’t just look at the monthly fee; look at the total annual cost including SMS packages, virtual POS commissions and add-on module fees. A package that looks cheap can end up expensive once the extras are added.</p>
+      <h2 id="ornek" class="bi-h2" data-n="08">An example: how we designed KATSİS</h2>
+      <p>We experienced some of these criteria first-hand while developing our own product. <b>KATSİS</b>, developed by CYF Tech, was designed to bring apartment and complex management into a single panel: dues and debt tracking, cash management, announcements, support requests, online collection via virtual POS and SMS modules all work together. There is a web panel and a Windows app for managers, and iOS and Android apps for residents.</p>
+      <p>The most important lesson from development was this: what management boards really need is not a long list of features, but accurate dues calculations, easy collection and organised communication. You can explore the product and our other work on our <a href="projelerimiz">projects</a> page. Whichever software you choose, we recommend using the checklist above.</p>
+      <div class="bi-check">
+        <div class="eyebrow">// CHECKLIST BEFORE CHOOSING SOFTWARE</div>
+        <ul class="bi-list"><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are dues allocation keys (land share, equal, custom) supported?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Can the late fee rate and method be configured according to the board’s decision?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are online payments, transfer matching and automatic receipts available?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Is debt information shown only to the person concerned?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Are data location, backups and data handover at contract end in writing?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Can existing records and opening balances be imported?</span></li><li><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Has the total annual cost been calculated, including SMS, POS and add-on modules?</span></li></ul>
+      </div>
+      <h2 id="sss" class="bi-h2" data-n="09">Frequently asked questions</h2>
+      <div class="bi-faq"><details class="bi-faq-i"><summary>What is the late payment interest on apartment dues?</summary><p>Under Article 20 of Condominium Law No. 634, a unit owner who fails to pay their share of expenses or advances on time pays a late fee of 5 percent per month for the days of delay. If there is any doubt about the calculation method, consulting a legal professional is recommended.</p></details><details class="bi-faq-i"><summary>Can a list of residents with unpaid dues be posted in the lift?</summary><p>No. The Personal Data Protection Board found that posting the details of residents with unpaid dues in common areas such as lifts, entrances and corridors is unlawful. Notifications should only be made through channels accessible to the individuals concerned.</p></details><details class="bi-faq-i"><summary>Does a small apartment building need management software?</summary><p>It isn’t mandatory, but even in buildings with a few flats, online payments, personal debt statements and announcements make the manager’s job much easier and prevent records from being lost when the manager changes.</p></details><details class="bi-faq-i"><summary>How is the price of apartment management software determined?</summary><p>It is usually based on the number of units, the selected modules and platforms. SMS packages and virtual POS commissions are often charged separately; comparisons should be made on total annual cost.</p></details><details class="bi-faq-i"><summary>What should be done before suing over unpaid dues?</summary><p>Since 1 September 2023, mediation has been mandatory before filing a lawsuit in disputes arising from the Condominium Law. Enforcement proceedings are also an option for receivables based on a finalised operating budget; seek a lawyer’s support for the process.</p></details></div>
+      <h2 id="sonuc">Final word</h2>
+      <p>The right apartment management software lightens the manager’s load, speeds up dues collection and, most importantly, increases trust in the management. When choosing, focus less on shiny feature lists and more on whether dues calculations comply with the law, how easy collection is, KVKK safeguards, and migration and support processes.</p>
+      <p>If you would like to discuss the right solution for your complex or the buildings you manage, see KATSİS up close, or assess the need for software tailored to your own management processes, <a href="iletisim">contact us</a>.</p>
+      <div class="bi-src"><div class="eyebrow">// SOURCES</div><ol><li><a href="https://www.mevzuat.gov.tr/mevzuatmetin/1.5.634.pdf" target="_blank" rel="noopener nofollow">Condominium Law No. 634 (mevzuat.gov.tr)</a></li><li><a href="https://www.kvkk.gov.tr/Icerik/8769/apartmanlarda-guvenlik-kamerasi-sistemi-kullaniminda-dikkat-edilecek-hususlara-dair-kamuoyu-duyurusu" target="_blank" rel="noopener nofollow">KVKK — Public announcement on the use of security cameras in apartment buildings</a></li><li><a href="https://www.alomaliye.com/2026/03/31/toplu-yapilarda-apartman-site-sakinlerine-ait-borc-bilgilerinin-ortak-yerlere-asilmasi-hakkinda-kvkk-duyurusu/" target="_blank" rel="noopener nofollow">KVKK announcement on posting debt information in common areas (Alomaliye)</a></li><li><a href="https://adb.adalet.gov.tr" target="_blank" rel="noopener nofollow">Mandatory pre-trial mediation introduced by Law No. 7445 (Ministry of Justice, Department of Mediation)</a></li></ol></div>
+      <div class="bi-foot">
+        <a class="bi-back" href="blog"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>All posts</a>
+        <div class="bi-share"><div class="bi-share-l"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg>Share</div><a class="bi-share-btn" data-share="wa" href="#" target="_blank" rel="noopener" aria-label="Share on WhatsApp" title="Share on WhatsApp"><svg width="18" height="18" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a><a class="bi-share-btn" data-share="li" href="#" target="_blank" rel="noopener" aria-label="Share on LinkedIn" title="Share on LinkedIn"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg></a><a class="bi-share-btn" data-share="x" href="#" target="_blank" rel="noopener" aria-label="Share on X" title="Share on X"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4l16 16M20 4L4 20"/></svg></a><a class="bi-share-btn" data-share="mail" href="#" target="_blank" rel="noopener" aria-label="Send by email" title="Send by email"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></a></div>
+      </div>
+    </article>
+    <aside class="bi-aside">
+      <nav class="bi-box" aria-label="Contents">
+        <div class="eyebrow">// IN THIS ARTICLE</div>
+        <ol class="bi-toc"><li><a href="#neden" data-n="01">Why software?</a></li><li><a href="#aidat-ve-borc" data-n="02">Dues and debt tracking</a></li><li><a href="#isletme-projesi" data-n="03">Operating budget</a></li><li><a href="#tahsilat" data-n="04">Online collection</a></li><li><a href="#kvkk" data-n="05">KVKK and data security</a></li><li><a href="#iletisim-mobil" data-n="06">Communication and mobile</a></li><li><a href="#karsilastirma" data-n="07">How to compare?</a></li><li><a href="#ornek" data-n="08">An example: KATSİS</a></li><li><a href="#sss" data-n="09">Frequently asked questions</a></li></ol>
+      </nav>
+      <div class="bi-box">
+        <div class="eyebrow">// MORE POSTS</div>
+        <ul class="bi-others"><li><a href="wordpress-mi-ozel-yazilim-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 October 2026</span><b>WordPress or Custom Software? A Guide to Choosing the Right Platform</b><span class="bi-read">10 min read</span></div></a></li><li><a href="ozel-yazilim-gelistirme"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 October 2026</span><b>Custom Software Development: When Do You Need It and How Does It Work?</b><span class="bi-read">8 min read</span></div></a></li><li><a href="masaustu-mu-web-uygulamasi-mi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 October 2026</span><b>Desktop App or Web App? A Guide to Making the Right Choice</b><span class="bi-read">8 min read</span></div></a></li><li><a href="restoran-adisyon-sistemi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></span><div><span class="d">31 October 2026</span><b>Choosing a Restaurant Ordering System: A Guide to POS and Order Software</b><span class="bi-read">8 min read</span></div></a></li><li><a href="kurumsal-web-sitesi-rehberi"><span class="bi-oic"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></span><div><span class="d">31 October 2026</span><b>7 Things to Know Before Commissioning a Corporate Website</b><span class="bi-read">6 min read</span></div></a></li></ul>
+      </div>
+      <a class="bi-box bi-cta" href="iletisim"><b>Let’s talk about your project.</b><span>Tell us about your idea, and we’ll prepare a quote tailored to you.</span><div class="bi-go">Get a Quote<svg class="ic" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></div></a>
+    </aside>
+  </div>
+</section>
+
+<section class="section cta-dark">
+  <div class="bg-layer" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="cta reveal">
+      <div style="position:relative">
+        <div class="eyebrow">// LET'S GET STARTED</div>
+        <h2 class="h2">Let's bring your project to life together.</h2>
+        <p class="lead" style="margin-top:20px">Tell us about the project you have in mind, and we'll prepare a quote tailored to you.</p>
+        <div class="btn-row"><a class="btn btn-primary" href="iletisim">Get a Quote<svg class="ic ic-dir" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><a class="btn" href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>Message us on WhatsApp</a></div>
+      </div>
+      <div class="contact-lines" style="position:relative">
+        <a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg><span class="k">tel</span>0543 791 10 61</a>
+        <a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><span class="k">mail</span>info@cyftech.com.tr</a>
+        <a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg><span class="k">address</span>Şehzadeler / Manisa</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <p>Your trusted partner in digital. Web design, software development and digital solutions.</p>
+      </div>
+      <div>
+        <h2>QUICK MENU</h2>
+        <ul><li><a href="./">Home</a></li><li><a href="projelerimiz">Projects</a></li><li><a href="referanslar">References</a></li><li><a href="blog">Blog</a></li><li><a href="hakkimizda">About Us</a></li><li><a href="iletisim">Contact</a></li></ul>
+      </div>
+      <div>
+        <h2>SERVICES</h2>
+        <ul><li><a href="web-cozumleri"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M8 14l-2 2 2 2M16 14l2 2-2 2"/></svg>Web Solutions</a></li><li><a href="masaustu-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>Desktop Applications</a></li><li><a href="mobil-uygulamalar"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg>Mobile Applications</a></li></ul>
+      </div>
+      <div>
+        <h2>CONTACT</h2>
+        <ul><li><a href="tel:+905437911061"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2"/></svg>0543 791 10 61</a></li><li><a href="mailto:info@cyftech.com.tr"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>info@cyftech.com.tr</a></li><li><a href="https://wa.me/905437911061" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1.3-4A8 8 0 1 1 8 18.7L4 20z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.6-2-1-1 1c-1-.5-2-1.5-2.5-2.5l1-1-1-2L9 8.5z"/></svg>WhatsApp</a></li><li><a href="https://maps.app.goo.gl/161gqpBeCkMonnv89" target="_blank" rel="noopener"><svg class="ic" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>Şehzadeler / Manisa</a></li></ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 CYF Tech — Your trusted partner in digital.</span> <span>All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+<a class="wa-fab" href="https://wa.me/905437911061" target="_blank" rel="noopener" aria-label="Message us on WhatsApp"><svg width="24" height="24" viewBox="0 0 640 640" fill="currentColor" aria-hidden="true"><path d="M476.9 161.1C435 119.1 379.2 96 319.9 96C197.5 96 97.9 195.6 97.9 318C97.9 357.1 108.1 395.3 127.5 429L96 544L213.7 513.1C246.1 530.8 282.6 540.1 319.8 540.1L319.9 540.1C442.2 540.1 544 440.5 544 318.1C544 258.8 518.8 203.1 476.9 161.1zM319.9 502.7C286.7 502.7 254.2 493.8 225.9 477L219.2 473L149.4 491.3L168 423.2L163.6 416.2C145.1 386.8 135.4 352.9 135.4 318C135.4 216.3 218.2 133.5 320 133.5C369.3 133.5 415.6 152.7 450.4 187.6C485.2 222.5 506.6 268.8 506.5 318.1C506.5 419.9 421.6 502.7 319.9 502.7zM421.1 364.5C415.6 361.7 388.3 348.3 383.2 346.5C378.1 344.6 374.4 343.7 370.7 349.3C367 354.9 356.4 367.3 353.1 371.1C349.9 374.8 346.6 375.3 341.1 372.5C308.5 356.2 287.1 343.4 265.6 306.5C259.9 296.7 271.3 297.4 281.9 276.2C283.7 272.5 282.8 269.3 281.4 266.5C280 263.7 268.9 236.4 264.3 225.3C259.8 214.5 255.2 216 251.8 215.8C248.6 215.6 244.9 215.6 241.2 215.6C237.5 215.6 231.5 217 226.4 222.5C221.3 228.1 207 241.5 207 268.8C207 296.1 226.9 322.5 229.6 326.2C232.4 329.9 268.7 385.9 324.4 410C359.6 425.2 373.4 426.5 391 423.9C401.7 422.3 423.8 410.5 428.4 397.5C433 384.5 433 373.4 431.6 371.1C430.3 368.6 426.6 367.2 421.1 364.5z"/></svg></a>
+</body>
+</html>

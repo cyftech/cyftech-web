@@ -38,7 +38,7 @@ REDIRECT = ('<script id="cyf-lang-redirect">try{var L=' + json.dumps(LANGS + ['t
             'if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];'
             'for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}'
             'if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();'
-            'location.replace(p.slice(0,p.length-f.length)+s+"/"+(f||"index.html")+location.search+location.hash)}}catch(e){}</script>')
+            'location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>')
 
 # strings that live inside inline scripts (the contact form's mail subject)
 SCRIPT_KEYS = ['Teklif talebi — ']
@@ -147,8 +147,9 @@ def extract(root):
         meta_content(tag, lambda n, v: add(v))
         return tag
 
+    from cleanurls import page_file  # after a full build the pages are .php
     for page in PAGES:
-        with open(os.path.join(root, page), encoding='utf-8') as f:
+        with open(page_file(root, page), encoding='utf-8') as f:
             walk(f.read(), add, on_tag)
     os.makedirs(DICT_DIR, exist_ok=True)
     with open(os.path.join(DICT_DIR, 'strings.json'), 'w', encoding='utf-8') as f:
