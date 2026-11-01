@@ -1,6 +1,6 @@
 import hashlib, json, math, os, re, runpy, sys
 OUT = sys.argv[1]
-VER = '20261031d'  # bump on every deploy so browsers fetch fresh css/js
+VER = '20261101a'  # bump on every deploy so browsers fetch fresh css/js
 SHOW_CD = False  # CD shelf (referanslar-cd.html) is parked: the page still builds, but nothing links to it
 
 TEL = '0543 791 10 61'
@@ -9,6 +9,25 @@ MAIL = 'info@cyftech.com.tr'
 WA = 'https://wa.me/905437911061'
 MAPS = 'https://maps.app.goo.gl/161gqpBeCkMonnv89'
 SITE = 'https://cyftech.com.tr'
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# fonts are self-hosted (assets/css/fonts.css, made from Google Fonts once); inlined so no extra render-blocking request
+with open(os.path.join(_ROOT, 'assets', 'css', 'fonts.css'), encoding='utf-8') as _f:
+    FONT_FACES = ''.join(l for l in _f.read().splitlines() if l.startswith('@font-face')).replace('../fonts/', '/assets/fonts/')
+FONT_PRELOAD = '\n'.join(f'<link rel="preload" href="/assets/fonts/{n}" as="font" type="font/woff2" crossorigin>' for n in ('SpaceGrotesk-latin.woff2', 'JetBrainsMono-latin.woff2'))
+# share images (og:image): tools/og.py renders assets/img/og/*.jpg; a post uses its own, every other page the default
+OG_DEFAULT = 'assets/img/og/cyftech.jpg'
+
+
+def _og_sizes():
+    from PIL import Image
+    out, d = {}, os.path.join(_ROOT, 'assets', 'img', 'og')
+    for n in os.listdir(d) if os.path.isdir(d) else []:
+        with Image.open(os.path.join(d, n)) as im:
+            out['assets/img/og/' + n] = im.size
+    return out
+
+
+OG_SIZE = _og_sizes()
 
 SERVICES = [
     ('web-cozumleri.html', 'Web Çözümleri', 'Web tasarım, yazılım, e-ticaret ve SEO — tek çatı altında.'),
@@ -241,7 +260,7 @@ def header(active, overlay=False, progress=False, fname='index.html'):
     mserv = ''.join(f'<a href="{h}"{cur(active, h)}>{icon(SERVICE_ICON[h])}{t}</a>' for h, t, _ in SERVICES)
     is_serv = active in [s[0] for s in SERVICES]
     return f'''<header class="site-head{' overlay' if overlay else ''}">
-  <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="index.html" aria-label="cyftech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Ana menü">
     <div class="nav-dd{' is-current' if is_serv else ''}">
       <button type="button" aria-haspopup="true">Hizmetler {I_CHEV}</button>
@@ -281,7 +300,7 @@ def footer():
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="index.html" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="index.html" aria-label="cyftech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
       </div>
       <div>
@@ -335,8 +354,10 @@ def iconize(html):
     return html
 
 
-def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class='', head='', og_type='website'):
-    fonts = 'family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700' + ('&amp;family=VT323' if vt323 else '') + '&amp;display=swap'
+def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress=False, vt323=False, wa=True, ambient=True, body_class='', head='', og_type='website', og_image=''):
+    gfonts = ('\n<link rel="preconnect" href="https://fonts.googleapis.com">\n<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
+              '\n<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&amp;display=swap">') if vt323 else ''
+    og_image = og_image or OG_DEFAULT
     css_tags = ''.join(f'\n<link rel="stylesheet" href="assets/css/{c}?v={VER}">' for c in ('site.css',) + tuple(css) + ('theme-light.css',))
     js_list = ('site.js',) + (('ambient.js',) if ambient else ()) + tuple(js)
     js_tags = ''.join(f'\n<script src="assets/js/{j}?v={VER}" defer></script>' for j in js_list)
@@ -357,12 +378,15 @@ def doc(fname, title, desc, body, active, css=(), js=(), overlay=False, progress
 <meta property="og:url" content="{SITE}/{fname}">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="{SITE}/{og_image}">
+<meta property="og:image:width" content="{OG_SIZE.get(og_image, (1200, 630))[0]}">
+<meta property="og:image:height" content="{OG_SIZE.get(og_image, (1200, 630))[1]}">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="{SITE}/{fname}">{head}
 <link rel="icon" type="image/png" href="assets/img/logo/ico.png">
 <script>try{{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}}catch(e){{}}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?{fonts}">{css_tags}{js_tags}
+{FONT_PRELOAD}
+<style>{FONT_FACES}</style>{gfonts}{css_tags}{js_tags}
 </head>
 <body{body_attr}>
 {BOOT}
@@ -514,7 +538,7 @@ def project_marquee():
     """Full-bleed, tilted, self-scrolling strip of the real project mockups (two copies for a seamless loop)."""
     items = ''.join(f'''<a class="mq-item" href="{ref_link(p)}"><img src="{p['img']}" alt="{p['ad']} web sitesi ekran görüntüsü" loading="lazy"><div class="mq-cap"><b>{p['ad']}</b><span>{p['sektor']}</span></div></a>''' for p in PROJECTS)
     return f'''<div class="marquee" aria-label="Tamamlanan projeler">
-  <div class="mq-tilt"><div class="marquee-track"><div class="mq-set">{items}</div><div class="mq-set" aria-hidden="true">{items}</div></div></div>
+  <div class="mq-tilt"><div class="marquee-track"><div class="mq-set">{items}</div><div class="mq-set" aria-hidden="true">{items.replace('<a class="mq-item"', '<a class="mq-item" tabindex="-1"')}</div></div></div>
 </div>'''
 
 
@@ -547,6 +571,21 @@ def chipset(items, kind='dot'):
         lead = icon(CHIP_ICON.get(b, 'check'))
         out.append(f'<div><div class="chip float">{lead}<div><b>{b}</b><small>{s}</small></div></div></div>')
     return '<div class="pc-chipset">' + ''.join(out) + '</div>'
+
+
+ORG_LD = {'@context': 'https://schema.org', '@type': 'Organization', '@id': f'{SITE}/#org', 'name': 'CYF Tech', 'url': f'{SITE}/index.html',
+          'logo': f'{SITE}/assets/img/logo/ico.png', 'image': f'{SITE}/{OG_DEFAULT}', 'email': MAIL, 'telephone': '+90 543 791 10 61',
+          'description': 'CYF Tech; web tasarım, web geliştirme, SEO ve e-ticaret çözümleriyle işletmenizi dijitalde büyütür. Manisa merkezli yazılım ve dijital çözümler.'}
+SITE_LD = {'@context': 'https://schema.org', '@type': 'WebSite', 'name': 'CYF Tech', 'url': f'{SITE}/index.html', 'inLanguage': 'tr', 'publisher': {'@id': f'{SITE}/#org'}}
+BIZ_LD = {'@context': 'https://schema.org', '@type': 'ProfessionalService', 'name': 'CYF Tech', 'url': f'{SITE}/index.html',
+          'image': f'{SITE}/{OG_DEFAULT}', 'logo': f'{SITE}/assets/img/logo/ico.png', 'email': MAIL, 'telephone': '+90 543 791 10 61',
+          'address': {'@type': 'PostalAddress', 'streetAddress': 'Yarhasanlar Mh. 2300 Sk. No:3 Daire:1', 'addressLocality': 'Şehzadeler',
+                      'addressRegion': 'Manisa', 'addressCountry': 'TR'},
+          'areaServed': 'TR', 'hasMap': MAPS}
+
+
+def ld(*items):
+    return ''.join('\n<script type="application/ld+json">' + json.dumps(i, ensure_ascii=False).replace('</', '<\\/') + '</script>' for i in items)
 
 
 def home():
@@ -635,7 +674,7 @@ def home():
 <div class="pc-counter" aria-hidden="true"><span class="accent" data-cur-num>00</span><span>/ 06</span><span class="bar"></span><span style="color:var(--text)" data-cur-name>Giriş</span></div>'''
     doc('index.html', 'CYF Tech — Yazılım ve Dijitalin Güvenilir Noktası',
         'CYF Tech; web tasarım, web geliştirme, SEO ve e-ticaret çözümleriyle işletmenizi dijitalde büyütür. Manisa merkezli yazılım ve dijital çözümler.',
-        body, 'home', css=('home.css',), js=('home.js',), overlay=True, progress=True, wa=False, ambient=False, body_class='home')
+        body, 'home', css=('home.css',), js=('home.js',), overlay=True, progress=True, wa=False, ambient=False, body_class='home', head=ld(ORG_LD, SITE_LD))
 
 
 # ------------------------------------------------------------------ services
@@ -891,7 +930,7 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
 </script>'''
     doc('iletisim.html', 'İletişim — CYF Tech',
         'CYF Tech ile iletişime geçin: 0543 791 10 61 · info@cyftech.com.tr · Yarhasanlar Mh. 2300 Sk. No:3, Şehzadeler / Manisa.',
-        body, 'iletisim', css=('iletisim.css',))
+        body, 'iletisim', css=('iletisim.css',), head=ld(BIZ_LD))
 
 
 # ------------------------------------------------------------------ projects
@@ -1331,13 +1370,18 @@ def related(post, n=5):
     return ([p for p in rest if p['kat'] == post['kat']] + [p for p in rest if p['kat'] != post['kat']])[:n]
 
 
+def post_og(post):
+    slug = post['href'][:-5]
+    return f'assets/img/og/{slug}.jpg' if f'assets/img/og/{slug}.jpg' in OG_SIZE else OG_DEFAULT
+
+
 def post_ld(post, desc, faq=()):
     # structured data: BlogPosting (+ FAQPage, + breadcrumbs). i18n.py translates the text fields and rewrites the URLs.
     _, _, _, iso = post_date(post)
     url = f"{SITE}/{post['href']}"
     org = {'@type': 'Organization', 'name': 'CYF Tech', 'url': SITE + '/', 'logo': {'@type': 'ImageObject', 'url': f'{SITE}/assets/img/logo/ico.png'}}
     items = [{'@context': 'https://schema.org', '@type': 'BlogPosting', 'headline': post['title'], 'description': desc,
-              'image': f"{SITE}/{post['img']}", 'datePublished': iso, 'dateModified': iso, 'inLanguage': 'tr',
+              'image': f"{SITE}/{post_og(post)}", 'datePublished': iso, 'dateModified': iso, 'inLanguage': 'tr',
               'mainEntityOfPage': url, 'url': url, 'author': org, 'publisher': org},
              {'@context': 'https://schema.org', '@type': 'BreadcrumbList', 'itemListElement': [
                  {'@type': 'ListItem', 'position': 1, 'name': 'CYF Tech', 'item': f'{SITE}/index.html'},
@@ -1391,7 +1435,7 @@ def post_page(post, crumb, h1, img_alt, article, aside_box, desc, faq=()):
 </section>
 
 {cta(dark=True)}'''
-    doc(post['href'], f"{post['title']} — CYF Tech Blog", desc, body, 'blog', css=('blog.css',), head=post_ld(post, desc, faq), og_type='article')
+    doc(post['href'], post['title'], desc, body, 'blog', css=('blog.css',), head=post_ld(post, desc, faq), og_type='article', og_image=post_og(post))
 
 
 def blog_inside():

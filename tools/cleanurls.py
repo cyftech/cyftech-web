@@ -31,6 +31,13 @@ Options -MultiViews -Indexes
 AddDefaultCharset UTF-8
 RewriteEngine On
 
+# one address: https, without www (local test hosts are left alone)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteCond %{HTTP_HOST} !^(localhost|127\.0\.0\.1)(:\d+)?$ [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^ https://%1%{REQUEST_URI} [R=301,L,NE]
+
 # build sources, dot-folders (.git) and the page files themselves are not public addresses
 RewriteRule ^tools(/|$) - [F,L]
 RewriteRule (^|/)\.(?!well-known/) - [F,L]
@@ -61,6 +68,39 @@ RewriteCond %{DOCUMENT_ROOT}/pages/tr/$1.php -f
 RewriteRule ^([\w-]+)$ pages/tr/$1.php [L]
 RewriteCond %{DOCUMENT_ROOT}/pages/tr/blog/$1.php -f
 RewriteRule ^([\w-]+)$ pages/tr/blog/$1.php [L]
+
+<IfModule mod_headers.c>
+  Header always set Strict-Transport-Security "max-age=31536000"
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # css/js are loaded with ?v=<build>, fonts never change: cache for a year
+  <FilesMatch "\.(css|js|woff2)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(webp|png|jpe?g|svg|ico|mp4|webm)$">
+    Header set Cache-Control "public, max-age=2592000"
+  </FilesMatch>
+</IfModule>
+'''
+
+# Turkish pages: a first-time visitor goes to their browser's language (Accept-Language; unsupported languages -> en);
+# a pick from the language menu (cookie cyf-lang, set by site.js) wins; crawlers and link previews are never redirected.
+LANG_REDIRECT = r'''<?php
+header('Vary: Accept-Language, Cookie');
+$L = ['en', 'de', 'ar', 'zh', 'ru']; $c = $_COOKIE['cyf-lang'] ?? ''; $al = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? ''; $to = '';
+if (in_array($c, $L, true)) $to = $c;
+elseif ($c === '' && $al !== '') {
+  $to = 'en';
+  foreach (explode(',', $al) as $x) { $x = strtolower(substr(trim($x), 0, 2)); if ($x === 'tr') { $to = ''; break; } if (in_array($x, $L, true)) { $to = $x; break; } }
+}
+if ($to !== '' && !preg_match('/bot|crawl|spider|slurp|lighthouse|preview|facebookexternalhit|whatsapp|telegram|slack|discord/i', $_SERVER['HTTP_USER_AGENT'] ?? '')
+    && is_file(str_replace(DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'tr' . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . $to . DIRECTORY_SEPARATOR, __FILE__))) {
+  $n = basename(__FILE__, '.php'); $q = $_SERVER['QUERY_STRING'] ?? '';
+  header('Location: /' . $to . '/' . ($n === 'index' ? '' : $n) . ($q !== '' ? '?' . $q : ''), true, 302);
+  exit;
+}
+?>
 '''
 
 
@@ -104,7 +144,7 @@ def convert(root):
             dst_dir = os.path.join(out, lang, sub)
             os.makedirs(dst_dir, exist_ok=True)
             with open(os.path.join(dst_dir, name[:-5] + '.php'), 'w', encoding='utf-8', newline='\n') as f:
-                f.write(clean(html))
+                f.write((LANG_REDIRECT if lang == 'tr' else '') + clean(html))
             os.remove(src)
             n += 1
         if lang != 'tr' and not os.listdir(src_dir):

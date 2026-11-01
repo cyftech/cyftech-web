@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>以转化为导向的网站设计：把访客变成客户的原则 — CYF Tech 博客</title>
+<title>以转化为导向的网站设计：把访客变成客户的原则</title>
 <meta name="description" content="什么是以转化为导向的网站设计？了解首屏、CTA、表单设计、信任元素、速度和 A/B 测试等把访客变成客户的 UX 原则。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="以转化为导向的网站设计：把访客变成客户的原则 — CYF Tech 博客">
+<meta property="og:title" content="以转化为导向的网站设计：把访客变成客户的原则">
 <meta property="og:description" content="什么是以转化为导向的网站设计？了解首屏、CTA、表单设计、信任元素、速度和 A/B 测试等把访客变成客户的 UX 原则。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/donusum-odakli-web-tasarim">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/donusum-odakli-web-tasarim.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/donusum-odakli-web-tasarim">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "以转化为导向的网站设计：把访客变成客户的原则", "description": "什么是以转化为导向的网站设计？了解首屏、CTA、表单设计、信任元素、速度和 A/B 测试等把访客变成客户的 UX 原则。", "image": "https://cyftech.com.tr/assets/img/blog/donusum-odakli-web-tasarim.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/donusum-odakli-web-tasarim", "url": "https://cyftech.com.tr/zh/donusum-odakli-web-tasarim", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "以转化为导向的网站设计：把访客变成客户的原则", "description": "什么是以转化为导向的网站设计？了解首屏、CTA、表单设计、信任元素、速度和 A/B 测试等把访客变成客户的 UX 原则。", "image": "https://cyftech.com.tr/assets/img/og/donusum-odakli-web-tasarim.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/donusum-odakli-web-tasarim", "url": "https://cyftech.com.tr/zh/donusum-odakli-web-tasarim", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "以转化为导向的网站设计：把访客变成客户的原则", "item": "https://cyftech.com.tr/zh/donusum-odakli-web-tasarim"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "什么是以转化为导向的网站设计？", "acceptedAnswer": {"@type": "Answer", "text": "这是一种设计方法，旨在让访客更轻松地在网站上完成特定行动，例如询价、购买或拨打电话。页面布局、文案、按钮、表单和速度都围绕这一目标来设计，并通过数据衡量结果、持续改进。"}}, {"@type": "Question", "name": "多高的转化率算好？", "acceptedAnswer": {"@type": "Answer", "text": "没有放之四海而皆准的数值。行业、产品价格、流量来源和目标行动不同，转化率差异很大。最合理的比较，是与您网站以往的表现对比。"}}, {"@type": "Question", "name": "如何提高网站的转化率？", "acceptedAnswer": {"@type": "Answer", "text": "首先在分析工具中开始追踪目标。然后让首屏更清晰，使用一个明确的行动号召，缩短表单，让信任元素清晰可见，并提升页面速度。逐项测试改动，看看哪一项真正有效。"}}, {"@type": "Question", "name": "UX 与转化率之间有什么关系？", "acceptedAnswer": {"@type": "Answer", "text": "用户体验决定了访客能多轻松地找到所需内容、多顺畅地完成操作。令人困惑的菜单、冗长的表单和缓慢的页面都会制造摩擦；摩擦越少，转化通常越高。"}}, {"@type": "Question", "name": "A/B 测试对小网站有意义吗？", "acceptedAnswer": {"@type": "Answer", "text": "低流量网站要获得具有统计意义的结果需要很长时间。这种情况下，先落实公认的最佳实践，通过用户访谈和会话录屏发现问题会更高效；等流量增长后再引入 A/B 测试。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/donusum-odakli-web-tasarim">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/donusum-odakli-web-tasarim">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/donusum-odakli-web-tasarim">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -312,7 +316,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

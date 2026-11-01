@@ -1,32 +1,50 @@
+<?php
+header('Vary: Accept-Language, Cookie');
+$L = ['en', 'de', 'ar', 'zh', 'ru']; $c = $_COOKIE['cyf-lang'] ?? ''; $al = $_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? ''; $to = '';
+if (in_array($c, $L, true)) $to = $c;
+elseif ($c === '' && $al !== '') {
+  $to = 'en';
+  foreach (explode(',', $al) as $x) { $x = strtolower(substr(trim($x), 0, 2)); if ($x === 'tr') { $to = ''; break; } if (in_array($x, $L, true)) { $to = $x; break; } }
+}
+if ($to !== '' && !preg_match('/bot|crawl|spider|slurp|lighthouse|preview|facebookexternalhit|whatsapp|telegram|slack|discord/i', $_SERVER['HTTP_USER_AGENT'] ?? '')
+    && is_file(str_replace(DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . 'tr' . DIRECTORY_SEPARATOR, DIRECTORY_SEPARATOR . 'pages' . DIRECTORY_SEPARATOR . $to . DIRECTORY_SEPARATOR, __FILE__))) {
+  $n = basename(__FILE__, '.php'); $q = $_SERVER['QUERY_STRING'] ?? '';
+  header('Location: /' . $to . '/' . ($n === 'index' ? '' : $n) . ($q !== '' ? '?' . $q : ''), true, 302);
+  exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
-<script id="cyf-lang-redirect">try{var L=["en", "de", "ar", "zh", "ru", "tr"],s=localStorage.getItem("cyf-lang");if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza — CYF Tech Blog</title>
+<title>KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza</title>
 <meta name="description" content="KVKK uyumlu web sitesi için aydınlatma metni, çerez politikası, açık rıza, form tasarımı ve VERBİS adımları; KVKK’nın 2025 çerez rehberine göre kontrol listesi.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza — CYF Tech Blog">
+<meta property="og:title" content="KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza">
 <meta property="og:description" content="KVKK uyumlu web sitesi için aydınlatma metni, çerez politikası, açık rıza, form tasarımı ve VERBİS adımları; KVKK’nın 2025 çerez rehberine göre kontrol listesi.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/kvkk-uyumlu-web-sitesi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="tr_TR">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/kvkk-uyumlu-web-sitesi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/kvkk-uyumlu-web-sitesi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza", "description": "KVKK uyumlu web sitesi için aydınlatma metni, çerez politikası, açık rıza, form tasarımı ve VERBİS adımları; KVKK’nın 2025 çerez rehberine göre kontrol listesi.", "image": "https://cyftech.com.tr/assets/img/blog/kvkk-uyumlu-web-sitesi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "tr", "mainEntityOfPage": "https://cyftech.com.tr/kvkk-uyumlu-web-sitesi", "url": "https://cyftech.com.tr/kvkk-uyumlu-web-sitesi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza", "description": "KVKK uyumlu web sitesi için aydınlatma metni, çerez politikası, açık rıza, form tasarımı ve VERBİS adımları; KVKK’nın 2025 çerez rehberine göre kontrol listesi.", "image": "https://cyftech.com.tr/assets/img/og/kvkk-uyumlu-web-sitesi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "tr", "mainEntityOfPage": "https://cyftech.com.tr/kvkk-uyumlu-web-sitesi", "url": "https://cyftech.com.tr/kvkk-uyumlu-web-sitesi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/blog"}, {"@type": "ListItem", "position": 3, "name": "KVKK Uyumlu Web Sitesi: Aydınlatma Metni, Çerez ve Açık Rıza", "item": "https://cyftech.com.tr/kvkk-uyumlu-web-sitesi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "tr", "mainEntity": [{"@type": "Question", "name": "Küçük bir işletmenin web sitesi için KVKK zorunlu mu?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. KVKK, kişisel veri işleyen tüm gerçek ve tüzel kişiler için geçerlidir. Küçük işletmeler VERBİS kaydından muaf olabilir, ancak aydınlatma, veri güvenliği ve ilgili kişi başvurularına yanıt verme yükümlülükleri devam eder."}}, {"@type": "Question", "name": "İletişim formu için açık rıza almak gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Genellikle hayır. Talebe dönüş yapmak için veri işlemek çoğu zaman sözleşmenin kurulmasına hazırlık veya meşru menfaat kapsamında değerlendirilir; aydınlatma metni yeterlidir. Pazarlama amaçlı iletişim içinse ayrı ve isteğe bağlı bir onay gerekir."}}, {"@type": "Question", "name": "Google Analytics kullanmak için çerez onayı gerekir mi?", "acceptedAnswer": {"@type": "Answer", "text": "KVKK’nın çerez rehberi, yalnızca sitenin işleyişini ölçmeye yönelik, verisi azaltılmış ve çapraz takip yapmayan birinci taraf analitiği açık rıza dışındaki şartlar kapsamında değerlendirebiliyor. Reklam özellikleri, yeniden pazarlama veya üçüncü taraf takip içeren kurulumlarda ise açık rıza alınması gerekir."}}, {"@type": "Question", "name": "Çerez bandında Reddet butonu olmak zorunda mı?", "acceptedAnswer": {"@type": "Answer", "text": "Kurum’un 2025 rehberi, Kabul et, Reddet ve Tercihler butonlarının eşit büyüklük, renk ve puntoda sunulmasını iyi uygulama örneği olarak gösteriyor. Reddetmenin kabul etmek kadar kolay olması, rızanın özgür iradeye dayandığını göstermenin en güvenli yoludur."}}, {"@type": "Question", "name": "KVKK aydınlatma metni hazır şablondan kopyalanabilir mi?", "acceptedAnswer": {"@type": "Answer", "text": "Önerilmez. Aydınlatma metni, sizin gerçekte hangi veriyi hangi amaçla ve hangi servislerle işlediğinizi anlatmalıdır. Başka bir şirketin metnini kopyalamak, gerçeği yansıtmayan ve yanıltıcı bir bilgilendirmeye yol açabilir."}}]}</script>
 <link rel="icon" type="image/png" href="assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="assets/css/theme-light.css?v=20261031d">
-<script src="assets/js/site.js?v=20261031d" defer></script>
-<script src="assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="assets/css/theme-light.css?v=20261101a">
+<script src="assets/js/site.js?v=20261101a" defer></script>
+<script src="assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/kvkk-uyumlu-web-sitesi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/kvkk-uyumlu-web-sitesi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/kvkk-uyumlu-web-sitesi">
@@ -119,7 +137,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">İçeriğe geç</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Ana menü">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Hizmetler <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -294,7 +312,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech ana sayfa" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Dijitalin güvenilir noktası. Web tasarım, yazılım geliştirme ve dijital çözümler.</p>
       </div>
       <div>

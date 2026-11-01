@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<style>
+@font-face{font-family:'Space Grotesk';font-weight:400 700;src:url(../../assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Space Grotesk';font-weight:400 700;src:url(../../assets/fonts/SpaceGrotesk-latin.woff2) format('woff2')}
+@font-face{font-family:'JetBrains Mono';font-weight:400 700;src:url(../../assets/fonts/JetBrainsMono-latin.woff2) format('woff2')}
+html,body{margin:0;width:1200px;height:630px;overflow:hidden;background:#040814}
+body{position:relative;font-family:'Space Grotesk',sans-serif;color:#E6EDF3}
+.glow{position:absolute;inset:0;background:radial-gradient(55% 70% at 78% 45%,rgba(56,189,248,.22),rgba(56,189,248,0) 70%)}
+.floor{position:absolute;left:-20%;right:-20%;bottom:0;height:52%;perspective:520px;overflow:hidden;-webkit-mask-image:linear-gradient(0deg,#000 10%,transparent)}
+.floor>div{position:absolute;inset:-80px 0 0;transform:rotateX(70deg);transform-origin:50% 100%;background-image:linear-gradient(rgba(56,189,248,.28) 1px,transparent 1px),linear-gradient(90deg,rgba(56,189,248,.28) 1px,transparent 1px);background-size:64px 64px}
+.mark{position:absolute;right:96px;top:150px;font:700 190px/1 'JetBrains Mono',monospace;color:#38BDF8;text-shadow:0 0 60px rgba(56,189,248,.55);letter-spacing:-.04em}
+.ring{position:absolute;right:40px;top:230px;width:470px;height:90px;border:2px solid rgba(56,189,248,.45);border-radius:50%;transform:rotate(-8deg)}
+.txt{position:absolute;left:84px;top:96px;width:620px;display:flex;flex-direction:column;gap:26px}
+.eyebrow{font:500 20px 'JetBrains Mono',monospace;letter-spacing:.12em;color:#38BDF8}
+.logo{font-weight:700;font-size:64px;letter-spacing:-.03em}
+.logo span{color:#38BDF8}
+h1{margin:0;font-weight:600;font-size:58px;line-height:1.05;letter-spacing:-.03em}
+h1 b{font-weight:600;color:#38BDF8}
+.url{position:absolute;left:84px;bottom:64px;font:500 22px 'JetBrains Mono',monospace;color:#8B9AB3;letter-spacing:.04em}
+</style>
+</head>
+<body>
+<div class="glow"></div>
+<div class="floor"><div></div></div>
+<div class="ring"></div>
+<div class="mark">&lt;/&gt;</div>
+<div class="txt">
+  <div class="logo">cyf<span>tech</span></div>
+  <h1>Yazılım ve dijitalin güvenilir <b>noktası.</b></h1>
+  <div class="eyebrow">WEB · MASAÜSTÜ · MOBİL · SEO</div>
+</div>
+<div class="url">cyftech.com.tr</div>
+</body>
+</html>

@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>桌面应用还是 Web 应用？做出正确选择的指南 — CYF Tech 博客</title>
+<title>桌面应用还是 Web 应用？做出正确选择的指南</title>
 <meta name="description" content="桌面应用还是 Web 应用？从离线运行、硬件访问、安全、成本和维护等方面进行比较，为企业提供决策指南。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="桌面应用还是 Web 应用？做出正确选择的指南 — CYF Tech 博客">
+<meta property="og:title" content="桌面应用还是 Web 应用？做出正确选择的指南">
 <meta property="og:description" content="桌面应用还是 Web 应用？从离线运行、硬件访问、安全、成本和维护等方面进行比较，为企业提供决策指南。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/masaustu-mu-web-uygulamasi-mi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "桌面应用还是 Web 应用？做出正确选择的指南", "description": "桌面应用还是 Web 应用？从离线运行、硬件访问、安全、成本和维护等方面进行比较，为企业提供决策指南。", "image": "https://cyftech.com.tr/assets/img/blog/masaustu-mu-web-uygulamasi-mi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi", "url": "https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "桌面应用还是 Web 应用？做出正确选择的指南", "description": "桌面应用还是 Web 应用？从离线运行、硬件访问、安全、成本和维护等方面进行比较，为企业提供决策指南。", "image": "https://cyftech.com.tr/assets/img/og/masaustu-mu-web-uygulamasi-mi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi", "url": "https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "桌面应用还是 Web 应用？做出正确选择的指南", "item": "https://cyftech.com.tr/zh/masaustu-mu-web-uygulamasi-mi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "Web 应用能在没有网络的情况下运行吗？", "acceptedAnswer": {"@type": "Answer", "text": "传统 Web 应用需要网络连接。而以 PWA 形式开发的 Web 应用可以缓存部分数据，实现有限的离线运行，并在恢复连接后同步数据。如果需要完整、长时间的离线运行，桌面应用是更稳妥的选择。"}}, {"@type": "Question", "name": "桌面应用和 Web 应用，哪个更安全？", "acceptedAnswer": {"@type": "Answer", "text": "两者都不是天生更安全。Web 应用对互联网开放，需要强身份验证和定期更新；桌面应用则面临本地数据备份、设备丢失和未更新安装等风险。安全取决于架构和维护。"}}, {"@type": "Question", "name": "我能把桌面程序改造成 Web 应用吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，但这通常意味着重新开发。业务规则和数据结构可以保留，界面和基础架构则需要为 Web 重新设计。在过渡期间，让两套系统并行运行一段时间，并谨慎迁移数据，这一点很重要。"}}, {"@type": "Question", "name": "开发 Web 应用比桌面应用更便宜吗？", "acceptedAnswer": {"@type": "Answer", "text": "如果面向多个平台和大量用户，Web 的总成本通常更低，因为一套代码就能在所有设备上运行，也无需分发更新。而对于只在单一操作系统上运行、以硬件为主的业务，桌面应用可能更经济。"}}, {"@type": "Question", "name": "Web 应用能在我们自己的服务器上运行吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。Web 应用既可以托管在云服务器上，也可以部署在贵公司自己的服务器上，仅供内网访问。在数据不得离开企业的情况下，这种模式既保留了 Web 在安装和更新上的便利，又把数据留在公司内部。"}}, {"@type": "Question", "name": "用 Electron 开发的应用算桌面应用吗？", "acceptedAnswer": {"@type": "Answer", "text": "算。Electron 应用是安装在电脑上、可以访问操作系统的真正桌面应用；只是其界面用 Web 技术编写。这样便于与 Web 应用共享代码，但体积和内存占用高于原生应用。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/masaustu-mu-web-uygulamasi-mi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/masaustu-mu-web-uygulamasi-mi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/masaustu-mu-web-uygulamasi-mi">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -295,7 +299,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

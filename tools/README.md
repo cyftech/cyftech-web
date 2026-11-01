@@ -23,6 +23,19 @@ Sunucuda Apache + `mod_rewrite` + PHP gerekir (GitHub Pages PHP çalıştırmaz)
 
     docker run --rm -p 8766:80 -v "$PWD:/var/www/html:ro" php:8.3-apache bash -c "a2enmod rewrite && sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf && apache2-foreground"
 
+`.htaccess` ayrıca http → https ve www → www'suz 301 yönlendirmesini, güvenlik başlıklarını (HSTS, nosniff, Referrer-Policy) ve
+önbellek sürelerini (css/js/font 1 yıl, görseller 30 gün) içerir. Türkçe sayfaların başındaki PHP kodu ilk kez gelen ziyaretçiyi
+tarayıcı diline (`Accept-Language`) yönlendirir; menüden dil seçilince `site.js` bunu `cyf-lang` çerezine yazar ve o geçerli olur.
+Botlar ve bağlantı önizlemeleri yönlendirilmez.
+
+## Fontlar ve paylaşım görselleri
+
+- Space Grotesk ve JetBrains Mono sitenin kendi sunucusundan gelir (`assets/fonts/*.woff2`, tanımlar `assets/css/fonts.css`);
+  build `@font-face`'leri her sayfanın `<head>`'ine gömer. Google Fonts yalnızca ar/zh/ru yazı tipleri ve CD rafındaki VT323 için kullanılır.
+- Paylaşım görselleri (`og:image`) `assets/img/og/` altındadır: `cyftech.jpg` tüm sayfalar, `<slug>.jpg` blog yazıları için.
+  Yeni yazı ekleyince veya kapak değişince `python tools/og.py` çalıştırın (Chrome gerekir), sonra build alın. Varsayılan görselin
+  tasarımı `tools/og/default.html`.
+
 Kaynakta (build.py, yazı dosyaları) bağlantılar hâlâ `sayfa.html` diye yazılır; dönüşüm bunu kendisi yapar.
 
 ## Diller
@@ -54,3 +67,10 @@ Her build `sitemap.xml` (tüm diller, hreflang ile) ve `robots.txt` dosyaların�
 - Gece / gündüz teması: `assets/css/theme-light.css` (`<html data-theme="light">`). Ziyaretçi butona basana kadar sistemin açık/koyu ayarını izler; basınca seçimi tarayıcıda saklanır.
 - Açılış animasyonu: oturumun ilk sayfasında `BOOT` ekranı (`build.py`, stili `site.css` sonunda) ~4 sn oynar: noktalar `</>` logosunu oluşturur, isim çözülür, logo bir tur döner, sayfa logonun merkezinden açılır; tıklama/tuş ile geçilir, "hareketi azalt" ayarında hiç gösterilmez.
 - CD rafı (`/referanslar-cd`) şimdilik gizli: `build.py` içindeki `SHOW_CD = True` yapılınca bağlantılar geri gelir.
+
+## Yayın (Hostlab)
+
+`main`'e her push'ta `.github/workflows/deploy.yml` siteyi FTPS ile Hostlab'a yükler (yalnızca değişen dosyalar; `tools/`,
+`.github/`, `CNAME` gitmez). Build sunucuda değil yerelde alınır: önce `python tools/build.py .`, sonra commit + push.
+Gerekenler: repo secret'ları `FTP_SERVER`, `FTP_USERNAME`, `FTP_PASSWORD`; FTP hesabının dizini `public_html` olmalı.
+Elle tetiklemek için: GitHub → Actions → "Hostlab'a yayınla" → Run workflow.

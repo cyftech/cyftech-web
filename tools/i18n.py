@@ -32,13 +32,7 @@ FONTS = {
     'zh': ('Noto+Sans+SC:wght@400;500;600;700', "'Noto Sans SC'"),
     'ru': ('Inter:wght@400;500;600;700', "'Inter'"),
 }
-# Turkish root pages only: send a first-time visitor to their browser's language (or to the one they picked from the
-# menu earlier, which site.js stores as cyf-lang). Unsupported languages go to English; crawlers are never redirected.
-REDIRECT = ('<script id="cyf-lang-redirect">try{var L=' + json.dumps(LANGS + ['tr']) + ',s=localStorage.getItem("cyf-lang");'
-            'if(!s&&!/bot|crawl|spider|slurp|lighthouse/i.test(navigator.userAgent)){var ls=navigator.languages||[navigator.language||""];'
-            'for(var i=0;i<ls.length&&!s;i++){var c=(ls[i]||"").slice(0,2).toLowerCase();if(L.indexOf(c)>-1)s=c}s=s||"en"}'
-            'if(s&&s!=="tr"&&L.indexOf(s)>-1){var p=location.pathname,f=p.split("/").pop();'
-            'location.replace(p.slice(0,p.length-f.length)+s+"/"+f+location.search+location.hash)}}catch(e){}</script>')
+# The language redirect for first-time visitors runs on the server: tools/cleanurls.py LANG_REDIRECT.
 
 # strings that live inside inline scripts (the contact form's mail subject)
 SCRIPT_KEYS = ['Teklif talebi — ']
@@ -286,7 +280,6 @@ def build(root):
             html = f.read()
         if 'hreflang="x-default"' not in html:
             html = mark_current(html, 'tr').replace('</head>', alternates(page) + '\n</head>', 1)
-            html = html.replace('<meta name="viewport"', REDIRECT + '\n<meta name="viewport"', 1)
             with open(p, 'w', encoding='utf-8', newline='\n') as f:
                 f.write(html)
 

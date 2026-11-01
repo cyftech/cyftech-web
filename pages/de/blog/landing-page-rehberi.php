@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung – CYF Tech Blog</title>
+<title>Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung</title>
 <meta name="description" content="Was ist eine Landingpage und wie erstellt man sie? Ein Schritt-für-Schritt-Leitfaden zu Arten, unverzichtbaren Elementen, Google-Ads-Abstimmung, SEO, A/B-Tests und häufigen Fehlern.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung – CYF Tech Blog">
+<meta property="og:title" content="Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung">
 <meta property="og:description" content="Was ist eine Landingpage und wie erstellt man sie? Ein Schritt-für-Schritt-Leitfaden zu Arten, unverzichtbaren Elementen, Google-Ads-Abstimmung, SEO, A/B-Tests und häufigen Fehlern.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/de/landing-page-rehberi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/landing-page-rehberi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/de/landing-page-rehberi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung", "description": "Was ist eine Landingpage und wie erstellt man sie? Ein Schritt-für-Schritt-Leitfaden zu Arten, unverzichtbaren Elementen, Google-Ads-Abstimmung, SEO, A/B-Tests und häufigen Fehlern.", "image": "https://cyftech.com.tr/assets/img/blog/landing-page-rehberi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/landing-page-rehberi", "url": "https://cyftech.com.tr/de/landing-page-rehberi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung", "description": "Was ist eine Landingpage und wie erstellt man sie? Ein Schritt-für-Schritt-Leitfaden zu Arten, unverzichtbaren Elementen, Google-Ads-Abstimmung, SEO, A/B-Tests und häufigen Fehlern.", "image": "https://cyftech.com.tr/assets/img/og/landing-page-rehberi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/landing-page-rehberi", "url": "https://cyftech.com.tr/de/landing-page-rehberi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/de/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/de/blog"}, {"@type": "ListItem", "position": 3, "name": "Was ist eine Landingpage und wie erstellt man sie? Schritt-für-Schritt-Anleitung", "item": "https://cyftech.com.tr/de/landing-page-rehberi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Was ist der Unterschied zwischen Landingpage und Website?", "acceptedAnswer": {"@type": "Answer", "text": "Eine Website ist eine mehrseitige Struktur, die Ihr Unternehmen und alle Ihre Leistungen vorstellt. Eine Landingpage ist eine Seite für eine bestimmte Kampagne oder ein bestimmtes Angebot, die sich auf ein einziges Ziel konzentriert und den Besucher zu einer einzigen Aktion führt. Die Landingpage befindet sich meist innerhalb Ihrer Website."}}, {"@type": "Question", "name": "Wie lang sollte eine Landingpage sein?", "acceptedAnswer": {"@type": "Answer", "text": "Das hängt von Komplexität und Preis des Angebots ab. Für ein kostenloses E-Book oder eine einfache Anmeldung reicht eine kurze Seite, bei teuren, wohlüberlegten Leistungen bringt eine längere Seite, die Einwände beantwortet, meist bessere Ergebnisse. Die genaueste Antwort liefert ein Test."}}, {"@type": "Question", "name": "Trägt eine Landingpage zu SEO bei?", "acceptedAnswer": {"@type": "Answer", "text": "Eine Landingpage, die das Thema umfassend behandelt und für Nutzer wirklich hilfreich ist, kann auch organisch ranken. Werbeseiten, die nur aus Formular und kurzer Überschrift bestehen, sowie mit nahezu identischem Inhalt vervielfältigte Seiten sind in der organischen Suche dagegen meist nicht erfolgreich."}}, {"@type": "Question", "name": "Mit welchen Tools erstellt man eine Landingpage?", "acceptedAnswer": {"@type": "Answer", "text": "Infrage kommen fertige Drag-and-Drop-Landingpage-Tools, Content-Management-Systeme wie WordPress oder eigens für Ihre Website programmierte Seiten. Für schnelle Tests sind fertige Tools praktisch; bei langfristigen Kampagnen sind Seiten auf Ihrer eigenen Website hinsichtlich Geschwindigkeit, Messung und Markenkonsistenz im Vorteil."}}, {"@type": "Question", "name": "Braucht jede Anzeige eine eigene Landingpage?", "acceptedAnswer": {"@type": "Answer", "text": "Nicht jede Anzeige, aber für jedes unterschiedliche Angebot, jede Leistung oder Suchabsicht empfiehlt sich eine eigene Landingpage. So stimmen die Botschaft der Anzeige und die der Seite exakt überein, was sowohl die Conversion-Rate als auch die Landingpage-Erfahrung in Google Ads positiv beeinflusst."}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/landing-page-rehberi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/landing-page-rehberi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/landing-page-rehberi">
@@ -119,7 +123,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">Zum Inhalt springen</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Hauptmenü">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Leistungen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -312,7 +316,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Ihr verlässlicher digitaler Partner. Webdesign, Softwareentwicklung und digitale Lösungen.</p>
       </div>
       <div>

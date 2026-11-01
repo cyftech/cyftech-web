@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit — CYF Tech Blog</title>
+<title>Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit</title>
 <meta name="description" content="Technische SEO-Checkliste: Leitfaden 2026 mit 30 Punkten zu robots.txt, Sitemap, Canonical, Core Web Vitals, Mobile-First-Index, hreflang und strukturierten Daten.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit — CYF Tech Blog">
+<meta property="og:title" content="Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit">
 <meta property="og:description" content="Technische SEO-Checkliste: Leitfaden 2026 mit 30 Punkten zu robots.txt, Sitemap, Canonical, Core Web Vitals, Mobile-First-Index, hreflang und strukturierten Daten.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/de/teknik-seo-kontrol-listesi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="de_DE">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/teknik-seo-kontrol-listesi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/de/teknik-seo-kontrol-listesi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Technische SEO-Checkliste 2026: 30 Punkte für Ihr Website-Audit", "description": "Technische SEO-Checkliste: Leitfaden 2026 mit 30 Punkten zu robots.txt, Sitemap, Canonical, Core Web Vitals, Mobile-First-Index, hreflang und strukturierten Daten.", "image": "https://cyftech.com.tr/assets/img/blog/teknik-seo-kontrol-listesi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi", "url": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/de/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/de/blog"}, {"@type": "ListItem", "position": 3, "name": "Technische SEO-Checkliste 2026: 30 Punkte für Ihr Website-Audit", "item": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit", "description": "Technische SEO-Checkliste: Leitfaden 2026 mit 30 Punkten zu robots.txt, Sitemap, Canonical, Core Web Vitals, Mobile-First-Index, hreflang und strukturierten Daten.", "image": "https://cyftech.com.tr/assets/img/og/teknik-seo-kontrol-listesi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "de", "mainEntityOfPage": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi", "url": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/de/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/de/blog"}, {"@type": "ListItem", "position": 3, "name": "Technische SEO-Checkliste 2026: 30 Punkte für den Website-Audit", "item": "https://cyftech.com.tr/de/teknik-seo-kontrol-listesi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Was ist technisches SEO?", "acceptedAnswer": {"@type": "Answer", "text": "Technisches SEO umfasst Maßnahmen an der Infrastruktur, damit Suchmaschinen eine Website problemlos crawlen, verstehen und indexieren können. Dazu gehören robots.txt, Sitemap, Canonical-Tags, Weiterleitungen, HTTPS, Mobilfreundlichkeit, Ladezeit und strukturierte Daten."}}, {"@type": "Question", "name": "Wie oft sollte ein technisches SEO-Audit stattfinden?", "acceptedAnswer": {"@type": "Answer", "text": "Bei kleinen, selten geänderten Websites genügen eine allgemeine Prüfung alle paar Monate und das regelmäßige Verfolgen der Search-Console-Warnungen. Vor und unmittelbar nach einem Website-Umzug, Redesign, Domainwechsel oder großen Software-Update sollte jedoch unbedingt ein ausführliches Audit erfolgen."}}, {"@type": "Question", "name": "Warum erscheint meine Seite nicht bei Google?", "acceptedAnswer": {"@type": "Answer", "text": "Die häufigsten Gründe: Die Seite trägt ein noindex-Tag, ist per robots.txt gesperrt, erhält von keiner Seite Links, wegen doppelter Inhalte wurde eine andere Adresse als Canonical gewählt, oder sie wurde noch nicht gecrawlt. Das URL-Prüftool in der Search Console zeigt den Grund meist recht genau."}}, {"@type": "Question", "name": "Was ist der Unterschied zwischen robots.txt und noindex?", "acceptedAnswer": {"@type": "Answer", "text": "robots.txt verhindert, dass Google eine Seite crawlt; erhält die Seite jedoch Links von anderswo, kann sie ohne Inhalt im Index erscheinen. noindex dagegen erlaubt das Crawling und teilt mit, dass die Seite nicht in den Suchergebnissen erscheinen soll. Um eine Seite aus den Ergebnissen zu entfernen, sollte noindex verwendet und die Seite nicht per robots.txt gesperrt werden."}}, {"@type": "Question", "name": "Braucht man für die KI-Suche eine spezielle Datei wie llms.txt?", "acceptedAnswer": {"@type": "Answer", "text": "Laut Googles offizieller Dokumentation ist für die Sichtbarkeit in AI Overviews und im KI-Modus keine neue KI-Datei und keine spezielle Auszeichnung nötig. Es genügt, dass die Seite indexiert ist und als Snippet angezeigt werden kann. Wie andere KI-Dienste solche Dateien nutzen, ist dagegen unterschiedlich."}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/teknik-seo-kontrol-listesi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/teknik-seo-kontrol-listesi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/teknik-seo-kontrol-listesi">
@@ -119,7 +123,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">Zum Inhalt springen</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Hauptmenü">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Leistungen <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -297,7 +301,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech Startseite" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Ihr verlässlicher digitaler Partner. Webdesign, Softwareentwicklung und digitale Lösungen.</p>
       </div>
       <div>

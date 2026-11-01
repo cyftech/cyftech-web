@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Website Security and SSL: A 2026 Guide for SMEs — CYF Tech Blog</title>
+<title>Website Security and SSL: A 2026 Guide for SMEs</title>
 <meta name="description" content="Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="Website Security and SSL: A 2026 Guide for SMEs — CYF Tech Blog">
+<meta property="og:title" content="Website Security and SSL: A 2026 Guide for SMEs">
 <meta property="og:description" content="Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/en/web-sitesi-guvenligi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/web-sitesi-guvenligi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/en/web-sitesi-guvenligi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Website Security and SSL: A 2026 Guide for SMEs", "description": "Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.", "image": "https://cyftech.com.tr/assets/img/blog/web-sitesi-guvenligi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "en", "mainEntityOfPage": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "url": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "Website Security and SSL: A 2026 Guide for SMEs", "description": "Website security guide: SSL certificate types and shorter lifetimes in 2026, updates, 2FA, backups, WAF, OWASP Top 10 and KVKK data breach notification.", "image": "https://cyftech.com.tr/assets/img/og/web-sitesi-guvenligi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "en", "mainEntityOfPage": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "url": "https://cyftech.com.tr/en/web-sitesi-guvenligi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/en/"}, {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://cyftech.com.tr/en/blog"}, {"@type": "ListItem", "position": 3, "name": "Website Security and SSL: A 2026 Guide for SMEs", "item": "https://cyftech.com.tr/en/web-sitesi-guvenligi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Does an SSL certificate make a website completely secure?", "acceptedAnswer": {"@type": "Answer", "text": "No. SSL encrypts data traffic between the visitor and the server; but it doesn’t close software vulnerabilities, weak passwords or outdated plugins. Security requires regular updates, strong access control and backups alongside SSL."}}, {"@type": "Question", "name": "Is a free SSL certificate enough?", "acceptedAnswer": {"@type": "Answer", "text": "For most corporate and e-commerce sites, yes. Free DV certificates like Let’s Encrypt offer the same encryption strength as paid certificates. Paid OV and EV certificates provide additional organisation validation but don’t make the connection more secure."}}, {"@type": "Question", "name": "How long is an SSL certificate valid?", "acceptedAnswer": {"@type": "Answer", "text": "Under the CA/Browser Forum decision, the maximum validity of new certificates is 200 days from 15 March 2026. This will drop to 100 days on 15 March 2027 and to 47 days on 15 March 2029. As a result, automatic renewal is becoming essential."}}, {"@type": "Question", "name": "How can I tell if my website has been hacked?", "acceptedAnswer": {"@type": "Answer", "text": "The most common signs are seeing pages or links on the site you don’t recognise, foreign-language titles appearing in Google search results, visitors being redirected to other sites, a security warning in Search Console and spam notices from your hosting company."}}, {"@type": "Question", "name": "How often should a website be updated for security?", "acceptedAnswer": {"@type": "Answer", "text": "Security updates should be applied as soon as possible after release. As a general rule, check your site at least once a month and install critical security patches without delay. Don’t forget to take a backup before updating."}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/web-sitesi-guvenligi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/web-sitesi-guvenligi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/web-sitesi-guvenligi">
@@ -119,7 +123,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">Skip to content</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Main menu">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Services <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -303,7 +307,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech home page" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Your trusted partner in digital. Web design, software development and digital solutions.</p>
       </div>
       <div>

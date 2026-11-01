@@ -12,17 +12,21 @@
 <meta property="og:url" content="https://cyftech.com.tr/ru/blog">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/cyftech.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/ru/blog">
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/blog">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/blog">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/blog">
@@ -118,7 +122,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">Перейти к содержимому</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Главное меню">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Услуги <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -198,7 +202,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">483bdc8</span><b>Веб-дизайн</b><span>·</span>10 мин чтения</div>
-          <h3 class="h3">Стоимость сайта в 2026 году: 9 факторов, определяющих цену</h3>
+          <h3 class="h3">Цены на сайты в 2026 году: 9 факторов, определяющих стоимость</h3>
           <p>За один и тот же сайт одна компания просит 10 тысяч, другая — 150 тысяч TL. Рассказываем о 9 факторах, определяющих стоимость сайта, о ежегодных расходах и о том, как правильно сравнивать предложения.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/web-sitesi-fiyatlari.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="seo-nedir" data-kat="SEO"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -226,14 +230,14 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">4617861</span><b>Разработка ПО</b><span>·</span>10 мин чтения</div>
-          <h3 class="h3">WordPress или индивидуальная разработка? Как выбрать правильную платформу</h3>
+          <h3 class="h3">WordPress или заказная разработка? Как выбрать правильную платформу</h3>
           <p>Готовая платформа — быстро и экономно, индивидуальная разработка — гибко и полностью ваше. Сравниваем WordPress и заказное ПО по стоимости, безопасности, скорости и масштабированию и помогаем выбрать подходящий вариант.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/wordpress-mi-ozel-yazilim-mi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="yerel-seo-google-isletme-profili" data-kat="SEO"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">8f0b6dd</span><b>SEO</b><span>·</span>8 мин чтения</div>
-          <h3 class="h3">Локальное SEO и Google Business Profile: как выделиться на картах</h3>
+          <h3 class="h3">Локальное SEO и профиль компании в Google: как выделиться на картах</h3>
           <p>Почему по запросам «рядом со мной» показывается конкурент, а не вы? Как стать заметным на картах с помощью Google Business Profile, отзывов, единообразия NAP и локальных страниц.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/yerel-seo-google-isletme-profili.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="kobiler-icin-yapay-zeka" data-kat="Yapay Zekâ"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -247,7 +251,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">c88aa60</span><b>SEO</b><span>·</span>10 мин чтения</div>
-          <h3 class="h3">Core Web Vitals и скорость сайта: руководство по LCP, INP и CLS (2026)</h3>
+          <h3 class="h3">Core Web Vitals и скорость сайта: руководство по LCP, INP, CLS (2026)</h3>
           <p>Что означают LCP, INP и CLS, какие пороги считаются хорошими, как их измерять и улучшать? Простым языком рассказываем о Core Web Vitals и ускорении сайта.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/site-hizi-core-web-vitals.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="kvkk-uyumlu-web-sitesi" data-kat="Güvenlik"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -268,7 +272,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">d457165</span><b>Разработка ПО</b><span>·</span>8 мин чтения</div>
-          <h3 class="h3">Индивидуальная разработка ПО: когда она нужна и как устроен процесс?</h3>
+          <h3 class="h3">Заказная разработка ПО: когда она нужна и как идёт процесс?</h3>
           <p>Готовых программ уже не хватает? Рассказываем, когда заказная разработка оправдана, как выглядит процесс шаг за шагом, что влияет на стоимость и что обязательно должно быть в договоре.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/ozel-yazilim-gelistirme.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="google-ads-mi-seo-mu" data-kat="Dijital Pazarlama"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -289,7 +293,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">1e8c5de</span><b>SEO</b><span>·</span>8 мин чтения</div>
-          <h3 class="h3">Чек-лист технического SEO 2026: 30 пунктов для аудита сайта</h3>
+          <h3 class="h3">Чек-лист по техническому SEO 2026: 30 пунктов для аудита сайта</h3>
           <p>Если контент хороший, а Google не видит ваши страницы, проблема, скорее всего, техническая. Пошаговый чек-лист по сканированию, индексации, скорости, структурированным данным и ИИ-краулерам.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/teknik-seo-kontrol-listesi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="alan-adi-ve-hosting-secimi" data-kat="Web Tasarım"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -303,7 +307,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">4da070c</span><b>Безопасность</b><span>·</span>10 мин чтения</div>
-          <h3 class="h3">Безопасность сайта и SSL: руководство для МСБ на 2026 год</h3>
+          <h3 class="h3">Безопасность сайта и SSL: руководство для малого и среднего бизнеса на 2026 год</h3>
           <p>Достаточно ли SSL-сертификата? Практические способы защитить сайт с помощью обновлений, надёжного доступа, резервного копирования, файрвола и OWASP Top 10, а также о сокращении сроков действия SSL.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/web-sitesi-guvenligi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="landing-page-rehberi" data-kat="Dijital Pazarlama"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>окт. 2026</span></time>
@@ -331,7 +335,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">1188e94</span><b>Разработка ПО</b><span>·</span>8 мин чтения</div>
-          <h3 class="h3">Как выбрать систему для ресторана: руководство по POS и программам учёта заказов</h3>
+          <h3 class="h3">Как выбрать POS-систему для ресторана: руководство по программам учёта заказов</h3>
           <p>От экрана официанта до кухонного дисплея, от интеграции с кассовым аппаратом до e-Adisyon, от отчётности по филиалам до запрета платы за обслуживание (kuver): в беспристрастном руководстве собрали всё, на что стоит смотреть при выборе ресторанной POS-системы.</p><span class="bl-more">Читать далее →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/restoran-adisyon-sistemi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="blog-inside" data-kat="Haber"><time class="bl-date" datetime="2025-08-24"><b>24</b><span>авг. 2025</span></time>
@@ -369,7 +373,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Надёжная точка цифрового мира. Веб-дизайн, разработка ПО и цифровые решения.</p>
       </div>
       <div>

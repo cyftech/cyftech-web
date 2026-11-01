@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>域名与主机选择：.com.tr、TRABİS 与服务器指南 — CYF Tech 博客</title>
+<title>域名与主机选择：.com.tr、TRABİS 与服务器指南</title>
 <meta name="description" content="域名与主机选择指南：.com.tr 与 TRABİS 注册流程、域名所有权、共享主机、VPS 与云服务器对比，以及选择服务器的正确标准。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="域名与主机选择：.com.tr、TRABİS 与服务器指南 — CYF Tech 博客">
+<meta property="og:title" content="域名与主机选择：.com.tr、TRABİS 与服务器指南">
 <meta property="og:description" content="域名与主机选择指南：.com.tr 与 TRABİS 注册流程、域名所有权、共享主机、VPS 与云服务器对比，以及选择服务器的正确标准。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/alan-adi-ve-hosting-secimi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "域名与主机选择：.com.tr、TRABİS 与服务器指南", "description": "域名与主机选择指南：.com.tr 与 TRABİS 注册流程、域名所有权、共享主机、VPS 与云服务器对比，以及选择服务器的正确标准。", "image": "https://cyftech.com.tr/assets/img/blog/alan-adi-ve-hosting-secimi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi", "url": "https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "域名与主机选择：.com.tr、TRABİS 与服务器指南", "description": "域名与主机选择指南：.com.tr 与 TRABİS 注册流程、域名所有权、共享主机、VPS 与云服务器对比，以及选择服务器的正确标准。", "image": "https://cyftech.com.tr/assets/img/og/alan-adi-ve-hosting-secimi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi", "url": "https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "域名与主机选择：.com.tr、TRABİS 与服务器指南", "item": "https://cyftech.com.tr/zh/alan-adi-ve-hosting-secimi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "注册 .com.tr 域名需要证明文件吗？", "acceptedAnswer": {"@type": "Answer", "text": "不需要。随着 TRABİS 于 2022 年上线，.com.tr、.net.tr 和 .org.tr 域名无需证明文件，按先申请先分配的原则注册。而 .av.tr、.edu.tr 或 .gov.tr 等专属于特定机构的后缀，仍需提交证明文件。"}}, {"@type": "Question", "name": "域名和主机应该在同一家公司购买吗？", "acceptedAnswer": {"@type": "Answer", "text": "并非必须。在同一家公司购买便于管理；分开购买则可以在更换主机时不让域名承担风险。关键在于域名登记在您名下，且后台由您掌控。"}}, {"@type": "Question", "name": "域名到期会怎样？", "acceptedAnswer": {"@type": "Answer", "text": "到期的域名会先被暂停，网站和邮箱都会停止工作。如果在一定宽限期内未续费，域名将被删除并重新开放注册，此时任何人都可能注册它。开启自动续费并保持联系邮箱有效，即可消除这一风险。"}}, {"@type": "Question", "name": "企业网站用哪种主机就够了？", "acceptedAnswer": {"@type": "Answer", "text": "对于每月访问量几千次的展示型企业网站，优质的共享主机或托管主机通常就够用。涉及电商、会员系统或定制软件的项目，则应选择 VPS 或云服务器。"}}, {"@type": "Question", "name": ".com 和 .com.tr 哪个对 SEO 更好？", "acceptedAnswer": {"@type": "Answer", "text": "两者都适合 SEO。.com.tr 会自动表明您的目标市场是土耳其；使用 .com 时，可以通过语言、内容和 Search Console 设置传递同样的信号。请根据目标市场和品牌的易记程度来选择。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/alan-adi-ve-hosting-secimi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/alan-adi-ve-hosting-secimi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/alan-adi-ve-hosting-secimi">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -304,7 +308,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

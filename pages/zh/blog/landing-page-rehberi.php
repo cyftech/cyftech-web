@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>什么是落地页？如何制作？分步指南 — CYF Tech 博客</title>
+<title>什么是落地页？如何制作？分步指南</title>
 <meta name="description" content="什么是落地页？如何制作？落地页类型、必备要素、与 Google Ads 的配合、SEO、A/B 测试和常见错误，一份分步指南。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="什么是落地页？如何制作？分步指南 — CYF Tech 博客">
+<meta property="og:title" content="什么是落地页？如何制作？分步指南">
 <meta property="og:description" content="什么是落地页？如何制作？落地页类型、必备要素、与 Google Ads 的配合、SEO、A/B 测试和常见错误，一份分步指南。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/landing-page-rehberi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/landing-page-rehberi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/landing-page-rehberi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "什么是落地页？如何制作？分步指南", "description": "什么是落地页？如何制作？落地页类型、必备要素、与 Google Ads 的配合、SEO、A/B 测试和常见错误，一份分步指南。", "image": "https://cyftech.com.tr/assets/img/blog/landing-page-rehberi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/landing-page-rehberi", "url": "https://cyftech.com.tr/zh/landing-page-rehberi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "什么是落地页？如何制作？分步指南", "description": "什么是落地页？如何制作？落地页类型、必备要素、与 Google Ads 的配合、SEO、A/B 测试和常见错误，一份分步指南。", "image": "https://cyftech.com.tr/assets/img/og/landing-page-rehberi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/landing-page-rehberi", "url": "https://cyftech.com.tr/zh/landing-page-rehberi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "什么是落地页？如何制作？分步指南", "item": "https://cyftech.com.tr/zh/landing-page-rehberi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "落地页和网站有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "网站是介绍公司及所有服务的多页面结构。落地页则是为特定活动或优惠制作、聚焦单一目标并引导访客完成单一行动的页面。落地页通常位于网站之内。"}}, {"@type": "Question", "name": "落地页应该多长？", "acceptedAnswer": {"@type": "Answer", "text": "这取决于优惠的复杂程度和价格。免费电子书或简单报名，一个短页面就够了；而对于昂贵、需要深思熟虑的服务，能够回应各种疑虑的长页面通常效果更好。最准确的答案来自测试。"}}, {"@type": "Question", "name": "落地页对 SEO 有帮助吗？", "acceptedAnswer": {"@type": "Answer", "text": "全面阐述主题、真正对用户有用的落地页，也能在自然搜索中获得排名。但只有表单和简短标题的广告页面，以及内容几乎相同的复制页面，在自然搜索中通常难有成效。"}}, {"@type": "Question", "name": "制作落地页可以用哪些工具？", "acceptedAnswer": {"@type": "Answer", "text": "可以使用现成的拖放式落地页工具、WordPress 等内容管理系统，或为您网站专门编写的页面。现成工具适合快速测试；对于长期活动，从速度、衡量和品牌一致性的角度看，发布在自己网站上的页面更有优势。"}}, {"@type": "Question", "name": "每个广告都需要单独的落地页吗？", "acceptedAnswer": {"@type": "Answer", "text": "不必每个广告都有，但建议为每种不同的优惠、服务或搜索意图单独制作落地页。这样广告信息与页面信息完全吻合，转化率和 Google Ads 中的着陆页体验都会因此受益。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/landing-page-rehberi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/landing-page-rehberi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/landing-page-rehberi">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -314,7 +318,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

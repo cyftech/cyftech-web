@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>2026 年网站价格：决定成本的 9 个因素 — CYF Tech 博客</title>
+<title>2026 年网站价格：决定成本的 9 个因素</title>
 <meta name="description" content="2026 年网站价格由什么决定？按网站类型划分的大致价格区间、决定成本的 9 个因素、年度费用以及报价比较方法。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="2026 年网站价格：决定成本的 9 个因素 — CYF Tech 博客">
+<meta property="og:title" content="2026 年网站价格：决定成本的 9 个因素">
 <meta property="og:description" content="2026 年网站价格由什么决定？按网站类型划分的大致价格区间、决定成本的 9 个因素、年度费用以及报价比较方法。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/web-sitesi-fiyatlari">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/web-sitesi-fiyatlari.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/web-sitesi-fiyatlari">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "2026 年网站价格：决定成本的 9 个因素", "description": "2026 年网站价格由什么决定？按网站类型划分的大致价格区间、决定成本的 9 个因素、年度费用以及报价比较方法。", "image": "https://cyftech.com.tr/assets/img/blog/web-sitesi-fiyatlari.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/web-sitesi-fiyatlari", "url": "https://cyftech.com.tr/zh/web-sitesi-fiyatlari", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "2026 年网站价格：决定成本的 9 个因素", "description": "2026 年网站价格由什么决定？按网站类型划分的大致价格区间、决定成本的 9 个因素、年度费用以及报价比较方法。", "image": "https://cyftech.com.tr/assets/img/og/web-sitesi-fiyatlari.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/web-sitesi-fiyatlari", "url": "https://cyftech.com.tr/zh/web-sitesi-fiyatlari", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "2026 年网站价格：决定成本的 9 个因素", "item": "https://cyftech.com.tr/zh/web-sitesi-fiyatlari"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "做一个网站要花多少钱？", "acceptedAnswer": {"@type": "Answer", "text": "视范围而定。截至 2026 年，单页宣传网站大约 10,000 至 30,000 TL，使用现成主题的企业网站 15,000 至 50,000 TL，定制设计的企业网站 50,000 TL 及以上。电商和定制软件项目则根据模块和集成情况，在更宽的区间内变化。"}}, {"@type": "Question", "name": "网站每年的费用是多少？", "acceptedAnswer": {"@type": "Answer", "text": "建站后每年需支付域名续费、主机费用、高级主题和插件许可（如有）、企业邮箱以及维护支持费用。对于小型企业网站，这些费用只占建站费用的一小部分；而电商和高流量网站的这部分费用则会明显增加。"}}, {"@type": "Question", "name": "做便宜的网站划算吗？", "acceptedAnswer": {"@type": "Answer", "text": "如果目的只是一张短期的数字名片，或许可以。但报价过低通常意味着无授权的主题、性能差的服务器、缺失的 SEO 架构或上线后无人支持，网站可能很快就不得不重做。"}}, {"@type": "Question", "name": "网站多少天能做好？", "acceptedAnswer": {"@type": "Answer", "text": "如果内容已准备好，单页网站几天即可完成，企业网站通常需要 3 到 6 周，电商和定制软件项目则视范围需要几个月。最常见的延误原因是文案和图片迟迟不到位。"}}, {"@type": "Question", "name": "自助建站工具和外包公司，哪个更合适？", "acceptedAnswer": {"@type": "Answer", "text": "对于简单的宣传页面，自助建站工具可以是快速且低成本的起点。如果您需要品牌专属设计、SEO 表现、系统集成，并有发展计划，专业团队从长远来看会更经济。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/web-sitesi-fiyatlari">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/web-sitesi-fiyatlari">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/web-sitesi-fiyatlari">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -318,7 +322,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

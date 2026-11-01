@@ -12,17 +12,21 @@
 <meta property="og:url" content="https://cyftech.com.tr/ar/blog">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="ar_AR">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/cyftech.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/ar/blog">
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/blog">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/blog">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/blog">
@@ -118,7 +122,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">انتقل إلى المحتوى</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="الصفحة الرئيسية لـ CYF Tech" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech الصفحة الرئيسية" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="القائمة الرئيسية">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">الخدمات <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -198,14 +202,14 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20h4L19 9l-4-4L4 16v4z"/><path d="M13 7l4 4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">483bdc8</span><b>تصميم المواقع</b><span>·</span>10 دقائق قراءة</div>
-          <h3 class="h3">أسعار المواقع الإلكترونية 2026: 9 عوامل تحدد التكلفة</h3>
+          <h3 class="h3">أسعار مواقع الويب 2026: 9 عوامل تحدد التكلفة</h3>
           <p>قد يصل عرض سعر لنفس الموقع إلى 10 آلاف ليرة وعرض آخر إلى 150 ألف ليرة. شرحنا العوامل التسعة التي تحدد أسعار المواقع، والتكاليف السنوية، وكيفية مقارنة العروض بشكل صحيح.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/web-sitesi-fiyatlari.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="seo-nedir" data-kat="SEO"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>أكتوبر 2026</span></time>
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">59eef87</span><b>SEO</b><span>·</span>8 دقائق قراءة</div>
-          <h3 class="h3">ما هو SEO؟ دليل مبسّط وعملي للمبتدئين لعام 2026</h3>
+          <h3 class="h3">ما هو SEO؟ دليل مبتدئ بسيط وعملي لعام 2026</h3>
           <p>ما هو SEO، وكيف يعثر Google على الصفحة ويرتّبها، وما الذي غيّرته ملخصات الذكاء الاصطناعي؟ دليل بداية خطوة بخطوة لأصحاب الأعمال دون مصطلحات معقدة.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/seo-nedir.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="e-ticaret-sitesi-kurma-rehberi" data-kat="E-Ticaret"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>أكتوبر 2026</span></time>
@@ -226,7 +230,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">4617861</span><b>البرمجيات</b><span>·</span>10 دقائق قراءة</div>
-          <h3 class="h3">WordPress أم برمجيات مخصصة؟ دليل اختيار المنصة المناسبة</h3>
+          <h3 class="h3">WordPress أم برمجيات مخصصة؟ دليل اختيار البنية التحتية المناسبة</h3>
           <p>المنصات الجاهزة سريعة واقتصادية، والبرمجيات المخصصة مرنة وملك لك. قارنّا بين WordPress والبرمجيات المخصصة من حيث التكلفة والأمان والسرعة والنمو، وبيّنّا أيهما يناسبك.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/wordpress-mi-ozel-yazilim-mi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="yerel-seo-google-isletme-profili" data-kat="SEO"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>أكتوبر 2026</span></time>
@@ -261,7 +265,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">88c7181</span><b>تطبيقات الجوال</b><span>·</span>8 دقائق قراءة</div>
-          <h3 class="h3">Native أم متعدد المنصات؟ مقارنة بين Flutter وReact Native</h3>
+          <h3 class="h3">أصلي أم متعدد المنصات؟ مقارنة بين Flutter وReact Native</h3>
           <p>تطبيقان منفصلان بـ Swift وKotlin، أم قاعدة شيفرة واحدة بـ Flutter أو React Native؟ مقارنة تساعدك على اتخاذ القرار الصحيح من حيث الأداء والتكلفة والفريق والصيانة.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/native-mi-cross-platform-mu.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="ozel-yazilim-gelistirme" data-kat="Yazılım"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>أكتوبر 2026</span></time>
@@ -303,7 +307,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6l8-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">4da070c</span><b>الأمان</b><span>·</span>10 دقائق قراءة</div>
-          <h3 class="h3">أمان المواقع وشهادات SSL: دليل 2026 للشركات الصغيرة والمتوسطة</h3>
+          <h3 class="h3">أمن مواقع الويب وSSL: دليل 2026 للشركات الصغيرة والمتوسطة</h3>
           <p>هل شهادة SSL كافية؟ طرق عملية لحماية موقعك عبر التحديثات والوصول الآمن والنسخ الاحتياطي وجدار الحماية وOWASP Top 10، إضافة إلى تقلّص مدد صلاحية شهادات SSL.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/web-sitesi-guvenligi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="landing-page-rehberi" data-kat="Dijital Pazarlama"><time class="bl-date" datetime="2026-10-31"><b>31</b><span>أكتوبر 2026</span></time>
@@ -331,7 +335,7 @@
         <div class="bl-node" aria-hidden="true"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div>
         <div class="bl-body">
           <div class="bl-meta"><span class="bl-h">1188e94</span><b>البرمجيات</b><span>·</span>8 دقائق قراءة</div>
-          <h3 class="h3">اختيار نظام فواتير المطاعم: دليل أنظمة POS وبرامج الطلبات</h3>
+          <h3 class="h3">اختيار نظام الطلبات للمطاعم: دليل أنظمة POS وبرامج الفواتير</h3>
           <p>من شاشة النادل إلى شاشة المطبخ، ومن التكامل مع آلة تسجيل النقد إلى e-Adisyon، ومن تقارير الفروع المتعددة إلى حظر رسوم الخدمة (الكوفير): جمعنا في دليل محايد ما يجب مراعاته عند اختيار نظام الطلبات وPOS للمطاعم.</p><span class="bl-more">اقرأ المزيد →</span>
         </div>
         <div class="bl-thumb"><img src="../assets/img/blog/restoran-adisyon-sistemi.svg" alt="" loading="lazy"></div></a><a class="bl-row reveal" href="blog-inside" data-kat="Haber"><time class="bl-date" datetime="2025-08-24"><b>24</b><span>أغسطس 2025</span></time>
@@ -369,7 +373,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="الصفحة الرئيسية لـ CYF Tech" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech الصفحة الرئيسية" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>نقطتك الموثوقة في العالم الرقمي. تصميم المواقع وتطوير البرمجيات والحلول الرقمية.</p>
       </div>
       <div>

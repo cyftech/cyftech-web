@@ -31,6 +31,13 @@
     window.addEventListener('resize', function () { if (window.innerWidth > 960) setOpen(false); });
   }
 
+  // remembered language pick: the server reads the cookie (Turkish pages redirect by it, see tools/cleanurls.py)
+  function setLangPick(l) {
+    try { localStorage.setItem('cyf-lang', l); } catch (e) {}
+    document.cookie = 'cyf-lang=' + l + ';path=/;max-age=31536000;samesite=lax' + (location.protocol === 'https:' ? ';secure' : '');
+  }
+  try { var lp = localStorage.getItem('cyf-lang'); if (lp && document.cookie.indexOf('cyf-lang=') < 0) setLangPick(lp); } catch (e) {}
+
   // language menu: opens on hover (CSS) and on click/tap
   var dd = document.querySelector('.lang-dd');
   if (dd) {
@@ -41,7 +48,7 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') setLang(false); });
     // remember an explicit pick, so the Turkish root pages stop redirecting by browser language
     dd.querySelectorAll('[data-lang]').forEach(function (a) {
-      a.addEventListener('click', function () { try { localStorage.setItem('cyf-lang', a.getAttribute('data-lang')); } catch (e) {} });
+      a.addEventListener('click', function () { setLangPick(a.getAttribute('data-lang')); });
     });
   }
 

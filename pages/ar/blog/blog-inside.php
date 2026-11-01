@@ -3,28 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CYF Tech على ÜLKE TV — مدونة CYF Tech</title>
+<title>CYF Tech على ÜLKE TV</title>
 <meta name="description" content="حلّت CYF Tech ضيفة على برنامج «Yeni Nesil İşler» مع Aycan Gül على Ülke TV: قصة التأسيس والمشاريع وأثر الذكاء الاصطناعي على عالم الأعمال.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="CYF Tech على ÜLKE TV — مدونة CYF Tech">
+<meta property="og:title" content="CYF Tech على ÜLKE TV">
 <meta property="og:description" content="حلّت CYF Tech ضيفة على برنامج «Yeni Nesil İşler» مع Aycan Gül على Ülke TV: قصة التأسيس والمشاريع وأثر الذكاء الاصطناعي على عالم الأعمال.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/ar/blog-inside">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="ar_AR">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/blog-inside.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/ar/blog-inside">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "CYF Tech على ÜLKE TV", "description": "حلّت CYF Tech ضيفة على برنامج «Yeni Nesil İşler» مع Aycan Gül على Ülke TV: قصة التأسيس والمشاريع وأثر الذكاء الاصطناعي على عالم الأعمال.", "image": "https://cyftech.com.tr/assets/img/blog/ulketv.webp", "datePublished": "2025-08-24", "dateModified": "2025-08-24", "inLanguage": "ar", "mainEntityOfPage": "https://cyftech.com.tr/ar/blog-inside", "url": "https://cyftech.com.tr/ar/blog-inside", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "CYF Tech على ÜLKE TV", "description": "حلّت CYF Tech ضيفة على برنامج «Yeni Nesil İşler» مع Aycan Gül على Ülke TV: قصة التأسيس والمشاريع وأثر الذكاء الاصطناعي على عالم الأعمال.", "image": "https://cyftech.com.tr/assets/img/og/blog-inside.jpg", "datePublished": "2025-08-24", "dateModified": "2025-08-24", "inLanguage": "ar", "mainEntityOfPage": "https://cyftech.com.tr/ar/blog-inside", "url": "https://cyftech.com.tr/ar/blog-inside", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/ar/"}, {"@type": "ListItem", "position": 2, "name": "المدونة", "item": "https://cyftech.com.tr/ar/blog"}, {"@type": "ListItem", "position": 3, "name": "CYF Tech على ÜLKE TV", "item": "https://cyftech.com.tr/ar/blog-inside"}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/blog-inside">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/blog-inside">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/blog-inside">
@@ -120,7 +124,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">انتقل إلى المحتوى</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="الصفحة الرئيسية لـ CYF Tech" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech الصفحة الرئيسية" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="القائمة الرئيسية">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">الخدمات <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -217,7 +221,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="الصفحة الرئيسية لـ CYF Tech" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech الصفحة الرئيسية" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>نقطتك الموثوقة في العالم الرقمي. تصميم المواقع وتطوير البرمجيات والحلول الرقمية.</p>
       </div>
       <div>

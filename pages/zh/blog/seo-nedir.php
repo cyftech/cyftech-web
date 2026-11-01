@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>什么是 SEO？2026 年简明实用入门指南 — CYF Tech 博客</title>
+<title>什么是 SEO？2026 年简明实用入门指南</title>
 <meta name="description" content="什么是 SEO，它如何运作？我们用通俗的语言介绍 Google 的抓取、索引和排名流程、AI 概览的影响，以及您的企业应迈出的第一步。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="什么是 SEO？2026 年简明实用入门指南 — CYF Tech 博客">
+<meta property="og:title" content="什么是 SEO？2026 年简明实用入门指南">
 <meta property="og:description" content="什么是 SEO，它如何运作？我们用通俗的语言介绍 Google 的抓取、索引和排名流程、AI 概览的影响，以及您的企业应迈出的第一步。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/seo-nedir">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/seo-nedir.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/seo-nedir">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "什么是 SEO？2026 年简明实用入门指南", "description": "什么是 SEO，它如何运作？我们用通俗的语言介绍 Google 的抓取、索引和排名流程、AI 概览的影响，以及您的企业应迈出的第一步。", "image": "https://cyftech.com.tr/assets/img/blog/seo-nedir.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/seo-nedir", "url": "https://cyftech.com.tr/zh/seo-nedir", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "什么是 SEO？2026 年简明实用入门指南", "description": "什么是 SEO，它如何运作？我们用通俗的语言介绍 Google 的抓取、索引和排名流程、AI 概览的影响，以及您的企业应迈出的第一步。", "image": "https://cyftech.com.tr/assets/img/og/seo-nedir.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/seo-nedir", "url": "https://cyftech.com.tr/zh/seo-nedir", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "什么是 SEO？2026 年简明实用入门指南", "item": "https://cyftech.com.tr/zh/seo-nedir"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "什么是 SEO？它有什么用？", "acceptedAnswer": {"@type": "Answer", "text": "SEO 即搜索引擎优化，是为了让您的网站无需付费投放广告，就能在 Google 等搜索引擎的相关搜索中获得更高曝光而开展的技术、内容和权威工作的总和。其目标是让正在寻找您的潜在客户访问您的网站。"}}, {"@type": "Question", "name": "SEO 可以自己做吗？", "acceptedAnswer": {"@type": "Answer", "text": "基础步骤可以自己完成：安装 Search Console、调整页面标题、开通 Google 商家资料，以及撰写回答客户问题的内容。但在技术问题、网站架构和竞争激烈的行业方面，借助经验丰富的团队能节省时间。"}}, {"@type": "Question", "name": "SEO 多久能见效？", "acceptedAnswer": {"@type": "Answer", "text": "这取决于网站的历史、行业竞争程度和初始技术状况。清除技术障碍可能在几周内见效，而新网站获得可观的自然流量通常需要几个月。对于承诺确切时间或保证排名第一的服务，请保持谨慎。"}}, {"@type": "Question", "name": "人工智能搜索终结了 SEO 吗？", "acceptedAnswer": {"@type": "Answer", "text": "没有。据 Google 介绍，出现在 AI 概览和 AI 模式中没有额外要求；已被编入索引且提供优质内容的网页可以作为来源出现在这些摘要中。简单信息类问题的点击量可能会减少，但原创、基于经验的内容价值正在提升。"}}, {"@type": "Question", "name": "SEO 和 Google Ads 有什么区别？", "acceptedAnswer": {"@type": "Answer", "text": "在 Google Ads 中，您按点击付费，可以立即出现在广告位上，预算用完曝光就停止。SEO 不需要为点击付费，但取得成果需要时间和精力；获得的曝光更加持久。许多企业会两者结合使用。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/seo-nedir">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/seo-nedir">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/seo-nedir">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -299,7 +303,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

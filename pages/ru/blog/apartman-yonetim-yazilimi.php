@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>9 критериев выбора программы для управления жилым домом — блог CYF Tech</title>
+<title>9 критериев выбора программы для управления жилым домом</title>
 <meta name="description" content="На что смотреть при выборе программы для управления домом? Взносы и пени, смета расходов, онлайн-оплата, KVKK, мобильное приложение и чек-лист.">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="9 критериев выбора программы для управления жилым домом — блог CYF Tech">
+<meta property="og:title" content="9 критериев выбора программы для управления жилым домом">
 <meta property="og:description" content="На что смотреть при выборе программы для управления домом? Взносы и пени, смета расходов, онлайн-оплата, KVKK, мобильное приложение и чек-лист.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/ru/apartman-yonetim-yazilimi">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="ru_RU">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/apartman-yonetim-yazilimi.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/ru/apartman-yonetim-yazilimi">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "9 критериев выбора программы для управления жилым домом", "description": "На что смотреть при выборе программы для управления домом? Взносы и пени, смета расходов, онлайн-оплата, KVKK, мобильное приложение и чек-лист.", "image": "https://cyftech.com.tr/assets/img/blog/apartman-yonetim-yazilimi.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "ru", "mainEntityOfPage": "https://cyftech.com.tr/ru/apartman-yonetim-yazilimi", "url": "https://cyftech.com.tr/ru/apartman-yonetim-yazilimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "9 критериев выбора программы для управления жилым домом", "description": "На что смотреть при выборе программы для управления домом? Взносы и пени, смета расходов, онлайн-оплата, KVKK, мобильное приложение и чек-лист.", "image": "https://cyftech.com.tr/assets/img/og/apartman-yonetim-yazilimi.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "ru", "mainEntityOfPage": "https://cyftech.com.tr/ru/apartman-yonetim-yazilimi", "url": "https://cyftech.com.tr/ru/apartman-yonetim-yazilimi", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/ru/"}, {"@type": "ListItem", "position": 2, "name": "Блог", "item": "https://cyftech.com.tr/ru/blog"}, {"@type": "ListItem", "position": 3, "name": "9 критериев выбора программы для управления жилым домом", "item": "https://cyftech.com.tr/ru/apartman-yonetim-yazilimi"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "ru", "mainEntity": [{"@type": "Question", "name": "Какая пеня за просрочку взносов в жилом доме?", "acceptedAnswer": {"@type": "Answer", "text": "Согласно статье 20 Закона о кондоминиумах № 634, собственник, не уплативший вовремя свою долю расходов или аванс, платит пеню 5% в месяц за дни просрочки. Если есть сомнения в способе расчёта, рекомендуется проконсультироваться с юристом."}}, {"@type": "Question", "name": "Можно ли вывесить список должников в лифте?", "acceptedAnswer": {"@type": "Answer", "text": "Нет. Совет по защите персональных данных признал незаконным размещение данных жильцов с задолженностью в общих зонах — в лифте, у входа и в коридорах. Информировать следует только через каналы, доступные самим заинтересованным лицам."}}, {"@type": "Question", "name": "Нужна ли программа управления небольшому дому?", "acceptedAnswer": {"@type": "Answer", "text": "Не обязательно, но даже в доме на несколько квартир онлайн-оплата, индивидуальная выписка о долге и объявления заметно облегчают работу управляющего и предотвращают потерю записей при его смене."}}, {"@type": "Question", "name": "От чего зависит стоимость программы для управления домом?", "acceptedAnswer": {"@type": "Answer", "text": "Обычно от количества квартир или помещений, выбранных модулей и платформ. SMS-пакеты и комиссии эквайринга часто оплачиваются отдельно; сравнивать нужно по общей годовой стоимости."}}, {"@type": "Question", "name": "Что сделать перед подачей иска о задолженности по взносам?", "acceptedAnswer": {"@type": "Answer", "text": "С 1 сентября 2023 года по спорам, вытекающим из Закона о кондоминиумах, перед подачей иска обязательно обращение к медиатору. Для требований, основанных на утверждённой смете, возможно также исполнительное производство; за помощью в процессе стоит обратиться к юристу."}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/apartman-yonetim-yazilimi">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/apartman-yonetim-yazilimi">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/apartman-yonetim-yazilimi">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">Перейти к содержимому</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="Главное меню">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">Услуги <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -308,7 +312,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech — главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech главная страница" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>Надёжная точка цифрового мира. Веб-дизайн, разработка ПО и цифровые решения.</p>
       </div>
       <div>

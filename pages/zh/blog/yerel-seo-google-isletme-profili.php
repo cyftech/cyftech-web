@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>本地 SEO 与 Google 商家资料：在地图中脱颖而出指南 — CYF Tech 博客</title>
+<title>本地 SEO 与 Google 商家资料：在地图中脱颖而出指南</title>
 <meta name="description" content="什么是本地 SEO？如何优化 Google 商家资料？决定地图排名的 3 个信号、评价规则以及 Yandex 地图的分步指南。">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="本地 SEO 与 Google 商家资料：在地图中脱颖而出指南 — CYF Tech 博客">
+<meta property="og:title" content="本地 SEO 与 Google 商家资料：在地图中脱颖而出指南">
 <meta property="og:description" content="什么是本地 SEO？如何优化 Google 商家资料？决定地图排名的 3 个信号、评价规则以及 Yandex 地图的分步指南。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/yerel-seo-google-isletme-profili.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "本地 SEO 与 Google 商家资料：在地图中脱颖而出的指南", "description": "什么是本地 SEO？如何优化 Google 商家资料？决定地图排名的 3 个信号、评价规则以及 Yandex 地图的分步指南。", "image": "https://cyftech.com.tr/assets/img/blog/yerel-seo-google-isletme-profili.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili", "url": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "本地 SEO 与 Google 商家资料：在地图中脱颖而出的指南", "item": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili"}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "本地 SEO 与 Google 商家资料：在地图中脱颖而出指南", "description": "什么是本地 SEO？如何优化 Google 商家资料？决定地图排名的 3 个信号、评价规则以及 Yandex 地图的分步指南。", "image": "https://cyftech.com.tr/assets/img/og/yerel-seo-google-isletme-profili.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili", "url": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "本地 SEO 与 Google 商家资料：在地图中脱颖而出指南", "item": "https://cyftech.com.tr/zh/yerel-seo-google-isletme-profili"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "Google 商家资料收费吗？", "acceptedAnswer": {"@type": "Answer", "text": "不收费。开通、验证和管理 Google 商家资料都是免费的。Google 还表示，本地排名无法通过付费提升；地图结果中的广告是另一项付费服务，并会标注为广告。"}}, {"@type": "Question", "name": "没有地址也能在 Google 地图上注册吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。如果您上门为客户提供服务，可以注册为服务区域型商家，隐藏地址并标明您服务的区县和城市。但虚拟办公室和邮政信箱地址不被视为适用于商家资料。"}}, {"@type": "Question", "name": "Google 评价会影响排名吗？", "acceptedAnswer": {"@type": "Answer", "text": "会。根据 Google 帮助页面，更多的评价和正面评分有助于提升商家的知名度信号。Google 也建议回复评价。但以折扣或礼品换取评价、收集虚假评价都违反规则。"}}, {"@type": "Question", "name": "为什么在地图上竞争对手排在我前面？", "acceptedAnswer": {"@type": "Answer", "text": "通常是以下三个原因之一：竞争对手离搜索者更近；其资料更完整、类别更准确；或者其评价更多、更新。距离您无法改变，但可以强化您的资料信息、评价流和网站。"}}, {"@type": "Question", "name": "Google 商家资料验证需要多长时间？", "acceptedAnswer": {"@type": "Answer", "text": "验证方式因商家而异；通常会要求提供一段展示商家的短视频，审核可能需要几天。审核期间不要频繁修改信息，以免延长流程。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/yerel-seo-google-isletme-profili">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/yerel-seo-google-isletme-profili">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/yerel-seo-google-isletme-profili">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -296,7 +300,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>

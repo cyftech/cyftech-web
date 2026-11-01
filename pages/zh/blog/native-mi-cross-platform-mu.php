@@ -3,29 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>原生还是跨平台？Flutter 与 React Native 对比 — CYF Tech 博客</title>
+<title>原生还是跨平台？Flutter 与 React Native 对比</title>
 <meta name="description" content="原生还是跨平台？我们从性能、成本、维护和团队角度对比了 Flutter、React Native 和 Kotlin Multiplatform——哪种项目适合哪种方案？">
 <meta name="theme-color" content="#040814">
-<meta property="og:title" content="原生还是跨平台？Flutter 与 React Native 对比 — CYF Tech 博客">
+<meta property="og:title" content="原生还是跨平台？Flutter 与 React Native 对比">
 <meta property="og:description" content="原生还是跨平台？我们从性能、成本、维护和团队角度对比了 Flutter、React Native 和 Kotlin Multiplatform——哪种项目适合哪种方案？">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://cyftech.com.tr/zh/native-mi-cross-platform-mu">
 <meta property="og:site_name" content="CYF Tech">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cyftech.com.tr/assets/img/og/native-mi-cross-platform-mu.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://cyftech.com.tr/zh/native-mi-cross-platform-mu">
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "原生还是跨平台？Flutter 与 React Native 对比", "description": "原生还是跨平台？我们从性能、成本、维护和团队角度对比了 Flutter、React Native 和 Kotlin Multiplatform——哪种项目适合哪种方案？", "image": "https://cyftech.com.tr/assets/img/blog/native-mi-cross-platform-mu.svg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/native-mi-cross-platform-mu", "url": "https://cyftech.com.tr/zh/native-mi-cross-platform-mu", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "原生还是跨平台？Flutter 与 React Native 对比", "description": "原生还是跨平台？我们从性能、成本、维护和团队角度对比了 Flutter、React Native 和 Kotlin Multiplatform——哪种项目适合哪种方案？", "image": "https://cyftech.com.tr/assets/img/og/native-mi-cross-platform-mu.jpg", "datePublished": "2026-10-31", "dateModified": "2026-10-31", "inLanguage": "zh", "mainEntityOfPage": "https://cyftech.com.tr/zh/native-mi-cross-platform-mu", "url": "https://cyftech.com.tr/zh/native-mi-cross-platform-mu", "author": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}, "publisher": {"@type": "Organization", "name": "CYF Tech", "url": "https://cyftech.com.tr/", "logo": {"@type": "ImageObject", "url": "https://cyftech.com.tr/assets/img/logo/ico.png"}}}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "CYF Tech", "item": "https://cyftech.com.tr/zh/"}, {"@type": "ListItem", "position": 2, "name": "博客", "item": "https://cyftech.com.tr/zh/blog"}, {"@type": "ListItem", "position": 3, "name": "原生还是跨平台？Flutter 与 React Native 对比", "item": "https://cyftech.com.tr/zh/native-mi-cross-platform-mu"}]}</script>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh", "mainEntity": [{"@type": "Question", "name": "跨平台应用和原生应用一样快吗？", "acceptedAnswer": {"@type": "Answer", "text": "在绝大多数业务应用中，用户感觉不到差异。Flutter 借助自有渲染引擎、React Native 借助新架构，都能提供流畅的体验。但在密集图形、游戏或实时媒体处理等场景下，原生仍然更具优势。"}}, {"@type": "Question", "name": "Flutter 和 React Native 哪个更好？", "acceptedAnswer": {"@type": "Answer", "text": "没有唯一的正确答案。如果需要品牌专属、在每台设备上外观一致的界面，并同时面向桌面端，通常选 Flutter；如果团队熟悉 React 和 TypeScript，或已有 React Web 项目，React Native 通常更合适。"}}, {"@type": "Question", "name": "用跨平台技术开发的应用可以在 App Store 和 Google Play 上架吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以。用 Flutter 和 React Native 开发的应用会像原生应用一样编译，并按相同规则在两大应用商店上架。对用户而言，看不出应用是用哪种技术编写的。"}}, {"@type": "Question", "name": "可以先用跨平台开发，之后再转为原生吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，但这通常意味着要重写应用。相比之下，在跨平台应用中用原生代码编写所需的特定界面或模块，往往是更经济的做法。"}}, {"@type": "Question", "name": "移动应用和网站可以使用同一套基础设施吗？", "acceptedAnswer": {"@type": "Answer", "text": "可以，而且大多数情况下也应该这样做。无论选择哪种移动技术，应用都可以与网站或管理后台接入同一个 API 和数据库。如果使用 React Native，还可以与基于 React 的 Web 项目共享部分业务逻辑。这种方式能降低维护成本，并确保数据集中、一致。"}}, {"@type": "Question", "name": "什么是 Kotlin Multiplatform？何时适合选择它？", "acceptedAnswer": {"@type": "Answer", "text": "Kotlin Multiplatform 是一种在 iOS 和 Android 之间共享业务逻辑，同时可用原生方式或 Compose Multiplatform 编写界面的方案。它适合拥有强大 Android 团队、希望在不牺牲原生体验的前提下共享代码的项目。"}}]}</script>
 <link rel="icon" type="image/png" href="../assets/img/logo/ico.png">
 <script>try{var t=localStorage.getItem('cyf-theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark');document.documentElement.setAttribute('data-theme',t);if(!sessionStorage.getItem('cyf-intro')&&!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')}catch(e){}</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="../assets/css/site.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/blog.css?v=20261031d">
-<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261031d">
-<script src="../assets/js/site.js?v=20261031d" defer></script>
-<script src="../assets/js/ambient.js?v=20261031d" defer></script>
+<link rel="preload" href="/assets/fonts/SpaceGrotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/JetBrainsMono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic-ext.woff2) format('woff2');unicode-range:U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-cyrillic.woff2) format('woff2');unicode-range:U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/JetBrainsMono-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF}@font-face{font-family:'Space Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(/assets/fonts/SpaceGrotesk-latin.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}</style>
+<link rel="stylesheet" href="../assets/css/site.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/blog.css?v=20261101a">
+<link rel="stylesheet" href="../assets/css/theme-light.css?v=20261101a">
+<script src="../assets/js/site.js?v=20261101a" defer></script>
+<script src="../assets/js/ambient.js?v=20261101a" defer></script>
 <link rel="alternate" hreflang="tr" href="https://cyftech.com.tr/native-mi-cross-platform-mu">
 <link rel="alternate" hreflang="en" href="https://cyftech.com.tr/en/native-mi-cross-platform-mu">
 <link rel="alternate" hreflang="de" href="https://cyftech.com.tr/de/native-mi-cross-platform-mu">
@@ -121,7 +125,7 @@
 })();</script>
 <a class="sr-only" href="#icerik">跳到正文</a>
 <header class="site-head">
-  <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+  <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
   <nav class="nav" aria-label="主菜单">
     <div class="nav-dd">
       <button type="button" aria-haspopup="true">服务 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button>
@@ -302,7 +306,7 @@
   <div class="wrap">
     <div class="foot-grid">
       <div>
-        <a class="logo" href="./" aria-label="CYF Tech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
+        <a class="logo" href="./" aria-label="cyftech 首页" translate="no"><span class="logo-word">cyf<span>tech</span></span></a>
         <p>值得信赖的数字化伙伴。网站设计、软件开发与数字化解决方案。</p>
       </div>
       <div>
